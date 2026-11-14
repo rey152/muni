@@ -56,6 +56,70 @@
     '<path d="M162 184 V122 L194 98 L226 122 V184 Z" fill="#66cdc8"/><rect x="186" y="150" width="16" height="34" fill="#faf9f5"/>' +
     '<circle cx="262" cy="148" r="22" fill="#7cc142"/><rect x="259" y="160" width="6" height="24" fill="#0b7a3d"/>' +
     '<path class="mu-art-line" d="M10 186 C 70 178, 120 192, 170 184 S 270 178, 312 188" fill="none" stroke="#1f2733" stroke-width="3" stroke-linecap="round"/></svg>';
+
+  /* Wayfinding: public topics and central questions */
+  var TI = { homes: '<path d="M4 12 L12 4 L20 12 V20 H4 Z" fill="#66cdc8"/><rect x="10" y="14" width="4" height="6" fill="#1f2733"/>',
+    roads: '<rect x="3" y="8" width="18" height="10" rx="3" fill="#4a6fa5"/><rect x="5" y="10" width="6" height="4" rx="1" fill="#f2b950"/><rect x="13" y="10" width="6" height="4" rx="1" fill="#f2b950"/><circle cx="8" cy="19" r="2" fill="#bcc3b5"/><circle cx="16" cy="19" r="2" fill="#bcc3b5"/>',
+    taxes: '<circle cx="12" cy="12" r="8" fill="#f2b950"/><rect x="11" y="7" width="2" height="10" fill="#2d5a9e"/><rect x="8" y="11" width="8" height="2" fill="#2d5a9e"/>',
+    parks: '<circle cx="11" cy="9" r="6" fill="#7cc142"/><rect x="10" y="13" width="2" height="8" fill="#0b7a3d"/><circle cx="18" cy="17" r="3" fill="#d61f5a"/>',
+    water: '<path d="M12 3 C 8 9, 6 12, 6 15 a6 6 0 0 0 12 0 C 18 12, 16 9, 12 3 Z" fill="#1aa7e0"/><rect x="3" y="19" width="5" height="2" fill="#d97757"/>',
+    community: '<circle cx="8" cy="9" r="3" fill="#d61f5a"/><circle cx="16" cy="9" r="3" fill="#d97757"/><rect x="4" y="14" width="8" height="6" rx="3" fill="#d61f5a"/><rect x="12" y="14" width="8" height="6" rx="3" fill="#d97757"/>' };
+  var SHORT = { homes: 'Homes', roads: 'Getting around', taxes: 'Taxes and fees', parks: 'Parks', water: 'Water and waste', community: 'Community' };
+  var TOPICS = [
+    ['homes', 'Homes and new buildings', 'Development proposals, rental rules, housing policy and land-use changes.'],
+    ['roads', 'Roads, transit and getting around', 'Transit, roads, sidewalks, cycling, parking and travel disruption.'],
+    ['taxes', 'Taxes, fees and city spending', 'Budgets, charges, funding choices and capital spending.'],
+    ['parks', 'Parks, recreation and public spaces', 'Parks, facilities, public spaces and access.'],
+    ['water', 'Water, waste and the environment', 'Water, sewer, stormwater, waste, climate and environmental projects.'],
+    ['community', 'Community services and local rules', 'Other municipal services, licensing, local rules and heritage.']];
+  function topicIcon(slug) { return '<svg class="ticon" viewBox="0 0 24 24" aria-hidden="true">' + (TI[slug] || '') + '</svg>'; }
+  function inTopic(name) { return D.matters.filter(function (m) { return (m.topics || []).indexOf(name) >= 0; }); }
+  function today() { return new Date().toISOString().slice(0, 10); }
+  function kinds(m) { return (m.events || []).map(function (e) { return e.kind; }); }
+  function decided(m) { var k = kinds(m); return k.indexOf('council_decision') >= 0 || k.indexOf('in_force') >= 0 || k.indexOf('repealed') >= 0; }
+  function openWindows(m) { return (m.windows || []).filter(function (w) { return w.state === 'rule_based' || (w.state === 'dated' && w.deadline_date && w.deadline_date >= today()); }); }
+  var QS = {
+    decided: ["What's been decided?", 'Matters with a council decision, a rule in force, or a repeal in the records.', decided],
+    say: ['Can I still have a say?', 'Matters with a dated window that has not closed, or a window set by rule. Closed windows are marked closed.', function (m) { return (m.windows || []).length > 0; }],
+    undecided: ["What's still undecided?", 'Matters with points marked not decided, or no decision in the records yet.', function (m) { return !decided(m) || (m.claims || []).some(function (c) { return c.section === 'not_decided'; }); }]
+  };
+  var MON = ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec'];
+  function ledgerRow(m, extra) {
+    var ds = (m.events || []).map(function (e) { return String(e.date || ''); }).filter(function (d) { return /^\d{4}-\d{2}-\d{2}/.test(d); }).sort();
+    var d = ds[ds.length - 1];
+    var stamp = d ? '<span class="lstamp"><span class="lstamp__m">' + MON[+d.slice(5, 7) - 1] + '</span><span class="lstamp__d">' + (+d.slice(8, 10)) + '</span></span>' : '<span class="lstamp lstamp--none" aria-hidden="true"><span class="lstamp__dot"></span></span>';
+    return '<li><a class="lrow" href="#/matter/' + encodeURIComponent(m.id) + '">' + stamp + '<span class="lrow__body"><span class="lrow__title">' + esc(m.title) + '</span>' +
+      '<span class="lrow__meta">' + esc((m.topics || [])[0] || 'Council matter') + ' · ' + esc(m.authority || m.location || '') + '</span>' + (extra ? extra(m) : '') + '</span>' + statusChip(m) +
+      '<svg class="lrow__chev" viewBox="0 0 24 24" aria-hidden="true"><path d="M9 6 l6 6 -6 6" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/></svg></a></li>';
+  }
+  function ledger(list, extra) { return '<ul class="ledger">' + list.map(function (m) { return ledgerRow(m, extra); }).join('') + '</ul>'; }
+  function topicTiles() {
+    return '<ul class="mu-tiles ttiles">' + TOPICS.map(function (t) { var n = inTopic(t[1]).length;
+      return '<li><a class="mu-tile" href="#/topic/' + t[0] + '" title="' + esc(t[1] + ': ' + t[2]) + '">' + topicIcon(t[0]) + '<span>' + esc(SHORT[t[0]]) + '</span><span class="ttile__n">' + (n ? n + (n === 1 ? ' matter' : ' matters') : 'None checked') + '</span><span class="sr-only">' + esc(t[1] + '. ' + t[2]) + '</span></a></li>'; }).join('') + '</ul>';
+  }
+  function qChips() { return '<div class="qchips">' + Object.keys(QS).map(function (k) { return '<a class="qchip" href="#/q/' + k + '">' + esc(QS[k][0]) + '</a>'; }).join('') + '</div>'; }
+  function renderTopics() {
+    main.innerHTML = '<section class="view"><p class="mu-overline">Browse</p><h1>Topics</h1><p class="mu-meta">Six public topics. A matter can sit in more than one.</p>' + topicTiles() + '<h2>Or start from a question</h2>' + qChips() + '</section>';
+    focusMain('Topics');
+  }
+  function renderTopic(slug) {
+    var t = TOPICS.filter(function (x) { return x[0] === slug; })[0];
+    if (!t) { main.innerHTML = '<section class="view"><h1>Topic not found</h1><p><a href="#/topics">See all topics</a></p></section>'; return focusMain('Topic not found'); }
+    var list = inTopic(t[1]);
+    main.innerHTML = '<section class="view"><p class="crumb"><a href="#/topics">Topics</a></p><div class="vhead">' + topicIcon(t[0]) + '<div><h1>' + esc(t[1]) + '</h1><p class="mu-meta">' + esc(t[2]) + '</p></div></div>' +
+      (list.length ? ledger(list) : '<div class="empty"><p><strong>No matters in this topic have been checked yet.</strong></p><p>Muni only lists matters whose records it has checked. For current items, see the <a href="https://www.waterloo.ca" rel="noopener" target="_blank">City of Waterloo website</a>.</p></div>') + '</section>';
+    focusMain(t[1]);
+  }
+  function renderQ(key) {
+    var q = QS[key];
+    if (!q) { main.innerHTML = '<section class="view"><h1>Question not found</h1><p><a href="#/">Back to home</a></p></section>'; return focusMain('Not found'); }
+    var list = D.matters.filter(q[2]);
+    var extra = key === 'say' ? function (m) { var open = openWindows(m).length; return '<span class="wtag ' + (open ? 'wtag--open' : 'wtag--closed') + '">' + (open ? 'Window open' : 'Closed') + '</span>'; } : null;
+    if (key === 'say') list.sort(function (a, b) { return openWindows(b).length - openWindows(a).length; });
+    main.innerHTML = '<section class="view"><p class="crumb"><a href="#/">Home</a></p><h1>' + esc(q[0]) + '</h1><p class="mu-meta">' + esc(q[1]) + ' Checked ' + esc(asOf()) + '.</p>' +
+      qChips() + (list.length ? ledger(list, extra) : '<div class="empty"><p>No checked matters match this yet.</p></div>') + '</section>';
+    focusMain(q[0]);
+  }
   function chip(p) { return '<span class="chip' + (p === 'ai_paraphrase' ? ' chip--ai' : '') + '">' + esc(PROV[p] || p) + '</span>'; }
 
   function sourceDetails(pid, label) {
@@ -83,7 +147,7 @@
 
   /* Routing */
   function setNav(r) {
-    document.querySelectorAll('.site-nav a').forEach(function (a) {
+    document.querySelectorAll('.site-nav a, .tabbar a').forEach(function (a) {
       if (a.getAttribute('data-route') === r) a.setAttribute('aria-current', 'page'); else a.removeAttribute('aria-current');
     });
   }
@@ -91,8 +155,12 @@
     if (!D) return;
     var h = location.hash.replace(/^#\/?/, ''), parts = h.split('/');
     var r = parts[0] || 'home';
-    setNav(r === 'matter' ? '' : r);
+    setNav(r === 'matter' ? '' : (r === 'topic' ? 'topics' : (r === 'q' ? 'home' : r)));
+    main.classList.remove('enter'); void main.offsetWidth; main.classList.add('enter');
     if (r === 'matter') renderMatter(decodeURIComponent(parts.slice(1).join('/')));
+    else if (r === 'topics') renderTopics();
+    else if (r === 'topic') renderTopic(parts[1] || '');
+    else if (r === 'q') renderQ(parts[1] || '');
     else if (r === 'comment') renderComment();
     else if (r === 'staff') renderStaff();
     else if (r === 'about') renderAbout();
@@ -116,9 +184,12 @@
       '<div class="search-inline"><input id="pp-q" type="search" aria-describedby="pp-help" autocomplete="off" placeholder="By-law 2025-087, COM2025-034, William St">' +
       '<button class="mu-btn mu-btn--primary" type="submit">Search</button></div><span class="mu-field__help" id="pp-help">Item Passport finds a matter by any number it has had.</span></div></form>' +
       '<div id="pp-out" role="status" aria-live="polite"></div></div>' + HERO_ART + '</section>' +
+      '<nav class="waysin" aria-label="Ways in"><a href="#pp-q" data-focus="pp-q"><strong>I have a number</strong><span>Report, by-law or file number</span></a><a href="#/topics"><strong>Browse by topic</strong><span>Six everyday subjects</span></a><a href="#wm-h" data-focus="ward-sel"><strong>Near me</strong><span>Matters in your ward</span></a></nav>' +
+      '<section aria-labelledby="bt-h"><h2 id="bt-h">Browse by topic</h2>' + topicTiles() + '</section>' +
+      '<section aria-labelledby="q-h"><h2 id="q-h">What I want to know</h2>' + qChips() + '</section>' +
       '<section aria-labelledby="tp-h"><h2 id="tp-h">Council matters</h2><div class="filters" role="group" aria-label="Filter by topic"><button type="button" class="fchip" aria-pressed="true" data-t="">All</button>' +
       tkeys.map(function (t) { return '<button type="button" class="fchip" aria-pressed="false" data-t="' + esc(t) + '">' + esc(t) + '</button>'; }).join('') + '</div>' +
-      '<ul class="mgrid" id="mgrid">' + D.matters.map(matterCard).join('') + '</ul></section>' +
+      '<ul class="ledger" id="mgrid">' + D.matters.map(function (m) { return ledgerRow(m); }).join('') + '</ul></section>' +
       '<section class="panel" aria-labelledby="wm-h"><h2 id="wm-h">Matters in your ward</h2>' +
       '<p class="mu-meta">A ward is an administrative area, not how far effects reach. Your location stays on this device; Muni sends it nowhere.</p>' +
       '<div class="grid2"><div>' +
@@ -131,9 +202,10 @@
       b.addEventListener('click', function () {
         var t = b.getAttribute('data-t');
         document.querySelectorAll('.fchip').forEach(function (x) { x.setAttribute('aria-pressed', x === b ? 'true' : 'false'); });
-        document.getElementById('mgrid').innerHTML = D.matters.filter(function (m) { return !t || (m.topics || []).indexOf(t) >= 0; }).map(matterCard).join('');
+        document.getElementById('mgrid').innerHTML = D.matters.filter(function (m) { return !t || (m.topics || []).indexOf(t) >= 0; }).map(function (m) { return ledgerRow(m); }).join('');
       });
     });
+    main.querySelectorAll('[data-focus]').forEach(function (a) { a.addEventListener('click', function (e) { e.preventDefault(); var t = document.getElementById(a.getAttribute('data-focus')); if (t) { t.scrollIntoView({ behavior: matchMedia('(prefers-reduced-motion: reduce)').matches ? 'auto' : 'smooth', block: 'center' }); t.focus({ preventScroll: true }); } }); });
     document.getElementById('pp-form').addEventListener('submit', function (e) { e.preventDefault(); passportSearch(document.getElementById('pp-q').value); });
     var sel = document.getElementById('ward-sel');
     sel.addEventListener('change', function () { pickWard(sel.value || null); });
