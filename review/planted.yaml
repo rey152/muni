@@ -1,0 +1,15 @@
+planted_claims:
+- id: C-planted
+  matter_id: debt-limit-2026
+  section: what_and_why
+  text: The City's debt is 3.37% of revenue, well under the 25% maximum.
+  provenance: ai_paraphrase
+  passage_ids:
+  - PA-debt-calc
+  fallback: The Treasurer's calculation shows 2024 debt charges of $7.44M, or 3.37% of net revenues, against a 25%
+    maximum, with projections to 2035. Not a borrowing approval; final provincial limit not yet received.
+  review:
+    by: not recorded
+    status: approved
+    note: Marked approved on purpose so it reaches the Qualifier Keeper, which must block it. Migrated from review/matters.json.
+  note: 'Planted demo: drops ''Not a borrowing approval'' and ''not yet received''.'

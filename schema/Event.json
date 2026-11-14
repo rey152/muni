@@ -1,0 +1,116 @@
+{
+ "$defs": {
+  "Review": {
+   "additionalProperties": false,
+   "properties": {
+    "by": {
+     "default": "",
+     "title": "By",
+     "type": "string"
+    },
+    "on": {
+     "anyOf": [
+      {
+       "type": "string"
+      },
+      {
+       "type": "null"
+      }
+     ],
+     "default": null,
+     "title": "On"
+    },
+    "status": {
+     "default": "pending",
+     "enum": [
+      "approved",
+      "edit",
+      "reject",
+      "needs_recheck",
+      "pending"
+     ],
+     "title": "Status",
+     "type": "string"
+    },
+    "note": {
+     "default": "",
+     "title": "Note",
+     "type": "string"
+    }
+   },
+   "title": "Review",
+   "type": "object"
+  }
+ },
+ "additionalProperties": false,
+ "properties": {
+  "id": {
+   "title": "Id",
+   "type": "string"
+  },
+  "matter_id": {
+   "default": "",
+   "title": "Matter Id",
+   "type": "string"
+  },
+  "kind": {
+   "enum": [
+    "proposed",
+    "staff_recommendation",
+    "committee_action",
+    "council_decision",
+    "mayoral_instrument",
+    "provincial_decision",
+    "appeal_window",
+    "in_force",
+    "repealed",
+    "amended",
+    "implemented"
+   ],
+   "title": "Kind",
+   "type": "string"
+  },
+  "date": {
+   "pattern": "^\\d{4}(-\\d{2}(-\\d{2})?)?$",
+   "title": "Date",
+   "type": "string"
+  },
+  "actor": {
+   "title": "Actor",
+   "type": "string"
+  },
+  "outcome_text": {
+   "description": "Verbatim from the passage.",
+   "minLength": 1,
+   "title": "Outcome Text",
+   "type": "string"
+  },
+  "passage_id": {
+   "title": "Passage Id",
+   "type": "string"
+  },
+  "establishes": {
+   "title": "Establishes",
+   "type": "string"
+  },
+  "not_establishes": {
+   "title": "Not Establishes",
+   "type": "string"
+  },
+  "review": {
+   "$ref": "#/$defs/Review"
+  }
+ },
+ "required": [
+  "id",
+  "kind",
+  "date",
+  "actor",
+  "outcome_text",
+  "passage_id",
+  "establishes",
+  "not_establishes"
+ ],
+ "title": "Event",
+ "type": "object"
+}

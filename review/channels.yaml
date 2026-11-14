@@ -1,0 +1,9 @@
+channels:
+- id: CH-p202-email
+  channel: E-mail written comments to Council
+  statement: Written comments sent by e-mail become part of the public record.
+  passage_id: PA-p202-public
+  review:
+    by: not recorded
+    status: approved
+    note: Migrated from review/matters.json, where it was approved; reviewer and date weren't recorded there.

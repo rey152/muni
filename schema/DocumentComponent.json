@@ -1,0 +1,48 @@
+{
+ "additionalProperties": false,
+ "properties": {
+  "id": {
+   "title": "Id",
+   "type": "string"
+  },
+  "label": {
+   "title": "Label",
+   "type": "string"
+  },
+  "element_type": {
+   "title": "Element Type",
+   "type": "string"
+  },
+  "description": {
+   "title": "Description",
+   "type": "string"
+  },
+  "source_particular": {
+   "pattern": "^P\\d{3}$",
+   "title": "Source Particular",
+   "type": "string"
+  },
+  "url": {
+   "title": "Url",
+   "type": "string"
+  },
+  "subcategory_codes": {
+   "items": {
+    "type": "string"
+   },
+   "title": "Subcategory Codes",
+   "type": "array"
+  }
+ },
+ "required": [
+  "id",
+  "label",
+  "element_type",
+  "description",
+  "source_particular",
+  "url",
+  "subcategory_codes"
+ ],
+ "title": "DocumentComponent",
+ "type": "object"
+}

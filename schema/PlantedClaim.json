@@ -1,0 +1,132 @@
+{
+ "$defs": {
+  "Review": {
+   "additionalProperties": false,
+   "properties": {
+    "by": {
+     "default": "",
+     "title": "By",
+     "type": "string"
+    },
+    "on": {
+     "anyOf": [
+      {
+       "type": "string"
+      },
+      {
+       "type": "null"
+      }
+     ],
+     "default": null,
+     "title": "On"
+    },
+    "status": {
+     "default": "pending",
+     "enum": [
+      "approved",
+      "edit",
+      "reject",
+      "needs_recheck",
+      "pending"
+     ],
+     "title": "Status",
+     "type": "string"
+    },
+    "note": {
+     "default": "",
+     "title": "Note",
+     "type": "string"
+    }
+   },
+   "title": "Review",
+   "type": "object"
+  }
+ },
+ "additionalProperties": false,
+ "description": "A deliberately bad claim kept in review/planted.yaml to prove the checks block it.",
+ "properties": {
+  "id": {
+   "title": "Id",
+   "type": "string"
+  },
+  "matter_id": {
+   "default": "",
+   "title": "Matter Id",
+   "type": "string"
+  },
+  "section": {
+   "title": "Section",
+   "type": "string"
+  },
+  "text": {
+   "minLength": 1,
+   "title": "Text",
+   "type": "string"
+  },
+  "provenance": {
+   "enum": [
+    "quote",
+    "extraction",
+    "ai_paraphrase",
+    "human"
+   ],
+   "title": "Provenance",
+   "type": "string"
+  },
+  "passage_ids": {
+   "items": {
+    "type": "string"
+   },
+   "title": "Passage Ids",
+   "type": "array"
+  },
+  "fallback": {
+   "default": "",
+   "title": "Fallback",
+   "type": "string"
+  },
+  "review": {
+   "$ref": "#/$defs/Review"
+  },
+  "checked_against": {
+   "additionalProperties": {
+    "type": "string"
+   },
+   "default": {},
+   "description": "snapshot_id -> sha256 the reviewer checked.",
+   "title": "Checked Against",
+   "type": "object"
+  },
+  "qualifiers_required": {
+   "default": [],
+   "items": {
+    "type": "string"
+   },
+   "title": "Qualifiers Required",
+   "type": "array"
+  },
+  "qualifiers_waived": {
+   "additionalProperties": {
+    "type": "string"
+   },
+   "default": {},
+   "description": "marker -> reason it isn't material.",
+   "title": "Qualifiers Waived",
+   "type": "object"
+  },
+  "note": {
+   "default": "",
+   "title": "Note",
+   "type": "string"
+  }
+ },
+ "required": [
+  "id",
+  "section",
+  "text",
+  "provenance",
+  "passage_ids"
+ ],
+ "title": "PlantedClaim",
+ "type": "object"
+}

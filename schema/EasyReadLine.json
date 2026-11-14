@@ -1,0 +1,88 @@
+{
+ "$defs": {
+  "Review": {
+   "additionalProperties": false,
+   "properties": {
+    "by": {
+     "default": "",
+     "title": "By",
+     "type": "string"
+    },
+    "on": {
+     "anyOf": [
+      {
+       "type": "string"
+      },
+      {
+       "type": "null"
+      }
+     ],
+     "default": null,
+     "title": "On"
+    },
+    "status": {
+     "default": "pending",
+     "enum": [
+      "approved",
+      "edit",
+      "reject",
+      "needs_recheck",
+      "pending"
+     ],
+     "title": "Status",
+     "type": "string"
+    },
+    "note": {
+     "default": "",
+     "title": "Note",
+     "type": "string"
+    }
+   },
+   "title": "Review",
+   "type": "object"
+  }
+ },
+ "additionalProperties": false,
+ "properties": {
+  "id": {
+   "title": "Id",
+   "type": "string"
+  },
+  "matter_id": {
+   "default": "",
+   "title": "Matter Id",
+   "type": "string"
+  },
+  "text": {
+   "minLength": 1,
+   "title": "Text",
+   "type": "string"
+  },
+  "claim_id": {
+   "title": "Claim Id",
+   "type": "string"
+  },
+  "grade_level": {
+   "anyOf": [
+    {
+     "type": "number"
+    },
+    {
+     "type": "null"
+    }
+   ],
+   "default": null,
+   "title": "Grade Level"
+  },
+  "review": {
+   "$ref": "#/$defs/Review"
+  }
+ },
+ "required": [
+  "id",
+  "text",
+  "claim_id"
+ ],
+ "title": "EasyReadLine",
+ "type": "object"
+}

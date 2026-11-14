@@ -1,0 +1,25 @@
+{
+ "additionalProperties": false,
+ "properties": {
+  "code": {
+   "pattern": "^[A-G][1-3]$",
+   "title": "Code",
+   "type": "string"
+  },
+  "method": {
+   "enum": [
+    "rule",
+    "llm",
+    "human"
+   ],
+   "title": "Method",
+   "type": "string"
+  }
+ },
+ "required": [
+  "code",
+  "method"
+ ],
+ "title": "Role",
+ "type": "object"
+}

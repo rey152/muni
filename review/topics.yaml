@@ -1,0 +1,19 @@
+topics:
+- slug: homes-and-new-buildings
+  name: Homes and new buildings
+  description: Development proposals, rental rules, housing policy and land-use changes.
+- slug: roads-transit-and-getting-around
+  name: Roads, transit and getting around
+  description: Transit, roads, sidewalks, cycling, parking and travel disruption.
+- slug: taxes-fees-and-city-spending
+  name: Taxes, fees and city spending
+  description: Budgets, charges, funding choices and capital spending.
+- slug: parks-recreation-and-public-spaces
+  name: Parks, recreation and public spaces
+  description: Parks, facilities, public spaces and access.
+- slug: water-waste-and-the-environment
+  name: Water, waste and the environment
+  description: Water, sewer, stormwater, waste, climate and environmental projects.
+- slug: community-services-and-local-rules
+  name: Community services and local rules
+  description: Other municipal services, licensing, local rules and heritage. This broad grouping is provisional.

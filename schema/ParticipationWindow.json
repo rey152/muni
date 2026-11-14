@@ -1,0 +1,146 @@
+{
+ "$defs": {
+  "Review": {
+   "additionalProperties": false,
+   "properties": {
+    "by": {
+     "default": "",
+     "title": "By",
+     "type": "string"
+    },
+    "on": {
+     "anyOf": [
+      {
+       "type": "string"
+      },
+      {
+       "type": "null"
+      }
+     ],
+     "default": null,
+     "title": "On"
+    },
+    "status": {
+     "default": "pending",
+     "enum": [
+      "approved",
+      "edit",
+      "reject",
+      "needs_recheck",
+      "pending"
+     ],
+     "title": "Status",
+     "type": "string"
+    },
+    "note": {
+     "default": "",
+     "title": "Note",
+     "type": "string"
+    }
+   },
+   "title": "Review",
+   "type": "object"
+  }
+ },
+ "additionalProperties": false,
+ "properties": {
+  "id": {
+   "title": "Id",
+   "type": "string"
+  },
+  "matter_id": {
+   "default": "",
+   "title": "Matter Id",
+   "type": "string"
+  },
+  "action": {
+   "title": "Action",
+   "type": "string"
+  },
+  "channel": {
+   "default": "",
+   "title": "Channel",
+   "type": "string"
+  },
+  "state": {
+   "enum": [
+    "dated",
+    "rule_based",
+    "not_published",
+    "not_checked",
+    "source_unavailable"
+   ],
+   "title": "State",
+   "type": "string"
+  },
+  "deadline_quote": {
+   "default": "",
+   "title": "Deadline Quote",
+   "type": "string"
+  },
+  "deadline_date": {
+   "anyOf": [
+    {
+     "type": "string"
+    },
+    {
+     "type": "null"
+    }
+   ],
+   "default": null,
+   "title": "Deadline Date"
+  },
+  "passage_id": {
+   "title": "Passage Id",
+   "type": "string"
+  },
+  "checked_on": {
+   "anyOf": [
+    {
+     "type": "string"
+    },
+    {
+     "type": "null"
+    }
+   ],
+   "default": null,
+   "title": "Checked On"
+  },
+  "note": {
+   "default": "",
+   "title": "Note",
+   "type": "string"
+  },
+  "review": {
+   "$ref": "#/$defs/Review"
+  },
+  "computed_state": {
+   "anyOf": [
+    {
+     "enum": [
+      "open",
+      "closed",
+      "rule_based",
+      "not_published",
+      "not_checked",
+      "source_unavailable"
+     ],
+     "type": "string"
+    },
+    {
+     "type": "null"
+    }
+   ],
+   "default": null,
+   "title": "Computed State"
+  }
+ },
+ "required": [
+  "id",
+  "action",
+  "state",
+  "passage_id"
+ ],
+ "title": "ParticipationWindow",
+ "type": "object"
+}

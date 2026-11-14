@@ -1,0 +1,19 @@
+{
+ "additionalProperties": false,
+ "properties": {
+  "passage_id": {
+   "title": "Passage Id",
+   "type": "string"
+  },
+  "text": {
+   "title": "Text",
+   "type": "string"
+  }
+ },
+ "required": [
+  "passage_id",
+  "text"
+ ],
+ "title": "PassageRef",
+ "type": "object"
+}

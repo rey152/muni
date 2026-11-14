@@ -1,0 +1,139 @@
+{
+ "additionalProperties": false,
+ "properties": {
+  "id": {
+   "title": "Id",
+   "type": "string"
+  },
+  "url": {
+   "title": "Url",
+   "type": "string"
+  },
+  "final_url": {
+   "anyOf": [
+    {
+     "type": "string"
+    },
+    {
+     "type": "null"
+    }
+   ],
+   "default": null,
+   "title": "Final Url"
+  },
+  "fetched_at": {
+   "title": "Fetched At",
+   "type": "string"
+  },
+  "checked_on": {
+   "anyOf": [
+    {
+     "type": "string"
+    },
+    {
+     "type": "null"
+    }
+   ],
+   "default": null,
+   "title": "Checked On"
+  },
+  "sha256": {
+   "anyOf": [
+    {
+     "pattern": "^[0-9a-f]{64}$",
+     "type": "string"
+    },
+    {
+     "type": "null"
+    }
+   ],
+   "default": null,
+   "title": "Sha256"
+  },
+  "content_type": {
+   "anyOf": [
+    {
+     "type": "string"
+    },
+    {
+     "type": "null"
+    }
+   ],
+   "default": null,
+   "title": "Content Type"
+  },
+  "status": {
+   "anyOf": [
+    {
+     "type": "integer"
+    },
+    {
+     "type": "null"
+    }
+   ],
+   "default": null,
+   "title": "Status"
+  },
+  "obtained_by": {
+   "enum": [
+    "chromium",
+    "manual"
+   ],
+   "title": "Obtained By",
+   "type": "string"
+  },
+  "availability": {
+   "enum": [
+    "ok",
+    "blocked",
+    "sign_in",
+    "dead",
+    "request_only"
+   ],
+   "title": "Availability",
+   "type": "string"
+  },
+  "reason": {
+   "default": "",
+   "title": "Reason",
+   "type": "string"
+  },
+  "particular": {
+   "default": "",
+   "description": "Inventory ids, e.g. 'P011-P014,P196'.",
+   "title": "Particular",
+   "type": "string"
+  },
+  "publisher": {
+   "title": "Publisher",
+   "type": "string"
+  },
+  "title": {
+   "title": "Title",
+   "type": "string"
+  },
+  "path": {
+   "anyOf": [
+    {
+     "type": "string"
+    },
+    {
+     "type": "null"
+    }
+   ],
+   "default": null,
+   "title": "Path"
+  }
+ },
+ "required": [
+  "id",
+  "url",
+  "fetched_at",
+  "obtained_by",
+  "availability",
+  "publisher",
+  "title"
+ ],
+ "title": "Snapshot",
+ "type": "object"
+}

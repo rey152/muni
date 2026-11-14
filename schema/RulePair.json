@@ -1,0 +1,29 @@
+{
+ "additionalProperties": false,
+ "properties": {
+  "id": {
+   "title": "Id",
+   "type": "string"
+  },
+  "topic": {
+   "title": "Topic",
+   "type": "string"
+  },
+  "guide_passage": {
+   "title": "Guide Passage",
+   "type": "string"
+  },
+  "rule_passage": {
+   "title": "Rule Passage",
+   "type": "string"
+  }
+ },
+ "required": [
+  "id",
+  "topic",
+  "guide_passage",
+  "rule_passage"
+ ],
+ "title": "RulePair",
+ "type": "object"
+}

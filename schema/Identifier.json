@@ -1,0 +1,103 @@
+{
+ "$defs": {
+  "Review": {
+   "additionalProperties": false,
+   "properties": {
+    "by": {
+     "default": "",
+     "title": "By",
+     "type": "string"
+    },
+    "on": {
+     "anyOf": [
+      {
+       "type": "string"
+      },
+      {
+       "type": "null"
+      }
+     ],
+     "default": null,
+     "title": "On"
+    },
+    "status": {
+     "default": "pending",
+     "enum": [
+      "approved",
+      "edit",
+      "reject",
+      "needs_recheck",
+      "pending"
+     ],
+     "title": "Status",
+     "type": "string"
+    },
+    "note": {
+     "default": "",
+     "title": "Note",
+     "type": "string"
+    }
+   },
+   "title": "Review",
+   "type": "object"
+  }
+ },
+ "additionalProperties": false,
+ "properties": {
+  "value": {
+   "title": "Value",
+   "type": "string"
+  },
+  "normalized": {
+   "default": "",
+   "title": "Normalized",
+   "type": "string"
+  },
+  "kind": {
+   "enum": [
+    "report no.",
+    "file no.",
+    "by-law no.",
+    "OPA no.",
+    "MD no.",
+    "address"
+   ],
+   "title": "Kind",
+   "type": "string"
+  },
+  "matter_id": {
+   "default": "",
+   "title": "Matter Id",
+   "type": "string"
+  },
+  "passage_id": {
+   "title": "Passage Id",
+   "type": "string"
+  },
+  "valid_from": {
+   "default": "",
+   "title": "Valid From",
+   "type": "string"
+  },
+  "valid_to": {
+   "default": "",
+   "title": "Valid To",
+   "type": "string"
+  },
+  "note": {
+   "default": "",
+   "title": "Note",
+   "type": "string"
+  },
+  "review": {
+   "$ref": "#/$defs/Review"
+  }
+ },
+ "required": [
+  "value",
+  "kind",
+  "passage_id"
+ ],
+ "title": "Identifier",
+ "type": "object"
+}

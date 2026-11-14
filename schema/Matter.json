@@ -1,0 +1,562 @@
+{
+ "$defs": {
+  "Claim": {
+   "additionalProperties": false,
+   "properties": {
+    "id": {
+     "title": "Id",
+     "type": "string"
+    },
+    "matter_id": {
+     "default": "",
+     "title": "Matter Id",
+     "type": "string"
+    },
+    "section": {
+     "title": "Section",
+     "type": "string"
+    },
+    "text": {
+     "minLength": 1,
+     "title": "Text",
+     "type": "string"
+    },
+    "provenance": {
+     "enum": [
+      "quote",
+      "extraction",
+      "ai_paraphrase",
+      "human"
+     ],
+     "title": "Provenance",
+     "type": "string"
+    },
+    "passage_ids": {
+     "items": {
+      "type": "string"
+     },
+     "title": "Passage Ids",
+     "type": "array"
+    },
+    "fallback": {
+     "default": "",
+     "title": "Fallback",
+     "type": "string"
+    },
+    "review": {
+     "$ref": "#/$defs/Review"
+    },
+    "checked_against": {
+     "additionalProperties": {
+      "type": "string"
+     },
+     "default": {},
+     "description": "snapshot_id -> sha256 the reviewer checked.",
+     "title": "Checked Against",
+     "type": "object"
+    },
+    "qualifiers_required": {
+     "default": [],
+     "items": {
+      "type": "string"
+     },
+     "title": "Qualifiers Required",
+     "type": "array"
+    },
+    "qualifiers_waived": {
+     "additionalProperties": {
+      "type": "string"
+     },
+     "default": {},
+     "description": "marker -> reason it isn't material.",
+     "title": "Qualifiers Waived",
+     "type": "object"
+    }
+   },
+   "required": [
+    "id",
+    "section",
+    "text",
+    "provenance",
+    "passage_ids"
+   ],
+   "title": "Claim",
+   "type": "object"
+  },
+  "Condition": {
+   "additionalProperties": false,
+   "properties": {
+    "id": {
+     "title": "Id",
+     "type": "string"
+    },
+    "matter_id": {
+     "default": "",
+     "title": "Matter Id",
+     "type": "string"
+    },
+    "text": {
+     "minLength": 1,
+     "title": "Text",
+     "type": "string"
+    },
+    "applies_to": {
+     "default": "",
+     "title": "Applies To",
+     "type": "string"
+    },
+    "imposed_by": {
+     "enum": [
+      "decision",
+      "report",
+      "study_mitigation"
+     ],
+     "title": "Imposed By",
+     "type": "string"
+    },
+    "passage_id": {
+     "title": "Passage Id",
+     "type": "string"
+    },
+    "review": {
+     "$ref": "#/$defs/Review"
+    }
+   },
+   "required": [
+    "id",
+    "text",
+    "imposed_by",
+    "passage_id"
+   ],
+   "title": "Condition",
+   "type": "object"
+  },
+  "EasyReadLine": {
+   "additionalProperties": false,
+   "properties": {
+    "id": {
+     "title": "Id",
+     "type": "string"
+    },
+    "matter_id": {
+     "default": "",
+     "title": "Matter Id",
+     "type": "string"
+    },
+    "text": {
+     "minLength": 1,
+     "title": "Text",
+     "type": "string"
+    },
+    "claim_id": {
+     "title": "Claim Id",
+     "type": "string"
+    },
+    "grade_level": {
+     "anyOf": [
+      {
+       "type": "number"
+      },
+      {
+       "type": "null"
+      }
+     ],
+     "default": null,
+     "title": "Grade Level"
+    },
+    "review": {
+     "$ref": "#/$defs/Review"
+    }
+   },
+   "required": [
+    "id",
+    "text",
+    "claim_id"
+   ],
+   "title": "EasyReadLine",
+   "type": "object"
+  },
+  "Event": {
+   "additionalProperties": false,
+   "properties": {
+    "id": {
+     "title": "Id",
+     "type": "string"
+    },
+    "matter_id": {
+     "default": "",
+     "title": "Matter Id",
+     "type": "string"
+    },
+    "kind": {
+     "enum": [
+      "proposed",
+      "staff_recommendation",
+      "committee_action",
+      "council_decision",
+      "mayoral_instrument",
+      "provincial_decision",
+      "appeal_window",
+      "in_force",
+      "repealed",
+      "amended",
+      "implemented"
+     ],
+     "title": "Kind",
+     "type": "string"
+    },
+    "date": {
+     "pattern": "^\\d{4}(-\\d{2}(-\\d{2})?)?$",
+     "title": "Date",
+     "type": "string"
+    },
+    "actor": {
+     "title": "Actor",
+     "type": "string"
+    },
+    "outcome_text": {
+     "description": "Verbatim from the passage.",
+     "minLength": 1,
+     "title": "Outcome Text",
+     "type": "string"
+    },
+    "passage_id": {
+     "title": "Passage Id",
+     "type": "string"
+    },
+    "establishes": {
+     "title": "Establishes",
+     "type": "string"
+    },
+    "not_establishes": {
+     "title": "Not Establishes",
+     "type": "string"
+    },
+    "review": {
+     "$ref": "#/$defs/Review"
+    }
+   },
+   "required": [
+    "id",
+    "kind",
+    "date",
+    "actor",
+    "outcome_text",
+    "passage_id",
+    "establishes",
+    "not_establishes"
+   ],
+   "title": "Event",
+   "type": "object"
+  },
+  "Identifier": {
+   "additionalProperties": false,
+   "properties": {
+    "value": {
+     "title": "Value",
+     "type": "string"
+    },
+    "normalized": {
+     "default": "",
+     "title": "Normalized",
+     "type": "string"
+    },
+    "kind": {
+     "enum": [
+      "report no.",
+      "file no.",
+      "by-law no.",
+      "OPA no.",
+      "MD no.",
+      "address"
+     ],
+     "title": "Kind",
+     "type": "string"
+    },
+    "matter_id": {
+     "default": "",
+     "title": "Matter Id",
+     "type": "string"
+    },
+    "passage_id": {
+     "title": "Passage Id",
+     "type": "string"
+    },
+    "valid_from": {
+     "default": "",
+     "title": "Valid From",
+     "type": "string"
+    },
+    "valid_to": {
+     "default": "",
+     "title": "Valid To",
+     "type": "string"
+    },
+    "note": {
+     "default": "",
+     "title": "Note",
+     "type": "string"
+    },
+    "review": {
+     "$ref": "#/$defs/Review"
+    }
+   },
+   "required": [
+    "value",
+    "kind",
+    "passage_id"
+   ],
+   "title": "Identifier",
+   "type": "object"
+  },
+  "ParticipationWindow": {
+   "additionalProperties": false,
+   "properties": {
+    "id": {
+     "title": "Id",
+     "type": "string"
+    },
+    "matter_id": {
+     "default": "",
+     "title": "Matter Id",
+     "type": "string"
+    },
+    "action": {
+     "title": "Action",
+     "type": "string"
+    },
+    "channel": {
+     "default": "",
+     "title": "Channel",
+     "type": "string"
+    },
+    "state": {
+     "enum": [
+      "dated",
+      "rule_based",
+      "not_published",
+      "not_checked",
+      "source_unavailable"
+     ],
+     "title": "State",
+     "type": "string"
+    },
+    "deadline_quote": {
+     "default": "",
+     "title": "Deadline Quote",
+     "type": "string"
+    },
+    "deadline_date": {
+     "anyOf": [
+      {
+       "type": "string"
+      },
+      {
+       "type": "null"
+      }
+     ],
+     "default": null,
+     "title": "Deadline Date"
+    },
+    "passage_id": {
+     "title": "Passage Id",
+     "type": "string"
+    },
+    "checked_on": {
+     "anyOf": [
+      {
+       "type": "string"
+      },
+      {
+       "type": "null"
+      }
+     ],
+     "default": null,
+     "title": "Checked On"
+    },
+    "note": {
+     "default": "",
+     "title": "Note",
+     "type": "string"
+    },
+    "review": {
+     "$ref": "#/$defs/Review"
+    },
+    "computed_state": {
+     "anyOf": [
+      {
+       "enum": [
+        "open",
+        "closed",
+        "rule_based",
+        "not_published",
+        "not_checked",
+        "source_unavailable"
+       ],
+       "type": "string"
+      },
+      {
+       "type": "null"
+      }
+     ],
+     "default": null,
+     "title": "Computed State"
+    }
+   },
+   "required": [
+    "id",
+    "action",
+    "state",
+    "passage_id"
+   ],
+   "title": "ParticipationWindow",
+   "type": "object"
+  },
+  "Review": {
+   "additionalProperties": false,
+   "properties": {
+    "by": {
+     "default": "",
+     "title": "By",
+     "type": "string"
+    },
+    "on": {
+     "anyOf": [
+      {
+       "type": "string"
+      },
+      {
+       "type": "null"
+      }
+     ],
+     "default": null,
+     "title": "On"
+    },
+    "status": {
+     "default": "pending",
+     "enum": [
+      "approved",
+      "edit",
+      "reject",
+      "needs_recheck",
+      "pending"
+     ],
+     "title": "Status",
+     "type": "string"
+    },
+    "note": {
+     "default": "",
+     "title": "Note",
+     "type": "string"
+    }
+   },
+   "title": "Review",
+   "type": "object"
+  }
+ },
+ "additionalProperties": false,
+ "properties": {
+  "id": {
+   "pattern": "^[a-z0-9-]+$",
+   "title": "Id",
+   "type": "string"
+  },
+  "title": {
+   "title": "Title",
+   "type": "string"
+  },
+  "topics": {
+   "description": "Topic names, as in review/topics.yaml.",
+   "items": {
+    "type": "string"
+   },
+   "minItems": 1,
+   "title": "Topics",
+   "type": "array"
+  },
+  "authority": {
+   "description": "Display text naming who decides.",
+   "title": "Authority",
+   "type": "string"
+  },
+  "authority_ids": {
+   "items": {
+    "type": "string"
+   },
+   "minItems": 1,
+   "title": "Authority Ids",
+   "type": "array"
+  },
+  "location": {
+   "description": "An address, a place name or 'citywide'.",
+   "title": "Location",
+   "type": "string"
+  },
+  "wards": {
+   "default": [],
+   "items": {
+    "type": "integer"
+   },
+   "title": "Wards",
+   "type": "array"
+  },
+  "identifiers": {
+   "default": [],
+   "items": {
+    "$ref": "#/$defs/Identifier"
+   },
+   "title": "Identifiers",
+   "type": "array"
+  },
+  "events": {
+   "default": [],
+   "items": {
+    "$ref": "#/$defs/Event"
+   },
+   "title": "Events",
+   "type": "array"
+  },
+  "conditions": {
+   "default": [],
+   "items": {
+    "$ref": "#/$defs/Condition"
+   },
+   "title": "Conditions",
+   "type": "array"
+  },
+  "windows": {
+   "default": [],
+   "items": {
+    "$ref": "#/$defs/ParticipationWindow"
+   },
+   "title": "Windows",
+   "type": "array"
+  },
+  "claims": {
+   "default": [],
+   "items": {
+    "$ref": "#/$defs/Claim"
+   },
+   "title": "Claims",
+   "type": "array"
+  },
+  "easy_read": {
+   "default": [],
+   "items": {
+    "$ref": "#/$defs/EasyReadLine"
+   },
+   "title": "Easy Read",
+   "type": "array"
+  }
+ },
+ "required": [
+  "id",
+  "title",
+  "topics",
+  "authority",
+  "authority_ids",
+  "location"
+ ],
+ "title": "Matter",
+ "type": "object"
+}

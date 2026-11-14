@@ -1,0 +1,25 @@
+{
+ "additionalProperties": false,
+ "properties": {
+  "slug": {
+   "pattern": "^[a-z0-9-]+$",
+   "title": "Slug",
+   "type": "string"
+  },
+  "name": {
+   "title": "Name",
+   "type": "string"
+  },
+  "description": {
+   "title": "Description",
+   "type": "string"
+  }
+ },
+ "required": [
+  "slug",
+  "name",
+  "description"
+ ],
+ "title": "Topic",
+ "type": "object"
+}

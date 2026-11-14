@@ -1,0 +1,145 @@
+{
+ "$defs": {
+  "PassageRef": {
+   "additionalProperties": false,
+   "properties": {
+    "passage_id": {
+     "title": "Passage Id",
+     "type": "string"
+    },
+    "text": {
+     "title": "Text",
+     "type": "string"
+    }
+   },
+   "required": [
+    "passage_id",
+    "text"
+   ],
+   "title": "PassageRef",
+   "type": "object"
+  }
+ },
+ "additionalProperties": false,
+ "properties": {
+  "id": {
+   "title": "Id",
+   "type": "string"
+  },
+  "kind": {
+   "enum": [
+    "rule_drift",
+    "source_drift"
+   ],
+   "title": "Kind",
+   "type": "string"
+  },
+  "topic": {
+   "default": "",
+   "title": "Topic",
+   "type": "string"
+  },
+  "guide": {
+   "anyOf": [
+    {
+     "$ref": "#/$defs/PassageRef"
+    },
+    {
+     "type": "null"
+    }
+   ],
+   "default": null,
+   "description": "Rule drift: the guidance side (source A)."
+  },
+  "rule": {
+   "anyOf": [
+    {
+     "$ref": "#/$defs/PassageRef"
+    },
+    {
+     "type": "null"
+    }
+   ],
+   "default": null,
+   "description": "Rule drift: the binding side (source B)."
+  },
+  "claim_id": {
+   "anyOf": [
+    {
+     "type": "string"
+    },
+    {
+     "type": "null"
+    }
+   ],
+   "default": null,
+   "title": "Claim Id"
+  },
+  "snapshot_id": {
+   "anyOf": [
+    {
+     "type": "string"
+    },
+    {
+     "type": "null"
+    }
+   ],
+   "default": null,
+   "title": "Snapshot Id"
+  },
+  "checked_sha256": {
+   "anyOf": [
+    {
+     "type": "string"
+    },
+    {
+     "type": "null"
+    }
+   ],
+   "default": null,
+   "title": "Checked Sha256"
+  },
+  "latest_sha256": {
+   "anyOf": [
+    {
+     "type": "string"
+    },
+    {
+     "type": "null"
+    }
+   ],
+   "default": null,
+   "title": "Latest Sha256"
+  },
+  "difference": {
+   "title": "Difference",
+   "type": "string"
+  },
+  "suggested_fix": {
+   "default": "",
+   "title": "Suggested Fix",
+   "type": "string"
+  },
+  "found_on": {
+   "default": "",
+   "title": "Found On",
+   "type": "string"
+  },
+  "status": {
+   "default": "open",
+   "enum": [
+    "open",
+    "resolved"
+   ],
+   "title": "Status",
+   "type": "string"
+  }
+ },
+ "required": [
+  "id",
+  "kind",
+  "difference"
+ ],
+ "title": "Discrepancy",
+ "type": "object"
+}

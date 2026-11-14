@@ -1,0 +1,41 @@
+{
+ "additionalProperties": false,
+ "properties": {
+  "by": {
+   "default": "",
+   "title": "By",
+   "type": "string"
+  },
+  "on": {
+   "anyOf": [
+    {
+     "type": "string"
+    },
+    {
+     "type": "null"
+    }
+   ],
+   "default": null,
+   "title": "On"
+  },
+  "status": {
+   "default": "pending",
+   "enum": [
+    "approved",
+    "edit",
+    "reject",
+    "needs_recheck",
+    "pending"
+   ],
+   "title": "Status",
+   "type": "string"
+  },
+  "note": {
+   "default": "",
+   "title": "Note",
+   "type": "string"
+  }
+ },
+ "title": "Review",
+ "type": "object"
+}

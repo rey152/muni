@@ -1,0 +1,364 @@
+{
+ "$defs": {
+  "FetchInfo": {
+   "additionalProperties": false,
+   "description": "One row from snapshots/snapshots.sqlite, as written by pipeline/fetch.py.",
+   "properties": {
+    "fetched_at": {
+     "title": "Fetched At",
+     "type": "string"
+    },
+    "url": {
+     "title": "Url",
+     "type": "string"
+    },
+    "final_url": {
+     "anyOf": [
+      {
+       "type": "string"
+      },
+      {
+       "type": "null"
+      }
+     ],
+     "default": null,
+     "title": "Final Url"
+    },
+    "status": {
+     "anyOf": [
+      {
+       "type": "integer"
+      },
+      {
+       "type": "null"
+      }
+     ],
+     "default": null,
+     "title": "Status"
+    },
+    "availability": {
+     "anyOf": [
+      {
+       "enum": [
+        "ok",
+        "blocked",
+        "sign_in",
+        "dead",
+        "request_only"
+       ],
+       "type": "string"
+      },
+      {
+       "type": "null"
+      }
+     ],
+     "default": null,
+     "title": "Availability"
+    },
+    "sha256": {
+     "pattern": "^[0-9a-f]{64}$",
+     "title": "Sha256",
+     "type": "string"
+    },
+    "content_type": {
+     "anyOf": [
+      {
+       "type": "string"
+      },
+      {
+       "type": "null"
+      }
+     ],
+     "default": null,
+     "title": "Content Type"
+    },
+    "obtained_by": {
+     "title": "Obtained By",
+     "type": "string"
+    },
+    "path": {
+     "title": "Path",
+     "type": "string"
+    }
+   },
+   "required": [
+    "fetched_at",
+    "url",
+    "sha256",
+    "obtained_by",
+    "path"
+   ],
+   "title": "FetchInfo",
+   "type": "object"
+  },
+  "SecondaryRole": {
+   "additionalProperties": false,
+   "properties": {
+    "code": {
+     "pattern": "^[A-G][1-3]$",
+     "title": "Code",
+     "type": "string"
+    },
+    "reason": {
+     "title": "Reason",
+     "type": "string"
+    }
+   },
+   "required": [
+    "code",
+    "reason"
+   ],
+   "title": "SecondaryRole",
+   "type": "object"
+  }
+ },
+ "additionalProperties": false,
+ "properties": {
+  "id": {
+   "pattern": "^P\\d{3}$",
+   "title": "Id",
+   "type": "string"
+  },
+  "title": {
+   "title": "Title",
+   "type": "string"
+  },
+  "level": {
+   "title": "Level",
+   "type": "string"
+  },
+  "family": {
+   "pattern": "^DF\\d{2}$",
+   "title": "Family",
+   "type": "string"
+  },
+  "family_name": {
+   "title": "Family Name",
+   "type": "string"
+  },
+  "subfamily": {
+   "pattern": "^DF\\d{2}\\.\\d+$",
+   "title": "Subfamily",
+   "type": "string"
+  },
+  "subfamily_name": {
+   "title": "Subfamily Name",
+   "type": "string"
+  },
+  "components": {
+   "default": [],
+   "description": "Document-family codes of components inside it.",
+   "items": {
+    "type": "string"
+   },
+   "title": "Components",
+   "type": "array"
+  },
+  "group": {
+   "title": "Group",
+   "type": "string"
+  },
+  "authority": {
+   "title": "Authority",
+   "type": "string"
+  },
+  "url": {
+   "title": "Url",
+   "type": "string"
+  },
+  "retrieval_urls": {
+   "default": [],
+   "items": {
+    "type": "string"
+   },
+   "title": "Retrieval Urls",
+   "type": "array"
+  },
+  "access": {
+   "title": "Access",
+   "type": "string"
+  },
+  "access_note": {
+   "title": "Access Note",
+   "type": "string"
+  },
+  "pull_confirmed": {
+   "title": "Pull Confirmed",
+   "type": "string"
+  },
+  "original_response_status": {
+   "anyOf": [
+    {
+     "type": "integer"
+    },
+    {
+     "type": "null"
+    }
+   ],
+   "default": null,
+   "title": "Original Response Status"
+  },
+  "original_response_kind": {
+   "anyOf": [
+    {
+     "type": "string"
+    },
+    {
+     "type": "null"
+    }
+   ],
+   "default": null,
+   "title": "Original Response Kind"
+  },
+  "publication_structure": {
+   "title": "Publication Structure",
+   "type": "string"
+  },
+  "transferability": {
+   "title": "Transferability",
+   "type": "string"
+  },
+  "extraction": {
+   "title": "Extraction",
+   "type": "string"
+  },
+  "summary": {
+   "title": "Summary",
+   "type": "string"
+  },
+  "primary_role": {
+   "pattern": "^[A-G][1-3]$",
+   "title": "Primary Role",
+   "type": "string"
+  },
+  "primary_reason": {
+   "title": "Primary Reason",
+   "type": "string"
+  },
+  "secondary_roles": {
+   "default": [],
+   "items": {
+    "$ref": "#/$defs/SecondaryRole"
+   },
+   "title": "Secondary Roles",
+   "type": "array"
+  },
+  "role_note": {
+   "default": "",
+   "title": "Role Note",
+   "type": "string"
+  },
+  "supplied_roles": {
+   "default": "",
+   "title": "Supplied Roles",
+   "type": "string"
+  },
+  "supplied_primary": {
+   "description": "Primary role in the earlier baseline / graph.",
+   "pattern": "^[A-G][1-3]$",
+   "title": "Supplied Primary",
+   "type": "string"
+  },
+  "categories": {
+   "default": [],
+   "description": "Graph role codes (earlier baseline).",
+   "items": {
+    "type": "string"
+   },
+   "title": "Categories",
+   "type": "array"
+  },
+  "classification_reason": {
+   "default": "",
+   "title": "Classification Reason",
+   "type": "string"
+  },
+  "parsing_note": {
+   "default": "",
+   "title": "Parsing Note",
+   "type": "string"
+  },
+  "evidence": {
+   "title": "Evidence",
+   "type": "string"
+  },
+  "evidence_detail": {
+   "default": "",
+   "title": "Evidence Detail",
+   "type": "string"
+  },
+  "evidence_references": {
+   "default": [],
+   "items": {
+    "type": "string"
+   },
+   "title": "Evidence References",
+   "type": "array"
+  },
+  "cross_refs": {
+   "default": [],
+   "items": {
+    "type": "string"
+   },
+   "title": "Cross Refs",
+   "type": "array"
+  },
+  "authority_status": {
+   "default": "",
+   "title": "Authority Status",
+   "type": "string"
+  },
+  "linked_snapshot_ids": {
+   "default": [],
+   "items": {
+    "type": "string"
+   },
+   "title": "Linked Snapshot Ids",
+   "type": "array"
+  },
+  "linked_matter_ids": {
+   "default": [],
+   "items": {
+    "type": "string"
+   },
+   "title": "Linked Matter Ids",
+   "type": "array"
+  },
+  "latest_fetch": {
+   "anyOf": [
+    {
+     "$ref": "#/$defs/FetchInfo"
+    },
+    {
+     "type": "null"
+    }
+   ],
+   "default": null
+  }
+ },
+ "required": [
+  "id",
+  "title",
+  "level",
+  "family",
+  "family_name",
+  "subfamily",
+  "subfamily_name",
+  "group",
+  "authority",
+  "url",
+  "access",
+  "access_note",
+  "pull_confirmed",
+  "publication_structure",
+  "transferability",
+  "extraction",
+  "summary",
+  "primary_role",
+  "primary_reason",
+  "supplied_primary",
+  "evidence"
+ ],
+ "title": "Particular",
+ "type": "object"
+}

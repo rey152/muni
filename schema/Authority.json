@@ -1,0 +1,30 @@
+{
+ "additionalProperties": false,
+ "properties": {
+  "id": {
+   "title": "Id",
+   "type": "string"
+  },
+  "name": {
+   "title": "Name",
+   "type": "string"
+  },
+  "tier": {
+   "enum": [
+    "City",
+    "Region",
+    "Province",
+    "tribunal"
+   ],
+   "title": "Tier",
+   "type": "string"
+  }
+ },
+ "required": [
+  "id",
+  "name",
+  "tier"
+ ],
+ "title": "Authority",
+ "type": "object"
+}

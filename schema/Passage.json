@@ -1,0 +1,139 @@
+{
+ "$defs": {
+  "Locator": {
+   "additionalProperties": false,
+   "properties": {
+    "page": {
+     "anyOf": [
+      {
+       "type": "integer"
+      },
+      {
+       "type": "null"
+      }
+     ],
+     "default": null,
+     "title": "Page"
+    },
+    "char_start": {
+     "anyOf": [
+      {
+       "type": "integer"
+      },
+      {
+       "type": "null"
+      }
+     ],
+     "default": null,
+     "title": "Char Start"
+    },
+    "char_end": {
+     "anyOf": [
+      {
+       "type": "integer"
+      },
+      {
+       "type": "null"
+      }
+     ],
+     "default": null,
+     "title": "Char End"
+    },
+    "element_path": {
+     "anyOf": [
+      {
+       "type": "string"
+      },
+      {
+       "type": "null"
+      }
+     ],
+     "default": null,
+     "title": "Element Path"
+    },
+    "label": {
+     "default": "",
+     "description": "Human-readable place, e.g. 'minutes s.9'.",
+     "title": "Label",
+     "type": "string"
+    }
+   },
+   "title": "Locator",
+   "type": "object"
+  },
+  "Role": {
+   "additionalProperties": false,
+   "properties": {
+    "code": {
+     "pattern": "^[A-G][1-3]$",
+     "title": "Code",
+     "type": "string"
+    },
+    "method": {
+     "enum": [
+      "rule",
+      "llm",
+      "human"
+     ],
+     "title": "Method",
+     "type": "string"
+    }
+   },
+   "required": [
+    "code",
+    "method"
+   ],
+   "title": "Role",
+   "type": "object"
+  }
+ },
+ "additionalProperties": false,
+ "properties": {
+  "id": {
+   "title": "Id",
+   "type": "string"
+  },
+  "snapshot_id": {
+   "title": "Snapshot Id",
+   "type": "string"
+  },
+  "locator": {
+   "$ref": "#/$defs/Locator"
+  },
+  "kind": {
+   "enum": [
+    "verbatim",
+    "research_note"
+   ],
+   "title": "Kind",
+   "type": "string"
+  },
+  "text": {
+   "minLength": 1,
+   "title": "Text",
+   "type": "string"
+  },
+  "roles": {
+   "default": [],
+   "items": {
+    "$ref": "#/$defs/Role"
+   },
+   "title": "Roles",
+   "type": "array"
+  },
+  "note": {
+   "default": "",
+   "title": "Note",
+   "type": "string"
+  }
+ },
+ "required": [
+  "id",
+  "snapshot_id",
+  "locator",
+  "kind",
+  "text"
+ ],
+ "title": "Passage",
+ "type": "object"
+}

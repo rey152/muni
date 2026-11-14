@@ -1,0 +1,61 @@
+{
+ "additionalProperties": false,
+ "properties": {
+  "page": {
+   "anyOf": [
+    {
+     "type": "integer"
+    },
+    {
+     "type": "null"
+    }
+   ],
+   "default": null,
+   "title": "Page"
+  },
+  "char_start": {
+   "anyOf": [
+    {
+     "type": "integer"
+    },
+    {
+     "type": "null"
+    }
+   ],
+   "default": null,
+   "title": "Char Start"
+  },
+  "char_end": {
+   "anyOf": [
+    {
+     "type": "integer"
+    },
+    {
+     "type": "null"
+    }
+   ],
+   "default": null,
+   "title": "Char End"
+  },
+  "element_path": {
+   "anyOf": [
+    {
+     "type": "string"
+    },
+    {
+     "type": "null"
+    }
+   ],
+   "default": null,
+   "title": "Element Path"
+  },
+  "label": {
+   "default": "",
+   "description": "Human-readable place, e.g. 'minutes s.9'.",
+   "title": "Label",
+   "type": "string"
+  }
+ },
+ "title": "Locator",
+ "type": "object"
+}

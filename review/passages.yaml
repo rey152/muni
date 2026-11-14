@@ -1,0 +1,181 @@
+passages:
+- id: PA-agenda-consent
+  snapshot_id: S-dec8-packet
+  locator:
+    label: agenda p.1-9, s.4
+  kind: verbatim
+  text: That consent motion items (a) through (d) be approved
+  roles:
+  - code: B1
+    method: human
+- id: PA-revised-bylaw
+  snapshot_id: S-dec8-revised
+  locator:
+    label: revised agenda, By-laws section
+  kind: research_note
+  text: Revised agenda filled items marked "REPORT TO FOLLOW" and moved the first by-law number from 2025-086 to
+    2025-087.
+  roles:
+  - code: B1
+    method: human
+  - code: G3
+    method: human
+- id: PA-min-amended
+  snapshot_id: S-dec8-minutes
+  locator:
+    label: minutes, CORP2025-042 item
+  kind: research_note
+  text: The minutes show the CORP2025-042 package amended and partly carried on divided votes. A failed amendment
+    (3-5) was followed by a carried amendment.
+  roles:
+  - code: D1
+    method: human
+  - code: D2
+    method: human
+- id: PA-min-bylaws
+  snapshot_id: S-dec8-minutes
+  locator:
+    label: minutes s.9 "ENACTMENT OF BY-LAWS"
+  kind: verbatim
+  text: 9. ENACTMENT OF BY-LAWS
+  roles:
+  - code: D2
+    method: human
+  note: Lists By-laws 2025-087 and 2025-088.
+- id: PA-fees-proposed
+  snapshot_id: S-dec8-packet
+  locator:
+    label: COM2025-034 App. A, C; IPPW2025-066 App. A
+  kind: research_note
+  text: Current versus proposed fee schedules with effective dates, attached for Council approval. Proposed fees
+    became operative only through By-law 2025-087.
+  roles:
+  - code: E1
+    method: human
+  - code: B1
+    method: human
+- id: PA-2026-047-repeal
+  snapshot_id: S-bylaw-2026-047
+  locator:
+    label: s.5.1 and s.6.1
+  kind: research_note
+  text: The body repeals By-law 2025-087 (s.5.1) and is in force on passage (s.6.1). Most rows carry two fee/effective-date
+    pairs; 25 items are flagged DISCONTINUE.
+  roles:
+  - code: A2
+    method: human
+  - code: D3
+    method: human
+- id: PA-debt-calc
+  snapshot_id: S-dec8-packet
+  locator:
+    label: CORP2025-041, packet pp.10-16
+  kind: research_note
+  text: The Treasurer's calculation shows 2024 debt charges of $7.44M, or 3.37% of net revenues, against a 25% maximum,
+    with projections to 2035. Not a borrowing approval; final provincial limit not yet received.
+  roles:
+  - code: E1
+    method: human
+  - code: E3
+    method: human
+  - code: B3
+    method: human
+- id: PA-debt-chain
+  snapshot_id: S-dec8-packet
+  locator:
+    label: CORP2025-041 Section E, packet p.12
+  kind: research_note
+  text: 'Prior reports: CORP2024-046, CORP2023-048, CORP2022-046.'
+  roles:
+  - code: G3
+    method: human
+- id: PA-p209-objection
+  snapshot_id: S-p209
+  locator:
+    label: p.3
+  kind: verbatim
+  text: The last day for filing an objection is November 6, 2026
+  roles:
+  - code: C1
+    method: human
+- id: PA-p209-intent
+  snapshot_id: S-p209
+  locator:
+    label: p.1
+  kind: verbatim
+  text: NOTICE IS HEREBY GIVEN
+  roles:
+  - code: B1
+    method: human
+  note: Notice of Council's intention to designate 131 William St W under Part IV of the Ontario Heritage Act (Oct
+    7, 2026). Not a designation.
+- id: PA-p209-value
+  snapshot_id: S-p209
+  locator:
+    label: p.2
+  kind: research_note
+  text: Cultural-heritage-value statement citing O. Reg. 9/06 criteria 1, 4, 5, 8, and a list of heritage attributes.
+  roles:
+  - code: B3
+    method: human
+- id: PA-p210-passed
+  snapshot_id: S-p210
+  locator:
+    label: p.1
+  kind: research_note
+  text: Council passed By-law 2026-080 on Oct 5, 2026 designating 15 King St N under Part IV of the Ontario Heritage
+    Act.
+  roles:
+  - code: D2
+    method: human
+- id: PA-p210-appeal
+  snapshot_id: S-p210
+  locator:
+    label: p.2-3
+  kind: research_note
+  text: Appeal to the Ontario Land Tribunal (OLT) ending Nov 8, 2026. The by-law comes into force only if no appeal
+    is filed.
+  roles:
+  - code: D3
+    method: human
+  - code: C1
+    method: human
+- id: PA-p202-register
+  snapshot_id: S-p202
+  locator:
+    label: H2 "Register in advance"
+  kind: research_note
+  text: Registration closes at 10 a.m. on the Monday of the meeting. Speakers registered by Friday 10 a.m. get 10
+    minutes, later registrants 5. Online form, e-mail or in person.
+  roles:
+  - code: C1
+    method: human
+  - code: G2
+    method: human
+- id: PA-p202-public
+  snapshot_id: S-p202
+  locator:
+    label: '"How to register"'
+  kind: research_note
+  text: Written comments sent by e-mail become part of the public record.
+  roles:
+  - code: C1
+    method: human
+- id: PA-p253-guide
+  snapshot_id: S-p253-page
+  locator:
+    label: guide page body
+  kind: verbatim
+  text: within 10 days of the initial communication
+  roles:
+  - code: G2
+    method: human
+- id: PA-p253-bylaw
+  snapshot_id: S-p253-bylaw
+  locator:
+    label: s.8.2, p.6
+  kind: verbatim
+  text: no later than ten (10) business days
+  roles:
+  - code: A2
+    method: human

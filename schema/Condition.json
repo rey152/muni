@@ -1,0 +1,91 @@
+{
+ "$defs": {
+  "Review": {
+   "additionalProperties": false,
+   "properties": {
+    "by": {
+     "default": "",
+     "title": "By",
+     "type": "string"
+    },
+    "on": {
+     "anyOf": [
+      {
+       "type": "string"
+      },
+      {
+       "type": "null"
+      }
+     ],
+     "default": null,
+     "title": "On"
+    },
+    "status": {
+     "default": "pending",
+     "enum": [
+      "approved",
+      "edit",
+      "reject",
+      "needs_recheck",
+      "pending"
+     ],
+     "title": "Status",
+     "type": "string"
+    },
+    "note": {
+     "default": "",
+     "title": "Note",
+     "type": "string"
+    }
+   },
+   "title": "Review",
+   "type": "object"
+  }
+ },
+ "additionalProperties": false,
+ "properties": {
+  "id": {
+   "title": "Id",
+   "type": "string"
+  },
+  "matter_id": {
+   "default": "",
+   "title": "Matter Id",
+   "type": "string"
+  },
+  "text": {
+   "minLength": 1,
+   "title": "Text",
+   "type": "string"
+  },
+  "applies_to": {
+   "default": "",
+   "title": "Applies To",
+   "type": "string"
+  },
+  "imposed_by": {
+   "enum": [
+    "decision",
+    "report",
+    "study_mitigation"
+   ],
+   "title": "Imposed By",
+   "type": "string"
+  },
+  "passage_id": {
+   "title": "Passage Id",
+   "type": "string"
+  },
+  "review": {
+   "$ref": "#/$defs/Review"
+  }
+ },
+ "required": [
+  "id",
+  "text",
+  "imposed_by",
+  "passage_id"
+ ],
+ "title": "Condition",
+ "type": "object"
+}

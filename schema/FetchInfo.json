@@ -1,0 +1,91 @@
+{
+ "additionalProperties": false,
+ "description": "One row from snapshots/snapshots.sqlite, as written by pipeline/fetch.py.",
+ "properties": {
+  "fetched_at": {
+   "title": "Fetched At",
+   "type": "string"
+  },
+  "url": {
+   "title": "Url",
+   "type": "string"
+  },
+  "final_url": {
+   "anyOf": [
+    {
+     "type": "string"
+    },
+    {
+     "type": "null"
+    }
+   ],
+   "default": null,
+   "title": "Final Url"
+  },
+  "status": {
+   "anyOf": [
+    {
+     "type": "integer"
+    },
+    {
+     "type": "null"
+    }
+   ],
+   "default": null,
+   "title": "Status"
+  },
+  "availability": {
+   "anyOf": [
+    {
+     "enum": [
+      "ok",
+      "blocked",
+      "sign_in",
+      "dead",
+      "request_only"
+     ],
+     "type": "string"
+    },
+    {
+     "type": "null"
+    }
+   ],
+   "default": null,
+   "title": "Availability"
+  },
+  "sha256": {
+   "pattern": "^[0-9a-f]{64}$",
+   "title": "Sha256",
+   "type": "string"
+  },
+  "content_type": {
+   "anyOf": [
+    {
+     "type": "string"
+    },
+    {
+     "type": "null"
+    }
+   ],
+   "default": null,
+   "title": "Content Type"
+  },
+  "obtained_by": {
+   "title": "Obtained By",
+   "type": "string"
+  },
+  "path": {
+   "title": "Path",
+   "type": "string"
+  }
+ },
+ "required": [
+  "fetched_at",
+  "url",
+  "sha256",
+  "obtained_by",
+  "path"
+ ],
+ "title": "FetchInfo",
+ "type": "object"
+}

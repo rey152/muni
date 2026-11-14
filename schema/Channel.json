@@ -1,0 +1,76 @@
+{
+ "$defs": {
+  "Review": {
+   "additionalProperties": false,
+   "properties": {
+    "by": {
+     "default": "",
+     "title": "By",
+     "type": "string"
+    },
+    "on": {
+     "anyOf": [
+      {
+       "type": "string"
+      },
+      {
+       "type": "null"
+      }
+     ],
+     "default": null,
+     "title": "On"
+    },
+    "status": {
+     "default": "pending",
+     "enum": [
+      "approved",
+      "edit",
+      "reject",
+      "needs_recheck",
+      "pending"
+     ],
+     "title": "Status",
+     "type": "string"
+    },
+    "note": {
+     "default": "",
+     "title": "Note",
+     "type": "string"
+    }
+   },
+   "title": "Review",
+   "type": "object"
+  }
+ },
+ "additionalProperties": false,
+ "properties": {
+  "id": {
+   "title": "Id",
+   "type": "string"
+  },
+  "channel": {
+   "title": "Channel",
+   "type": "string"
+  },
+  "statement": {
+   "description": "What the channel's official page says about publication.",
+   "title": "Statement",
+   "type": "string"
+  },
+  "passage_id": {
+   "title": "Passage Id",
+   "type": "string"
+  },
+  "review": {
+   "$ref": "#/$defs/Review"
+  }
+ },
+ "required": [
+  "id",
+  "channel",
+  "statement",
+  "passage_id"
+ ],
+ "title": "Channel",
+ "type": "object"
+}

@@ -1,0 +1,5 @@
+rule_pairs:
+- id: RP-p253-lobbyist
+  topic: Lobbyist registration deadline (Region)
+  guide_passage: PA-p253-guide
+  rule_passage: PA-p253-bylaw

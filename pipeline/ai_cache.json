@@ -1,0 +1,16 @@
+{
+ "qwen2.5:7b|easy-read-v1|f303304256b028ecaa1d9e0d4b05ea89a374c79db917e5d4b0e1453900754063": {
+  "date": "2026-11-14",
+  "input_hash": "f303304256b028ecaa1d9e0d4b05ea89a374c79db917e5d4b0e1453900754063",
+  "model": "qwen2.5:7b",
+  "output": "C-d1: : The City can borrow money.\nC-d2: : 2024 debt charges were not approved.\nC-d2: : The limit is not final.\nC-d3: : City Council got the report.\nC-d4: : The limit is not known.",
+  "prompt_version": "easy-read-v1"
+ },
+ "qwen2.5:7b|paraphrase-v1|f467c9160c6eb4fbd67524ebc31f6cf160e9631396773cc9d20c4beb791e4252": {
+  "date": "2026-11-14",
+  "input_hash": "f467c9160c6eb4fbd67524ebc31f6cf160e9631396773cc9d20c4beb791e4252",
+  "model": "qwen2.5:7b",
+  "output": "The Treasurer's calculation shows 2024 debt charges of $7.44M, or 3.37% of net revenues, but not a borrowing approval; the final provincial limit has not yet been received.",
+  "prompt_version": "paraphrase-v1"
+ }
+}

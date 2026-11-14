@@ -1,0 +1,13 @@
+authorities:
+- id: city-of-waterloo-council
+  name: City of Waterloo Council
+  tier: City
+- id: region-of-waterloo-council
+  name: Region of Waterloo Council
+  tier: Region
+- id: province-of-ontario
+  name: Province of Ontario
+  tier: Province
+- id: ontario-land-tribunal
+  name: Ontario Land Tribunal
+  tier: tribunal

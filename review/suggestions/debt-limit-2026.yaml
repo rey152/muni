@@ -1,0 +1,289 @@
+matter_id: debt-limit-2026
+generated_at: '2026-11-14T15:40:45+00:00'
+note: AI drafts for a reviewer. Not reviewed and never published from this file. To use one, copy it into review/matters/
+  and review it there.
+paraphrases:
+- claim_id: C-d1
+  passage_ids:
+  - PA-debt-calc
+  text: The Treasurer's calculation shows 2024 debt charges of $7.44M, or 3.37% of net revenues, but not a borrowing
+    approval; the final provincial limit has not yet been received.
+  provenance: ai_paraphrase
+  review:
+    status: pending
+  made_by:
+    model: qwen2.5:7b
+    prompt_version: paraphrase-v1
+    date: '2026-11-14'
+    input_hash: f467c9160c6eb4fbd67524ebc31f6cf160e9631396773cc9d20c4beb791e4252
+    cached: true
+  checks:
+    qualifiers_required:
+    - not a
+    - not yet
+    qualifiers_missing: []
+    numbers_added: []
+    status_words_added: []
+    nli:
+      available: true
+      model: cross-encoder/nli-deberta-v3-base
+      scores:
+        contradiction: 0.0002
+        entailment: 0.9953
+        neutral: 0.0045
+      label: entailment
+      flag: false
+      reason: ''
+    flags: []
+- claim_id: C-d2
+  passage_ids:
+  - PA-debt-calc
+  text: The Treasurer's calculation shows 2024 debt charges of $7.44M, or 3.37% of net revenues, but not a borrowing
+    approval; the final provincial limit has not yet been received.
+  provenance: ai_paraphrase
+  review:
+    status: pending
+  made_by:
+    model: qwen2.5:7b
+    prompt_version: paraphrase-v1
+    date: '2026-11-14'
+    input_hash: f467c9160c6eb4fbd67524ebc31f6cf160e9631396773cc9d20c4beb791e4252
+    cached: true
+  checks:
+    qualifiers_required:
+    - not a
+    - not yet
+    qualifiers_missing: []
+    numbers_added: []
+    status_words_added: []
+    nli:
+      available: true
+      model: cross-encoder/nli-deberta-v3-base
+      scores:
+        contradiction: 0.0002
+        entailment: 0.9953
+        neutral: 0.0045
+      label: entailment
+      flag: false
+      reason: ''
+    flags: []
+- claim_id: C-d3
+  passage_ids:
+  - PA-debt-calc
+  text: The Treasurer's calculation shows 2024 debt charges of $7.44M, or 3.37% of net revenues, but not a borrowing
+    approval; the final provincial limit has not yet been received.
+  provenance: ai_paraphrase
+  review:
+    status: pending
+  made_by:
+    model: qwen2.5:7b
+    prompt_version: paraphrase-v1
+    date: '2026-11-14'
+    input_hash: f467c9160c6eb4fbd67524ebc31f6cf160e9631396773cc9d20c4beb791e4252
+    cached: true
+  checks:
+    qualifiers_required:
+    - not a
+    - not yet
+    qualifiers_missing: []
+    numbers_added: []
+    status_words_added: []
+    nli:
+      available: true
+      model: cross-encoder/nli-deberta-v3-base
+      scores:
+        contradiction: 0.0002
+        entailment: 0.9953
+        neutral: 0.0045
+      label: entailment
+      flag: false
+      reason: ''
+    flags: []
+- claim_id: C-d4
+  passage_ids:
+  - PA-debt-calc
+  text: The Treasurer's calculation shows 2024 debt charges of $7.44M, or 3.37% of net revenues, but not a borrowing
+    approval; the final provincial limit has not yet been received.
+  provenance: ai_paraphrase
+  review:
+    status: pending
+  made_by:
+    model: qwen2.5:7b
+    prompt_version: paraphrase-v1
+    date: '2026-11-14'
+    input_hash: f467c9160c6eb4fbd67524ebc31f6cf160e9631396773cc9d20c4beb791e4252
+    cached: true
+  checks:
+    qualifiers_required:
+    - not a
+    - not yet
+    qualifiers_missing: []
+    numbers_added: []
+    status_words_added: []
+    nli:
+      available: true
+      model: cross-encoder/nli-deberta-v3-base
+      scores:
+        contradiction: 0.0002
+        entailment: 0.9953
+        neutral: 0.0045
+      label: entailment
+      flag: false
+      reason: ''
+    flags: []
+easy_read:
+- id: ER-ai-debt-limit-2026-1
+  claim_id: C-d1
+  text: The City can borrow money.
+  grade_level: 5.2
+  review:
+    status: pending
+  made_by:
+    model: qwen2.5:7b
+    prompt_version: easy-read-v1
+    date: '2026-11-14'
+    input_hash: f303304256b028ecaa1d9e0d4b05ea89a374c79db917e5d4b0e1453900754063
+    cached: true
+  checks:
+    qualifiers_required: []
+    qualifiers_missing: []
+    numbers_added: []
+    status_words_added: []
+    nli:
+      available: true
+      model: cross-encoder/nli-deberta-v3-base
+      scores:
+        contradiction: 0.0
+        entailment: 0.9959
+        neutral: 0.0041
+      label: entailment
+      flag: false
+      reason: ''
+    flags: []
+- id: ER-ai-debt-limit-2026-2
+  claim_id: C-d2
+  text: 2024 debt charges were not approved.
+  grade_level: 2.5
+  review:
+    status: pending
+  made_by:
+    model: qwen2.5:7b
+    prompt_version: easy-read-v1
+    date: '2026-11-14'
+    input_hash: f303304256b028ecaa1d9e0d4b05ea89a374c79db917e5d4b0e1453900754063
+    cached: true
+  checks:
+    qualifiers_required:
+    - not a
+    - not yet
+    qualifiers_missing:
+    - not a
+    - not yet
+    numbers_added: []
+    status_words_added:
+    - approved
+    nli:
+      available: true
+      model: cross-encoder/nli-deberta-v3-base
+      scores:
+        contradiction: 0.009
+        entailment: 0.8339
+        neutral: 0.1571
+      label: entailment
+      flag: false
+      reason: ''
+    flags:
+    - 'Lines for C-d2 drop qualifier(s): not a, not yet.'
+    - 'Adds status words not in the source: approved.'
+- id: ER-ai-debt-limit-2026-3
+  claim_id: C-d2
+  text: The limit is not final.
+  grade_level: 2.9
+  review:
+    status: pending
+  made_by:
+    model: qwen2.5:7b
+    prompt_version: easy-read-v1
+    date: '2026-11-14'
+    input_hash: f303304256b028ecaa1d9e0d4b05ea89a374c79db917e5d4b0e1453900754063
+    cached: true
+  checks:
+    qualifiers_required:
+    - not a
+    - not yet
+    qualifiers_missing:
+    - not a
+    - not yet
+    numbers_added: []
+    status_words_added: []
+    nli:
+      available: true
+      model: cross-encoder/nli-deberta-v3-base
+      scores:
+        contradiction: 0.0004
+        entailment: 0.9943
+        neutral: 0.0053
+      label: entailment
+      flag: false
+      reason: ''
+    flags:
+    - 'Lines for C-d2 drop qualifier(s): not a, not yet.'
+- id: ER-ai-debt-limit-2026-4
+  claim_id: C-d3
+  text: City Council got the report.
+  grade_level: 5.2
+  review:
+    status: pending
+  made_by:
+    model: qwen2.5:7b
+    prompt_version: easy-read-v1
+    date: '2026-11-14'
+    input_hash: f303304256b028ecaa1d9e0d4b05ea89a374c79db917e5d4b0e1453900754063
+    cached: true
+  checks:
+    qualifiers_required: []
+    qualifiers_missing: []
+    numbers_added: []
+    status_words_added: []
+    nli:
+      available: true
+      model: cross-encoder/nli-deberta-v3-base
+      scores:
+        contradiction: 0.0001
+        entailment: 0.9978
+        neutral: 0.0022
+      label: entailment
+      flag: false
+      reason: ''
+    flags: []
+- id: ER-ai-debt-limit-2026-5
+  claim_id: C-d4
+  text: The limit is not known.
+  grade_level: 0.5
+  review:
+    status: pending
+  made_by:
+    model: qwen2.5:7b
+    prompt_version: easy-read-v1
+    date: '2026-11-14'
+    input_hash: f303304256b028ecaa1d9e0d4b05ea89a374c79db917e5d4b0e1453900754063
+    cached: true
+  checks:
+    qualifiers_required:
+    - not yet
+    qualifiers_missing:
+    - not yet
+    numbers_added: []
+    status_words_added: []
+    nli:
+      available: true
+      model: cross-encoder/nli-deberta-v3-base
+      scores:
+        contradiction: 0.0005
+        entailment: 0.9902
+        neutral: 0.0093
+      label: entailment
+      flag: false
+      reason: ''
+    flags:
+    - 'Lines for C-d4 drop qualifier(s): not yet.'

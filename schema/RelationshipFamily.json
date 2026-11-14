@@ -1,0 +1,30 @@
+{
+ "additionalProperties": false,
+ "properties": {
+  "code": {
+   "pattern": "^R[1-8]$",
+   "title": "Code",
+   "type": "string"
+  },
+  "name": {
+   "title": "Name",
+   "type": "string"
+  },
+  "verbs": {
+   "title": "Verbs",
+   "type": "string"
+  },
+  "meaning": {
+   "title": "Meaning",
+   "type": "string"
+  }
+ },
+ "required": [
+  "code",
+  "name",
+  "verbs",
+  "meaning"
+ ],
+ "title": "RelationshipFamily",
+ "type": "object"
+}

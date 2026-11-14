@@ -1,0 +1,154 @@
+{
+ "$defs": {
+  "Endpoint": {
+   "additionalProperties": false,
+   "properties": {
+    "kind": {
+     "enum": [
+      "particular",
+      "role",
+      "description"
+     ],
+     "title": "Kind",
+     "type": "string"
+    },
+    "value": {
+     "title": "Value",
+     "type": "string"
+    }
+   },
+   "required": [
+    "kind",
+    "value"
+   ],
+   "title": "Endpoint",
+   "type": "object"
+  }
+ },
+ "additionalProperties": false,
+ "properties": {
+  "id": {
+   "title": "Id",
+   "type": "string"
+  },
+  "categories": {
+   "description": "The edge as written in the graph, e.g. 'C1 → C2 → C3'.",
+   "title": "Categories",
+   "type": "string"
+  },
+  "from": {
+   "items": {
+    "$ref": "#/$defs/Endpoint"
+   },
+   "title": "From",
+   "type": "array"
+  },
+  "to": {
+   "items": {
+    "$ref": "#/$defs/Endpoint"
+   },
+   "title": "To",
+   "type": "array"
+  },
+  "chain": {
+   "description": "Every node in order; from = first, to = last.",
+   "items": {
+    "items": {
+     "$ref": "#/$defs/Endpoint"
+    },
+    "type": "array"
+   },
+   "title": "Chain",
+   "type": "array"
+  },
+  "arrows": {
+   "items": {
+    "enum": [
+     "→",
+     "↔"
+    ],
+    "type": "string"
+   },
+   "title": "Arrows",
+   "type": "array"
+  },
+  "families": {
+   "items": {
+    "type": "string"
+   },
+   "minItems": 1,
+   "title": "Families",
+   "type": "array"
+  },
+  "meaning": {
+   "title": "Meaning",
+   "type": "string"
+  },
+  "condition": {
+   "title": "Condition",
+   "type": "string"
+  },
+  "evidence": {
+   "title": "Evidence",
+   "type": "string"
+  },
+  "url": {
+   "title": "Url",
+   "type": "string"
+  },
+  "limitation": {
+   "title": "Limitation",
+   "type": "string"
+  },
+  "connection_basis": {
+   "default": "",
+   "title": "Connection Basis",
+   "type": "string"
+  },
+  "dependency": {
+   "default": "",
+   "title": "Dependency",
+   "type": "string"
+  },
+  "retrieval_dependency": {
+   "default": "",
+   "title": "Retrieval Dependency",
+   "type": "string"
+  },
+  "access_context": {
+   "default": "",
+   "title": "Access Context",
+   "type": "string"
+  },
+  "evidence_url_current_test": {
+   "default": "",
+   "title": "Evidence Url Current Test",
+   "type": "string"
+  },
+  "evidence_particular_ids": {
+   "default": [],
+   "description": "Particulars whose URL is the evidence URL.",
+   "items": {
+    "type": "string"
+   },
+   "title": "Evidence Particular Ids",
+   "type": "array"
+  }
+ },
+ "required": [
+  "id",
+  "categories",
+  "from",
+  "to",
+  "chain",
+  "arrows",
+  "families",
+  "meaning",
+  "condition",
+  "evidence",
+  "url",
+  "limitation"
+ ],
+ "title": "Relationship",
+ "type": "object"
+}
