@@ -1,0 +1,1148 @@
+[
+ {
+  "url": "https://www.regionofwaterloo.ca/umbraco/surface/GOVMemberSurface/GetMemberValue?pageId=2606",
+  "method": "GET",
+  "status": 200,
+  "content_type": "text/plain; charset=utf-8"
+ },
+ {
+  "url": "https://api.uxtweak.com/snippet/68c631a9-c518-44ce-bf26-5e07497e352f",
+  "method": "POST",
+  "status": 200,
+  "content_type": "application/json; charset=utf-8"
+ },
+ {
+  "url": "https://listgrowth.ctctcdn.com/v1/dd3e14d2575cc3cd7a55f8107034521f.json",
+  "method": "GET",
+  "status": 200,
+  "content_type": "application/json"
+ },
+ {
+  "url": "https://js.arcgis.com/5.2/builddate.txt",
+  "method": "GET",
+  "status": 200,
+  "content_type": "text/plain"
+ },
+ {
+  "url": "https://www.arcgis.com/sharing/rest/oauth2/platformSelf?f=json",
+  "method": "POST",
+  "status": 200,
+  "content_type": "application/json;charset=utf-8"
+ },
+ {
+  "url": "https://www.arcgis.com/sharing/rest/content/items/2030d50b04b34fa7a38995d352821cb0?f=json",
+  "method": "GET",
+  "status": 200,
+  "content_type": "application/json;charset=utf-8"
+ },
+ {
+  "url": "https://www.arcgis.com/sharing/rest/content/items/2030d50b04b34fa7a38995d352821cb0/data?f=json",
+  "method": "GET",
+  "status": 200,
+  "content_type": "application/json;charset=utf-8"
+ },
+ {
+  "url": "https://experience.arcgis.com/cdn/3924/themes/default/manifest.json",
+  "method": "GET",
+  "status": 200,
+  "content_type": "application/json"
+ },
+ {
+  "url": "https://experience.arcgis.com/cdn/3924/themes/default/variables.json",
+  "method": "GET",
+  "status": 200,
+  "content_type": "application/json"
+ },
+ {
+  "url": "https://experience.arcgis.com/cdn/3924/widgets/arcgis/legend/icon.svg",
+  "method": "GET",
+  "status": 200,
+  "content_type": "image/svg+xml"
+ },
+ {
+  "url": "https://rmw.maps.arcgis.com/sharing/rest/portals/self?f=json&culture=en-us",
+  "method": "GET",
+  "status": 200,
+  "content_type": "application/json;charset=utf-8"
+ },
+ {
+  "url": "https://www.arcgis.com/sharing/rest/portals/self?f=json&culture=en-us",
+  "method": "GET",
+  "status": 200,
+  "content_type": "application/json;charset=utf-8"
+ },
+ {
+  "url": "https://www.arcgis.com/sharing/rest/content/items/3a371c4156344453be2011576407eb52?f=json",
+  "method": "GET",
+  "status": 200,
+  "content_type": "application/json;charset=utf-8"
+ },
+ {
+  "url": "https://js.arcgis.com/5.2/esri/widgets/Zoom/t9n/messages.en.json",
+  "method": "GET",
+  "status": 200,
+  "content_type": "application/json"
+ },
+ {
+  "url": "https://www.arcgis.com/sharing/rest/content/items/3a371c4156344453be2011576407eb52/data?f=json",
+  "method": "GET",
+  "status": 200,
+  "content_type": "application/json;charset=utf-8"
+ },
+ {
+  "url": "https://www.arcgis.com/sharing/rest/portals/self?f=json&culture=en-us",
+  "method": "GET",
+  "status": 200,
+  "content_type": "application/json;charset=utf-8"
+ },
+ {
+  "url": "https://js.arcgis.com/5.2/map-components/assets/popup/t9n/messages.en.json",
+  "method": "GET",
+  "status": 200,
+  "content_type": "application/json"
+ },
+ {
+  "url": "https://www.arcgis.com/sharing/rest/content/items/d4d0c6dedec14e59930688f3830776c6?f=json",
+  "method": "GET",
+  "status": 200,
+  "content_type": "application/json;charset=utf-8"
+ },
+ {
+  "url": "https://js.arcgis.com/5.2/map-components/assets/features-next/t9n/messages.en.json",
+  "method": "GET",
+  "status": 200,
+  "content_type": "application/json"
+ },
+ {
+  "url": "https://www.arcgis.com/sharing/rest/content/items/d4d0c6dedec14e59930688f3830776c6/data?f=json",
+  "method": "GET",
+  "status": 200,
+  "content_type": "application/json;charset=utf-8"
+ },
+ {
+  "url": "https://js.arcgis.com/5.2/esri/geometry/support/pe-wasm.wasm",
+  "method": "GET",
+  "status": 200,
+  "content_type": "application/wasm"
+ },
+ {
+  "url": "https://js.arcgis.com/calcite-components/5.2.0/assets/flow-item/t9n/messages.en.json",
+  "method": "GET",
+  "status": 200,
+  "content_type": "application/json"
+ },
+ {
+  "url": "https://js.arcgis.com/calcite-components/5.2.0/assets/action-group/t9n/messages.en.json",
+  "method": "GET",
+  "status": 200,
+  "content_type": "application/json"
+ },
+ {
+  "url": "https://js.arcgis.com/calcite-components/5.2.0/assets/action-bar/t9n/messages.en.json",
+  "method": "GET",
+  "status": 200,
+  "content_type": "application/json"
+ },
+ {
+  "url": "https://js.arcgis.com/calcite-components/5.2.0/assets/action/t9n/messages.en.json",
+  "method": "GET",
+  "status": 200,
+  "content_type": "application/json"
+ },
+ {
+  "url": "https://cdn.arcgis.com/sharing/rest/content/items/291da5eab3a0412593b66d384379f89f/resources/styles/root.json?f=json",
+  "method": "GET",
+  "status": 200,
+  "content_type": "application/json;charset=utf-8"
+ },
+ {
+  "url": "https://cdn.arcgis.com/sharing/rest/content/items/1768e8369a214dfab4e2167d5c5f2454/resources/styles/root.json?f=json",
+  "method": "GET",
+  "status": 200,
+  "content_type": "application/json;charset=utf-8"
+ },
+ {
+  "url": "https://js.arcgis.com/calcite-components/5.2.0/assets/panel/t9n/messages.en.json",
+  "method": "GET",
+  "status": 200,
+  "content_type": "application/json"
+ },
+ {
+  "url": "https://utility.arcgis.com/usrsvcs/servers/16f4a36a4c0049008cf578b259d3a4e9/rest/services/_Roads/MapServer/1?f=json",
+  "method": "GET",
+  "status": 200,
+  "content_type": "application/json;charset=utf-8"
+ },
+ {
+  "url": "https://utility.arcgis.com/usrsvcs/servers/a72373c806cf470b9ad9eb49a194beef/rest/services/_Boundaries/MapServer/5?f=json",
+  "method": "GET",
+  "status": 200,
+  "content_type": "application/json;charset=utf-8"
+ },
+ {
+  "url": "https://basemaps.arcgis.com/arcgis/rest/services/World_Basemap_v2/VectorTileServer?f=json",
+  "method": "GET",
+  "status": 200,
+  "content_type": "application/json;charset=utf-8"
+ },
+ {
+  "url": "https://basemaps.arcgis.com/arcgis/rest/services/World_Basemap_v2/VectorTileServer?f=json",
+  "method": "GET",
+  "status": 200,
+  "content_type": "application/json;charset=utf-8"
+ },
+ {
+  "url": "https://js.arcgis.com/calcite-components/5.2.0/assets/popover/t9n/messages.en.json",
+  "method": "GET",
+  "status": 200,
+  "content_type": "application/json"
+ },
+ {
+  "url": "https://utility.arcgis.com/usrsvcs/servers/d4d0c6dedec14e59930688f3830776c6/rest/services/OpenData/OpenData/MapServer?f=json",
+  "method": "GET",
+  "status": 200,
+  "content_type": "application/json;charset=utf-8"
+ },
+ {
+  "url": "https://utility.arcgis.com/usrsvcs/servers/3e549c213c8b4f76946689410084aa72/rest/services/_Capital_Projects/MapServer/14?f=json",
+  "method": "GET",
+  "status": 200,
+  "content_type": "application/json;charset=utf-8"
+ },
+ {
+  "url": "https://cdn.arcgis.com/sharing/rest/content/items/291da5eab3a0412593b66d384379f89f/resources/sprites/sprite.json",
+  "method": "GET",
+  "status": 200,
+  "content_type": "application/json;charset=utf-8"
+ },
+ {
+  "url": "https://cdn.arcgis.com/sharing/rest/content/items/1768e8369a214dfab4e2167d5c5f2454/resources/sprites/sprite.json",
+  "method": "GET",
+  "status": 200,
+  "content_type": "application/json;charset=utf-8"
+ },
+ {
+  "url": "https://js.arcgis.com/5.2/map-components/assets/zoom/t9n/messages.en.json",
+  "method": "GET",
+  "status": 200,
+  "content_type": "application/json"
+ },
+ {
+  "url": "https://js.arcgis.com/5.2/map-components/assets/home/t9n/messages.en.json",
+  "method": "GET",
+  "status": 200,
+  "content_type": "application/json"
+ },
+ {
+  "url": "https://utility.arcgis.com/usrsvcs/servers/d4d0c6dedec14e59930688f3830776c6/rest/services/OpenData/OpenData/MapServer/1?f=json",
+  "method": "GET",
+  "status": 200,
+  "content_type": "application/json;charset=utf-8"
+ },
+ {
+  "url": "https://basemaps.arcgis.com/arcgis/rest/services/World_Basemap_v2/VectorTileServer/tilemap/9/160/128/32/32?f=json",
+  "method": "GET",
+  "status": 200,
+  "content_type": "application/json;charset=utf-8"
+ },
+ {
+  "url": "https://basemaps.arcgis.com/arcgis/rest/services/World_Basemap_v2/VectorTileServer/tilemap/8/64/64/32/32?f=json",
+  "method": "GET",
+  "status": 200,
+  "content_type": "application/json;charset=utf-8"
+ },
+ {
+  "url": "https://basemaps.arcgis.com/arcgis/rest/services/World_Basemap_v2/VectorTileServer/tilemap/7/32/32/32/32?f=json",
+  "method": "GET",
+  "status": 200,
+  "content_type": "application/json;charset=utf-8"
+ },
+ {
+  "url": "https://basemaps.arcgis.com/arcgis/rest/services/World_Basemap_v2/VectorTileServer/tilemap/6/0/0/32/32?f=json",
+  "method": "GET",
+  "status": 200,
+  "content_type": "application/json;charset=utf-8"
+ },
+ {
+  "url": "https://basemaps.arcgis.com/arcgis/rest/services/World_Basemap_v2/VectorTileServer/tilemap/5/0/0/32/32?f=json",
+  "method": "GET",
+  "status": 200,
+  "content_type": "application/json;charset=utf-8"
+ },
+ {
+  "url": "https://basemaps.arcgis.com/arcgis/rest/services/World_Basemap_v2/VectorTileServer/tilemap/9/160/128/32/32?f=json",
+  "method": "GET",
+  "status": 200,
+  "content_type": "application/json;charset=utf-8"
+ },
+ {
+  "url": "https://static.arcgis.com/attribution/Vector/World_Basemap_v2?f=json",
+  "method": "GET",
+  "status": 200,
+  "content_type": "text/plain;charset=utf-8"
+ },
+ {
+  "url": "https://static.arcgis.com/attribution/Vector/World_Basemap_v2?f=json",
+  "method": "GET",
+  "status": 200,
+  "content_type": "text/plain;charset=utf-8"
+ },
+ {
+  "url": "https://basemaps.arcgis.com/arcgis/rest/services/World_Basemap_v2/VectorTileServer/tile/9/187/141.pbf",
+  "method": "GET",
+  "status": 200,
+  "content_type": "application/octet-stream"
+ },
+ {
+  "url": "https://basemaps.arcgis.com/arcgis/rest/services/World_Basemap_v2/VectorTileServer/tile/9/186/141.pbf",
+  "method": "GET",
+  "status": 200,
+  "content_type": "application/octet-stream"
+ },
+ {
+  "url": "https://js.arcgis.com/calcite-components/5.2.0/assets/button/t9n/messages.en.json",
+  "method": "GET",
+  "status": 200,
+  "content_type": "application/json"
+ },
+ {
+  "url": "https://www.arcgis.com/sharing/rest/content/items/d4d0c6dedec14e59930688f3830776c6?f=json",
+  "method": "GET",
+  "status": 200,
+  "content_type": "application/json;charset=utf-8"
+ },
+ {
+  "url": "https://www.arcgis.com/sharing/rest/portals/self?f=json&culture=en-us",
+  "method": "GET",
+  "status": 200,
+  "content_type": "application/json;charset=utf-8"
+ },
+ {
+  "url": "https://js.arcgis.com/5.2/esri/core/libs/libtess/libtess-f32.wasm",
+  "method": "GET",
+  "status": 200,
+  "content_type": "application/wasm"
+ },
+ {
+  "url": "https://js.arcgis.com/5.2/map-components/assets/locate/t9n/messages.en.json",
+  "method": "GET",
+  "status": 200,
+  "content_type": "application/json"
+ },
+ {
+  "url": "https://utility.arcgis.com/usrsvcs/servers/3e549c213c8b4f76946689410084aa72/rest/services/_Capital_Projects/MapServer/14/query?f=json&returnCountOnly=true&outFields=ProjectStatus&returnDistinctValues=true&returnGeometry=false&returnZ=true&spatialRel=esriSpatialRelIntersects&where=(MakeExternal%20%3D%20%27Yes%27)%20and%20((ProjectStatus%20IS%20NOT%20NULL)%20AND%20(CHAR_LENGTH(ProjectStatus)%20%3E%200))",
+  "method": "GET",
+  "status": 200,
+  "content_type": "application/json;charset=utf-8"
+ },
+ {
+  "url": "https://js.arcgis.com/5.2/esri/core/libs/libtess/libtess-f32.wasm",
+  "method": "GET",
+  "status": 200,
+  "content_type": "application/wasm"
+ },
+ {
+  "url": "https://js.arcgis.com/5.2/esri/core/libs/libtess/libtess-f32.wasm",
+  "method": "GET",
+  "status": 200,
+  "content_type": "application/wasm"
+ },
+ {
+  "url": "https://basemaps.arcgis.com/arcgis/rest/services/World_Basemap_v2/VectorTileServer/resources/fonts/Ubuntu%20Regular/0-255.pbf",
+  "method": "GET",
+  "status": 200,
+  "content_type": "application/octet-stream"
+ },
+ {
+  "url": "https://basemaps.arcgis.com/arcgis/rest/services/World_Basemap_v2/VectorTileServer/resources/fonts/Ubuntu%20Light/0-255.pbf",
+  "method": "GET",
+  "status": 200,
+  "content_type": "application/octet-stream"
+ },
+ {
+  "url": "https://www.arcgis.com/sharing/rest/content/items/d4d0c6dedec14e59930688f3830776c6/data?f=json",
+  "method": "GET",
+  "status": 200,
+  "content_type": "application/json;charset=utf-8"
+ },
+ {
+  "url": "https://utility.arcgis.com/usrsvcs/servers/d4d0c6dedec14e59930688f3830776c6/rest/services/OpenData/OpenData/MapServer?f=json",
+  "method": "GET",
+  "status": 200,
+  "content_type": "application/json;charset=utf-8"
+ },
+ {
+  "url": "https://js.arcgis.com/5.2/esri/core/libs/libtess/libtess-f32.wasm",
+  "method": "GET",
+  "status": 200,
+  "content_type": "application/wasm"
+ },
+ {
+  "url": "https://utility.arcgis.com/usrsvcs/servers/3e549c213c8b4f76946689410084aa72/rest/services/_Capital_Projects/MapServer/14/query?f=json&geometry=%7B%22xmin%22%3A-9001224.450862993%2C%22ymin%22%3A5400734.670518989%2C%22xmax%22%3A-8922952.933898991%2C%22ymax%22%3A5479006.187482988%7D&orderByFields=OBJECTID%20ASC&outFields=OBJECTID%2CProjectStatus&outSR=102100&quantizationParameters=%7B%22extent%22%3A%7B%22spatialReference%22%3A%7B%22latestWkid%22%3A3857%2C%22wkid%22%3A102100%7D%2C%22xmin%22%3A-9001224.450862993%2C%22ymin%22%3A5400734.670518989%2C%22xmax%22%3A-8922952.933898991%2C%22ymax%22%3A5479006.187482988%7D%2C%22mode%22%3A%22view%22%2C%22originPosition%22%3A%22upperLeft%22%2C%22tolerance%22%3A152.87405657031263%7D&resultType=tile&returnCentroid=true&returnExceededLimitFeatures=false&spatialRel=esriSpatialRelIntersects&where=MakeExternal%20%3D%20%27Yes%27&geometryType=esriGeometryEnvelope&inSR=102100",
+  "method": "GET",
+  "status": 200,
+  "content_type": "application/json;charset=utf-8"
+ },
+ {
+  "url": "https://utility.arcgis.com/usrsvcs/servers/a72373c806cf470b9ad9eb49a194beef/rest/services/_Boundaries/MapServer/5/query?f=json&geometry=%7B%22xmin%22%3A-9001224.450862993%2C%22ymin%22%3A5400734.670518989%2C%22xmax%22%3A-8922952.933898991%2C%22ymax%22%3A5479006.187482988%7D&orderByFields=OBJECTID%20ASC&outFields=FullName%2COBJECTID&outSR=102100&quantizationParameters=%7B%22extent%22%3A%7B%22spatialReference%22%3A%7B%22latestWkid%22%3A3857%2C%22wkid%22%3A102100%7D%2C%22xmin%22%3A-9001224.450862993%2C%22ymin%22%3A5400734.670518989%2C%22xmax%22%3A-8922952.933898991%2C%22ymax%22%3A5479006.187482988%7D%2C%22mode%22%3A%22view%22%2C%22originPosition%22%3A%22upperLeft%22%2C%22tolerance%22%3A152.87405657031263%7D&resultType=tile&returnCentroid=true&returnExceededLimitFeatures=false&spatialRel=esriSpatialRelIntersects&where=1%3D1&geometryType=esriGeometryEnvelope&inSR=102100",
+  "method": "GET",
+  "status": 200,
+  "content_type": "application/json;charset=utf-8"
+ },
+ {
+  "url": "https://utility.arcgis.com/usrsvcs/servers/3e549c213c8b4f76946689410084aa72/rest/services/_Capital_Projects/MapServer/14/query?f=json&resultOffset=0&resultRecordCount=100&where=(MakeExternal%20%3D%20%27Yes%27)%20and%20((ProjectStatus%20IS%20NOT%20NULL)%20AND%20(CHAR_LENGTH(ProjectStatus)%20%3E%200))&orderByFields=ProjectStatus%20ASC&outFields=ProjectStatus&returnDistinctValues=true&returnGeometry=false&returnZ=true&spatialRel=esriSpatialRelIntersects",
+  "method": "GET",
+  "status": 200,
+  "content_type": "application/json;charset=utf-8"
+ },
+ {
+  "url": "https://utility.arcgis.com/usrsvcs/servers/a72373c806cf470b9ad9eb49a194beef/rest/services/_Boundaries/MapServer/5/query?f=json&geometry=%7B%22xmin%22%3A-9001224.450862993%2C%22ymin%22%3A5322463.153554989%2C%22xmax%22%3A-8922952.933898991%2C%22ymax%22%3A5400734.670518989%7D&orderByFields=OBJECTID%20ASC&outFields=FullName%2COBJECTID&outSR=102100&quantizationParameters=%7B%22extent%22%3A%7B%22spatialReference%22%3A%7B%22latestWkid%22%3A3857%2C%22wkid%22%3A102100%7D%2C%22xmin%22%3A-9001224.450862993%2C%22ymin%22%3A5322463.153554989%2C%22xmax%22%3A-8922952.933898991%2C%22ymax%22%3A5400734.670518989%7D%2C%22mode%22%3A%22view%22%2C%22originPosition%22%3A%22upperLeft%22%2C%22tolerance%22%3A152.87405657031263%7D&resultType=tile&returnCentroid=true&returnExceededLimitFeatures=false&spatialRel=esriSpatialRelIntersects&where=1%3D1&geometryType=esriGeometryEnvelope&inSR=102100",
+  "method": "GET",
+  "status": 200,
+  "content_type": "application/json;charset=utf-8"
+ },
+ {
+  "url": "https://utility.arcgis.com/usrsvcs/servers/3e549c213c8b4f76946689410084aa72/rest/services/_Capital_Projects/MapServer/14/query?f=json&geometry=%7B%22xmin%22%3A-9001224.450862993%2C%22ymin%22%3A5322463.153554989%2C%22xmax%22%3A-8922952.933898991%2C%22ymax%22%3A5400734.670518989%7D&orderByFields=OBJECTID%20ASC&outFields=OBJECTID%2CProjectStatus&outSR=102100&quantizationParameters=%7B%22extent%22%3A%7B%22spatialReference%22%3A%7B%22latestWkid%22%3A3857%2C%22wkid%22%3A102100%7D%2C%22xmin%22%3A-9001224.450862993%2C%22ymin%22%3A5322463.153554989%2C%22xmax%22%3A-8922952.933898991%2C%22ymax%22%3A5400734.670518989%7D%2C%22mode%22%3A%22view%22%2C%22originPosition%22%3A%22upperLeft%22%2C%22tolerance%22%3A152.87405657031263%7D&resultType=tile&returnCentroid=true&returnExceededLimitFeatures=false&spatialRel=esriSpatialRelIntersects&where=MakeExternal%20%3D%20%27Yes%27&geometryType=esriGeometryEnvelope&inSR=102100",
+  "method": "GET",
+  "status": 200,
+  "content_type": "application/json;charset=utf-8"
+ },
+ {
+  "url": "https://utility.arcgis.com/usrsvcs/servers/d4d0c6dedec14e59930688f3830776c6/rest/services/OpenData/OpenData/MapServer/1/query?f=json&returnCountOnly=true&orderByFields=&outSR=102100&returnGeometry=false&spatialRel=esriSpatialRelIntersects&where=IsPrimary%20%3D%20%27Yes%27",
+  "method": "GET",
+  "status": 200,
+  "content_type": "application/json;charset=utf-8"
+ },
+ {
+  "url": "https://utility.arcgis.com/usrsvcs/servers/d4d0c6dedec14e59930688f3830776c6/rest/services/OpenData/OpenData/MapServer/1/query?f=pbf&geometry=%7B%22xmin%22%3A-9001224.450862993%2C%22ymin%22%3A5400734.670518989%2C%22xmax%22%3A-8922952.933898991%2C%22ymax%22%3A5479006.187482988%7D&orderByFields=OBJECTID%20ASC&outFields=AddressNumber%2CIsPrimary%2COBJECTID%2CUnitNumber&outSR=102100&quantizationParameters=%7B%22extent%22%3A%7B%22spatialReference%22%3A%7B%22latestWkid%22%3A3857%2C%22wkid%22%3A102100%7D%2C%22xmin%22%3A-9001224.450862993%2C%22ymin%22%3A5400734.670518989%2C%22xmax%22%3A-8922952.933898991%2C%22ymax%22%3A5479006.187482988%7D%2C%22mode%22%3A%22view%22%2C%22originPosition%22%3A%22upperLeft%22%2C%22tolerance%22%3A152.87405657031263%7D&resultType=tile&returnExceededLimitFeatures=false&spatialRel=esriSpatialRelIntersects&where=IsPrimary%20%3D%20%27Yes%27&geometryType=esriGeometryEnvelope&inSR=102100",
+  "method": "GET",
+  "status": 200,
+  "content_type": "application/x-protobuf"
+ },
+ {
+  "url": "https://utility.arcgis.com/usrsvcs/servers/d4d0c6dedec14e59930688f3830776c6/rest/services/OpenData/OpenData/MapServer/1/query?f=pbf&geometry=%7B%22xmin%22%3A-9001224.450862993%2C%22ymin%22%3A5439870.429000989%2C%22xmax%22%3A-8962088.69238099%2C%22ymax%22%3A5479006.187482988%7D&orderByFields=OBJECTID%20ASC&outFields=AddressNumber%2CIsPrimary%2COBJECTID%2CUnitNumber&outSR=102100&quantizationParameters=%7B%22extent%22%3A%7B%22spatialReference%22%3A%7B%22latestWkid%22%3A3857%2C%22wkid%22%3A102100%7D%2C%22xmin%22%3A-9001224.450862993%2C%22ymin%22%3A5400734.670518989%2C%22xmax%22%3A-8922952.933898991%2C%22ymax%22%3A5479006.187482988%7D%2C%22mode%22%3A%22view%22%2C%22originPosition%22%3A%22upperLeft%22%2C%22tolerance%22%3A152.87405657031263%7D&resultType=tile&returnExceededLimitFeatures=false&spatialRel=esriSpatialRelIntersects&where=IsPrimary%20%3D%20%27Yes%27&geometryType=esriGeometryEnvelope&inSR=102100",
+  "method": "GET",
+  "status": 200,
+  "content_type": "application/x-protobuf"
+ },
+ {
+  "url": "https://utility.arcgis.com/usrsvcs/servers/d4d0c6dedec14e59930688f3830776c6/rest/services/OpenData/OpenData/MapServer/1/query?f=pbf&geometry=%7B%22xmin%22%3A-8962088.69238099%2C%22ymin%22%3A5439870.429000989%2C%22xmax%22%3A-8922952.933898991%2C%22ymax%22%3A5479006.187482988%7D&orderByFields=OBJECTID%20ASC&outFields=AddressNumber%2CIsPrimary%2COBJECTID%2CUnitNumber&outSR=102100&quantizationParameters=%7B%22extent%22%3A%7B%22spatialReference%22%3A%7B%22latestWkid%22%3A3857%2C%22wkid%22%3A102100%7D%2C%22xmin%22%3A-9001224.450862993%2C%22ymin%22%3A5400734.670518989%2C%22xmax%22%3A-8922952.933898991%2C%22ymax%22%3A5479006.187482988%7D%2C%22mode%22%3A%22view%22%2C%22originPosition%22%3A%22upperLeft%22%2C%22tolerance%22%3A152.87405657031263%7D&resultType=tile&returnExceededLimitFeatures=false&spatialRel=esriSpatialRelIntersects&where=IsPrimary%20%3D%20%27Yes%27&geometryType=esriGeometryEnvelope&inSR=102100",
+  "method": "GET",
+  "status": 200,
+  "content_type": "application/x-protobuf"
+ },
+ {
+  "url": "https://utility.arcgis.com/usrsvcs/servers/d4d0c6dedec14e59930688f3830776c6/rest/services/OpenData/OpenData/MapServer/1/query?f=pbf&geometry=%7B%22xmin%22%3A-9001224.450862993%2C%22ymin%22%3A5322463.153554989%2C%22xmax%22%3A-8922952.933898991%2C%22ymax%22%3A5400734.670518989%7D&orderByFields=OBJECTID%20ASC&outFields=AddressNumber%2CIsPrimary%2COBJECTID%2CUnitNumber&outSR=102100&quantizationParameters=%7B%22extent%22%3A%7B%22spatialReference%22%3A%7B%22latestWkid%22%3A3857%2C%22wkid%22%3A102100%7D%2C%22xmin%22%3A-9001224.450862993%2C%22ymin%22%3A5322463.153554989%2C%22xmax%22%3A-8922952.933898991%2C%22ymax%22%3A5400734.670518989%7D%2C%22mode%22%3A%22view%22%2C%22originPosition%22%3A%22upperLeft%22%2C%22tolerance%22%3A152.87405657031263%7D&resultType=tile&returnExceededLimitFeatures=false&spatialRel=esriSpatialRelIntersects&where=IsPrimary%20%3D%20%27Yes%27&geometryType=esriGeometryEnvelope&inSR=102100",
+  "method": "GET",
+  "status": 200,
+  "content_type": "application/x-protobuf"
+ },
+ {
+  "url": "https://utility.arcgis.com/usrsvcs/servers/d4d0c6dedec14e59930688f3830776c6/rest/services/OpenData/OpenData/MapServer/1/query?f=pbf&geometry=%7B%22xmin%22%3A-9001224.450862993%2C%22ymin%22%3A5400734.670518989%2C%22xmax%22%3A-8962088.69238099%2C%22ymax%22%3A5439870.429000989%7D&orderByFields=OBJECTID%20ASC&outFields=AddressNumber%2CIsPrimary%2COBJECTID%2CUnitNumber&outSR=102100&quantizationParameters=%7B%22extent%22%3A%7B%22spatialReference%22%3A%7B%22latestWkid%22%3A3857%2C%22wkid%22%3A102100%7D%2C%22xmin%22%3A-9001224.450862993%2C%22ymin%22%3A5400734.670518989%2C%22xmax%22%3A-8922952.933898991%2C%22ymax%22%3A5479006.187482988%7D%2C%22mode%22%3A%22view%22%2C%22originPosition%22%3A%22upperLeft%22%2C%22tolerance%22%3A152.87405657031263%7D&resultType=tile&returnExceededLimitFeatures=false&spatialRel=esriSpatialRelIntersects&where=IsPrimary%20%3D%20%27Yes%27&geometryType=esriGeometryEnvelope&inSR=102100",
+  "method": "GET",
+  "status": 200,
+  "content_type": "application/x-protobuf"
+ },
+ {
+  "url": "https://utility.arcgis.com/usrsvcs/servers/d4d0c6dedec14e59930688f3830776c6/rest/services/OpenData/OpenData/MapServer/1/query?f=pbf&geometry=%7B%22xmin%22%3A-9001224.450862993%2C%22ymin%22%3A5420302.549759988%2C%22xmax%22%3A-8981656.571621992%2C%22ymax%22%3A5439870.429000989%7D&orderByFields=OBJECTID%20ASC&outFields=AddressNumber%2CIsPrimary%2COBJECTID%2CUnitNumber&outSR=102100&quantizationParameters=%7B%22extent%22%3A%7B%22spatialReference%22%3A%7B%22latestWkid%22%3A3857%2C%22wkid%22%3A102100%7D%2C%22xmin%22%3A-9001224.450862993%2C%22ymin%22%3A5400734.670518989%2C%22xmax%22%3A-8922952.933898991%2C%22ymax%22%3A5479006.187482988%7D%2C%22mode%22%3A%22view%22%2C%22originPosition%22%3A%22upperLeft%22%2C%22tolerance%22%3A152.87405657031263%7D&resultType=tile&returnExceededLimitFeatures=false&spatialRel=esriSpatialRelIntersects&where=IsPrimary%20%3D%20%27Yes%27&geometryType=esriGeometryEnvelope&inSR=102100",
+  "method": "GET",
+  "status": 200,
+  "content_type": "application/x-protobuf"
+ },
+ {
+  "url": "https://utility.arcgis.com/usrsvcs/servers/d4d0c6dedec14e59930688f3830776c6/rest/services/OpenData/OpenData/MapServer/1/query?f=pbf&geometry=%7B%22xmin%22%3A-8981656.571621992%2C%22ymin%22%3A5420302.549759988%2C%22xmax%22%3A-8962088.69238099%2C%22ymax%22%3A5439870.429000989%7D&orderByFields=OBJECTID%20ASC&outFields=AddressNumber%2CIsPrimary%2COBJECTID%2CUnitNumber&outSR=102100&quantizationParameters=%7B%22extent%22%3A%7B%22spatialReference%22%3A%7B%22latestWkid%22%3A3857%2C%22wkid%22%3A102100%7D%2C%22xmin%22%3A-9001224.450862993%2C%22ymin%22%3A5400734.670518989%2C%22xmax%22%3A-8922952.933898991%2C%22ymax%22%3A5479006.187482988%7D%2C%22mode%22%3A%22view%22%2C%22originPosition%22%3A%22upperLeft%22%2C%22tolerance%22%3A152.87405657031263%7D&resultType=tile&returnExceededLimitFeatures=false&spatialRel=esriSpatialRelIntersects&where=IsPrimary%20%3D%20%27Yes%27&geometryType=esriGeometryEnvelope&inSR=102100",
+  "method": "GET",
+  "status": 200,
+  "content_type": "application/x-protobuf"
+ },
+ {
+  "url": "https://utility.arcgis.com/usrsvcs/servers/d4d0c6dedec14e59930688f3830776c6/rest/services/OpenData/OpenData/MapServer/1/query?f=pbf&geometry=%7B%22xmin%22%3A-9001224.450862993%2C%22ymin%22%3A5361598.912036989%2C%22xmax%22%3A-8962088.69238099%2C%22ymax%22%3A5400734.670518989%7D&orderByFields=OBJECTID%20ASC&outFields=AddressNumber%2CIsPrimary%2COBJECTID%2CUnitNumber&outSR=102100&quantizationParameters=%7B%22extent%22%3A%7B%22spatialReference%22%3A%7B%22latestWkid%22%3A3857%2C%22wkid%22%3A102100%7D%2C%22xmin%22%3A-9001224.450862993%2C%22ymin%22%3A5322463.153554989%2C%22xmax%22%3A-8922952.933898991%2C%22ymax%22%3A5400734.670518989%7D%2C%22mode%22%3A%22view%22%2C%22originPosition%22%3A%22upperLeft%22%2C%22tolerance%22%3A152.87405657031263%7D&resultType=tile&returnExceededLimitFeatures=false&spatialRel=esriSpatialRelIntersects&where=IsPrimary%20%3D%20%27Yes%27&geometryType=esriGeometryEnvelope&inSR=102100",
+  "method": "GET",
+  "status": 200,
+  "content_type": "application/x-protobuf"
+ },
+ {
+  "url": "https://utility.arcgis.com/usrsvcs/servers/d4d0c6dedec14e59930688f3830776c6/rest/services/OpenData/OpenData/MapServer/1/query?f=pbf&geometry=%7B%22xmin%22%3A-9001224.450862993%2C%22ymin%22%3A5400734.670518989%2C%22xmax%22%3A-8981656.571621992%2C%22ymax%22%3A5420302.549759988%7D&orderByFields=OBJECTID%20ASC&outFields=AddressNumber%2CIsPrimary%2COBJECTID%2CUnitNumber&outSR=102100&quantizationParameters=%7B%22extent%22%3A%7B%22spatialReference%22%3A%7B%22latestWkid%22%3A3857%2C%22wkid%22%3A102100%7D%2C%22xmin%22%3A-9001224.450862993%2C%22ymin%22%3A5400734.670518989%2C%22xmax%22%3A-8922952.933898991%2C%22ymax%22%3A5479006.187482988%7D%2C%22mode%22%3A%22view%22%2C%22originPosition%22%3A%22upperLeft%22%2C%22tolerance%22%3A152.87405657031263%7D&resultType=tile&returnExceededLimitFeatures=false&spatialRel=esriSpatialRelIntersects&where=IsPrimary%20%3D%20%27Yes%27&geometryType=esriGeometryEnvelope&inSR=102100",
+  "method": "GET",
+  "status": 200,
+  "content_type": "application/x-protobuf"
+ },
+ {
+  "url": "https://utility.arcgis.com/usrsvcs/servers/d4d0c6dedec14e59930688f3830776c6/rest/services/OpenData/OpenData/MapServer/1/query?f=pbf&geometry=%7B%22xmin%22%3A-9001224.450862993%2C%22ymin%22%3A5381166.791277988%2C%22xmax%22%3A-8981656.571621992%2C%22ymax%22%3A5400734.670518989%7D&orderByFields=OBJECTID%20ASC&outFields=AddressNumber%2CIsPrimary%2COBJECTID%2CUnitNumber&outSR=102100&quantizationParameters=%7B%22extent%22%3A%7B%22spatialReference%22%3A%7B%22latestWkid%22%3A3857%2C%22wkid%22%3A102100%7D%2C%22xmin%22%3A-9001224.450862993%2C%22ymin%22%3A5322463.153554989%2C%22xmax%22%3A-8922952.933898991%2C%22ymax%22%3A5400734.670518989%7D%2C%22mode%22%3A%22view%22%2C%22originPosition%22%3A%22upperLeft%22%2C%22tolerance%22%3A152.87405657031263%7D&resultType=tile&returnExceededLimitFeatures=false&spatialRel=esriSpatialRelIntersects&where=IsPrimary%20%3D%20%27Yes%27&geometryType=esriGeometryEnvelope&inSR=102100",
+  "method": "GET",
+  "status": 200,
+  "content_type": "application/x-protobuf"
+ },
+ {
+  "url": "https://utility.arcgis.com/usrsvcs/servers/d4d0c6dedec14e59930688f3830776c6/rest/services/OpenData/OpenData/MapServer/1/query?f=pbf&geometry=%7B%22xmin%22%3A-9001224.450862993%2C%22ymin%22%3A5390950.730898488%2C%22xmax%22%3A-8991440.511242492%2C%22ymax%22%3A5400734.670518989%7D&orderByFields=OBJECTID%20ASC&outFields=AddressNumber%2CIsPrimary%2COBJECTID%2CUnitNumber&outSR=102100&quantizationParameters=%7B%22extent%22%3A%7B%22spatialReference%22%3A%7B%22latestWkid%22%3A3857%2C%22wkid%22%3A102100%7D%2C%22xmin%22%3A-9001224.450862993%2C%22ymin%22%3A5322463.153554989%2C%22xmax%22%3A-8922952.933898991%2C%22ymax%22%3A5400734.670518989%7D%2C%22mode%22%3A%22view%22%2C%22originPosition%22%3A%22upperLeft%22%2C%22tolerance%22%3A152.87405657031263%7D&resultType=tile&returnExceededLimitFeatures=false&spatialRel=esriSpatialRelIntersects&where=IsPrimary%20%3D%20%27Yes%27&geometryType=esriGeometryEnvelope&inSR=102100",
+  "method": "GET",
+  "status": 200,
+  "content_type": "application/x-protobuf"
+ },
+ {
+  "url": "https://utility.arcgis.com/usrsvcs/servers/d4d0c6dedec14e59930688f3830776c6/rest/services/OpenData/OpenData/MapServer/1/query?f=pbf&geometry=%7B%22xmin%22%3A-8981656.571621992%2C%22ymin%22%3A5400734.670518989%2C%22xmax%22%3A-8962088.69238099%2C%22ymax%22%3A5420302.549759988%7D&orderByFields=OBJECTID%20ASC&outFields=AddressNumber%2CIsPrimary%2COBJECTID%2CUnitNumber&outSR=102100&quantizationParameters=%7B%22extent%22%3A%7B%22spatialReference%22%3A%7B%22latestWkid%22%3A3857%2C%22wkid%22%3A102100%7D%2C%22xmin%22%3A-9001224.450862993%2C%22ymin%22%3A5400734.670518989%2C%22xmax%22%3A-8922952.933898991%2C%22ymax%22%3A5479006.187482988%7D%2C%22mode%22%3A%22view%22%2C%22originPosition%22%3A%22upperLeft%22%2C%22tolerance%22%3A152.87405657031263%7D&resultType=tile&returnExceededLimitFeatures=false&spatialRel=esriSpatialRelIntersects&where=IsPrimary%20%3D%20%27Yes%27&geometryType=esriGeometryEnvelope&inSR=102100",
+  "method": "GET",
+  "status": 200,
+  "content_type": "application/x-protobuf"
+ },
+ {
+  "url": "https://utility.arcgis.com/usrsvcs/servers/d4d0c6dedec14e59930688f3830776c6/rest/services/OpenData/OpenData/MapServer/1/query?f=pbf&geometry=%7B%22xmin%22%3A-8991440.511242492%2C%22ymin%22%3A5390950.730898488%2C%22xmax%22%3A-8981656.571621992%2C%22ymax%22%3A5400734.670518989%7D&orderByFields=OBJECTID%20ASC&outFields=AddressNumber%2CIsPrimary%2COBJECTID%2CUnitNumber&outSR=102100&quantizationParameters=%7B%22extent%22%3A%7B%22spatialReference%22%3A%7B%22latestWkid%22%3A3857%2C%22wkid%22%3A102100%7D%2C%22xmin%22%3A-9001224.450862993%2C%22ymin%22%3A5322463.153554989%2C%22xmax%22%3A-8922952.933898991%2C%22ymax%22%3A5400734.670518989%7D%2C%22mode%22%3A%22view%22%2C%22originPosition%22%3A%22upperLeft%22%2C%22tolerance%22%3A152.87405657031263%7D&resultType=tile&returnExceededLimitFeatures=false&spatialRel=esriSpatialRelIntersects&where=IsPrimary%20%3D%20%27Yes%27&geometryType=esriGeometryEnvelope&inSR=102100",
+  "method": "GET",
+  "status": 200,
+  "content_type": "application/x-protobuf"
+ },
+ {
+  "url": "https://utility.arcgis.com/usrsvcs/servers/d4d0c6dedec14e59930688f3830776c6/rest/services/OpenData/OpenData/MapServer/1/query?f=pbf&geometry=%7B%22xmin%22%3A-8981656.571621992%2C%22ymin%22%3A5410518.610139489%2C%22xmax%22%3A-8971872.632001491%2C%22ymax%22%3A5420302.549759988%7D&orderByFields=OBJECTID%20ASC&outFields=AddressNumber%2CIsPrimary%2COBJECTID%2CUnitNumber&outSR=102100&quantizationParameters=%7B%22extent%22%3A%7B%22spatialReference%22%3A%7B%22latestWkid%22%3A3857%2C%22wkid%22%3A102100%7D%2C%22xmin%22%3A-9001224.450862993%2C%22ymin%22%3A5400734.670518989%2C%22xmax%22%3A-8922952.933898991%2C%22ymax%22%3A5479006.187482988%7D%2C%22mode%22%3A%22view%22%2C%22originPosition%22%3A%22upperLeft%22%2C%22tolerance%22%3A152.87405657031263%7D&resultType=tile&returnExceededLimitFeatures=false&spatialRel=esriSpatialRelIntersects&where=IsPrimary%20%3D%20%27Yes%27&geometryType=esriGeometryEnvelope&inSR=102100",
+  "method": "GET",
+  "status": 200,
+  "content_type": "application/x-protobuf"
+ },
+ {
+  "url": "https://utility.arcgis.com/usrsvcs/servers/d4d0c6dedec14e59930688f3830776c6/rest/services/OpenData/OpenData/MapServer/1/query?f=pbf&geometry=%7B%22xmin%22%3A-9001224.450862993%2C%22ymin%22%3A5381166.791277988%2C%22xmax%22%3A-8991440.511242492%2C%22ymax%22%3A5390950.730898488%7D&orderByFields=OBJECTID%20ASC&outFields=AddressNumber%2CIsPrimary%2COBJECTID%2CUnitNumber&outSR=102100&quantizationParameters=%7B%22extent%22%3A%7B%22spatialReference%22%3A%7B%22latestWkid%22%3A3857%2C%22wkid%22%3A102100%7D%2C%22xmin%22%3A-9001224.450862993%2C%22ymin%22%3A5322463.153554989%2C%22xmax%22%3A-8922952.933898991%2C%22ymax%22%3A5400734.670518989%7D%2C%22mode%22%3A%22view%22%2C%22originPosition%22%3A%22upperLeft%22%2C%22tolerance%22%3A152.87405657031263%7D&resultType=tile&returnExceededLimitFeatures=false&spatialRel=esriSpatialRelIntersects&where=IsPrimary%20%3D%20%27Yes%27&geometryType=esriGeometryEnvelope&inSR=102100",
+  "method": "GET",
+  "status": 200,
+  "content_type": "application/x-protobuf"
+ },
+ {
+  "url": "https://utility.arcgis.com/usrsvcs/servers/d4d0c6dedec14e59930688f3830776c6/rest/services/OpenData/OpenData/MapServer/1/query?f=pbf&geometry=%7B%22xmin%22%3A-8971872.632001491%2C%22ymin%22%3A5410518.610139489%2C%22xmax%22%3A-8962088.69238099%2C%22ymax%22%3A5420302.549759988%7D&orderByFields=OBJECTID%20ASC&outFields=AddressNumber%2CIsPrimary%2COBJECTID%2CUnitNumber&outSR=102100&quantizationParameters=%7B%22extent%22%3A%7B%22spatialReference%22%3A%7B%22latestWkid%22%3A3857%2C%22wkid%22%3A102100%7D%2C%22xmin%22%3A-9001224.450862993%2C%22ymin%22%3A5400734.670518989%2C%22xmax%22%3A-8922952.933898991%2C%22ymax%22%3A5479006.187482988%7D%2C%22mode%22%3A%22view%22%2C%22originPosition%22%3A%22upperLeft%22%2C%22tolerance%22%3A152.87405657031263%7D&resultType=tile&returnExceededLimitFeatures=false&spatialRel=esriSpatialRelIntersects&where=IsPrimary%20%3D%20%27Yes%27&geometryType=esriGeometryEnvelope&inSR=102100",
+  "method": "GET",
+  "status": 200,
+  "content_type": "application/x-protobuf"
+ },
+ {
+  "url": "https://utility.arcgis.com/usrsvcs/servers/d4d0c6dedec14e59930688f3830776c6/rest/services/OpenData/OpenData/MapServer/1/query?f=pbf&geometry=%7B%22xmin%22%3A-8991440.511242492%2C%22ymin%22%3A5381166.791277988%2C%22xmax%22%3A-8981656.571621992%2C%22ymax%22%3A5390950.730898488%7D&orderByFields=OBJECTID%20ASC&outFields=AddressNumber%2CIsPrimary%2COBJECTID%2CUnitNumber&outSR=102100&quantizationParameters=%7B%22extent%22%3A%7B%22spatialReference%22%3A%7B%22latestWkid%22%3A3857%2C%22wkid%22%3A102100%7D%2C%22xmin%22%3A-9001224.450862993%2C%22ymin%22%3A5322463.153554989%2C%22xmax%22%3A-8922952.933898991%2C%22ymax%22%3A5400734.670518989%7D%2C%22mode%22%3A%22view%22%2C%22originPosition%22%3A%22upperLeft%22%2C%22tolerance%22%3A152.87405657031263%7D&resultType=tile&returnExceededLimitFeatures=false&spatialRel=esriSpatialRelIntersects&where=IsPrimary%20%3D%20%27Yes%27&geometryType=esriGeometryEnvelope&inSR=102100",
+  "method": "GET",
+  "status": 200,
+  "content_type": "application/x-protobuf"
+ },
+ {
+  "url": "https://utility.arcgis.com/usrsvcs/servers/d4d0c6dedec14e59930688f3830776c6/rest/services/OpenData/OpenData/MapServer/1/query?f=pbf&geometry=%7B%22xmin%22%3A-8991440.511242492%2C%22ymin%22%3A5386058.761088239%2C%22xmax%22%3A-8986548.541432241%2C%22ymax%22%3A5390950.730898488%7D&orderByFields=OBJECTID%20ASC&outFields=AddressNumber%2CIsPrimary%2COBJECTID%2CUnitNumber&outSR=102100&quantizationParameters=%7B%22extent%22%3A%7B%22spatialReference%22%3A%7B%22latestWkid%22%3A3857%2C%22wkid%22%3A102100%7D%2C%22xmin%22%3A-9001224.450862993%2C%22ymin%22%3A5322463.153554989%2C%22xmax%22%3A-8922952.933898991%2C%22ymax%22%3A5400734.670518989%7D%2C%22mode%22%3A%22view%22%2C%22originPosition%22%3A%22upperLeft%22%2C%22tolerance%22%3A152.87405657031263%7D&resultType=tile&spatialRel=esriSpatialRelIntersects&where=IsPrimary%20%3D%20%27Yes%27&geometryType=esriGeometryEnvelope&inSR=102100",
+  "method": "GET",
+  "status": 200,
+  "content_type": "application/x-protobuf"
+ },
+ {
+  "url": "https://utility.arcgis.com/usrsvcs/servers/d4d0c6dedec14e59930688f3830776c6/rest/services/OpenData/OpenData/MapServer/1/query?f=pbf&geometry=%7B%22xmin%22%3A-8981656.571621992%2C%22ymin%22%3A5400734.670518989%2C%22xmax%22%3A-8971872.632001491%2C%22ymax%22%3A5410518.610139489%7D&orderByFields=OBJECTID%20ASC&outFields=AddressNumber%2CIsPrimary%2COBJECTID%2CUnitNumber&outSR=102100&quantizationParameters=%7B%22extent%22%3A%7B%22spatialReference%22%3A%7B%22latestWkid%22%3A3857%2C%22wkid%22%3A102100%7D%2C%22xmin%22%3A-9001224.450862993%2C%22ymin%22%3A5400734.670518989%2C%22xmax%22%3A-8922952.933898991%2C%22ymax%22%3A5479006.187482988%7D%2C%22mode%22%3A%22view%22%2C%22originPosition%22%3A%22upperLeft%22%2C%22tolerance%22%3A152.87405657031263%7D&resultType=tile&returnExceededLimitFeatures=false&spatialRel=esriSpatialRelIntersects&where=IsPrimary%20%3D%20%27Yes%27&geometryType=esriGeometryEnvelope&inSR=102100",
+  "method": "GET",
+  "status": 200,
+  "content_type": "application/x-protobuf"
+ },
+ {
+  "url": "https://utility.arcgis.com/usrsvcs/servers/d4d0c6dedec14e59930688f3830776c6/rest/services/OpenData/OpenData/MapServer/1/query?f=pbf&geometry=%7B%22xmin%22%3A-8986548.541432241%2C%22ymin%22%3A5386058.761088239%2C%22xmax%22%3A-8981656.571621992%2C%22ymax%22%3A5390950.730898488%7D&orderByFields=OBJECTID%20ASC&outFields=AddressNumber%2CIsPrimary%2COBJECTID%2CUnitNumber&outSR=102100&quantizationParameters=%7B%22extent%22%3A%7B%22spatialReference%22%3A%7B%22latestWkid%22%3A3857%2C%22wkid%22%3A102100%7D%2C%22xmin%22%3A-9001224.450862993%2C%22ymin%22%3A5322463.153554989%2C%22xmax%22%3A-8922952.933898991%2C%22ymax%22%3A5400734.670518989%7D%2C%22mode%22%3A%22view%22%2C%22originPosition%22%3A%22upperLeft%22%2C%22tolerance%22%3A152.87405657031263%7D&resultType=tile&spatialRel=esriSpatialRelIntersects&where=IsPrimary%20%3D%20%27Yes%27&geometryType=esriGeometryEnvelope&inSR=102100",
+  "method": "GET",
+  "status": 200,
+  "content_type": "application/x-protobuf"
+ },
+ {
+  "url": "https://utility.arcgis.com/usrsvcs/servers/d4d0c6dedec14e59930688f3830776c6/rest/services/OpenData/OpenData/MapServer/1/query?f=pbf&geometry=%7B%22xmin%22%3A-8971872.632001491%2C%22ymin%22%3A5400734.670518989%2C%22xmax%22%3A-8962088.69238099%2C%22ymax%22%3A5410518.610139489%7D&orderByFields=OBJECTID%20ASC&outFields=AddressNumber%2CIsPrimary%2COBJECTID%2CUnitNumber&outSR=102100&quantizationParameters=%7B%22extent%22%3A%7B%22spatialReference%22%3A%7B%22latestWkid%22%3A3857%2C%22wkid%22%3A102100%7D%2C%22xmin%22%3A-9001224.450862993%2C%22ymin%22%3A5400734.670518989%2C%22xmax%22%3A-8922952.933898991%2C%22ymax%22%3A5479006.187482988%7D%2C%22mode%22%3A%22view%22%2C%22originPosition%22%3A%22upperLeft%22%2C%22tolerance%22%3A152.87405657031263%7D&resultType=tile&returnExceededLimitFeatures=false&spatialRel=esriSpatialRelIntersects&where=IsPrimary%20%3D%20%27Yes%27&geometryType=esriGeometryEnvelope&inSR=102100",
+  "method": "GET",
+  "status": 200,
+  "content_type": "application/x-protobuf"
+ },
+ {
+  "url": "https://utility.arcgis.com/usrsvcs/servers/d4d0c6dedec14e59930688f3830776c6/rest/services/OpenData/OpenData/MapServer/1/query?f=pbf&geometry=%7B%22xmin%22%3A-8971872.632001491%2C%22ymin%22%3A5405626.640329238%2C%22xmax%22%3A-8966980.662191242%2C%22ymax%22%3A5410518.610139489%7D&orderByFields=OBJECTID%20ASC&outFields=AddressNumber%2CIsPrimary%2COBJECTID%2CUnitNumber&outSR=102100&quantizationParameters=%7B%22extent%22%3A%7B%22spatialReference%22%3A%7B%22latestWkid%22%3A3857%2C%22wkid%22%3A102100%7D%2C%22xmin%22%3A-9001224.450862993%2C%22ymin%22%3A5400734.670518989%2C%22xmax%22%3A-8922952.933898991%2C%22ymax%22%3A5479006.187482988%7D%2C%22mode%22%3A%22view%22%2C%22originPosition%22%3A%22upperLeft%22%2C%22tolerance%22%3A152.87405657031263%7D&resultType=tile&spatialRel=esriSpatialRelIntersects&where=IsPrimary%20%3D%20%27Yes%27&geometryType=esriGeometryEnvelope&inSR=102100",
+  "method": "GET",
+  "status": 200,
+  "content_type": "application/x-protobuf"
+ },
+ {
+  "url": "https://utility.arcgis.com/usrsvcs/servers/d4d0c6dedec14e59930688f3830776c6/rest/services/OpenData/OpenData/MapServer/1/query?f=pbf&geometry=%7B%22xmin%22%3A-8991440.511242492%2C%22ymin%22%3A5381166.791277988%2C%22xmax%22%3A-8986548.541432241%2C%22ymax%22%3A5386058.761088239%7D&orderByFields=OBJECTID%20ASC&outFields=AddressNumber%2CIsPrimary%2COBJECTID%2CUnitNumber&outSR=102100&quantizationParameters=%7B%22extent%22%3A%7B%22spatialReference%22%3A%7B%22latestWkid%22%3A3857%2C%22wkid%22%3A102100%7D%2C%22xmin%22%3A-9001224.450862993%2C%22ymin%22%3A5322463.153554989%2C%22xmax%22%3A-8922952.933898991%2C%22ymax%22%3A5400734.670518989%7D%2C%22mode%22%3A%22view%22%2C%22originPosition%22%3A%22upperLeft%22%2C%22tolerance%22%3A152.87405657031263%7D&resultType=tile&spatialRel=esriSpatialRelIntersects&where=IsPrimary%20%3D%20%27Yes%27&geometryType=esriGeometryEnvelope&inSR=102100",
+  "method": "GET",
+  "status": 200,
+  "content_type": "application/x-protobuf"
+ },
+ {
+  "url": "https://utility.arcgis.com/usrsvcs/servers/d4d0c6dedec14e59930688f3830776c6/rest/services/OpenData/OpenData/MapServer/1/query?f=pbf&geometry=%7B%22xmin%22%3A-8966980.662191242%2C%22ymin%22%3A5405626.640329238%2C%22xmax%22%3A-8962088.69238099%2C%22ymax%22%3A5410518.610139489%7D&orderByFields=OBJECTID%20ASC&outFields=AddressNumber%2CIsPrimary%2COBJECTID%2CUnitNumber&outSR=102100&quantizationParameters=%7B%22extent%22%3A%7B%22spatialReference%22%3A%7B%22latestWkid%22%3A3857%2C%22wkid%22%3A102100%7D%2C%22xmin%22%3A-9001224.450862993%2C%22ymin%22%3A5400734.670518989%2C%22xmax%22%3A-8922952.933898991%2C%22ymax%22%3A5479006.187482988%7D%2C%22mode%22%3A%22view%22%2C%22originPosition%22%3A%22upperLeft%22%2C%22tolerance%22%3A152.87405657031263%7D&resultType=tile&spatialRel=esriSpatialRelIntersects&where=IsPrimary%20%3D%20%27Yes%27&geometryType=esriGeometryEnvelope&inSR=102100",
+  "method": "GET",
+  "status": 200,
+  "content_type": "application/x-protobuf"
+ },
+ {
+  "url": "https://utility.arcgis.com/usrsvcs/servers/d4d0c6dedec14e59930688f3830776c6/rest/services/OpenData/OpenData/MapServer/1/query?f=pbf&geometry=%7B%22xmin%22%3A-8986548.541432241%2C%22ymin%22%3A5381166.791277988%2C%22xmax%22%3A-8981656.571621992%2C%22ymax%22%3A5386058.761088239%7D&orderByFields=OBJECTID%20ASC&outFields=AddressNumber%2CIsPrimary%2COBJECTID%2CUnitNumber&outSR=102100&quantizationParameters=%7B%22extent%22%3A%7B%22spatialReference%22%3A%7B%22latestWkid%22%3A3857%2C%22wkid%22%3A102100%7D%2C%22xmin%22%3A-9001224.450862993%2C%22ymin%22%3A5322463.153554989%2C%22xmax%22%3A-8922952.933898991%2C%22ymax%22%3A5400734.670518989%7D%2C%22mode%22%3A%22view%22%2C%22originPosition%22%3A%22upperLeft%22%2C%22tolerance%22%3A152.87405657031263%7D&resultType=tile&spatialRel=esriSpatialRelIntersects&where=IsPrimary%20%3D%20%27Yes%27&geometryType=esriGeometryEnvelope&inSR=102100",
+  "method": "GET",
+  "status": 200,
+  "content_type": "application/x-protobuf"
+ },
+ {
+  "url": "https://utility.arcgis.com/usrsvcs/servers/d4d0c6dedec14e59930688f3830776c6/rest/services/OpenData/OpenData/MapServer/1/query?f=pbf&geometry=%7B%22xmin%22%3A-8971872.632001491%2C%22ymin%22%3A5400734.670518989%2C%22xmax%22%3A-8966980.662191242%2C%22ymax%22%3A5405626.640329238%7D&orderByFields=OBJECTID%20ASC&outFields=AddressNumber%2CIsPrimary%2COBJECTID%2CUnitNumber&outSR=102100&quantizationParameters=%7B%22extent%22%3A%7B%22spatialReference%22%3A%7B%22latestWkid%22%3A3857%2C%22wkid%22%3A102100%7D%2C%22xmin%22%3A-9001224.450862993%2C%22ymin%22%3A5400734.670518989%2C%22xmax%22%3A-8922952.933898991%2C%22ymax%22%3A5479006.187482988%7D%2C%22mode%22%3A%22view%22%2C%22originPosition%22%3A%22upperLeft%22%2C%22tolerance%22%3A152.87405657031263%7D&resultType=tile&spatialRel=esriSpatialRelIntersects&where=IsPrimary%20%3D%20%27Yes%27&geometryType=esriGeometryEnvelope&inSR=102100",
+  "method": "GET",
+  "status": 200,
+  "content_type": "application/x-protobuf"
+ },
+ {
+  "url": "https://utility.arcgis.com/usrsvcs/servers/d4d0c6dedec14e59930688f3830776c6/rest/services/OpenData/OpenData/MapServer/1/query?f=pbf&geometry=%7B%22xmin%22%3A-8981656.571621992%2C%22ymin%22%3A5381166.791277988%2C%22xmax%22%3A-8962088.69238099%2C%22ymax%22%3A5400734.670518989%7D&orderByFields=OBJECTID%20ASC&outFields=AddressNumber%2CIsPrimary%2COBJECTID%2CUnitNumber&outSR=102100&quantizationParameters=%7B%22extent%22%3A%7B%22spatialReference%22%3A%7B%22latestWkid%22%3A3857%2C%22wkid%22%3A102100%7D%2C%22xmin%22%3A-9001224.450862993%2C%22ymin%22%3A5322463.153554989%2C%22xmax%22%3A-8922952.933898991%2C%22ymax%22%3A5400734.670518989%7D%2C%22mode%22%3A%22view%22%2C%22originPosition%22%3A%22upperLeft%22%2C%22tolerance%22%3A152.87405657031263%7D&resultType=tile&returnExceededLimitFeatures=false&spatialRel=esriSpatialRelIntersects&where=IsPrimary%20%3D%20%27Yes%27&geometryType=esriGeometryEnvelope&inSR=102100",
+  "method": "GET",
+  "status": 200,
+  "content_type": "application/x-protobuf"
+ },
+ {
+  "url": "https://www.google-analytics.com/g/collect?v=2&tid=G-G7NNF2QND3&gtm=45je6bb1v9254673223za208zd9254673223xf1&_p=1794670853454&gcd=13l3l3l3l1l1&npa=0&dma=0&_eu=AAAAAAQ&cid=574398482.1794670609&frm=0&ngs=1&pscdl=noapi&rcb=17&sr=1280x720&uaa=arm&uab=64&uafvl=Not-A.Brand%3B99.0.0.0%7CGoogle%2520Chrome%3B157.0.8103.78%7CChromium%3B157.0.8103.78&uam=&uamb=0&uap=macOS&uapv=15.6.0&uaw=0&ul=en-us&_s=1&tag_exp=115938466~115938469~118897920~118897930~119860443~120213116~120385422~120412526~120420416~120469145~120469153~121246026~121246034&sid=1794670608&sct=1&seg=1&dl=https%3A%2F%2Fwww.regionofwaterloo.ca%2Fprograms-and-services%2Froads-and-transportation%2Froad-construction%2F&dt=Road%20Construction%20%7C%20Region%20of%20Waterloo&en=page_view&_ee=1&tfd=5384",
+  "method": "POST",
+  "status": 204,
+  "content_type": "text/plain"
+ },
+ {
+  "url": "https://utility.arcgis.com/usrsvcs/servers/d4d0c6dedec14e59930688f3830776c6/rest/services/OpenData/OpenData/MapServer/1/query?f=pbf&geometry=%7B%22xmin%22%3A-8966980.662191242%2C%22ymin%22%3A5400734.670518989%2C%22xmax%22%3A-8962088.69238099%2C%22ymax%22%3A5405626.640329238%7D&orderByFields=OBJECTID%20ASC&outFields=AddressNumber%2CIsPrimary%2COBJECTID%2CUnitNumber&outSR=102100&quantizationParameters=%7B%22extent%22%3A%7B%22spatialReference%22%3A%7B%22latestWkid%22%3A3857%2C%22wkid%22%3A102100%7D%2C%22xmin%22%3A-9001224.450862993%2C%22ymin%22%3A5400734.670518989%2C%22xmax%22%3A-8922952.933898991%2C%22ymax%22%3A5479006.187482988%7D%2C%22mode%22%3A%22view%22%2C%22originPosition%22%3A%22upperLeft%22%2C%22tolerance%22%3A152.87405657031263%7D&resultType=tile&spatialRel=esriSpatialRelIntersects&where=IsPrimary%20%3D%20%27Yes%27&geometryType=esriGeometryEnvelope&inSR=102100",
+  "method": "GET",
+  "status": 200,
+  "content_type": "application/x-protobuf"
+ },
+ {
+  "url": "https://utility.arcgis.com/usrsvcs/servers/d4d0c6dedec14e59930688f3830776c6/rest/services/OpenData/OpenData/MapServer/1/query?f=pbf&geometry=%7B%22xmin%22%3A-8981656.571621992%2C%22ymin%22%3A5390950.730898488%2C%22xmax%22%3A-8971872.632001491%2C%22ymax%22%3A5400734.670518989%7D&orderByFields=OBJECTID%20ASC&outFields=AddressNumber%2CIsPrimary%2COBJECTID%2CUnitNumber&outSR=102100&quantizationParameters=%7B%22extent%22%3A%7B%22spatialReference%22%3A%7B%22latestWkid%22%3A3857%2C%22wkid%22%3A102100%7D%2C%22xmin%22%3A-9001224.450862993%2C%22ymin%22%3A5322463.153554989%2C%22xmax%22%3A-8922952.933898991%2C%22ymax%22%3A5400734.670518989%7D%2C%22mode%22%3A%22view%22%2C%22originPosition%22%3A%22upperLeft%22%2C%22tolerance%22%3A152.87405657031263%7D&resultType=tile&returnExceededLimitFeatures=false&spatialRel=esriSpatialRelIntersects&where=IsPrimary%20%3D%20%27Yes%27&geometryType=esriGeometryEnvelope&inSR=102100",
+  "method": "GET",
+  "status": 200,
+  "content_type": "application/x-protobuf"
+ },
+ {
+  "url": "https://utility.arcgis.com/usrsvcs/servers/d4d0c6dedec14e59930688f3830776c6/rest/services/OpenData/OpenData/MapServer/1/query?f=pbf&geometry=%7B%22xmin%22%3A-8962088.69238099%2C%22ymin%22%3A5400734.670518989%2C%22xmax%22%3A-8922952.933898991%2C%22ymax%22%3A5439870.429000989%7D&orderByFields=OBJECTID%20ASC&outFields=AddressNumber%2CIsPrimary%2COBJECTID%2CUnitNumber&outSR=102100&quantizationParameters=%7B%22extent%22%3A%7B%22spatialReference%22%3A%7B%22latestWkid%22%3A3857%2C%22wkid%22%3A102100%7D%2C%22xmin%22%3A-9001224.450862993%2C%22ymin%22%3A5400734.670518989%2C%22xmax%22%3A-8922952.933898991%2C%22ymax%22%3A5479006.187482988%7D%2C%22mode%22%3A%22view%22%2C%22originPosition%22%3A%22upperLeft%22%2C%22tolerance%22%3A152.87405657031263%7D&resultType=tile&returnExceededLimitFeatures=false&spatialRel=esriSpatialRelIntersects&where=IsPrimary%20%3D%20%27Yes%27&geometryType=esriGeometryEnvelope&inSR=102100",
+  "method": "GET",
+  "status": 200,
+  "content_type": "application/x-protobuf"
+ },
+ {
+  "url": "https://utility.arcgis.com/usrsvcs/servers/d4d0c6dedec14e59930688f3830776c6/rest/services/OpenData/OpenData/MapServer/1/query?f=pbf&geometry=%7B%22xmin%22%3A-8981656.571621992%2C%22ymin%22%3A5395842.700708739%2C%22xmax%22%3A-8976764.601811742%2C%22ymax%22%3A5400734.670518989%7D&orderByFields=OBJECTID%20ASC&outFields=AddressNumber%2CIsPrimary%2COBJECTID%2CUnitNumber&outSR=102100&quantizationParameters=%7B%22extent%22%3A%7B%22spatialReference%22%3A%7B%22latestWkid%22%3A3857%2C%22wkid%22%3A102100%7D%2C%22xmin%22%3A-9001224.450862993%2C%22ymin%22%3A5322463.153554989%2C%22xmax%22%3A-8922952.933898991%2C%22ymax%22%3A5400734.670518989%7D%2C%22mode%22%3A%22view%22%2C%22originPosition%22%3A%22upperLeft%22%2C%22tolerance%22%3A152.87405657031263%7D&resultType=tile&spatialRel=esriSpatialRelIntersects&where=IsPrimary%20%3D%20%27Yes%27&geometryType=esriGeometryEnvelope&inSR=102100",
+  "method": "GET",
+  "status": 200,
+  "content_type": "application/x-protobuf"
+ },
+ {
+  "url": "https://utility.arcgis.com/usrsvcs/servers/d4d0c6dedec14e59930688f3830776c6/rest/services/OpenData/OpenData/MapServer/1/query?f=pbf&geometry=%7B%22xmin%22%3A-8976764.601811742%2C%22ymin%22%3A5395842.700708739%2C%22xmax%22%3A-8971872.632001491%2C%22ymax%22%3A5400734.670518989%7D&orderByFields=OBJECTID%20ASC&outFields=AddressNumber%2CIsPrimary%2COBJECTID%2CUnitNumber&outSR=102100&quantizationParameters=%7B%22extent%22%3A%7B%22spatialReference%22%3A%7B%22latestWkid%22%3A3857%2C%22wkid%22%3A102100%7D%2C%22xmin%22%3A-9001224.450862993%2C%22ymin%22%3A5322463.153554989%2C%22xmax%22%3A-8922952.933898991%2C%22ymax%22%3A5400734.670518989%7D%2C%22mode%22%3A%22view%22%2C%22originPosition%22%3A%22upperLeft%22%2C%22tolerance%22%3A152.87405657031263%7D&resultType=tile&spatialRel=esriSpatialRelIntersects&where=IsPrimary%20%3D%20%27Yes%27&geometryType=esriGeometryEnvelope&inSR=102100",
+  "method": "GET",
+  "status": 200,
+  "content_type": "application/x-protobuf"
+ },
+ {
+  "url": "https://utility.arcgis.com/usrsvcs/servers/d4d0c6dedec14e59930688f3830776c6/rest/services/OpenData/OpenData/MapServer/1/query?f=pbf&geometry=%7B%22xmin%22%3A-8981656.571621992%2C%22ymin%22%3A5390950.730898488%2C%22xmax%22%3A-8976764.601811742%2C%22ymax%22%3A5395842.700708739%7D&orderByFields=OBJECTID%20ASC&outFields=AddressNumber%2CIsPrimary%2COBJECTID%2CUnitNumber&outSR=102100&quantizationParameters=%7B%22extent%22%3A%7B%22spatialReference%22%3A%7B%22latestWkid%22%3A3857%2C%22wkid%22%3A102100%7D%2C%22xmin%22%3A-9001224.450862993%2C%22ymin%22%3A5322463.153554989%2C%22xmax%22%3A-8922952.933898991%2C%22ymax%22%3A5400734.670518989%7D%2C%22mode%22%3A%22view%22%2C%22originPosition%22%3A%22upperLeft%22%2C%22tolerance%22%3A152.87405657031263%7D&resultType=tile&spatialRel=esriSpatialRelIntersects&where=IsPrimary%20%3D%20%27Yes%27&geometryType=esriGeometryEnvelope&inSR=102100",
+  "method": "GET",
+  "status": 200,
+  "content_type": "application/x-protobuf"
+ },
+ {
+  "url": "https://utility.arcgis.com/usrsvcs/servers/d4d0c6dedec14e59930688f3830776c6/rest/services/OpenData/OpenData/MapServer/1/query?f=pbf&geometry=%7B%22xmin%22%3A-8976764.601811742%2C%22ymin%22%3A5390950.730898488%2C%22xmax%22%3A-8971872.632001491%2C%22ymax%22%3A5395842.700708739%7D&orderByFields=OBJECTID%20ASC&outFields=AddressNumber%2CIsPrimary%2COBJECTID%2CUnitNumber&outSR=102100&quantizationParameters=%7B%22extent%22%3A%7B%22spatialReference%22%3A%7B%22latestWkid%22%3A3857%2C%22wkid%22%3A102100%7D%2C%22xmin%22%3A-9001224.450862993%2C%22ymin%22%3A5322463.153554989%2C%22xmax%22%3A-8922952.933898991%2C%22ymax%22%3A5400734.670518989%7D%2C%22mode%22%3A%22view%22%2C%22originPosition%22%3A%22upperLeft%22%2C%22tolerance%22%3A152.87405657031263%7D&resultType=tile&spatialRel=esriSpatialRelIntersects&where=IsPrimary%20%3D%20%27Yes%27&geometryType=esriGeometryEnvelope&inSR=102100",
+  "method": "GET",
+  "status": 200,
+  "content_type": "application/x-protobuf"
+ },
+ {
+  "url": "https://utility.arcgis.com/usrsvcs/servers/d4d0c6dedec14e59930688f3830776c6/rest/services/OpenData/OpenData/MapServer/1/query?f=pbf&geometry=%7B%22xmin%22%3A-8971872.632001491%2C%22ymin%22%3A5390950.730898488%2C%22xmax%22%3A-8962088.69238099%2C%22ymax%22%3A5400734.670518989%7D&orderByFields=OBJECTID%20ASC&outFields=AddressNumber%2CIsPrimary%2COBJECTID%2CUnitNumber&outSR=102100&quantizationParameters=%7B%22extent%22%3A%7B%22spatialReference%22%3A%7B%22latestWkid%22%3A3857%2C%22wkid%22%3A102100%7D%2C%22xmin%22%3A-9001224.450862993%2C%22ymin%22%3A5322463.153554989%2C%22xmax%22%3A-8922952.933898991%2C%22ymax%22%3A5400734.670518989%7D%2C%22mode%22%3A%22view%22%2C%22originPosition%22%3A%22upperLeft%22%2C%22tolerance%22%3A152.87405657031263%7D&resultType=tile&returnExceededLimitFeatures=false&spatialRel=esriSpatialRelIntersects&where=IsPrimary%20%3D%20%27Yes%27&geometryType=esriGeometryEnvelope&inSR=102100",
+  "method": "GET",
+  "status": 200,
+  "content_type": "application/x-protobuf"
+ },
+ {
+  "url": "https://utility.arcgis.com/usrsvcs/servers/d4d0c6dedec14e59930688f3830776c6/rest/services/OpenData/OpenData/MapServer/1/query?f=pbf&geometry=%7B%22xmin%22%3A-8971872.632001491%2C%22ymin%22%3A5395842.700708739%2C%22xmax%22%3A-8966980.662191242%2C%22ymax%22%3A5400734.670518989%7D&orderByFields=OBJECTID%20ASC&outFields=AddressNumber%2CIsPrimary%2COBJECTID%2CUnitNumber&outSR=102100&quantizationParameters=%7B%22extent%22%3A%7B%22spatialReference%22%3A%7B%22latestWkid%22%3A3857%2C%22wkid%22%3A102100%7D%2C%22xmin%22%3A-9001224.450862993%2C%22ymin%22%3A5322463.153554989%2C%22xmax%22%3A-8922952.933898991%2C%22ymax%22%3A5400734.670518989%7D%2C%22mode%22%3A%22view%22%2C%22originPosition%22%3A%22upperLeft%22%2C%22tolerance%22%3A152.87405657031263%7D&resultType=tile&spatialRel=esriSpatialRelIntersects&where=IsPrimary%20%3D%20%27Yes%27&geometryType=esriGeometryEnvelope&inSR=102100",
+  "method": "GET",
+  "status": 200,
+  "content_type": "application/x-protobuf"
+ },
+ {
+  "url": "https://utility.arcgis.com/usrsvcs/servers/d4d0c6dedec14e59930688f3830776c6/rest/services/OpenData/OpenData/MapServer/1/query?f=pbf&geometry=%7B%22xmin%22%3A-8966980.662191242%2C%22ymin%22%3A5395842.700708739%2C%22xmax%22%3A-8962088.69238099%2C%22ymax%22%3A5400734.670518989%7D&orderByFields=OBJECTID%20ASC&outFields=AddressNumber%2CIsPrimary%2COBJECTID%2CUnitNumber&outSR=102100&quantizationParameters=%7B%22extent%22%3A%7B%22spatialReference%22%3A%7B%22latestWkid%22%3A3857%2C%22wkid%22%3A102100%7D%2C%22xmin%22%3A-9001224.450862993%2C%22ymin%22%3A5322463.153554989%2C%22xmax%22%3A-8922952.933898991%2C%22ymax%22%3A5400734.670518989%7D%2C%22mode%22%3A%22view%22%2C%22originPosition%22%3A%22upperLeft%22%2C%22tolerance%22%3A152.87405657031263%7D&resultType=tile&spatialRel=esriSpatialRelIntersects&where=IsPrimary%20%3D%20%27Yes%27&geometryType=esriGeometryEnvelope&inSR=102100",
+  "method": "GET",
+  "status": 200,
+  "content_type": "application/x-protobuf"
+ },
+ {
+  "url": "https://utility.arcgis.com/usrsvcs/servers/d4d0c6dedec14e59930688f3830776c6/rest/services/OpenData/OpenData/MapServer/1/query?f=pbf&geometry=%7B%22xmin%22%3A-8971872.632001491%2C%22ymin%22%3A5390950.730898488%2C%22xmax%22%3A-8966980.662191242%2C%22ymax%22%3A5395842.700708739%7D&orderByFields=OBJECTID%20ASC&outFields=AddressNumber%2CIsPrimary%2COBJECTID%2CUnitNumber&outSR=102100&quantizationParameters=%7B%22extent%22%3A%7B%22spatialReference%22%3A%7B%22latestWkid%22%3A3857%2C%22wkid%22%3A102100%7D%2C%22xmin%22%3A-9001224.450862993%2C%22ymin%22%3A5322463.153554989%2C%22xmax%22%3A-8922952.933898991%2C%22ymax%22%3A5400734.670518989%7D%2C%22mode%22%3A%22view%22%2C%22originPosition%22%3A%22upperLeft%22%2C%22tolerance%22%3A152.87405657031263%7D&resultType=tile&spatialRel=esriSpatialRelIntersects&where=IsPrimary%20%3D%20%27Yes%27&geometryType=esriGeometryEnvelope&inSR=102100",
+  "method": "GET",
+  "status": 200,
+  "content_type": "application/x-protobuf"
+ },
+ {
+  "url": "https://utility.arcgis.com/usrsvcs/servers/d4d0c6dedec14e59930688f3830776c6/rest/services/OpenData/OpenData/MapServer/1/query?f=pbf&geometry=%7B%22xmin%22%3A-8966980.662191242%2C%22ymin%22%3A5390950.730898488%2C%22xmax%22%3A-8962088.69238099%2C%22ymax%22%3A5395842.700708739%7D&orderByFields=OBJECTID%20ASC&outFields=AddressNumber%2CIsPrimary%2COBJECTID%2CUnitNumber&outSR=102100&quantizationParameters=%7B%22extent%22%3A%7B%22spatialReference%22%3A%7B%22latestWkid%22%3A3857%2C%22wkid%22%3A102100%7D%2C%22xmin%22%3A-9001224.450862993%2C%22ymin%22%3A5322463.153554989%2C%22xmax%22%3A-8922952.933898991%2C%22ymax%22%3A5400734.670518989%7D%2C%22mode%22%3A%22view%22%2C%22originPosition%22%3A%22upperLeft%22%2C%22tolerance%22%3A152.87405657031263%7D&resultType=tile&spatialRel=esriSpatialRelIntersects&where=IsPrimary%20%3D%20%27Yes%27&geometryType=esriGeometryEnvelope&inSR=102100",
+  "method": "GET",
+  "status": 200,
+  "content_type": "application/x-protobuf"
+ },
+ {
+  "url": "https://utility.arcgis.com/usrsvcs/servers/d4d0c6dedec14e59930688f3830776c6/rest/services/OpenData/OpenData/MapServer/1/query?f=pbf&geometry=%7B%22xmin%22%3A-8981656.571621992%2C%22ymin%22%3A5381166.791277988%2C%22xmax%22%3A-8971872.632001491%2C%22ymax%22%3A5390950.730898488%7D&orderByFields=OBJECTID%20ASC&outFields=AddressNumber%2CIsPrimary%2COBJECTID%2CUnitNumber&outSR=102100&quantizationParameters=%7B%22extent%22%3A%7B%22spatialReference%22%3A%7B%22latestWkid%22%3A3857%2C%22wkid%22%3A102100%7D%2C%22xmin%22%3A-9001224.450862993%2C%22ymin%22%3A5322463.153554989%2C%22xmax%22%3A-8922952.933898991%2C%22ymax%22%3A5400734.670518989%7D%2C%22mode%22%3A%22view%22%2C%22originPosition%22%3A%22upperLeft%22%2C%22tolerance%22%3A152.87405657031263%7D&resultType=tile&returnExceededLimitFeatures=false&spatialRel=esriSpatialRelIntersects&where=IsPrimary%20%3D%20%27Yes%27&geometryType=esriGeometryEnvelope&inSR=102100",
+  "method": "GET",
+  "status": 200,
+  "content_type": "application/x-protobuf"
+ },
+ {
+  "url": "https://utility.arcgis.com/usrsvcs/servers/d4d0c6dedec14e59930688f3830776c6/rest/services/OpenData/OpenData/MapServer/1/query?f=pbf&geometry=%7B%22xmin%22%3A-8981656.571621992%2C%22ymin%22%3A5386058.761088239%2C%22xmax%22%3A-8976764.601811742%2C%22ymax%22%3A5390950.730898488%7D&orderByFields=OBJECTID%20ASC&outFields=AddressNumber%2CIsPrimary%2COBJECTID%2CUnitNumber&outSR=102100&quantizationParameters=%7B%22extent%22%3A%7B%22spatialReference%22%3A%7B%22latestWkid%22%3A3857%2C%22wkid%22%3A102100%7D%2C%22xmin%22%3A-9001224.450862993%2C%22ymin%22%3A5322463.153554989%2C%22xmax%22%3A-8922952.933898991%2C%22ymax%22%3A5400734.670518989%7D%2C%22mode%22%3A%22view%22%2C%22originPosition%22%3A%22upperLeft%22%2C%22tolerance%22%3A152.87405657031263%7D&resultType=tile&spatialRel=esriSpatialRelIntersects&where=IsPrimary%20%3D%20%27Yes%27&geometryType=esriGeometryEnvelope&inSR=102100",
+  "method": "GET",
+  "status": 200,
+  "content_type": "application/x-protobuf"
+ },
+ {
+  "url": "https://utility.arcgis.com/usrsvcs/servers/d4d0c6dedec14e59930688f3830776c6/rest/services/OpenData/OpenData/MapServer/1/query?f=pbf&geometry=%7B%22xmin%22%3A-8976764.601811742%2C%22ymin%22%3A5386058.761088239%2C%22xmax%22%3A-8971872.632001491%2C%22ymax%22%3A5390950.730898488%7D&orderByFields=OBJECTID%20ASC&outFields=AddressNumber%2CIsPrimary%2COBJECTID%2CUnitNumber&outSR=102100&quantizationParameters=%7B%22extent%22%3A%7B%22spatialReference%22%3A%7B%22latestWkid%22%3A3857%2C%22wkid%22%3A102100%7D%2C%22xmin%22%3A-9001224.450862993%2C%22ymin%22%3A5322463.153554989%2C%22xmax%22%3A-8922952.933898991%2C%22ymax%22%3A5400734.670518989%7D%2C%22mode%22%3A%22view%22%2C%22originPosition%22%3A%22upperLeft%22%2C%22tolerance%22%3A152.87405657031263%7D&resultType=tile&spatialRel=esriSpatialRelIntersects&where=IsPrimary%20%3D%20%27Yes%27&geometryType=esriGeometryEnvelope&inSR=102100",
+  "method": "GET",
+  "status": 200,
+  "content_type": "application/x-protobuf"
+ },
+ {
+  "url": "https://utility.arcgis.com/usrsvcs/servers/d4d0c6dedec14e59930688f3830776c6/rest/services/OpenData/OpenData/MapServer/1/query?f=pbf&geometry=%7B%22xmin%22%3A-8981656.571621992%2C%22ymin%22%3A5381166.791277988%2C%22xmax%22%3A-8976764.601811742%2C%22ymax%22%3A5386058.761088239%7D&orderByFields=OBJECTID%20ASC&outFields=AddressNumber%2CIsPrimary%2COBJECTID%2CUnitNumber&outSR=102100&quantizationParameters=%7B%22extent%22%3A%7B%22spatialReference%22%3A%7B%22latestWkid%22%3A3857%2C%22wkid%22%3A102100%7D%2C%22xmin%22%3A-9001224.450862993%2C%22ymin%22%3A5322463.153554989%2C%22xmax%22%3A-8922952.933898991%2C%22ymax%22%3A5400734.670518989%7D%2C%22mode%22%3A%22view%22%2C%22originPosition%22%3A%22upperLeft%22%2C%22tolerance%22%3A152.87405657031263%7D&resultType=tile&spatialRel=esriSpatialRelIntersects&where=IsPrimary%20%3D%20%27Yes%27&geometryType=esriGeometryEnvelope&inSR=102100",
+  "method": "GET",
+  "status": 200,
+  "content_type": "application/x-protobuf"
+ },
+ {
+  "url": "https://utility.arcgis.com/usrsvcs/servers/d4d0c6dedec14e59930688f3830776c6/rest/services/OpenData/OpenData/MapServer/1/query?f=pbf&geometry=%7B%22xmin%22%3A-8976764.601811742%2C%22ymin%22%3A5381166.791277988%2C%22xmax%22%3A-8971872.632001491%2C%22ymax%22%3A5386058.761088239%7D&orderByFields=OBJECTID%20ASC&outFields=AddressNumber%2CIsPrimary%2COBJECTID%2CUnitNumber&outSR=102100&quantizationParameters=%7B%22extent%22%3A%7B%22spatialReference%22%3A%7B%22latestWkid%22%3A3857%2C%22wkid%22%3A102100%7D%2C%22xmin%22%3A-9001224.450862993%2C%22ymin%22%3A5322463.153554989%2C%22xmax%22%3A-8922952.933898991%2C%22ymax%22%3A5400734.670518989%7D%2C%22mode%22%3A%22view%22%2C%22originPosition%22%3A%22upperLeft%22%2C%22tolerance%22%3A152.87405657031263%7D&resultType=tile&spatialRel=esriSpatialRelIntersects&where=IsPrimary%20%3D%20%27Yes%27&geometryType=esriGeometryEnvelope&inSR=102100",
+  "method": "GET",
+  "status": 200,
+  "content_type": "application/x-protobuf"
+ },
+ {
+  "url": "https://utility.arcgis.com/usrsvcs/servers/d4d0c6dedec14e59930688f3830776c6/rest/services/OpenData/OpenData/MapServer/1/query?f=pbf&geometry=%7B%22xmin%22%3A-8971872.632001491%2C%22ymin%22%3A5381166.791277988%2C%22xmax%22%3A-8962088.69238099%2C%22ymax%22%3A5390950.730898488%7D&orderByFields=OBJECTID%20ASC&outFields=AddressNumber%2CIsPrimary%2COBJECTID%2CUnitNumber&outSR=102100&quantizationParameters=%7B%22extent%22%3A%7B%22spatialReference%22%3A%7B%22latestWkid%22%3A3857%2C%22wkid%22%3A102100%7D%2C%22xmin%22%3A-9001224.450862993%2C%22ymin%22%3A5322463.153554989%2C%22xmax%22%3A-8922952.933898991%2C%22ymax%22%3A5400734.670518989%7D%2C%22mode%22%3A%22view%22%2C%22originPosition%22%3A%22upperLeft%22%2C%22tolerance%22%3A152.87405657031263%7D&resultType=tile&returnExceededLimitFeatures=false&spatialRel=esriSpatialRelIntersects&where=IsPrimary%20%3D%20%27Yes%27&geometryType=esriGeometryEnvelope&inSR=102100",
+  "method": "GET",
+  "status": 200,
+  "content_type": "application/x-protobuf"
+ },
+ {
+  "url": "https://utility.arcgis.com/usrsvcs/servers/d4d0c6dedec14e59930688f3830776c6/rest/services/OpenData/OpenData/MapServer/1/query?f=pbf&geometry=%7B%22xmin%22%3A-8971872.632001491%2C%22ymin%22%3A5386058.761088239%2C%22xmax%22%3A-8966980.662191242%2C%22ymax%22%3A5390950.730898488%7D&orderByFields=OBJECTID%20ASC&outFields=AddressNumber%2CIsPrimary%2COBJECTID%2CUnitNumber&outSR=102100&quantizationParameters=%7B%22extent%22%3A%7B%22spatialReference%22%3A%7B%22latestWkid%22%3A3857%2C%22wkid%22%3A102100%7D%2C%22xmin%22%3A-9001224.450862993%2C%22ymin%22%3A5322463.153554989%2C%22xmax%22%3A-8922952.933898991%2C%22ymax%22%3A5400734.670518989%7D%2C%22mode%22%3A%22view%22%2C%22originPosition%22%3A%22upperLeft%22%2C%22tolerance%22%3A152.87405657031263%7D&resultType=tile&spatialRel=esriSpatialRelIntersects&where=IsPrimary%20%3D%20%27Yes%27&geometryType=esriGeometryEnvelope&inSR=102100",
+  "method": "GET",
+  "status": 200,
+  "content_type": "application/x-protobuf"
+ },
+ {
+  "url": "https://utility.arcgis.com/usrsvcs/servers/d4d0c6dedec14e59930688f3830776c6/rest/services/OpenData/OpenData/MapServer/1/query?f=pbf&geometry=%7B%22xmin%22%3A-8966980.662191242%2C%22ymin%22%3A5386058.761088239%2C%22xmax%22%3A-8962088.69238099%2C%22ymax%22%3A5390950.730898488%7D&orderByFields=OBJECTID%20ASC&outFields=AddressNumber%2CIsPrimary%2COBJECTID%2CUnitNumber&outSR=102100&quantizationParameters=%7B%22extent%22%3A%7B%22spatialReference%22%3A%7B%22latestWkid%22%3A3857%2C%22wkid%22%3A102100%7D%2C%22xmin%22%3A-9001224.450862993%2C%22ymin%22%3A5322463.153554989%2C%22xmax%22%3A-8922952.933898991%2C%22ymax%22%3A5400734.670518989%7D%2C%22mode%22%3A%22view%22%2C%22originPosition%22%3A%22upperLeft%22%2C%22tolerance%22%3A152.87405657031263%7D&resultType=tile&spatialRel=esriSpatialRelIntersects&where=IsPrimary%20%3D%20%27Yes%27&geometryType=esriGeometryEnvelope&inSR=102100",
+  "method": "GET",
+  "status": 200,
+  "content_type": "application/x-protobuf"
+ },
+ {
+  "url": "https://utility.arcgis.com/usrsvcs/servers/d4d0c6dedec14e59930688f3830776c6/rest/services/OpenData/OpenData/MapServer/1/query?f=pbf&geometry=%7B%22xmin%22%3A-8971872.632001491%2C%22ymin%22%3A5381166.791277988%2C%22xmax%22%3A-8966980.662191242%2C%22ymax%22%3A5386058.761088239%7D&orderByFields=OBJECTID%20ASC&outFields=AddressNumber%2CIsPrimary%2COBJECTID%2CUnitNumber&outSR=102100&quantizationParameters=%7B%22extent%22%3A%7B%22spatialReference%22%3A%7B%22latestWkid%22%3A3857%2C%22wkid%22%3A102100%7D%2C%22xmin%22%3A-9001224.450862993%2C%22ymin%22%3A5322463.153554989%2C%22xmax%22%3A-8922952.933898991%2C%22ymax%22%3A5400734.670518989%7D%2C%22mode%22%3A%22view%22%2C%22originPosition%22%3A%22upperLeft%22%2C%22tolerance%22%3A152.87405657031263%7D&resultType=tile&spatialRel=esriSpatialRelIntersects&where=IsPrimary%20%3D%20%27Yes%27&geometryType=esriGeometryEnvelope&inSR=102100",
+  "method": "GET",
+  "status": 200,
+  "content_type": "application/x-protobuf"
+ },
+ {
+  "url": "https://utility.arcgis.com/usrsvcs/servers/d4d0c6dedec14e59930688f3830776c6/rest/services/OpenData/OpenData/MapServer/1/query?f=pbf&geometry=%7B%22xmin%22%3A-8966980.662191242%2C%22ymin%22%3A5381166.791277988%2C%22xmax%22%3A-8962088.69238099%2C%22ymax%22%3A5386058.761088239%7D&orderByFields=OBJECTID%20ASC&outFields=AddressNumber%2CIsPrimary%2COBJECTID%2CUnitNumber&outSR=102100&quantizationParameters=%7B%22extent%22%3A%7B%22spatialReference%22%3A%7B%22latestWkid%22%3A3857%2C%22wkid%22%3A102100%7D%2C%22xmin%22%3A-9001224.450862993%2C%22ymin%22%3A5322463.153554989%2C%22xmax%22%3A-8922952.933898991%2C%22ymax%22%3A5400734.670518989%7D%2C%22mode%22%3A%22view%22%2C%22originPosition%22%3A%22upperLeft%22%2C%22tolerance%22%3A152.87405657031263%7D&resultType=tile&spatialRel=esriSpatialRelIntersects&where=IsPrimary%20%3D%20%27Yes%27&geometryType=esriGeometryEnvelope&inSR=102100",
+  "method": "GET",
+  "status": 200,
+  "content_type": "application/x-protobuf"
+ },
+ {
+  "url": "https://utility.arcgis.com/usrsvcs/servers/d4d0c6dedec14e59930688f3830776c6/rest/services/OpenData/OpenData/MapServer/1/query?f=pbf&geometry=%7B%22xmin%22%3A-9001224.450862993%2C%22ymin%22%3A5361598.912036989%2C%22xmax%22%3A-8981656.571621992%2C%22ymax%22%3A5381166.791277988%7D&orderByFields=OBJECTID%20ASC&outFields=AddressNumber%2CIsPrimary%2COBJECTID%2CUnitNumber&outSR=102100&quantizationParameters=%7B%22extent%22%3A%7B%22spatialReference%22%3A%7B%22latestWkid%22%3A3857%2C%22wkid%22%3A102100%7D%2C%22xmin%22%3A-9001224.450862993%2C%22ymin%22%3A5322463.153554989%2C%22xmax%22%3A-8922952.933898991%2C%22ymax%22%3A5400734.670518989%7D%2C%22mode%22%3A%22view%22%2C%22originPosition%22%3A%22upperLeft%22%2C%22tolerance%22%3A152.87405657031263%7D&resultType=tile&returnExceededLimitFeatures=false&spatialRel=esriSpatialRelIntersects&where=IsPrimary%20%3D%20%27Yes%27&geometryType=esriGeometryEnvelope&inSR=102100",
+  "method": "GET",
+  "status": 200,
+  "content_type": "application/x-protobuf"
+ },
+ {
+  "url": "https://utility.arcgis.com/usrsvcs/servers/d4d0c6dedec14e59930688f3830776c6/rest/services/OpenData/OpenData/MapServer/1/query?f=pbf&geometry=%7B%22xmin%22%3A-9001224.450862993%2C%22ymin%22%3A5371382.851657489%2C%22xmax%22%3A-8991440.511242492%2C%22ymax%22%3A5381166.791277988%7D&orderByFields=OBJECTID%20ASC&outFields=AddressNumber%2CIsPrimary%2COBJECTID%2CUnitNumber&outSR=102100&quantizationParameters=%7B%22extent%22%3A%7B%22spatialReference%22%3A%7B%22latestWkid%22%3A3857%2C%22wkid%22%3A102100%7D%2C%22xmin%22%3A-9001224.450862993%2C%22ymin%22%3A5322463.153554989%2C%22xmax%22%3A-8922952.933898991%2C%22ymax%22%3A5400734.670518989%7D%2C%22mode%22%3A%22view%22%2C%22originPosition%22%3A%22upperLeft%22%2C%22tolerance%22%3A152.87405657031263%7D&resultType=tile&returnExceededLimitFeatures=false&spatialRel=esriSpatialRelIntersects&where=IsPrimary%20%3D%20%27Yes%27&geometryType=esriGeometryEnvelope&inSR=102100",
+  "method": "GET",
+  "status": 200,
+  "content_type": "application/x-protobuf"
+ },
+ {
+  "url": "https://utility.arcgis.com/usrsvcs/servers/d4d0c6dedec14e59930688f3830776c6/rest/services/OpenData/OpenData/MapServer/1/query?f=pbf&geometry=%7B%22xmin%22%3A-8991440.511242492%2C%22ymin%22%3A5371382.851657489%2C%22xmax%22%3A-8981656.571621992%2C%22ymax%22%3A5381166.791277988%7D&orderByFields=OBJECTID%20ASC&outFields=AddressNumber%2CIsPrimary%2COBJECTID%2CUnitNumber&outSR=102100&quantizationParameters=%7B%22extent%22%3A%7B%22spatialReference%22%3A%7B%22latestWkid%22%3A3857%2C%22wkid%22%3A102100%7D%2C%22xmin%22%3A-9001224.450862993%2C%22ymin%22%3A5322463.153554989%2C%22xmax%22%3A-8922952.933898991%2C%22ymax%22%3A5400734.670518989%7D%2C%22mode%22%3A%22view%22%2C%22originPosition%22%3A%22upperLeft%22%2C%22tolerance%22%3A152.87405657031263%7D&resultType=tile&returnExceededLimitFeatures=false&spatialRel=esriSpatialRelIntersects&where=IsPrimary%20%3D%20%27Yes%27&geometryType=esriGeometryEnvelope&inSR=102100",
+  "method": "GET",
+  "status": 200,
+  "content_type": "application/x-protobuf"
+ },
+ {
+  "url": "https://utility.arcgis.com/usrsvcs/servers/d4d0c6dedec14e59930688f3830776c6/rest/services/OpenData/OpenData/MapServer/1/query?f=pbf&geometry=%7B%22xmin%22%3A-9001224.450862993%2C%22ymin%22%3A5361598.912036989%2C%22xmax%22%3A-8991440.511242492%2C%22ymax%22%3A5371382.851657489%7D&orderByFields=OBJECTID%20ASC&outFields=AddressNumber%2CIsPrimary%2COBJECTID%2CUnitNumber&outSR=102100&quantizationParameters=%7B%22extent%22%3A%7B%22spatialReference%22%3A%7B%22latestWkid%22%3A3857%2C%22wkid%22%3A102100%7D%2C%22xmin%22%3A-9001224.450862993%2C%22ymin%22%3A5322463.153554989%2C%22xmax%22%3A-8922952.933898991%2C%22ymax%22%3A5400734.670518989%7D%2C%22mode%22%3A%22view%22%2C%22originPosition%22%3A%22upperLeft%22%2C%22tolerance%22%3A152.87405657031263%7D&resultType=tile&returnExceededLimitFeatures=false&spatialRel=esriSpatialRelIntersects&where=IsPrimary%20%3D%20%27Yes%27&geometryType=esriGeometryEnvelope&inSR=102100",
+  "method": "GET",
+  "status": 200,
+  "content_type": "application/x-protobuf"
+ },
+ {
+  "url": "https://utility.arcgis.com/usrsvcs/servers/d4d0c6dedec14e59930688f3830776c6/rest/services/OpenData/OpenData/MapServer/1/query?f=pbf&geometry=%7B%22xmin%22%3A-8991440.511242492%2C%22ymin%22%3A5361598.912036989%2C%22xmax%22%3A-8981656.571621992%2C%22ymax%22%3A5371382.851657489%7D&orderByFields=OBJECTID%20ASC&outFields=AddressNumber%2CIsPrimary%2COBJECTID%2CUnitNumber&outSR=102100&quantizationParameters=%7B%22extent%22%3A%7B%22spatialReference%22%3A%7B%22latestWkid%22%3A3857%2C%22wkid%22%3A102100%7D%2C%22xmin%22%3A-9001224.450862993%2C%22ymin%22%3A5322463.153554989%2C%22xmax%22%3A-8922952.933898991%2C%22ymax%22%3A5400734.670518989%7D%2C%22mode%22%3A%22view%22%2C%22originPosition%22%3A%22upperLeft%22%2C%22tolerance%22%3A152.87405657031263%7D&resultType=tile&returnExceededLimitFeatures=false&spatialRel=esriSpatialRelIntersects&where=IsPrimary%20%3D%20%27Yes%27&geometryType=esriGeometryEnvelope&inSR=102100",
+  "method": "GET",
+  "status": 200,
+  "content_type": "application/x-protobuf"
+ },
+ {
+  "url": "https://utility.arcgis.com/usrsvcs/servers/d4d0c6dedec14e59930688f3830776c6/rest/services/OpenData/OpenData/MapServer/1/query?f=pbf&geometry=%7B%22xmin%22%3A-8991440.511242492%2C%22ymin%22%3A5366490.881847238%2C%22xmax%22%3A-8986548.541432241%2C%22ymax%22%3A5371382.851657489%7D&orderByFields=OBJECTID%20ASC&outFields=AddressNumber%2CIsPrimary%2COBJECTID%2CUnitNumber&outSR=102100&quantizationParameters=%7B%22extent%22%3A%7B%22spatialReference%22%3A%7B%22latestWkid%22%3A3857%2C%22wkid%22%3A102100%7D%2C%22xmin%22%3A-9001224.450862993%2C%22ymin%22%3A5322463.153554989%2C%22xmax%22%3A-8922952.933898991%2C%22ymax%22%3A5400734.670518989%7D%2C%22mode%22%3A%22view%22%2C%22originPosition%22%3A%22upperLeft%22%2C%22tolerance%22%3A152.87405657031263%7D&resultType=tile&spatialRel=esriSpatialRelIntersects&where=IsPrimary%20%3D%20%27Yes%27&geometryType=esriGeometryEnvelope&inSR=102100",
+  "method": "GET",
+  "status": 200,
+  "content_type": "application/x-protobuf"
+ },
+ {
+  "url": "https://utility.arcgis.com/usrsvcs/servers/d4d0c6dedec14e59930688f3830776c6/rest/services/OpenData/OpenData/MapServer/1/query?f=pbf&geometry=%7B%22xmin%22%3A-8986548.541432241%2C%22ymin%22%3A5366490.881847238%2C%22xmax%22%3A-8981656.571621992%2C%22ymax%22%3A5371382.851657489%7D&orderByFields=OBJECTID%20ASC&outFields=AddressNumber%2CIsPrimary%2COBJECTID%2CUnitNumber&outSR=102100&quantizationParameters=%7B%22extent%22%3A%7B%22spatialReference%22%3A%7B%22latestWkid%22%3A3857%2C%22wkid%22%3A102100%7D%2C%22xmin%22%3A-9001224.450862993%2C%22ymin%22%3A5322463.153554989%2C%22xmax%22%3A-8922952.933898991%2C%22ymax%22%3A5400734.670518989%7D%2C%22mode%22%3A%22view%22%2C%22originPosition%22%3A%22upperLeft%22%2C%22tolerance%22%3A152.87405657031263%7D&resultType=tile&spatialRel=esriSpatialRelIntersects&where=IsPrimary%20%3D%20%27Yes%27&geometryType=esriGeometryEnvelope&inSR=102100",
+  "method": "GET",
+  "status": 200,
+  "content_type": "application/x-protobuf"
+ },
+ {
+  "url": "https://utility.arcgis.com/usrsvcs/servers/d4d0c6dedec14e59930688f3830776c6/rest/services/OpenData/OpenData/MapServer/1/query?f=pbf&geometry=%7B%22xmin%22%3A-8991440.511242492%2C%22ymin%22%3A5361598.912036989%2C%22xmax%22%3A-8986548.541432241%2C%22ymax%22%3A5366490.881847238%7D&orderByFields=OBJECTID%20ASC&outFields=AddressNumber%2CIsPrimary%2COBJECTID%2CUnitNumber&outSR=102100&quantizationParameters=%7B%22extent%22%3A%7B%22spatialReference%22%3A%7B%22latestWkid%22%3A3857%2C%22wkid%22%3A102100%7D%2C%22xmin%22%3A-9001224.450862993%2C%22ymin%22%3A5322463.153554989%2C%22xmax%22%3A-8922952.933898991%2C%22ymax%22%3A5400734.670518989%7D%2C%22mode%22%3A%22view%22%2C%22originPosition%22%3A%22upperLeft%22%2C%22tolerance%22%3A152.87405657031263%7D&resultType=tile&spatialRel=esriSpatialRelIntersects&where=IsPrimary%20%3D%20%27Yes%27&geometryType=esriGeometryEnvelope&inSR=102100",
+  "method": "GET",
+  "status": 200,
+  "content_type": "application/x-protobuf"
+ },
+ {
+  "url": "https://utility.arcgis.com/usrsvcs/servers/d4d0c6dedec14e59930688f3830776c6/rest/services/OpenData/OpenData/MapServer/1/query?f=pbf&geometry=%7B%22xmin%22%3A-8986548.541432241%2C%22ymin%22%3A5361598.912036989%2C%22xmax%22%3A-8981656.571621992%2C%22ymax%22%3A5366490.881847238%7D&orderByFields=OBJECTID%20ASC&outFields=AddressNumber%2CIsPrimary%2COBJECTID%2CUnitNumber&outSR=102100&quantizationParameters=%7B%22extent%22%3A%7B%22spatialReference%22%3A%7B%22latestWkid%22%3A3857%2C%22wkid%22%3A102100%7D%2C%22xmin%22%3A-9001224.450862993%2C%22ymin%22%3A5322463.153554989%2C%22xmax%22%3A-8922952.933898991%2C%22ymax%22%3A5400734.670518989%7D%2C%22mode%22%3A%22view%22%2C%22originPosition%22%3A%22upperLeft%22%2C%22tolerance%22%3A152.87405657031263%7D&resultType=tile&spatialRel=esriSpatialRelIntersects&where=IsPrimary%20%3D%20%27Yes%27&geometryType=esriGeometryEnvelope&inSR=102100",
+  "method": "GET",
+  "status": 200,
+  "content_type": "application/x-protobuf"
+ },
+ {
+  "url": "https://utility.arcgis.com/usrsvcs/servers/d4d0c6dedec14e59930688f3830776c6/rest/services/OpenData/OpenData/MapServer/1/query?f=pbf&geometry=%7B%22xmin%22%3A-8981656.571621992%2C%22ymin%22%3A5361598.912036989%2C%22xmax%22%3A-8962088.69238099%2C%22ymax%22%3A5381166.791277988%7D&orderByFields=OBJECTID%20ASC&outFields=AddressNumber%2CIsPrimary%2COBJECTID%2CUnitNumber&outSR=102100&quantizationParameters=%7B%22extent%22%3A%7B%22spatialReference%22%3A%7B%22latestWkid%22%3A3857%2C%22wkid%22%3A102100%7D%2C%22xmin%22%3A-9001224.450862993%2C%22ymin%22%3A5322463.153554989%2C%22xmax%22%3A-8922952.933898991%2C%22ymax%22%3A5400734.670518989%7D%2C%22mode%22%3A%22view%22%2C%22originPosition%22%3A%22upperLeft%22%2C%22tolerance%22%3A152.87405657031263%7D&resultType=tile&returnExceededLimitFeatures=false&spatialRel=esriSpatialRelIntersects&where=IsPrimary%20%3D%20%27Yes%27&geometryType=esriGeometryEnvelope&inSR=102100",
+  "method": "GET",
+  "status": 200,
+  "content_type": "application/x-protobuf"
+ },
+ {
+  "url": "https://utility.arcgis.com/usrsvcs/servers/d4d0c6dedec14e59930688f3830776c6/rest/services/OpenData/OpenData/MapServer/1/query?f=pbf&geometry=%7B%22xmin%22%3A-8981656.571621992%2C%22ymin%22%3A5371382.851657489%2C%22xmax%22%3A-8971872.632001491%2C%22ymax%22%3A5381166.791277988%7D&orderByFields=OBJECTID%20ASC&outFields=AddressNumber%2CIsPrimary%2COBJECTID%2CUnitNumber&outSR=102100&quantizationParameters=%7B%22extent%22%3A%7B%22spatialReference%22%3A%7B%22latestWkid%22%3A3857%2C%22wkid%22%3A102100%7D%2C%22xmin%22%3A-9001224.450862993%2C%22ymin%22%3A5322463.153554989%2C%22xmax%22%3A-8922952.933898991%2C%22ymax%22%3A5400734.670518989%7D%2C%22mode%22%3A%22view%22%2C%22originPosition%22%3A%22upperLeft%22%2C%22tolerance%22%3A152.87405657031263%7D&resultType=tile&returnExceededLimitFeatures=false&spatialRel=esriSpatialRelIntersects&where=IsPrimary%20%3D%20%27Yes%27&geometryType=esriGeometryEnvelope&inSR=102100",
+  "method": "GET",
+  "status": 200,
+  "content_type": "application/x-protobuf"
+ },
+ {
+  "url": "https://utility.arcgis.com/usrsvcs/servers/d4d0c6dedec14e59930688f3830776c6/rest/services/OpenData/OpenData/MapServer/1/query?f=pbf&geometry=%7B%22xmin%22%3A-8981656.571621992%2C%22ymin%22%3A5376274.821467739%2C%22xmax%22%3A-8976764.601811742%2C%22ymax%22%3A5381166.791277988%7D&orderByFields=OBJECTID%20ASC&outFields=AddressNumber%2CIsPrimary%2COBJECTID%2CUnitNumber&outSR=102100&quantizationParameters=%7B%22extent%22%3A%7B%22spatialReference%22%3A%7B%22latestWkid%22%3A3857%2C%22wkid%22%3A102100%7D%2C%22xmin%22%3A-9001224.450862993%2C%22ymin%22%3A5322463.153554989%2C%22xmax%22%3A-8922952.933898991%2C%22ymax%22%3A5400734.670518989%7D%2C%22mode%22%3A%22view%22%2C%22originPosition%22%3A%22upperLeft%22%2C%22tolerance%22%3A152.87405657031263%7D&resultType=tile&spatialRel=esriSpatialRelIntersects&where=IsPrimary%20%3D%20%27Yes%27&geometryType=esriGeometryEnvelope&inSR=102100",
+  "method": "GET",
+  "status": 200,
+  "content_type": "application/x-protobuf"
+ },
+ {
+  "url": "https://utility.arcgis.com/usrsvcs/servers/d4d0c6dedec14e59930688f3830776c6/rest/services/OpenData/OpenData/MapServer/1/query?f=pbf&geometry=%7B%22xmin%22%3A-8976764.601811742%2C%22ymin%22%3A5376274.821467739%2C%22xmax%22%3A-8971872.632001491%2C%22ymax%22%3A5381166.791277988%7D&orderByFields=OBJECTID%20ASC&outFields=AddressNumber%2CIsPrimary%2COBJECTID%2CUnitNumber&outSR=102100&quantizationParameters=%7B%22extent%22%3A%7B%22spatialReference%22%3A%7B%22latestWkid%22%3A3857%2C%22wkid%22%3A102100%7D%2C%22xmin%22%3A-9001224.450862993%2C%22ymin%22%3A5322463.153554989%2C%22xmax%22%3A-8922952.933898991%2C%22ymax%22%3A5400734.670518989%7D%2C%22mode%22%3A%22view%22%2C%22originPosition%22%3A%22upperLeft%22%2C%22tolerance%22%3A152.87405657031263%7D&resultType=tile&spatialRel=esriSpatialRelIntersects&where=IsPrimary%20%3D%20%27Yes%27&geometryType=esriGeometryEnvelope&inSR=102100",
+  "method": "GET",
+  "status": 200,
+  "content_type": "application/x-protobuf"
+ },
+ {
+  "url": "https://translate.googleapis.com/element/log?format=json&hasfast=true&authuser=0",
+  "method": "POST",
+  "status": 200,
+  "content_type": "text/plain; charset=UTF-8"
+ },
+ {
+  "url": "https://utility.arcgis.com/usrsvcs/servers/d4d0c6dedec14e59930688f3830776c6/rest/services/OpenData/OpenData/MapServer/1/query?f=pbf&geometry=%7B%22xmin%22%3A-8981656.571621992%2C%22ymin%22%3A5371382.851657489%2C%22xmax%22%3A-8976764.601811742%2C%22ymax%22%3A5376274.821467739%7D&orderByFields=OBJECTID%20ASC&outFields=AddressNumber%2CIsPrimary%2COBJECTID%2CUnitNumber&outSR=102100&quantizationParameters=%7B%22extent%22%3A%7B%22spatialReference%22%3A%7B%22latestWkid%22%3A3857%2C%22wkid%22%3A102100%7D%2C%22xmin%22%3A-9001224.450862993%2C%22ymin%22%3A5322463.153554989%2C%22xmax%22%3A-8922952.933898991%2C%22ymax%22%3A5400734.670518989%7D%2C%22mode%22%3A%22view%22%2C%22originPosition%22%3A%22upperLeft%22%2C%22tolerance%22%3A152.87405657031263%7D&resultType=tile&spatialRel=esriSpatialRelIntersects&where=IsPrimary%20%3D%20%27Yes%27&geometryType=esriGeometryEnvelope&inSR=102100",
+  "method": "GET",
+  "status": 200,
+  "content_type": "application/x-protobuf"
+ },
+ {
+  "url": "https://utility.arcgis.com/usrsvcs/servers/d4d0c6dedec14e59930688f3830776c6/rest/services/OpenData/OpenData/MapServer/1/query?f=pbf&geometry=%7B%22xmin%22%3A-8976764.601811742%2C%22ymin%22%3A5371382.851657489%2C%22xmax%22%3A-8971872.632001491%2C%22ymax%22%3A5376274.821467739%7D&orderByFields=OBJECTID%20ASC&outFields=AddressNumber%2CIsPrimary%2COBJECTID%2CUnitNumber&outSR=102100&quantizationParameters=%7B%22extent%22%3A%7B%22spatialReference%22%3A%7B%22latestWkid%22%3A3857%2C%22wkid%22%3A102100%7D%2C%22xmin%22%3A-9001224.450862993%2C%22ymin%22%3A5322463.153554989%2C%22xmax%22%3A-8922952.933898991%2C%22ymax%22%3A5400734.670518989%7D%2C%22mode%22%3A%22view%22%2C%22originPosition%22%3A%22upperLeft%22%2C%22tolerance%22%3A152.87405657031263%7D&resultType=tile&spatialRel=esriSpatialRelIntersects&where=IsPrimary%20%3D%20%27Yes%27&geometryType=esriGeometryEnvelope&inSR=102100",
+  "method": "GET",
+  "status": 200,
+  "content_type": "application/x-protobuf"
+ },
+ {
+  "url": "https://utility.arcgis.com/usrsvcs/servers/d4d0c6dedec14e59930688f3830776c6/rest/services/OpenData/OpenData/MapServer/1/query?f=pbf&geometry=%7B%22xmin%22%3A-8971872.632001491%2C%22ymin%22%3A5371382.851657489%2C%22xmax%22%3A-8962088.69238099%2C%22ymax%22%3A5381166.791277988%7D&orderByFields=OBJECTID%20ASC&outFields=AddressNumber%2CIsPrimary%2COBJECTID%2CUnitNumber&outSR=102100&quantizationParameters=%7B%22extent%22%3A%7B%22spatialReference%22%3A%7B%22latestWkid%22%3A3857%2C%22wkid%22%3A102100%7D%2C%22xmin%22%3A-9001224.450862993%2C%22ymin%22%3A5322463.153554989%2C%22xmax%22%3A-8922952.933898991%2C%22ymax%22%3A5400734.670518989%7D%2C%22mode%22%3A%22view%22%2C%22originPosition%22%3A%22upperLeft%22%2C%22tolerance%22%3A152.87405657031263%7D&resultType=tile&returnExceededLimitFeatures=false&spatialRel=esriSpatialRelIntersects&where=IsPrimary%20%3D%20%27Yes%27&geometryType=esriGeometryEnvelope&inSR=102100",
+  "method": "GET",
+  "status": 200,
+  "content_type": "application/x-protobuf"
+ },
+ {
+  "url": "https://utility.arcgis.com/usrsvcs/servers/d4d0c6dedec14e59930688f3830776c6/rest/services/OpenData/OpenData/MapServer/1/query?f=pbf&geometry=%7B%22xmin%22%3A-8971872.632001491%2C%22ymin%22%3A5376274.821467739%2C%22xmax%22%3A-8966980.662191242%2C%22ymax%22%3A5381166.791277988%7D&orderByFields=OBJECTID%20ASC&outFields=AddressNumber%2CIsPrimary%2COBJECTID%2CUnitNumber&outSR=102100&quantizationParameters=%7B%22extent%22%3A%7B%22spatialReference%22%3A%7B%22latestWkid%22%3A3857%2C%22wkid%22%3A102100%7D%2C%22xmin%22%3A-9001224.450862993%2C%22ymin%22%3A5322463.153554989%2C%22xmax%22%3A-8922952.933898991%2C%22ymax%22%3A5400734.670518989%7D%2C%22mode%22%3A%22view%22%2C%22originPosition%22%3A%22upperLeft%22%2C%22tolerance%22%3A152.87405657031263%7D&resultType=tile&spatialRel=esriSpatialRelIntersects&where=IsPrimary%20%3D%20%27Yes%27&geometryType=esriGeometryEnvelope&inSR=102100",
+  "method": "GET",
+  "status": 200,
+  "content_type": "application/x-protobuf"
+ },
+ {
+  "url": "https://utility.arcgis.com/usrsvcs/servers/d4d0c6dedec14e59930688f3830776c6/rest/services/OpenData/OpenData/MapServer/1/query?f=pbf&geometry=%7B%22xmin%22%3A-8966980.662191242%2C%22ymin%22%3A5376274.821467739%2C%22xmax%22%3A-8962088.69238099%2C%22ymax%22%3A5381166.791277988%7D&orderByFields=OBJECTID%20ASC&outFields=AddressNumber%2CIsPrimary%2COBJECTID%2CUnitNumber&outSR=102100&quantizationParameters=%7B%22extent%22%3A%7B%22spatialReference%22%3A%7B%22latestWkid%22%3A3857%2C%22wkid%22%3A102100%7D%2C%22xmin%22%3A-9001224.450862993%2C%22ymin%22%3A5322463.153554989%2C%22xmax%22%3A-8922952.933898991%2C%22ymax%22%3A5400734.670518989%7D%2C%22mode%22%3A%22view%22%2C%22originPosition%22%3A%22upperLeft%22%2C%22tolerance%22%3A152.87405657031263%7D&resultType=tile&spatialRel=esriSpatialRelIntersects&where=IsPrimary%20%3D%20%27Yes%27&geometryType=esriGeometryEnvelope&inSR=102100",
+  "method": "GET",
+  "status": 200,
+  "content_type": "application/x-protobuf"
+ },
+ {
+  "url": "https://utility.arcgis.com/usrsvcs/servers/d4d0c6dedec14e59930688f3830776c6/rest/services/OpenData/OpenData/MapServer/1/query?f=pbf&geometry=%7B%22xmin%22%3A-8971872.632001491%2C%22ymin%22%3A5371382.851657489%2C%22xmax%22%3A-8966980.662191242%2C%22ymax%22%3A5376274.821467739%7D&orderByFields=OBJECTID%20ASC&outFields=AddressNumber%2CIsPrimary%2COBJECTID%2CUnitNumber&outSR=102100&quantizationParameters=%7B%22extent%22%3A%7B%22spatialReference%22%3A%7B%22latestWkid%22%3A3857%2C%22wkid%22%3A102100%7D%2C%22xmin%22%3A-9001224.450862993%2C%22ymin%22%3A5322463.153554989%2C%22xmax%22%3A-8922952.933898991%2C%22ymax%22%3A5400734.670518989%7D%2C%22mode%22%3A%22view%22%2C%22originPosition%22%3A%22upperLeft%22%2C%22tolerance%22%3A152.87405657031263%7D&resultType=tile&spatialRel=esriSpatialRelIntersects&where=IsPrimary%20%3D%20%27Yes%27&geometryType=esriGeometryEnvelope&inSR=102100",
+  "method": "GET",
+  "status": 200,
+  "content_type": "application/x-protobuf"
+ },
+ {
+  "url": "https://utility.arcgis.com/usrsvcs/servers/d4d0c6dedec14e59930688f3830776c6/rest/services/OpenData/OpenData/MapServer/1/query?f=pbf&geometry=%7B%22xmin%22%3A-8966980.662191242%2C%22ymin%22%3A5371382.851657489%2C%22xmax%22%3A-8962088.69238099%2C%22ymax%22%3A5376274.821467739%7D&orderByFields=OBJECTID%20ASC&outFields=AddressNumber%2CIsPrimary%2COBJECTID%2CUnitNumber&outSR=102100&quantizationParameters=%7B%22extent%22%3A%7B%22spatialReference%22%3A%7B%22latestWkid%22%3A3857%2C%22wkid%22%3A102100%7D%2C%22xmin%22%3A-9001224.450862993%2C%22ymin%22%3A5322463.153554989%2C%22xmax%22%3A-8922952.933898991%2C%22ymax%22%3A5400734.670518989%7D%2C%22mode%22%3A%22view%22%2C%22originPosition%22%3A%22upperLeft%22%2C%22tolerance%22%3A152.87405657031263%7D&resultType=tile&spatialRel=esriSpatialRelIntersects&where=IsPrimary%20%3D%20%27Yes%27&geometryType=esriGeometryEnvelope&inSR=102100",
+  "method": "GET",
+  "status": 200,
+  "content_type": "application/x-protobuf"
+ },
+ {
+  "url": "https://utility.arcgis.com/usrsvcs/servers/d4d0c6dedec14e59930688f3830776c6/rest/services/OpenData/OpenData/MapServer/1/query?f=pbf&geometry=%7B%22xmin%22%3A-8981656.571621992%2C%22ymin%22%3A5361598.912036989%2C%22xmax%22%3A-8971872.632001491%2C%22ymax%22%3A5371382.851657489%7D&orderByFields=OBJECTID%20ASC&outFields=AddressNumber%2CIsPrimary%2COBJECTID%2CUnitNumber&outSR=102100&quantizationParameters=%7B%22extent%22%3A%7B%22spatialReference%22%3A%7B%22latestWkid%22%3A3857%2C%22wkid%22%3A102100%7D%2C%22xmin%22%3A-9001224.450862993%2C%22ymin%22%3A5322463.153554989%2C%22xmax%22%3A-8922952.933898991%2C%22ymax%22%3A5400734.670518989%7D%2C%22mode%22%3A%22view%22%2C%22originPosition%22%3A%22upperLeft%22%2C%22tolerance%22%3A152.87405657031263%7D&resultType=tile&returnExceededLimitFeatures=false&spatialRel=esriSpatialRelIntersects&where=IsPrimary%20%3D%20%27Yes%27&geometryType=esriGeometryEnvelope&inSR=102100",
+  "method": "GET",
+  "status": 200,
+  "content_type": "application/x-protobuf"
+ },
+ {
+  "url": "https://utility.arcgis.com/usrsvcs/servers/d4d0c6dedec14e59930688f3830776c6/rest/services/OpenData/OpenData/MapServer/1/query?f=pbf&geometry=%7B%22xmin%22%3A-8971872.632001491%2C%22ymin%22%3A5361598.912036989%2C%22xmax%22%3A-8962088.69238099%2C%22ymax%22%3A5371382.851657489%7D&orderByFields=OBJECTID%20ASC&outFields=AddressNumber%2CIsPrimary%2COBJECTID%2CUnitNumber&outSR=102100&quantizationParameters=%7B%22extent%22%3A%7B%22spatialReference%22%3A%7B%22latestWkid%22%3A3857%2C%22wkid%22%3A102100%7D%2C%22xmin%22%3A-9001224.450862993%2C%22ymin%22%3A5322463.153554989%2C%22xmax%22%3A-8922952.933898991%2C%22ymax%22%3A5400734.670518989%7D%2C%22mode%22%3A%22view%22%2C%22originPosition%22%3A%22upperLeft%22%2C%22tolerance%22%3A152.87405657031263%7D&resultType=tile&returnExceededLimitFeatures=false&spatialRel=esriSpatialRelIntersects&where=IsPrimary%20%3D%20%27Yes%27&geometryType=esriGeometryEnvelope&inSR=102100",
+  "method": "GET",
+  "status": 200,
+  "content_type": "application/x-protobuf"
+ },
+ {
+  "url": "https://utility.arcgis.com/usrsvcs/servers/d4d0c6dedec14e59930688f3830776c6/rest/services/OpenData/OpenData/MapServer/1/query?f=pbf&geometry=%7B%22xmin%22%3A-8962088.69238099%2C%22ymin%22%3A5361598.912036989%2C%22xmax%22%3A-8922952.933898991%2C%22ymax%22%3A5400734.670518989%7D&orderByFields=OBJECTID%20ASC&outFields=AddressNumber%2CIsPrimary%2COBJECTID%2CUnitNumber&outSR=102100&quantizationParameters=%7B%22extent%22%3A%7B%22spatialReference%22%3A%7B%22latestWkid%22%3A3857%2C%22wkid%22%3A102100%7D%2C%22xmin%22%3A-9001224.450862993%2C%22ymin%22%3A5322463.153554989%2C%22xmax%22%3A-8922952.933898991%2C%22ymax%22%3A5400734.670518989%7D%2C%22mode%22%3A%22view%22%2C%22originPosition%22%3A%22upperLeft%22%2C%22tolerance%22%3A152.87405657031263%7D&resultType=tile&returnExceededLimitFeatures=false&spatialRel=esriSpatialRelIntersects&where=IsPrimary%20%3D%20%27Yes%27&geometryType=esriGeometryEnvelope&inSR=102100",
+  "method": "GET",
+  "status": 200,
+  "content_type": "application/x-protobuf"
+ },
+ {
+  "url": "https://utility.arcgis.com/usrsvcs/servers/3e549c213c8b4f76946689410084aa72/rest/services/_Capital_Projects/MapServer/14/query?f=json&resultOffset=0&resultRecordCount=100&where=MakeExternal%20%3D%20%27Yes%27&outFields=ProjectName%2CLocation%2CProjectDescription%2CFileNumber%2CMunicipality%2CContactEmail%2CContactName%2CContactPhone%2CProjectStatus%2CProposedStartYear%2CWebPage%2CConstructionStartYear%2CConstructionEndYear%2CMakeExternal%2COBJECTID&returnZ=true&spatialRel=esriSpatialRelIntersects",
+  "method": "GET",
+  "status": 200,
+  "content_type": "application/json;charset=utf-8"
+ },
+ {
+  "url": "https://utility.arcgis.com/usrsvcs/servers/d4d0c6dedec14e59930688f3830776c6/rest/services/OpenData/OpenData/MapServer/1/query?f=pbf&geometry=%7B%22xmin%22%3A-8962088.69238099%2C%22ymin%22%3A5381166.791277988%2C%22xmax%22%3A-8942520.813139992%2C%22ymax%22%3A5400734.670518989%7D&orderByFields=OBJECTID%20ASC&outFields=AddressNumber%2CIsPrimary%2COBJECTID%2CUnitNumber&outSR=102100&quantizationParameters=%7B%22extent%22%3A%7B%22spatialReference%22%3A%7B%22latestWkid%22%3A3857%2C%22wkid%22%3A102100%7D%2C%22xmin%22%3A-9001224.450862993%2C%22ymin%22%3A5322463.153554989%2C%22xmax%22%3A-8922952.933898991%2C%22ymax%22%3A5400734.670518989%7D%2C%22mode%22%3A%22view%22%2C%22originPosition%22%3A%22upperLeft%22%2C%22tolerance%22%3A152.87405657031263%7D&resultType=tile&returnExceededLimitFeatures=false&spatialRel=esriSpatialRelIntersects&where=IsPrimary%20%3D%20%27Yes%27&geometryType=esriGeometryEnvelope&inSR=102100",
+  "method": "GET",
+  "status": 200,
+  "content_type": "application/x-protobuf"
+ },
+ {
+  "url": "https://utility.arcgis.com/usrsvcs/servers/3e549c213c8b4f76946689410084aa72/rest/services/_Capital_Projects/MapServer/14/query?f=json&returnCountOnly=true&returnZ=true&spatialRel=esriSpatialRelIntersects&where=MakeExternal%20%3D%20%27Yes%27",
+  "method": "GET",
+  "status": 200,
+  "content_type": "application/json;charset=utf-8"
+ },
+ {
+  "url": "https://utility.arcgis.com/usrsvcs/servers/d4d0c6dedec14e59930688f3830776c6/rest/services/OpenData/OpenData/MapServer/1/query?f=pbf&geometry=%7B%22xmin%22%3A-8962088.69238099%2C%22ymin%22%3A5390950.730898488%2C%22xmax%22%3A-8952304.752760492%2C%22ymax%22%3A5400734.670518989%7D&orderByFields=OBJECTID%20ASC&outFields=AddressNumber%2CIsPrimary%2COBJECTID%2CUnitNumber&outSR=102100&quantizationParameters=%7B%22extent%22%3A%7B%22spatialReference%22%3A%7B%22latestWkid%22%3A3857%2C%22wkid%22%3A102100%7D%2C%22xmin%22%3A-9001224.450862993%2C%22ymin%22%3A5322463.153554989%2C%22xmax%22%3A-8922952.933898991%2C%22ymax%22%3A5400734.670518989%7D%2C%22mode%22%3A%22view%22%2C%22originPosition%22%3A%22upperLeft%22%2C%22tolerance%22%3A152.87405657031263%7D&resultType=tile&returnExceededLimitFeatures=false&spatialRel=esriSpatialRelIntersects&where=IsPrimary%20%3D%20%27Yes%27&geometryType=esriGeometryEnvelope&inSR=102100",
+  "method": "GET",
+  "status": 200,
+  "content_type": "application/x-protobuf"
+ },
+ {
+  "url": "https://utility.arcgis.com/usrsvcs/servers/3e549c213c8b4f76946689410084aa72/rest/services/_Capital_Projects/MapServer/14/query?f=json&resultOffset=0&resultRecordCount=30&where=MakeExternal%20%3D%20%27Yes%27&outFields=*&outSR=102100&returnZ=true&spatialRel=esriSpatialRelIntersects",
+  "method": "GET",
+  "status": 200,
+  "content_type": "application/json;charset=utf-8"
+ },
+ {
+  "url": "https://js.arcgis.com/5.2/map-components/assets/feature-next/t9n/messages.en.json",
+  "method": "GET",
+  "status": 200,
+  "content_type": "application/json"
+ },
+ {
+  "url": "https://utility.arcgis.com/usrsvcs/servers/d4d0c6dedec14e59930688f3830776c6/rest/services/OpenData/OpenData/MapServer/1/query?f=pbf&geometry=%7B%22xmin%22%3A-8962088.69238099%2C%22ymin%22%3A5395842.700708739%2C%22xmax%22%3A-8957196.722570742%2C%22ymax%22%3A5400734.670518989%7D&orderByFields=OBJECTID%20ASC&outFields=AddressNumber%2CIsPrimary%2COBJECTID%2CUnitNumber&outSR=102100&quantizationParameters=%7B%22extent%22%3A%7B%22spatialReference%22%3A%7B%22latestWkid%22%3A3857%2C%22wkid%22%3A102100%7D%2C%22xmin%22%3A-9001224.450862993%2C%22ymin%22%3A5322463.153554989%2C%22xmax%22%3A-8922952.933898991%2C%22ymax%22%3A5400734.670518989%7D%2C%22mode%22%3A%22view%22%2C%22originPosition%22%3A%22upperLeft%22%2C%22tolerance%22%3A152.87405657031263%7D&resultType=tile&spatialRel=esriSpatialRelIntersects&where=IsPrimary%20%3D%20%27Yes%27&geometryType=esriGeometryEnvelope&inSR=102100",
+  "method": "GET",
+  "status": 200,
+  "content_type": "application/x-protobuf"
+ },
+ {
+  "url": "https://js.arcgis.com/calcite-components/5.2.0/assets/scrim/t9n/messages.en.json",
+  "method": "GET",
+  "status": 200,
+  "content_type": "application/json"
+ },
+ {
+  "url": "https://utility.arcgis.com/usrsvcs/servers/d4d0c6dedec14e59930688f3830776c6/rest/services/OpenData/OpenData/MapServer/1/query?f=pbf&geometry=%7B%22xmin%22%3A-8957196.722570742%2C%22ymin%22%3A5395842.700708739%2C%22xmax%22%3A-8952304.752760492%2C%22ymax%22%3A5400734.670518989%7D&orderByFields=OBJECTID%20ASC&outFields=AddressNumber%2CIsPrimary%2COBJECTID%2CUnitNumber&outSR=102100&quantizationParameters=%7B%22extent%22%3A%7B%22spatialReference%22%3A%7B%22latestWkid%22%3A3857%2C%22wkid%22%3A102100%7D%2C%22xmin%22%3A-9001224.450862993%2C%22ymin%22%3A5322463.153554989%2C%22xmax%22%3A-8922952.933898991%2C%22ymax%22%3A5400734.670518989%7D%2C%22mode%22%3A%22view%22%2C%22originPosition%22%3A%22upperLeft%22%2C%22tolerance%22%3A152.87405657031263%7D&resultType=tile&spatialRel=esriSpatialRelIntersects&where=IsPrimary%20%3D%20%27Yes%27&geometryType=esriGeometryEnvelope&inSR=102100",
+  "method": "GET",
+  "status": 200,
+  "content_type": "application/x-protobuf"
+ },
+ {
+  "url": "https://utility.arcgis.com/usrsvcs/servers/d4d0c6dedec14e59930688f3830776c6/rest/services/OpenData/OpenData/MapServer/1/query?f=pbf&geometry=%7B%22xmin%22%3A-8962088.69238099%2C%22ymin%22%3A5390950.730898488%2C%22xmax%22%3A-8957196.722570742%2C%22ymax%22%3A5395842.700708739%7D&orderByFields=OBJECTID%20ASC&outFields=AddressNumber%2CIsPrimary%2COBJECTID%2CUnitNumber&outSR=102100&quantizationParameters=%7B%22extent%22%3A%7B%22spatialReference%22%3A%7B%22latestWkid%22%3A3857%2C%22wkid%22%3A102100%7D%2C%22xmin%22%3A-9001224.450862993%2C%22ymin%22%3A5322463.153554989%2C%22xmax%22%3A-8922952.933898991%2C%22ymax%22%3A5400734.670518989%7D%2C%22mode%22%3A%22view%22%2C%22originPosition%22%3A%22upperLeft%22%2C%22tolerance%22%3A152.87405657031263%7D&resultType=tile&spatialRel=esriSpatialRelIntersects&where=IsPrimary%20%3D%20%27Yes%27&geometryType=esriGeometryEnvelope&inSR=102100",
+  "method": "GET",
+  "status": 200,
+  "content_type": "application/x-protobuf"
+ },
+ {
+  "url": "https://utility.arcgis.com/usrsvcs/servers/d4d0c6dedec14e59930688f3830776c6/rest/services/OpenData/OpenData/MapServer/1/query?f=pbf&geometry=%7B%22xmin%22%3A-8957196.722570742%2C%22ymin%22%3A5390950.730898488%2C%22xmax%22%3A-8952304.752760492%2C%22ymax%22%3A5395842.700708739%7D&orderByFields=OBJECTID%20ASC&outFields=AddressNumber%2CIsPrimary%2COBJECTID%2CUnitNumber&outSR=102100&quantizationParameters=%7B%22extent%22%3A%7B%22spatialReference%22%3A%7B%22latestWkid%22%3A3857%2C%22wkid%22%3A102100%7D%2C%22xmin%22%3A-9001224.450862993%2C%22ymin%22%3A5322463.153554989%2C%22xmax%22%3A-8922952.933898991%2C%22ymax%22%3A5400734.670518989%7D%2C%22mode%22%3A%22view%22%2C%22originPosition%22%3A%22upperLeft%22%2C%22tolerance%22%3A152.87405657031263%7D&resultType=tile&spatialRel=esriSpatialRelIntersects&where=IsPrimary%20%3D%20%27Yes%27&geometryType=esriGeometryEnvelope&inSR=102100",
+  "method": "GET",
+  "status": 200,
+  "content_type": "application/x-protobuf"
+ },
+ {
+  "url": "https://utility.arcgis.com/usrsvcs/servers/d4d0c6dedec14e59930688f3830776c6/rest/services/OpenData/OpenData/MapServer/1/query?f=pbf&geometry=%7B%22xmin%22%3A-8952304.752760492%2C%22ymin%22%3A5390950.730898488%2C%22xmax%22%3A-8942520.813139992%2C%22ymax%22%3A5400734.670518989%7D&orderByFields=OBJECTID%20ASC&outFields=AddressNumber%2CIsPrimary%2COBJECTID%2CUnitNumber&outSR=102100&quantizationParameters=%7B%22extent%22%3A%7B%22spatialReference%22%3A%7B%22latestWkid%22%3A3857%2C%22wkid%22%3A102100%7D%2C%22xmin%22%3A-9001224.450862993%2C%22ymin%22%3A5322463.153554989%2C%22xmax%22%3A-8922952.933898991%2C%22ymax%22%3A5400734.670518989%7D%2C%22mode%22%3A%22view%22%2C%22originPosition%22%3A%22upperLeft%22%2C%22tolerance%22%3A152.87405657031263%7D&resultType=tile&returnExceededLimitFeatures=false&spatialRel=esriSpatialRelIntersects&where=IsPrimary%20%3D%20%27Yes%27&geometryType=esriGeometryEnvelope&inSR=102100",
+  "method": "GET",
+  "status": 200,
+  "content_type": "application/x-protobuf"
+ },
+ {
+  "url": "https://utility.arcgis.com/usrsvcs/servers/d4d0c6dedec14e59930688f3830776c6/rest/services/OpenData/OpenData/MapServer/1/query?f=pbf&geometry=%7B%22xmin%22%3A-8962088.69238099%2C%22ymin%22%3A5381166.791277988%2C%22xmax%22%3A-8952304.752760492%2C%22ymax%22%3A5390950.730898488%7D&orderByFields=OBJECTID%20ASC&outFields=AddressNumber%2CIsPrimary%2COBJECTID%2CUnitNumber&outSR=102100&quantizationParameters=%7B%22extent%22%3A%7B%22spatialReference%22%3A%7B%22latestWkid%22%3A3857%2C%22wkid%22%3A102100%7D%2C%22xmin%22%3A-9001224.450862993%2C%22ymin%22%3A5322463.153554989%2C%22xmax%22%3A-8922952.933898991%2C%22ymax%22%3A5400734.670518989%7D%2C%22mode%22%3A%22view%22%2C%22originPosition%22%3A%22upperLeft%22%2C%22tolerance%22%3A152.87405657031263%7D&resultType=tile&returnExceededLimitFeatures=false&spatialRel=esriSpatialRelIntersects&where=IsPrimary%20%3D%20%27Yes%27&geometryType=esriGeometryEnvelope&inSR=102100",
+  "method": "GET",
+  "status": 200,
+  "content_type": "application/x-protobuf"
+ },
+ {
+  "url": "https://utility.arcgis.com/usrsvcs/servers/d4d0c6dedec14e59930688f3830776c6/rest/services/OpenData/OpenData/MapServer/1/query?f=pbf&geometry=%7B%22xmin%22%3A-8962088.69238099%2C%22ymin%22%3A5386058.761088239%2C%22xmax%22%3A-8957196.722570742%2C%22ymax%22%3A5390950.730898488%7D&orderByFields=OBJECTID%20ASC&outFields=AddressNumber%2CIsPrimary%2COBJECTID%2CUnitNumber&outSR=102100&quantizationParameters=%7B%22extent%22%3A%7B%22spatialReference%22%3A%7B%22latestWkid%22%3A3857%2C%22wkid%22%3A102100%7D%2C%22xmin%22%3A-9001224.450862993%2C%22ymin%22%3A5322463.153554989%2C%22xmax%22%3A-8922952.933898991%2C%22ymax%22%3A5400734.670518989%7D%2C%22mode%22%3A%22view%22%2C%22originPosition%22%3A%22upperLeft%22%2C%22tolerance%22%3A152.87405657031263%7D&resultType=tile&spatialRel=esriSpatialRelIntersects&where=IsPrimary%20%3D%20%27Yes%27&geometryType=esriGeometryEnvelope&inSR=102100",
+  "method": "GET",
+  "status": 200,
+  "content_type": "application/x-protobuf"
+ },
+ {
+  "url": "https://utility.arcgis.com/usrsvcs/servers/d4d0c6dedec14e59930688f3830776c6/rest/services/OpenData/OpenData/MapServer/1/query?f=pbf&geometry=%7B%22xmin%22%3A-8957196.722570742%2C%22ymin%22%3A5386058.761088239%2C%22xmax%22%3A-8952304.752760492%2C%22ymax%22%3A5390950.730898488%7D&orderByFields=OBJECTID%20ASC&outFields=AddressNumber%2CIsPrimary%2COBJECTID%2CUnitNumber&outSR=102100&quantizationParameters=%7B%22extent%22%3A%7B%22spatialReference%22%3A%7B%22latestWkid%22%3A3857%2C%22wkid%22%3A102100%7D%2C%22xmin%22%3A-9001224.450862993%2C%22ymin%22%3A5322463.153554989%2C%22xmax%22%3A-8922952.933898991%2C%22ymax%22%3A5400734.670518989%7D%2C%22mode%22%3A%22view%22%2C%22originPosition%22%3A%22upperLeft%22%2C%22tolerance%22%3A152.87405657031263%7D&resultType=tile&spatialRel=esriSpatialRelIntersects&where=IsPrimary%20%3D%20%27Yes%27&geometryType=esriGeometryEnvelope&inSR=102100",
+  "method": "GET",
+  "status": 200,
+  "content_type": "application/x-protobuf"
+ },
+ {
+  "url": "https://utility.arcgis.com/usrsvcs/servers/d4d0c6dedec14e59930688f3830776c6/rest/services/OpenData/OpenData/MapServer/1/query?f=pbf&geometry=%7B%22xmin%22%3A-8962088.69238099%2C%22ymin%22%3A5381166.791277988%2C%22xmax%22%3A-8957196.722570742%2C%22ymax%22%3A5386058.761088239%7D&orderByFields=OBJECTID%20ASC&outFields=AddressNumber%2CIsPrimary%2COBJECTID%2CUnitNumber&outSR=102100&quantizationParameters=%7B%22extent%22%3A%7B%22spatialReference%22%3A%7B%22latestWkid%22%3A3857%2C%22wkid%22%3A102100%7D%2C%22xmin%22%3A-9001224.450862993%2C%22ymin%22%3A5322463.153554989%2C%22xmax%22%3A-8922952.933898991%2C%22ymax%22%3A5400734.670518989%7D%2C%22mode%22%3A%22view%22%2C%22originPosition%22%3A%22upperLeft%22%2C%22tolerance%22%3A152.87405657031263%7D&resultType=tile&spatialRel=esriSpatialRelIntersects&where=IsPrimary%20%3D%20%27Yes%27&geometryType=esriGeometryEnvelope&inSR=102100",
+  "method": "GET",
+  "status": 200,
+  "content_type": "application/x-protobuf"
+ },
+ {
+  "url": "https://utility.arcgis.com/usrsvcs/servers/d4d0c6dedec14e59930688f3830776c6/rest/services/OpenData/OpenData/MapServer/1/query?f=pbf&geometry=%7B%22xmin%22%3A-8957196.722570742%2C%22ymin%22%3A5381166.791277988%2C%22xmax%22%3A-8952304.752760492%2C%22ymax%22%3A5386058.761088239%7D&orderByFields=OBJECTID%20ASC&outFields=AddressNumber%2CIsPrimary%2COBJECTID%2CUnitNumber&outSR=102100&quantizationParameters=%7B%22extent%22%3A%7B%22spatialReference%22%3A%7B%22latestWkid%22%3A3857%2C%22wkid%22%3A102100%7D%2C%22xmin%22%3A-9001224.450862993%2C%22ymin%22%3A5322463.153554989%2C%22xmax%22%3A-8922952.933898991%2C%22ymax%22%3A5400734.670518989%7D%2C%22mode%22%3A%22view%22%2C%22originPosition%22%3A%22upperLeft%22%2C%22tolerance%22%3A152.87405657031263%7D&resultType=tile&spatialRel=esriSpatialRelIntersects&where=IsPrimary%20%3D%20%27Yes%27&geometryType=esriGeometryEnvelope&inSR=102100",
+  "method": "GET",
+  "status": 200,
+  "content_type": "application/x-protobuf"
+ },
+ {
+  "url": "https://utility.arcgis.com/usrsvcs/servers/d4d0c6dedec14e59930688f3830776c6/rest/services/OpenData/OpenData/MapServer/1/query?f=pbf&geometry=%7B%22xmin%22%3A-8952304.752760492%2C%22ymin%22%3A5381166.791277988%2C%22xmax%22%3A-8942520.813139992%2C%22ymax%22%3A5390950.730898488%7D&orderByFields=OBJECTID%20ASC&outFields=AddressNumber%2CIsPrimary%2COBJECTID%2CUnitNumber&outSR=102100&quantizationParameters=%7B%22extent%22%3A%7B%22spatialReference%22%3A%7B%22latestWkid%22%3A3857%2C%22wkid%22%3A102100%7D%2C%22xmin%22%3A-9001224.450862993%2C%22ymin%22%3A5322463.153554989%2C%22xmax%22%3A-8922952.933898991%2C%22ymax%22%3A5400734.670518989%7D%2C%22mode%22%3A%22view%22%2C%22originPosition%22%3A%22upperLeft%22%2C%22tolerance%22%3A152.87405657031263%7D&resultType=tile&returnExceededLimitFeatures=false&spatialRel=esriSpatialRelIntersects&where=IsPrimary%20%3D%20%27Yes%27&geometryType=esriGeometryEnvelope&inSR=102100",
+  "method": "GET",
+  "status": 200,
+  "content_type": "application/x-protobuf"
+ },
+ {
+  "url": "https://utility.arcgis.com/usrsvcs/servers/d4d0c6dedec14e59930688f3830776c6/rest/services/OpenData/OpenData/MapServer/1/query?f=pbf&geometry=%7B%22xmin%22%3A-8952304.752760492%2C%22ymin%22%3A5386058.761088239%2C%22xmax%22%3A-8947412.782950241%2C%22ymax%22%3A5390950.730898488%7D&orderByFields=OBJECTID%20ASC&outFields=AddressNumber%2CIsPrimary%2COBJECTID%2CUnitNumber&outSR=102100&quantizationParameters=%7B%22extent%22%3A%7B%22spatialReference%22%3A%7B%22latestWkid%22%3A3857%2C%22wkid%22%3A102100%7D%2C%22xmin%22%3A-9001224.450862993%2C%22ymin%22%3A5322463.153554989%2C%22xmax%22%3A-8922952.933898991%2C%22ymax%22%3A5400734.670518989%7D%2C%22mode%22%3A%22view%22%2C%22originPosition%22%3A%22upperLeft%22%2C%22tolerance%22%3A152.87405657031263%7D&resultType=tile&spatialRel=esriSpatialRelIntersects&where=IsPrimary%20%3D%20%27Yes%27&geometryType=esriGeometryEnvelope&inSR=102100",
+  "method": "GET",
+  "status": 200,
+  "content_type": "application/x-protobuf"
+ },
+ {
+  "url": "https://utility.arcgis.com/usrsvcs/servers/d4d0c6dedec14e59930688f3830776c6/rest/services/OpenData/OpenData/MapServer/1/query?f=pbf&geometry=%7B%22xmin%22%3A-8947412.782950241%2C%22ymin%22%3A5386058.761088239%2C%22xmax%22%3A-8942520.813139992%2C%22ymax%22%3A5390950.730898488%7D&orderByFields=OBJECTID%20ASC&outFields=AddressNumber%2CIsPrimary%2COBJECTID%2CUnitNumber&outSR=102100&quantizationParameters=%7B%22extent%22%3A%7B%22spatialReference%22%3A%7B%22latestWkid%22%3A3857%2C%22wkid%22%3A102100%7D%2C%22xmin%22%3A-9001224.450862993%2C%22ymin%22%3A5322463.153554989%2C%22xmax%22%3A-8922952.933898991%2C%22ymax%22%3A5400734.670518989%7D%2C%22mode%22%3A%22view%22%2C%22originPosition%22%3A%22upperLeft%22%2C%22tolerance%22%3A152.87405657031263%7D&resultType=tile&spatialRel=esriSpatialRelIntersects&where=IsPrimary%20%3D%20%27Yes%27&geometryType=esriGeometryEnvelope&inSR=102100",
+  "method": "GET",
+  "status": 200,
+  "content_type": "application/x-protobuf"
+ },
+ {
+  "url": "https://utility.arcgis.com/usrsvcs/servers/d4d0c6dedec14e59930688f3830776c6/rest/services/OpenData/OpenData/MapServer/1/query?f=pbf&geometry=%7B%22xmin%22%3A-8952304.752760492%2C%22ymin%22%3A5381166.791277988%2C%22xmax%22%3A-8947412.782950241%2C%22ymax%22%3A5386058.761088239%7D&orderByFields=OBJECTID%20ASC&outFields=AddressNumber%2CIsPrimary%2COBJECTID%2CUnitNumber&outSR=102100&quantizationParameters=%7B%22extent%22%3A%7B%22spatialReference%22%3A%7B%22latestWkid%22%3A3857%2C%22wkid%22%3A102100%7D%2C%22xmin%22%3A-9001224.450862993%2C%22ymin%22%3A5322463.153554989%2C%22xmax%22%3A-8922952.933898991%2C%22ymax%22%3A5400734.670518989%7D%2C%22mode%22%3A%22view%22%2C%22originPosition%22%3A%22upperLeft%22%2C%22tolerance%22%3A152.87405657031263%7D&resultType=tile&spatialRel=esriSpatialRelIntersects&where=IsPrimary%20%3D%20%27Yes%27&geometryType=esriGeometryEnvelope&inSR=102100",
+  "method": "GET",
+  "status": 200,
+  "content_type": "application/x-protobuf"
+ },
+ {
+  "url": "https://utility.arcgis.com/usrsvcs/servers/d4d0c6dedec14e59930688f3830776c6/rest/services/OpenData/OpenData/MapServer/1/query?f=pbf&geometry=%7B%22xmin%22%3A-8947412.782950241%2C%22ymin%22%3A5381166.791277988%2C%22xmax%22%3A-8942520.813139992%2C%22ymax%22%3A5386058.761088239%7D&orderByFields=OBJECTID%20ASC&outFields=AddressNumber%2CIsPrimary%2COBJECTID%2CUnitNumber&outSR=102100&quantizationParameters=%7B%22extent%22%3A%7B%22spatialReference%22%3A%7B%22latestWkid%22%3A3857%2C%22wkid%22%3A102100%7D%2C%22xmin%22%3A-9001224.450862993%2C%22ymin%22%3A5322463.153554989%2C%22xmax%22%3A-8922952.933898991%2C%22ymax%22%3A5400734.670518989%7D%2C%22mode%22%3A%22view%22%2C%22originPosition%22%3A%22upperLeft%22%2C%22tolerance%22%3A152.87405657031263%7D&resultType=tile&spatialRel=esriSpatialRelIntersects&where=IsPrimary%20%3D%20%27Yes%27&geometryType=esriGeometryEnvelope&inSR=102100",
+  "method": "GET",
+  "status": 200,
+  "content_type": "application/x-protobuf"
+ },
+ {
+  "url": "https://utility.arcgis.com/usrsvcs/servers/d4d0c6dedec14e59930688f3830776c6/rest/services/OpenData/OpenData/MapServer/1/query?f=pbf&geometry=%7B%22xmin%22%3A-8942520.813139992%2C%22ymin%22%3A5381166.791277988%2C%22xmax%22%3A-8922952.933898991%2C%22ymax%22%3A5400734.670518989%7D&orderByFields=OBJECTID%20ASC&outFields=AddressNumber%2CIsPrimary%2COBJECTID%2CUnitNumber&outSR=102100&quantizationParameters=%7B%22extent%22%3A%7B%22spatialReference%22%3A%7B%22latestWkid%22%3A3857%2C%22wkid%22%3A102100%7D%2C%22xmin%22%3A-9001224.450862993%2C%22ymin%22%3A5322463.153554989%2C%22xmax%22%3A-8922952.933898991%2C%22ymax%22%3A5400734.670518989%7D%2C%22mode%22%3A%22view%22%2C%22originPosition%22%3A%22upperLeft%22%2C%22tolerance%22%3A152.87405657031263%7D&resultType=tile&returnExceededLimitFeatures=false&spatialRel=esriSpatialRelIntersects&where=IsPrimary%20%3D%20%27Yes%27&geometryType=esriGeometryEnvelope&inSR=102100",
+  "method": "GET",
+  "status": 200,
+  "content_type": "application/x-protobuf"
+ },
+ {
+  "url": "https://utility.arcgis.com/usrsvcs/servers/d4d0c6dedec14e59930688f3830776c6/rest/services/OpenData/OpenData/MapServer/1/query?f=pbf&geometry=%7B%22xmin%22%3A-8962088.69238099%2C%22ymin%22%3A5361598.912036989%2C%22xmax%22%3A-8942520.813139992%2C%22ymax%22%3A5381166.791277988%7D&orderByFields=OBJECTID%20ASC&outFields=AddressNumber%2CIsPrimary%2COBJECTID%2CUnitNumber&outSR=102100&quantizationParameters=%7B%22extent%22%3A%7B%22spatialReference%22%3A%7B%22latestWkid%22%3A3857%2C%22wkid%22%3A102100%7D%2C%22xmin%22%3A-9001224.450862993%2C%22ymin%22%3A5322463.153554989%2C%22xmax%22%3A-8922952.933898991%2C%22ymax%22%3A5400734.670518989%7D%2C%22mode%22%3A%22view%22%2C%22originPosition%22%3A%22upperLeft%22%2C%22tolerance%22%3A152.87405657031263%7D&resultType=tile&returnExceededLimitFeatures=false&spatialRel=esriSpatialRelIntersects&where=IsPrimary%20%3D%20%27Yes%27&geometryType=esriGeometryEnvelope&inSR=102100",
+  "method": "GET",
+  "status": 200,
+  "content_type": "application/x-protobuf"
+ },
+ {
+  "url": "https://utility.arcgis.com/usrsvcs/servers/d4d0c6dedec14e59930688f3830776c6/rest/services/OpenData/OpenData/MapServer/1/query?f=pbf&geometry=%7B%22xmin%22%3A-8962088.69238099%2C%22ymin%22%3A5371382.851657489%2C%22xmax%22%3A-8952304.752760492%2C%22ymax%22%3A5381166.791277988%7D&orderByFields=OBJECTID%20ASC&outFields=AddressNumber%2CIsPrimary%2COBJECTID%2CUnitNumber&outSR=102100&quantizationParameters=%7B%22extent%22%3A%7B%22spatialReference%22%3A%7B%22latestWkid%22%3A3857%2C%22wkid%22%3A102100%7D%2C%22xmin%22%3A-9001224.450862993%2C%22ymin%22%3A5322463.153554989%2C%22xmax%22%3A-8922952.933898991%2C%22ymax%22%3A5400734.670518989%7D%2C%22mode%22%3A%22view%22%2C%22originPosition%22%3A%22upperLeft%22%2C%22tolerance%22%3A152.87405657031263%7D&resultType=tile&returnExceededLimitFeatures=false&spatialRel=esriSpatialRelIntersects&where=IsPrimary%20%3D%20%27Yes%27&geometryType=esriGeometryEnvelope&inSR=102100",
+  "method": "GET",
+  "status": 200,
+  "content_type": "application/x-protobuf"
+ },
+ {
+  "url": "https://utility.arcgis.com/usrsvcs/servers/d4d0c6dedec14e59930688f3830776c6/rest/services/OpenData/OpenData/MapServer/1/query?f=pbf&geometry=%7B%22xmin%22%3A-8962088.69238099%2C%22ymin%22%3A5376274.821467739%2C%22xmax%22%3A-8957196.722570742%2C%22ymax%22%3A5381166.791277988%7D&orderByFields=OBJECTID%20ASC&outFields=AddressNumber%2CIsPrimary%2COBJECTID%2CUnitNumber&outSR=102100&quantizationParameters=%7B%22extent%22%3A%7B%22spatialReference%22%3A%7B%22latestWkid%22%3A3857%2C%22wkid%22%3A102100%7D%2C%22xmin%22%3A-9001224.450862993%2C%22ymin%22%3A5322463.153554989%2C%22xmax%22%3A-8922952.933898991%2C%22ymax%22%3A5400734.670518989%7D%2C%22mode%22%3A%22view%22%2C%22originPosition%22%3A%22upperLeft%22%2C%22tolerance%22%3A152.87405657031263%7D&resultType=tile&spatialRel=esriSpatialRelIntersects&where=IsPrimary%20%3D%20%27Yes%27&geometryType=esriGeometryEnvelope&inSR=102100",
+  "method": "GET",
+  "status": 200,
+  "content_type": "application/x-protobuf"
+ },
+ {
+  "url": "https://utility.arcgis.com/usrsvcs/servers/d4d0c6dedec14e59930688f3830776c6/rest/services/OpenData/OpenData/MapServer/1/query?f=pbf&geometry=%7B%22xmin%22%3A-8957196.722570742%2C%22ymin%22%3A5376274.821467739%2C%22xmax%22%3A-8952304.752760492%2C%22ymax%22%3A5381166.791277988%7D&orderByFields=OBJECTID%20ASC&outFields=AddressNumber%2CIsPrimary%2COBJECTID%2CUnitNumber&outSR=102100&quantizationParameters=%7B%22extent%22%3A%7B%22spatialReference%22%3A%7B%22latestWkid%22%3A3857%2C%22wkid%22%3A102100%7D%2C%22xmin%22%3A-9001224.450862993%2C%22ymin%22%3A5322463.153554989%2C%22xmax%22%3A-8922952.933898991%2C%22ymax%22%3A5400734.670518989%7D%2C%22mode%22%3A%22view%22%2C%22originPosition%22%3A%22upperLeft%22%2C%22tolerance%22%3A152.87405657031263%7D&resultType=tile&spatialRel=esriSpatialRelIntersects&where=IsPrimary%20%3D%20%27Yes%27&geometryType=esriGeometryEnvelope&inSR=102100",
+  "method": "GET",
+  "status": 200,
+  "content_type": "application/x-protobuf"
+ },
+ {
+  "url": "https://utility.arcgis.com/usrsvcs/servers/d4d0c6dedec14e59930688f3830776c6/rest/services/OpenData/OpenData/MapServer/1/query?f=pbf&geometry=%7B%22xmin%22%3A-8962088.69238099%2C%22ymin%22%3A5371382.851657489%2C%22xmax%22%3A-8957196.722570742%2C%22ymax%22%3A5376274.821467739%7D&orderByFields=OBJECTID%20ASC&outFields=AddressNumber%2CIsPrimary%2COBJECTID%2CUnitNumber&outSR=102100&quantizationParameters=%7B%22extent%22%3A%7B%22spatialReference%22%3A%7B%22latestWkid%22%3A3857%2C%22wkid%22%3A102100%7D%2C%22xmin%22%3A-9001224.450862993%2C%22ymin%22%3A5322463.153554989%2C%22xmax%22%3A-8922952.933898991%2C%22ymax%22%3A5400734.670518989%7D%2C%22mode%22%3A%22view%22%2C%22originPosition%22%3A%22upperLeft%22%2C%22tolerance%22%3A152.87405657031263%7D&resultType=tile&spatialRel=esriSpatialRelIntersects&where=IsPrimary%20%3D%20%27Yes%27&geometryType=esriGeometryEnvelope&inSR=102100",
+  "method": "GET",
+  "status": 200,
+  "content_type": "application/x-protobuf"
+ },
+ {
+  "url": "https://utility.arcgis.com/usrsvcs/servers/d4d0c6dedec14e59930688f3830776c6/rest/services/OpenData/OpenData/MapServer/1/query?f=pbf&geometry=%7B%22xmin%22%3A-8957196.722570742%2C%22ymin%22%3A5371382.851657489%2C%22xmax%22%3A-8952304.752760492%2C%22ymax%22%3A5376274.821467739%7D&orderByFields=OBJECTID%20ASC&outFields=AddressNumber%2CIsPrimary%2COBJECTID%2CUnitNumber&outSR=102100&quantizationParameters=%7B%22extent%22%3A%7B%22spatialReference%22%3A%7B%22latestWkid%22%3A3857%2C%22wkid%22%3A102100%7D%2C%22xmin%22%3A-9001224.450862993%2C%22ymin%22%3A5322463.153554989%2C%22xmax%22%3A-8922952.933898991%2C%22ymax%22%3A5400734.670518989%7D%2C%22mode%22%3A%22view%22%2C%22originPosition%22%3A%22upperLeft%22%2C%22tolerance%22%3A152.87405657031263%7D&resultType=tile&spatialRel=esriSpatialRelIntersects&where=IsPrimary%20%3D%20%27Yes%27&geometryType=esriGeometryEnvelope&inSR=102100",
+  "method": "GET",
+  "status": 200,
+  "content_type": "application/x-protobuf"
+ },
+ {
+  "url": "https://utility.arcgis.com/usrsvcs/servers/d4d0c6dedec14e59930688f3830776c6/rest/services/OpenData/OpenData/MapServer/1/query?f=pbf&geometry=%7B%22xmin%22%3A-8952304.752760492%2C%22ymin%22%3A5371382.851657489%2C%22xmax%22%3A-8942520.813139992%2C%22ymax%22%3A5381166.791277988%7D&orderByFields=OBJECTID%20ASC&outFields=AddressNumber%2CIsPrimary%2COBJECTID%2CUnitNumber&outSR=102100&quantizationParameters=%7B%22extent%22%3A%7B%22spatialReference%22%3A%7B%22latestWkid%22%3A3857%2C%22wkid%22%3A102100%7D%2C%22xmin%22%3A-9001224.450862993%2C%22ymin%22%3A5322463.153554989%2C%22xmax%22%3A-8922952.933898991%2C%22ymax%22%3A5400734.670518989%7D%2C%22mode%22%3A%22view%22%2C%22originPosition%22%3A%22upperLeft%22%2C%22tolerance%22%3A152.87405657031263%7D&resultType=tile&returnExceededLimitFeatures=false&spatialRel=esriSpatialRelIntersects&where=IsPrimary%20%3D%20%27Yes%27&geometryType=esriGeometryEnvelope&inSR=102100",
+  "method": "GET",
+  "status": 200,
+  "content_type": "application/x-protobuf"
+ },
+ {
+  "url": "https://utility.arcgis.com/usrsvcs/servers/d4d0c6dedec14e59930688f3830776c6/rest/services/OpenData/OpenData/MapServer/1/query?f=pbf&geometry=%7B%22xmin%22%3A-8952304.752760492%2C%22ymin%22%3A5376274.821467739%2C%22xmax%22%3A-8947412.782950241%2C%22ymax%22%3A5381166.791277988%7D&orderByFields=OBJECTID%20ASC&outFields=AddressNumber%2CIsPrimary%2COBJECTID%2CUnitNumber&outSR=102100&quantizationParameters=%7B%22extent%22%3A%7B%22spatialReference%22%3A%7B%22latestWkid%22%3A3857%2C%22wkid%22%3A102100%7D%2C%22xmin%22%3A-9001224.450862993%2C%22ymin%22%3A5322463.153554989%2C%22xmax%22%3A-8922952.933898991%2C%22ymax%22%3A5400734.670518989%7D%2C%22mode%22%3A%22view%22%2C%22originPosition%22%3A%22upperLeft%22%2C%22tolerance%22%3A152.87405657031263%7D&resultType=tile&spatialRel=esriSpatialRelIntersects&where=IsPrimary%20%3D%20%27Yes%27&geometryType=esriGeometryEnvelope&inSR=102100",
+  "method": "GET",
+  "status": 200,
+  "content_type": "application/x-protobuf"
+ },
+ {
+  "url": "https://utility.arcgis.com/usrsvcs/servers/d4d0c6dedec14e59930688f3830776c6/rest/services/OpenData/OpenData/MapServer/1/query?f=pbf&geometry=%7B%22xmin%22%3A-8947412.782950241%2C%22ymin%22%3A5376274.821467739%2C%22xmax%22%3A-8942520.813139992%2C%22ymax%22%3A5381166.791277988%7D&orderByFields=OBJECTID%20ASC&outFields=AddressNumber%2CIsPrimary%2COBJECTID%2CUnitNumber&outSR=102100&quantizationParameters=%7B%22extent%22%3A%7B%22spatialReference%22%3A%7B%22latestWkid%22%3A3857%2C%22wkid%22%3A102100%7D%2C%22xmin%22%3A-9001224.450862993%2C%22ymin%22%3A5322463.153554989%2C%22xmax%22%3A-8922952.933898991%2C%22ymax%22%3A5400734.670518989%7D%2C%22mode%22%3A%22view%22%2C%22originPosition%22%3A%22upperLeft%22%2C%22tolerance%22%3A152.87405657031263%7D&resultType=tile&spatialRel=esriSpatialRelIntersects&where=IsPrimary%20%3D%20%27Yes%27&geometryType=esriGeometryEnvelope&inSR=102100",
+  "method": "GET",
+  "status": 200,
+  "content_type": "application/x-protobuf"
+ },
+ {
+  "url": "https://utility.arcgis.com/usrsvcs/servers/d4d0c6dedec14e59930688f3830776c6/rest/services/OpenData/OpenData/MapServer/1/query?f=pbf&geometry=%7B%22xmin%22%3A-8952304.752760492%2C%22ymin%22%3A5371382.851657489%2C%22xmax%22%3A-8947412.782950241%2C%22ymax%22%3A5376274.821467739%7D&orderByFields=OBJECTID%20ASC&outFields=AddressNumber%2CIsPrimary%2COBJECTID%2CUnitNumber&outSR=102100&quantizationParameters=%7B%22extent%22%3A%7B%22spatialReference%22%3A%7B%22latestWkid%22%3A3857%2C%22wkid%22%3A102100%7D%2C%22xmin%22%3A-9001224.450862993%2C%22ymin%22%3A5322463.153554989%2C%22xmax%22%3A-8922952.933898991%2C%22ymax%22%3A5400734.670518989%7D%2C%22mode%22%3A%22view%22%2C%22originPosition%22%3A%22upperLeft%22%2C%22tolerance%22%3A152.87405657031263%7D&resultType=tile&spatialRel=esriSpatialRelIntersects&where=IsPrimary%20%3D%20%27Yes%27&geometryType=esriGeometryEnvelope&inSR=102100",
+  "method": "GET",
+  "status": 200,
+  "content_type": "application/x-protobuf"
+ },
+ {
+  "url": "https://utility.arcgis.com/usrsvcs/servers/d4d0c6dedec14e59930688f3830776c6/rest/services/OpenData/OpenData/MapServer/1/query?f=pbf&geometry=%7B%22xmin%22%3A-8947412.782950241%2C%22ymin%22%3A5371382.851657489%2C%22xmax%22%3A-8942520.813139992%2C%22ymax%22%3A5376274.821467739%7D&orderByFields=OBJECTID%20ASC&outFields=AddressNumber%2CIsPrimary%2COBJECTID%2CUnitNumber&outSR=102100&quantizationParameters=%7B%22extent%22%3A%7B%22spatialReference%22%3A%7B%22latestWkid%22%3A3857%2C%22wkid%22%3A102100%7D%2C%22xmin%22%3A-9001224.450862993%2C%22ymin%22%3A5322463.153554989%2C%22xmax%22%3A-8922952.933898991%2C%22ymax%22%3A5400734.670518989%7D%2C%22mode%22%3A%22view%22%2C%22originPosition%22%3A%22upperLeft%22%2C%22tolerance%22%3A152.87405657031263%7D&resultType=tile&spatialRel=esriSpatialRelIntersects&where=IsPrimary%20%3D%20%27Yes%27&geometryType=esriGeometryEnvelope&inSR=102100",
+  "method": "GET",
+  "status": 200,
+  "content_type": "application/x-protobuf"
+ },
+ {
+  "url": "https://utility.arcgis.com/usrsvcs/servers/d4d0c6dedec14e59930688f3830776c6/rest/services/OpenData/OpenData/MapServer/1/query?f=pbf&geometry=%7B%22xmin%22%3A-8962088.69238099%2C%22ymin%22%3A5361598.912036989%2C%22xmax%22%3A-8952304.752760492%2C%22ymax%22%3A5371382.851657489%7D&orderByFields=OBJECTID%20ASC&outFields=AddressNumber%2CIsPrimary%2COBJECTID%2CUnitNumber&outSR=102100&quantizationParameters=%7B%22extent%22%3A%7B%22spatialReference%22%3A%7B%22latestWkid%22%3A3857%2C%22wkid%22%3A102100%7D%2C%22xmin%22%3A-9001224.450862993%2C%22ymin%22%3A5322463.153554989%2C%22xmax%22%3A-8922952.933898991%2C%22ymax%22%3A5400734.670518989%7D%2C%22mode%22%3A%22view%22%2C%22originPosition%22%3A%22upperLeft%22%2C%22tolerance%22%3A152.87405657031263%7D&resultType=tile&returnExceededLimitFeatures=false&spatialRel=esriSpatialRelIntersects&where=IsPrimary%20%3D%20%27Yes%27&geometryType=esriGeometryEnvelope&inSR=102100",
+  "method": "GET",
+  "status": 200,
+  "content_type": "application/x-protobuf"
+ },
+ {
+  "url": "https://utility.arcgis.com/usrsvcs/servers/d4d0c6dedec14e59930688f3830776c6/rest/services/OpenData/OpenData/MapServer/1/query?f=pbf&geometry=%7B%22xmin%22%3A-8962088.69238099%2C%22ymin%22%3A5366490.881847238%2C%22xmax%22%3A-8957196.722570742%2C%22ymax%22%3A5371382.851657489%7D&orderByFields=OBJECTID%20ASC&outFields=AddressNumber%2CIsPrimary%2COBJECTID%2CUnitNumber&outSR=102100&quantizationParameters=%7B%22extent%22%3A%7B%22spatialReference%22%3A%7B%22latestWkid%22%3A3857%2C%22wkid%22%3A102100%7D%2C%22xmin%22%3A-9001224.450862993%2C%22ymin%22%3A5322463.153554989%2C%22xmax%22%3A-8922952.933898991%2C%22ymax%22%3A5400734.670518989%7D%2C%22mode%22%3A%22view%22%2C%22originPosition%22%3A%22upperLeft%22%2C%22tolerance%22%3A152.87405657031263%7D&resultType=tile&spatialRel=esriSpatialRelIntersects&where=IsPrimary%20%3D%20%27Yes%27&geometryType=esriGeometryEnvelope&inSR=102100",
+  "method": "GET",
+  "status": 200,
+  "content_type": "application/x-protobuf"
+ },
+ {
+  "url": "https://utility.arcgis.com/usrsvcs/servers/d4d0c6dedec14e59930688f3830776c6/rest/services/OpenData/OpenData/MapServer/1/query?f=pbf&geometry=%7B%22xmin%22%3A-8957196.722570742%2C%22ymin%22%3A5366490.881847238%2C%22xmax%22%3A-8952304.752760492%2C%22ymax%22%3A5371382.851657489%7D&orderByFields=OBJECTID%20ASC&outFields=AddressNumber%2CIsPrimary%2COBJECTID%2CUnitNumber&outSR=102100&quantizationParameters=%7B%22extent%22%3A%7B%22spatialReference%22%3A%7B%22latestWkid%22%3A3857%2C%22wkid%22%3A102100%7D%2C%22xmin%22%3A-9001224.450862993%2C%22ymin%22%3A5322463.153554989%2C%22xmax%22%3A-8922952.933898991%2C%22ymax%22%3A5400734.670518989%7D%2C%22mode%22%3A%22view%22%2C%22originPosition%22%3A%22upperLeft%22%2C%22tolerance%22%3A152.87405657031263%7D&resultType=tile&spatialRel=esriSpatialRelIntersects&where=IsPrimary%20%3D%20%27Yes%27&geometryType=esriGeometryEnvelope&inSR=102100",
+  "method": "GET",
+  "status": 200,
+  "content_type": "application/x-protobuf"
+ },
+ {
+  "url": "https://utility.arcgis.com/usrsvcs/servers/d4d0c6dedec14e59930688f3830776c6/rest/services/OpenData/OpenData/MapServer/1/query?f=pbf&geometry=%7B%22xmin%22%3A-8962088.69238099%2C%22ymin%22%3A5361598.912036989%2C%22xmax%22%3A-8957196.722570742%2C%22ymax%22%3A5366490.881847238%7D&orderByFields=OBJECTID%20ASC&outFields=AddressNumber%2CIsPrimary%2COBJECTID%2CUnitNumber&outSR=102100&quantizationParameters=%7B%22extent%22%3A%7B%22spatialReference%22%3A%7B%22latestWkid%22%3A3857%2C%22wkid%22%3A102100%7D%2C%22xmin%22%3A-9001224.450862993%2C%22ymin%22%3A5322463.153554989%2C%22xmax%22%3A-8922952.933898991%2C%22ymax%22%3A5400734.670518989%7D%2C%22mode%22%3A%22view%22%2C%22originPosition%22%3A%22upperLeft%22%2C%22tolerance%22%3A152.87405657031263%7D&resultType=tile&spatialRel=esriSpatialRelIntersects&where=IsPrimary%20%3D%20%27Yes%27&geometryType=esriGeometryEnvelope&inSR=102100",
+  "method": "GET",
+  "status": 200,
+  "content_type": "application/x-protobuf"
+ },
+ {
+  "url": "https://utility.arcgis.com/usrsvcs/servers/d4d0c6dedec14e59930688f3830776c6/rest/services/OpenData/OpenData/MapServer/1/query?f=pbf&geometry=%7B%22xmin%22%3A-8957196.722570742%2C%22ymin%22%3A5361598.912036989%2C%22xmax%22%3A-8952304.752760492%2C%22ymax%22%3A5366490.881847238%7D&orderByFields=OBJECTID%20ASC&outFields=AddressNumber%2CIsPrimary%2COBJECTID%2CUnitNumber&outSR=102100&quantizationParameters=%7B%22extent%22%3A%7B%22spatialReference%22%3A%7B%22latestWkid%22%3A3857%2C%22wkid%22%3A102100%7D%2C%22xmin%22%3A-9001224.450862993%2C%22ymin%22%3A5322463.153554989%2C%22xmax%22%3A-8922952.933898991%2C%22ymax%22%3A5400734.670518989%7D%2C%22mode%22%3A%22view%22%2C%22originPosition%22%3A%22upperLeft%22%2C%22tolerance%22%3A152.87405657031263%7D&resultType=tile&spatialRel=esriSpatialRelIntersects&where=IsPrimary%20%3D%20%27Yes%27&geometryType=esriGeometryEnvelope&inSR=102100",
+  "method": "GET",
+  "status": 200,
+  "content_type": "application/x-protobuf"
+ },
+ {
+  "url": "https://utility.arcgis.com/usrsvcs/servers/d4d0c6dedec14e59930688f3830776c6/rest/services/OpenData/OpenData/MapServer/1/query?f=pbf&geometry=%7B%22xmin%22%3A-8952304.752760492%2C%22ymin%22%3A5361598.912036989%2C%22xmax%22%3A-8942520.813139992%2C%22ymax%22%3A5371382.851657489%7D&orderByFields=OBJECTID%20ASC&outFields=AddressNumber%2CIsPrimary%2COBJECTID%2CUnitNumber&outSR=102100&quantizationParameters=%7B%22extent%22%3A%7B%22spatialReference%22%3A%7B%22latestWkid%22%3A3857%2C%22wkid%22%3A102100%7D%2C%22xmin%22%3A-9001224.450862993%2C%22ymin%22%3A5322463.153554989%2C%22xmax%22%3A-8922952.933898991%2C%22ymax%22%3A5400734.670518989%7D%2C%22mode%22%3A%22view%22%2C%22originPosition%22%3A%22upperLeft%22%2C%22tolerance%22%3A152.87405657031263%7D&resultType=tile&returnExceededLimitFeatures=false&spatialRel=esriSpatialRelIntersects&where=IsPrimary%20%3D%20%27Yes%27&geometryType=esriGeometryEnvelope&inSR=102100",
+  "method": "GET",
+  "status": 200,
+  "content_type": "application/x-protobuf"
+ },
+ {
+  "url": "https://utility.arcgis.com/usrsvcs/servers/d4d0c6dedec14e59930688f3830776c6/rest/services/OpenData/OpenData/MapServer/1/query?f=pbf&geometry=%7B%22xmin%22%3A-8952304.752760492%2C%22ymin%22%3A5366490.881847238%2C%22xmax%22%3A-8947412.782950241%2C%22ymax%22%3A5371382.851657489%7D&orderByFields=OBJECTID%20ASC&outFields=AddressNumber%2CIsPrimary%2COBJECTID%2CUnitNumber&outSR=102100&quantizationParameters=%7B%22extent%22%3A%7B%22spatialReference%22%3A%7B%22latestWkid%22%3A3857%2C%22wkid%22%3A102100%7D%2C%22xmin%22%3A-9001224.450862993%2C%22ymin%22%3A5322463.153554989%2C%22xmax%22%3A-8922952.933898991%2C%22ymax%22%3A5400734.670518989%7D%2C%22mode%22%3A%22view%22%2C%22originPosition%22%3A%22upperLeft%22%2C%22tolerance%22%3A152.87405657031263%7D&resultType=tile&spatialRel=esriSpatialRelIntersects&where=IsPrimary%20%3D%20%27Yes%27&geometryType=esriGeometryEnvelope&inSR=102100",
+  "method": "GET",
+  "status": 200,
+  "content_type": "application/x-protobuf"
+ },
+ {
+  "url": "https://utility.arcgis.com/usrsvcs/servers/d4d0c6dedec14e59930688f3830776c6/rest/services/OpenData/OpenData/MapServer/1/query?f=pbf&geometry=%7B%22xmin%22%3A-8947412.782950241%2C%22ymin%22%3A5366490.881847238%2C%22xmax%22%3A-8942520.813139992%2C%22ymax%22%3A5371382.851657489%7D&orderByFields=OBJECTID%20ASC&outFields=AddressNumber%2CIsPrimary%2COBJECTID%2CUnitNumber&outSR=102100&quantizationParameters=%7B%22extent%22%3A%7B%22spatialReference%22%3A%7B%22latestWkid%22%3A3857%2C%22wkid%22%3A102100%7D%2C%22xmin%22%3A-9001224.450862993%2C%22ymin%22%3A5322463.153554989%2C%22xmax%22%3A-8922952.933898991%2C%22ymax%22%3A5400734.670518989%7D%2C%22mode%22%3A%22view%22%2C%22originPosition%22%3A%22upperLeft%22%2C%22tolerance%22%3A152.87405657031263%7D&resultType=tile&spatialRel=esriSpatialRelIntersects&where=IsPrimary%20%3D%20%27Yes%27&geometryType=esriGeometryEnvelope&inSR=102100",
+  "method": "GET",
+  "status": 200,
+  "content_type": "application/x-protobuf"
+ },
+ {
+  "url": "https://utility.arcgis.com/usrsvcs/servers/d4d0c6dedec14e59930688f3830776c6/rest/services/OpenData/OpenData/MapServer/1/query?f=pbf&geometry=%7B%22xmin%22%3A-8952304.752760492%2C%22ymin%22%3A5361598.912036989%2C%22xmax%22%3A-8947412.782950241%2C%22ymax%22%3A5366490.881847238%7D&orderByFields=OBJECTID%20ASC&outFields=AddressNumber%2CIsPrimary%2COBJECTID%2CUnitNumber&outSR=102100&quantizationParameters=%7B%22extent%22%3A%7B%22spatialReference%22%3A%7B%22latestWkid%22%3A3857%2C%22wkid%22%3A102100%7D%2C%22xmin%22%3A-9001224.450862993%2C%22ymin%22%3A5322463.153554989%2C%22xmax%22%3A-8922952.933898991%2C%22ymax%22%3A5400734.670518989%7D%2C%22mode%22%3A%22view%22%2C%22originPosition%22%3A%22upperLeft%22%2C%22tolerance%22%3A152.87405657031263%7D&resultType=tile&spatialRel=esriSpatialRelIntersects&where=IsPrimary%20%3D%20%27Yes%27&geometryType=esriGeometryEnvelope&inSR=102100",
+  "method": "GET",
+  "status": 200,
+  "content_type": "application/x-protobuf"
+ },
+ {
+  "url": "https://utility.arcgis.com/usrsvcs/servers/d4d0c6dedec14e59930688f3830776c6/rest/services/OpenData/OpenData/MapServer/1/query?f=pbf&geometry=%7B%22xmin%22%3A-8947412.782950241%2C%22ymin%22%3A5361598.912036989%2C%22xmax%22%3A-8942520.813139992%2C%22ymax%22%3A5366490.881847238%7D&orderByFields=OBJECTID%20ASC&outFields=AddressNumber%2CIsPrimary%2COBJECTID%2CUnitNumber&outSR=102100&quantizationParameters=%7B%22extent%22%3A%7B%22spatialReference%22%3A%7B%22latestWkid%22%3A3857%2C%22wkid%22%3A102100%7D%2C%22xmin%22%3A-9001224.450862993%2C%22ymin%22%3A5322463.153554989%2C%22xmax%22%3A-8922952.933898991%2C%22ymax%22%3A5400734.670518989%7D%2C%22mode%22%3A%22view%22%2C%22originPosition%22%3A%22upperLeft%22%2C%22tolerance%22%3A152.87405657031263%7D&resultType=tile&spatialRel=esriSpatialRelIntersects&where=IsPrimary%20%3D%20%27Yes%27&geometryType=esriGeometryEnvelope&inSR=102100",
+  "method": "GET",
+  "status": 200,
+  "content_type": "application/x-protobuf"
+ },
+ {
+  "url": "https://utility.arcgis.com/usrsvcs/servers/d4d0c6dedec14e59930688f3830776c6/rest/services/OpenData/OpenData/MapServer/1/query?f=pbf&geometry=%7B%22xmin%22%3A-8942520.813139992%2C%22ymin%22%3A5361598.912036989%2C%22xmax%22%3A-8922952.933898991%2C%22ymax%22%3A5381166.791277988%7D&orderByFields=OBJECTID%20ASC&outFields=AddressNumber%2CIsPrimary%2COBJECTID%2CUnitNumber&outSR=102100&quantizationParameters=%7B%22extent%22%3A%7B%22spatialReference%22%3A%7B%22latestWkid%22%3A3857%2C%22wkid%22%3A102100%7D%2C%22xmin%22%3A-9001224.450862993%2C%22ymin%22%3A5322463.153554989%2C%22xmax%22%3A-8922952.933898991%2C%22ymax%22%3A5400734.670518989%7D%2C%22mode%22%3A%22view%22%2C%22originPosition%22%3A%22upperLeft%22%2C%22tolerance%22%3A152.87405657031263%7D&resultType=tile&returnExceededLimitFeatures=false&spatialRel=esriSpatialRelIntersects&where=IsPrimary%20%3D%20%27Yes%27&geometryType=esriGeometryEnvelope&inSR=102100",
+  "method": "GET",
+  "status": 200,
+  "content_type": "application/x-protobuf"
+ },
+ {
+  "url": "https://utility.arcgis.com/usrsvcs/servers/d4d0c6dedec14e59930688f3830776c6/rest/services/OpenData/OpenData/MapServer/1/query?f=pbf&geometry=%7B%22xmin%22%3A-8942520.813139992%2C%22ymin%22%3A5371382.851657489%2C%22xmax%22%3A-8932736.873519491%2C%22ymax%22%3A5381166.791277988%7D&orderByFields=OBJECTID%20ASC&outFields=AddressNumber%2CIsPrimary%2COBJECTID%2CUnitNumber&outSR=102100&quantizationParameters=%7B%22extent%22%3A%7B%22spatialReference%22%3A%7B%22latestWkid%22%3A3857%2C%22wkid%22%3A102100%7D%2C%22xmin%22%3A-9001224.450862993%2C%22ymin%22%3A5322463.153554989%2C%22xmax%22%3A-8922952.933898991%2C%22ymax%22%3A5400734.670518989%7D%2C%22mode%22%3A%22view%22%2C%22originPosition%22%3A%22upperLeft%22%2C%22tolerance%22%3A152.87405657031263%7D&resultType=tile&returnExceededLimitFeatures=false&spatialRel=esriSpatialRelIntersects&where=IsPrimary%20%3D%20%27Yes%27&geometryType=esriGeometryEnvelope&inSR=102100",
+  "method": "GET",
+  "status": 200,
+  "content_type": "application/x-protobuf"
+ },
+ {
+  "url": "https://utility.arcgis.com/usrsvcs/servers/d4d0c6dedec14e59930688f3830776c6/rest/services/OpenData/OpenData/MapServer/1/query?f=pbf&geometry=%7B%22xmin%22%3A-8942520.813139992%2C%22ymin%22%3A5376274.821467739%2C%22xmax%22%3A-8937628.843329743%2C%22ymax%22%3A5381166.791277988%7D&orderByFields=OBJECTID%20ASC&outFields=AddressNumber%2CIsPrimary%2COBJECTID%2CUnitNumber&outSR=102100&quantizationParameters=%7B%22extent%22%3A%7B%22spatialReference%22%3A%7B%22latestWkid%22%3A3857%2C%22wkid%22%3A102100%7D%2C%22xmin%22%3A-9001224.450862993%2C%22ymin%22%3A5322463.153554989%2C%22xmax%22%3A-8922952.933898991%2C%22ymax%22%3A5400734.670518989%7D%2C%22mode%22%3A%22view%22%2C%22originPosition%22%3A%22upperLeft%22%2C%22tolerance%22%3A152.87405657031263%7D&resultType=tile&spatialRel=esriSpatialRelIntersects&where=IsPrimary%20%3D%20%27Yes%27&geometryType=esriGeometryEnvelope&inSR=102100",
+  "method": "GET",
+  "status": 200,
+  "content_type": "application/x-protobuf"
+ },
+ {
+  "url": "https://utility.arcgis.com/usrsvcs/servers/d4d0c6dedec14e59930688f3830776c6/rest/services/OpenData/OpenData/MapServer/1/query?f=pbf&geometry=%7B%22xmin%22%3A-8937628.843329743%2C%22ymin%22%3A5376274.821467739%2C%22xmax%22%3A-8932736.873519491%2C%22ymax%22%3A5381166.791277988%7D&orderByFields=OBJECTID%20ASC&outFields=AddressNumber%2CIsPrimary%2COBJECTID%2CUnitNumber&outSR=102100&quantizationParameters=%7B%22extent%22%3A%7B%22spatialReference%22%3A%7B%22latestWkid%22%3A3857%2C%22wkid%22%3A102100%7D%2C%22xmin%22%3A-9001224.450862993%2C%22ymin%22%3A5322463.153554989%2C%22xmax%22%3A-8922952.933898991%2C%22ymax%22%3A5400734.670518989%7D%2C%22mode%22%3A%22view%22%2C%22originPosition%22%3A%22upperLeft%22%2C%22tolerance%22%3A152.87405657031263%7D&resultType=tile&spatialRel=esriSpatialRelIntersects&where=IsPrimary%20%3D%20%27Yes%27&geometryType=esriGeometryEnvelope&inSR=102100",
+  "method": "GET",
+  "status": 200,
+  "content_type": "application/x-protobuf"
+ }
+]

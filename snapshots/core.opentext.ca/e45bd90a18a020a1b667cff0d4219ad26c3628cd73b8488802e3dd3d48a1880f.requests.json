@@ -1,0 +1,134 @@
+[
+ {
+  "url": "https://core.opentext.ca/assets/i18n/en.json",
+  "method": "GET",
+  "status": 200,
+  "content_type": "application/json"
+ },
+ {
+  "url": "https://core.opentext.ca/socket.io/?EIO=4&transport=polling&t=kjvin88x",
+  "method": "GET",
+  "status": 200,
+  "content_type": "text/plain; charset=UTF-8"
+ },
+ {
+  "url": "https://core.opentext.ca/assets/i18n/en.json",
+  "method": "GET",
+  "status": 200,
+  "content_type": "application/json"
+ },
+ {
+  "url": "https://core.opentext.ca/api/v1/application/version",
+  "method": "GET",
+  "status": 200,
+  "content_type": "application/json; charset=utf-8"
+ },
+ {
+  "url": "https://core.opentext.ca/socket.io/?EIO=4&transport=polling&t=kjvjj54l&sid=Cy0q2QNGrYtUqlx_AH_b",
+  "method": "POST",
+  "status": 200,
+  "content_type": "text/html"
+ },
+ {
+  "url": "https://core.opentext.ca/socket.io/?EIO=4&transport=polling&t=kjvjm51v&sid=Cy0q2QNGrYtUqlx_AH_b",
+  "method": "GET",
+  "status": 200,
+  "content_type": "text/plain; charset=UTF-8"
+ },
+ {
+  "url": "https://core.opentext.ca/socket.io/?isPublic=true&EIO=4&transport=polling&t=kjvkever",
+  "method": "GET",
+  "status": 200,
+  "content_type": "text/plain; charset=UTF-8"
+ },
+ {
+  "url": "https://core.opentext.ca/assets/i18n/en.json",
+  "method": "GET",
+  "status": 200,
+  "content_type": "application/json"
+ },
+ {
+  "url": "https://core.opentext.ca/assets/i18n/en.json",
+  "method": "GET",
+  "status": 200,
+  "content_type": "application/json"
+ },
+ {
+  "url": "https://core.opentext.ca/socket.io/?EIO=4&transport=polling&t=kjvmdnnb",
+  "method": "GET",
+  "status": 200,
+  "content_type": "text/plain; charset=UTF-8"
+ },
+ {
+  "url": "https://core.opentext.ca/api/v1/application/version",
+  "method": "GET",
+  "status": 200,
+  "content_type": "application/json; charset=utf-8"
+ },
+ {
+  "url": "https://core.opentext.ca/socket.io/?isPublic=true&EIO=4&transport=polling&t=kjvmsvhf",
+  "method": "GET",
+  "status": 200,
+  "content_type": "text/plain; charset=UTF-8"
+ },
+ {
+  "url": "https://core.opentext.ca/socket.io/?EIO=4&transport=polling&t=kjvmzlya&sid=DLB5dosRjo0olzcsAH_d",
+  "method": "POST",
+  "status": 200,
+  "content_type": "text/html"
+ },
+ {
+  "url": "https://core.opentext.ca/socket.io/?EIO=4&transport=polling&t=kjvn02gn&sid=DLB5dosRjo0olzcsAH_d",
+  "method": "GET",
+  "status": 200,
+  "content_type": "text/plain; charset=UTF-8"
+ },
+ {
+  "url": "https://core.opentext.ca/api/v1/s/a5e9c05dc51d87352da3d99919f972ef056aa38809102760/options",
+  "method": "GET",
+  "status": 200,
+  "content_type": "application/json; charset=utf-8"
+ },
+ {
+  "url": "https://core.opentext.ca/socket.io/?isPublic=true&EIO=4&transport=polling&t=kjvng3ns&sid=yzUeXvgHKFY1wuErAH_e",
+  "method": "POST",
+  "status": 200,
+  "content_type": "text/html"
+ },
+ {
+  "url": "https://core.opentext.ca/socket.io/?isPublic=true&EIO=4&transport=polling&t=kjvnh0dl&sid=yzUeXvgHKFY1wuErAH_e",
+  "method": "GET",
+  "status": 200,
+  "content_type": "text/plain; charset=UTF-8"
+ },
+ {
+  "url": "https://core.opentext.ca/api/v1/s/a5e9c05dc51d87352da3d99919f972ef056aa38809102760/customizations",
+  "method": "GET",
+  "status": 200,
+  "content_type": "application/json; charset=utf-8"
+ },
+ {
+  "url": "https://core.opentext.ca/api/v1/s/a5e9c05dc51d87352da3d99919f972ef056aa38809102760",
+  "method": "GET",
+  "status": 200,
+  "content_type": "application/json; charset=utf-8"
+ },
+ {
+  "url": "https://core.opentext.ca/socket.io/?EIO=4&transport=polling&t=kjvnnnzi&sid=DLB5dosRjo0olzcsAH_d",
+  "method": "GET",
+  "status": 200,
+  "content_type": "text/plain; charset=UTF-8"
+ },
+ {
+  "url": "https://core.opentext.ca/api/v1/public/a5e9c05dc51d87352da3d99919f972ef056aa38809102760/2485784898825097364/children?limit=25&filter=any&order=lastModified:desc",
+  "method": "GET",
+  "status": 200,
+  "content_type": "application/json; charset=utf-8"
+ },
+ {
+  "url": "https://core.opentext.ca/socket.io/?isPublic=true&EIO=4&transport=polling&t=kjvo14cm&sid=yzUeXvgHKFY1wuErAH_e",
+  "method": "GET",
+  "status": 200,
+  "content_type": "text/plain; charset=UTF-8"
+ }
+]

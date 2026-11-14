@@ -1,0 +1,8 @@
+[
+ {
+  "url": "https://webapps.regionofwaterloo.ca/api/grt-routes/Home/Statistics/",
+  "method": "GET",
+  "status": 200,
+  "content_type": "application/json; charset=utf-8"
+ }
+]

@@ -1,0 +1,80 @@
+[
+ {
+  "url": "https://o382617.ingest.sentry.io/api/5211718/envelope/?sentry_version=7&sentry_key=e008262d2e8d4d77b2b47c497692546d&sentry_client=sentry.javascript.browser%2F10.27.0",
+  "method": "POST",
+  "status": 200,
+  "content_type": "application/json"
+ },
+ {
+  "url": "https://analytics.google.com/g/collect?v=2&tid=G-F03DWSJDKM&gtm=45je6bb1v9125981398za20ozb78045476zd78045476xf1&_p=1794670874454&_gaz=1&gcd=13l3l3l3l1l1&npa=0&dma=0&_eu=AAAAAGQ&cid=1347219115.1794670616&frm=0&pscdl=noapi&rcb=2&sr=1280x720&uaa=arm&uab=64&uafvl=Not-A.Brand%3B99.0.0.0%7CGoogle%2520Chrome%3B157.0.8103.78%7CChromium%3B157.0.8103.78&uam=&uamb=0&uap=macOS&uapv=15.6.0&uaw=0&ul=en-us&gaf=2&_s=1&tag_exp=100940090~115938466~115938469~118897920~118897930~119404696~120213116~120385423~120412528~120420414~120469145~120469153~121246026~121246034&sid=1794670615&sct=1&seg=1&dl=https%3A%2F%2Fwww.engagewr.ca%2Fwaterloo-rental%2Fcity-waterloo-council-approves-creation-rental-renovation-licensing-program&dt=City%20of%20Waterloo%20Council%20approves%20creation%20of%20Rental%20Renovation%20Licensing%20Program%20%7C%20Rental%20Housing%20Licensing%20Review%20%7C%20EngageWR&en=page_view&_c=1&tfd=540",
+  "method": "POST",
+  "status": 204,
+  "content_type": "text/plain"
+ },
+ {
+  "url": "https://www.engagewr.ca/application/js/i18n/hive/en-CA/form.json?_v=2.71.4.0",
+  "method": "GET",
+  "status": 200,
+  "content_type": "application/json"
+ },
+ {
+  "url": "https://www.engagewr.ca/application/js/i18n/hive/en-CA/block_ui.json?_v=2.71.4.0",
+  "method": "GET",
+  "status": 200,
+  "content_type": "application/json"
+ },
+ {
+  "url": "https://www.engagewr.ca/application/js/i18n/hive/en-US/form.json?_v=2.71.4.0",
+  "method": "GET",
+  "status": 200,
+  "content_type": "application/json"
+ },
+ {
+  "url": "https://www.engagewr.ca/application/js/i18n/hive/en-US/block_ui.json?_v=2.71.4.0",
+  "method": "GET",
+  "status": 200,
+  "content_type": "application/json"
+ },
+ {
+  "url": "https://www.engagewr.ca/application/js/i18n/hive/en-CA/core.json?_v=2.71.4.0",
+  "method": "GET",
+  "status": 200,
+  "content_type": "application/json"
+ },
+ {
+  "url": "https://www.engagewr.ca/application/js/i18n/hive/en-US/core.json?_v=2.71.4.0",
+  "method": "GET",
+  "status": 200,
+  "content_type": "application/json"
+ },
+ {
+  "url": "https://bam.nr-data.net/events/1/8d90b6fc96?a=1702865249&v=1.324.1&to=bldVN0FUXxICAhVfDVcddBZAQV4MTCIOWAFLV0MGb3ZeEwY9MVcFXG50DF1BQw4PDQREPmlTUAZwWl8VEQ4NWgdLCA0VWlBG&rst=659&s=16505622b9c2e1f2&ref=https://www.engagewr.ca/waterloo-rental/city-waterloo-council-approves-creation-rental-renovation-licensing-program&ptid=99778262fc81a475",
+  "method": "POST",
+  "status": 200,
+  "content_type": "image/gif"
+ },
+ {
+  "url": "https://bam.nr-data.net/events/1/8d90b6fc96?a=1702865249&v=1.324.1&to=bldVN0FUXxICAhVfDVcddBZAQV4MTCIOWAFLV0MGb3ZeEwY9MVcFXG50DF1BQw4PDQREPmlTUAZwWl8VEQ4NWgdLCA0VWlBG&rst=658&s=16505622b9c2e1f2&ref=https://www.engagewr.ca/waterloo-rental/city-waterloo-council-approves-creation-rental-renovation-licensing-program&ptid=99778262fc81a475",
+  "method": "POST",
+  "status": 200,
+  "content_type": "image/gif"
+ },
+ {
+  "url": "https://bam.nr-data.net/jserrors/1/8d90b6fc96?a=1702865249&v=1.324.1&to=bldVN0FUXxICAhVfDVcddBZAQV4MTCIOWAFLV0MGb3ZeEwY9MVcFXG50DF1BQw4PDQREPmlTUAZwWl8VEQ4NWgdLCA0VWlBG&rst=659&s=16505622b9c2e1f2&ref=https://www.engagewr.ca/waterloo-rental/city-waterloo-council-approves-creation-rental-renovation-licensing-program&ptid=99778262fc81a475",
+  "method": "POST",
+  "status": 200,
+  "content_type": "image/gif"
+ },
+ {
+  "url": "https://bam.nr-data.net/rum/2/8d90b6fc96?a=1702865249&v=1.324.1&to=bldVN0FUXxICAhVfDVcddBZAQV4MTCIOWAFLV0MGb3ZeEwY9MVcFXG50DF1BQw4PDQREPmlTUAZwWl8VEQ4NWgdLCA0VWlBG&rst=657&s=16505622b9c2e1f2&ref=https://www.engagewr.ca/waterloo-rental/city-waterloo-council-approves-creation-rental-renovation-licensing-program&ptid=99778262fc81a475&at=QhBCQQlOTE1BAEMMGURP&af=err,spa,xhr,stn,ins&ap=430&be=453&fe=188&dc=184&fp=564&fcp=564&perf=%7B%22timing%22:%7B%22of%22:1794670873990,%22n%22:0,%22f%22:0,%22dn%22:0,%22dne%22:0,%22c%22:0,%22s%22:0,%22ce%22:0,%22rq%22:1,%22rp%22:454,%22rpe%22:456,%22di%22:636,%22ds%22:636,%22de%22:637,%22dc%22:640,%22l%22:640,%22le%22:641%7D,%22navigation%22:%7B%7D%7D&timestamp=1794670874076",
+  "method": "POST",
+  "status": 200,
+  "content_type": "image/gif"
+ },
+ {
+  "url": "https://bam.nr-data.net/events/1/8d90b6fc96?a=1702865249&v=1.324.1&to=bldVN0FUXxICAhVfDVcddBZAQV4MTCIOWAFLV0MGb3ZeEwY9MVcFXG50DF1BQw4PDQREPmlTUAZwWl8VEQ4NWgdLCA0VWlBG&rst=659&s=16505622b9c2e1f2&ref=https://www.engagewr.ca/waterloo-rental/city-waterloo-council-approves-creation-rental-renovation-licensing-program&ptid=99778262fc81a475",
+  "method": "POST",
+  "status": 200,
+  "content_type": "image/gif"
+ }
+]

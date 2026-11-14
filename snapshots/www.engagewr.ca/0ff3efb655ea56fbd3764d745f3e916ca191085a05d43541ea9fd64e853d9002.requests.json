@@ -1,0 +1,92 @@
+[
+ {
+  "url": "https://o382617.ingest.sentry.io/api/5211718/envelope/?sentry_version=7&sentry_key=e008262d2e8d4d77b2b47c497692546d&sentry_client=sentry.javascript.browser%2F10.27.0",
+  "method": "POST",
+  "status": 200,
+  "content_type": "application/json"
+ },
+ {
+  "url": "https://www.engagewr.ca/application/js/i18n/hive/en-CA/form.json?_v=2.71.4.0",
+  "method": "GET",
+  "status": 200,
+  "content_type": "application/json"
+ },
+ {
+  "url": "https://analytics.google.com/g/collect?v=2&tid=G-F03DWSJDKM&gtm=45je6bb1v9125981398za20ozb78045476zd78045476xf1&_p=1794670832893&gcd=13l3l3l3l1l1&npa=0&dma=0&_eu=AAAAAGQ&cid=1347219115.1794670616&frm=0&pscdl=noapi&rcb=0&sr=1280x720&uaa=arm&uab=64&uafvl=Not-A.Brand%3B99.0.0.0%7CGoogle%2520Chrome%3B157.0.8103.78%7CChromium%3B157.0.8103.78&uam=&uamb=0&uap=macOS&uapv=15.6.0&uaw=0&ul=en-us&gaf=2&_s=1&tag_exp=115938465~115938468~118897920~118897930~119863601~120213116~120385423~120412526~120420416~120469145~120469153~121246026~121246034&sid=1794670615&sct=1&seg=1&dl=https%3A%2F%2Fwww.engagewr.ca%2Fmoore-avenue-south-reconstruction-1&dt=Moore%20Avenue%20South%20Reconstruction%20%7C%20EngageWR&en=page_view&_c=1&tfd=426",
+  "method": "POST",
+  "status": 204,
+  "content_type": "text/plain"
+ },
+ {
+  "url": "https://www.engagewr.ca/application/js/i18n/hive/en-CA/block_ui.json?_v=2.71.4.0",
+  "method": "GET",
+  "status": 200,
+  "content_type": "application/json"
+ },
+ {
+  "url": "https://www.engagewr.ca/application/js/i18n/hive/en-US/form.json?_v=2.71.4.0",
+  "method": "GET",
+  "status": 200,
+  "content_type": "application/json"
+ },
+ {
+  "url": "https://www.engagewr.ca/application/js/i18n/hive/en-US/block_ui.json?_v=2.71.4.0",
+  "method": "GET",
+  "status": 200,
+  "content_type": "application/json"
+ },
+ {
+  "url": "https://www.engagewr.ca/application/js/i18n/hive/en-CA/news_feed.json?_v=2.71.4.0",
+  "method": "GET",
+  "status": 200,
+  "content_type": "application/json"
+ },
+ {
+  "url": "https://www.engagewr.ca/application/js/i18n/hive/en-US/news_feed.json?_v=2.71.4.0",
+  "method": "GET",
+  "status": 200,
+  "content_type": "application/json"
+ },
+ {
+  "url": "https://www.engagewr.ca/application/js/i18n/hive/en-CA/core.json?_v=2.71.4.0",
+  "method": "GET",
+  "status": 200,
+  "content_type": "application/json"
+ },
+ {
+  "url": "https://www.engagewr.ca/application/js/i18n/hive/en-US/core.json?_v=2.71.4.0",
+  "method": "GET",
+  "status": 200,
+  "content_type": "application/json"
+ },
+ {
+  "url": "https://bam.nr-data.net/jserrors/1/8d90b6fc96?a=1702865249&v=1.324.1&to=bldVN0FUXxICAhVfDVcddBZAQV4MTCIOWAFLV0MGb2VQAggABlM%2BbVpSK1pDVDERDgtTAU1BayBcW0UTDA0NUxBlYlYEVmFIEQY9MUQNU1dUFwkPRwgGFg%3D%3D&rst=697&s=16505622b9c2e1f2&ref=https://www.engagewr.ca/moore-avenue-south-reconstruction-1&ptid=60183eafb7d309a6",
+  "method": "POST",
+  "status": 200,
+  "content_type": "image/gif"
+ },
+ {
+  "url": "https://bam.nr-data.net/rum/2/8d90b6fc96?a=1702865249&v=1.324.1&to=bldVN0FUXxICAhVfDVcddBZAQV4MTCIOWAFLV0MGb2VQAggABlM%2BbVpSK1pDVDERDgtTAU1BayBcW0UTDA0NUxBlYlYEVmFIEQY9MUQNU1dUFwkPRwgGFg%3D%3D&rst=696&s=16505622b9c2e1f2&ref=https://www.engagewr.ca/moore-avenue-south-reconstruction-1&ptid=60183eafb7d309a6&at=QhBCQQlOTE1BAEMMGURP&af=err,spa,xhr,stn,ins&ap=321&be=344&fe=348&dc=165&fp=476&fcp=476&perf=%7B%22timing%22:%7B%22of%22:1794670832532,%22n%22:0,%22f%22:1,%22dn%22:1,%22dne%22:1,%22c%22:1,%22s%22:1,%22ce%22:1,%22rq%22:1,%22rp%22:345,%22rpe%22:348,%22di%22:508,%22ds%22:508,%22de%22:509,%22dc%22:691,%22l%22:691,%22le%22:692%7D,%22navigation%22:%7B%7D%7D&timestamp=1794670832618",
+  "method": "POST",
+  "status": 200,
+  "content_type": "image/gif"
+ },
+ {
+  "url": "https://bam.nr-data.net/events/1/8d90b6fc96?a=1702865249&v=1.324.1&to=bldVN0FUXxICAhVfDVcddBZAQV4MTCIOWAFLV0MGb2VQAggABlM%2BbVpSK1pDVDERDgtTAU1BayBcW0UTDA0NUxBlYlYEVmFIEQY9MUQNU1dUFwkPRwgGFg%3D%3D&rst=697&s=16505622b9c2e1f2&ref=https://www.engagewr.ca/moore-avenue-south-reconstruction-1&ptid=60183eafb7d309a6",
+  "method": "POST",
+  "status": 200,
+  "content_type": "image/gif"
+ },
+ {
+  "url": "https://bam.nr-data.net/events/1/8d90b6fc96?a=1702865249&v=1.324.1&to=bldVN0FUXxICAhVfDVcddBZAQV4MTCIOWAFLV0MGb2VQAggABlM%2BbVpSK1pDVDERDgtTAU1BayBcW0UTDA0NUxBlYlYEVmFIEQY9MUQNU1dUFwkPRwgGFg%3D%3D&rst=698&s=16505622b9c2e1f2&ref=https://www.engagewr.ca/moore-avenue-south-reconstruction-1&ptid=60183eafb7d309a6",
+  "method": "POST",
+  "status": 200,
+  "content_type": "image/gif"
+ },
+ {
+  "url": "https://api.ca.harvestdp.com/hive/project/news?pagination=true&authtoken=eyJ0eXAiOiJKV1QiLCJhbGciOiJIRFBFQSIsImlhdCI6MTc5NDY3MDgzMiwidGFnIjoiSGl2ZSJ9.eyJlbmNyeXB0ZWQiOiJBczN5VnZYMFcxaWhSdm9tNXlENk1IMkpxWVFDUUJ5WFRtZUlTaURuNGRnNHlLYzljcTB2UlFLNkRMa1dqaldReE9HRnczdmVzclwvbXVOc2lZaG9KRlZpWlhhVjgwSmRFQ0wwWTNcLzdzOXVIYmtiY2VpVncyUTZmc215c3RLS0w1VGZaVm16d2swUDcxb1ZuY0dDRWNHUlZOQ1lRM1JWUXNiaVpkQ0tXeHp1S1pQWGVuWThlZjlwNUZqSFRXaDRtNlNhcz0ifQ.XergB_vDdl6Wuw9tuClvRKFvOmsXU2n6mfJ3cSFTiKg&length=12&start=0&sort=date_created&order=desc",
+  "method": "GET",
+  "status": 200,
+  "content_type": "application/json;charset=utf-8"
+ }
+]

@@ -1,0 +1,118 @@
+snapshots:
+- id: S-dec8-packet
+  url: https://events.waterloo.ca/meetings/Detail/2025-12-08-1400-Council-Meeting/949c2f40-e9de-470f-b1bb-b3a20146c594
+  fetched_at: '2026-11-14T15:36:48+00:00'
+  obtained_by: chromium
+  availability: blocked
+  reason: 'not requested: events.waterloo.ca gave "HTTP 403" for https://events.waterloo.ca/meetings/, so the host
+    was left alone'
+  particular: P011-P014,P196,P197
+  publisher: City of Waterloo
+  title: City Council packet, December 8, 2025 (313 pages)
+- id: S-dec8-revised
+  url: https://events.waterloo.ca/meetings/Detail/2025-12-08-1400-Council-Meeting/1cdc7d1e-b124-4980-8489-b3ac01313080
+  fetched_at: '2026-11-14T15:36:48+00:00'
+  obtained_by: chromium
+  availability: blocked
+  reason: 'not requested: events.waterloo.ca gave "HTTP 403" for https://events.waterloo.ca/meetings/, so the host
+    was left alone'
+  particular: P011
+  publisher: City of Waterloo
+  title: Revised agenda, December 8, 2025
+- id: S-dec8-minutes
+  url: https://events.waterloo.ca/meetings/Detail/2025-12-08-1400-Council-Meeting/40f19d1e-a584-4fb6-95fa-b3d801306dd5
+  fetched_at: '2026-11-14T15:36:48+00:00'
+  obtained_by: chromium
+  availability: blocked
+  reason: 'not requested: events.waterloo.ca gave "HTTP 403" for https://events.waterloo.ca/meetings/, so the host
+    was left alone'
+  particular: P015
+  publisher: City of Waterloo
+  title: Council minutes, December 8, 2025 (final, minute-book pp.237-251)
+- id: S-bylaw-2026-047
+  url: https://media-002-ca.cdn.govstack.com/waterloo-013-ca/media/zeqjquvr/fees-and-charges-bylaw.pdf
+  final_url: https://media-002-ca.cdn.govstack.com/waterloo-013-ca/media/zeqjquvr/fees-and-charges-bylaw.pdf
+  fetched_at: '2026-11-14T15:43:34+00:00'
+  sha256: bb5ba2adb9cf630ff2e283c81ba4749094506302590a832f5e529e209443d559
+  content_type: application/pdf
+  status: 200
+  obtained_by: chromium
+  availability: ok
+  particular: P036
+  publisher: City of Waterloo
+  title: Fees and Charges By-law 2026-047 (74 pages)
+  path: snapshots/media-002-ca.cdn.govstack.com/bb5ba2adb9cf630ff2e283c81ba4749094506302590a832f5e529e209443d559.pdf
+- id: S-p209
+  url: https://www.waterloo.ca/media/jtzfarez/notice-of-intention-to-designate-131-william-st-w.pdf
+  final_url: https://www.waterloo.ca/media/jtzfarez/notice-of-intention-to-designate-131-william-st-w.pdf
+  fetched_at: '2026-11-14T15:44:21+00:00'
+  sha256: edea81c3830f5ec0c1024cfbeef56f80471b6f58eba99cc0282c32bc4b86bfb1
+  content_type: application/pdf
+  status: 200
+  obtained_by: chromium
+  availability: ok
+  particular: P209
+  publisher: City of Waterloo
+  title: Notice of intention to designate 131 William St W
+  path: snapshots/www.waterloo.ca/edea81c3830f5ec0c1024cfbeef56f80471b6f58eba99cc0282c32bc4b86bfb1.pdf
+- id: S-p210
+  url: https://media-002-ca.cdn.govstack.com/waterloo-013-ca/media/kj2cb4ri/15-king-street-north-notice-of-passing.pdf
+  final_url: https://media-002-ca.cdn.govstack.com/waterloo-013-ca/media/kj2cb4ri/15-king-street-north-notice-of-passing.pdf
+  fetched_at: '2026-11-14T18:56:52+00:00'
+  sha256: 11ecf4a2466b9f3c10360399a5e6255f673fc98642469adc7e8d13f581c1e388
+  content_type: application/pdf
+  status: 200
+  obtained_by: chromium
+  availability: ok
+  particular: P210
+  publisher: City of Waterloo
+  title: Notice of passing, By-law 2026-080 (15 King St N)
+  path: snapshots/media-002-ca.cdn.govstack.com/11ecf4a2466b9f3c10360399a5e6255f673fc98642469adc7e8d13f581c1e388.pdf
+- id: S-p202
+  url: https://www.waterloo.ca/council-and-committees/council-and-committee-meetings/register-to-speak-at-a-council-meeting/
+  final_url: https://www.waterloo.ca/council-and-committees/council-and-committee-meetings/register-to-speak-at-a-council-meeting/
+  fetched_at: '2026-11-14T15:44:12+00:00'
+  sha256: b3fe8cc432bd8de36682f3fa6e52d5a46b03a9d65323a45afa85f8d0d026de48
+  content_type: text/html; charset=utf-8
+  status: 200
+  obtained_by: chromium
+  availability: ok
+  particular: P202
+  publisher: City of Waterloo
+  title: Register to speak at a council meeting
+  path: snapshots/www.waterloo.ca/b3fe8cc432bd8de36682f3fa6e52d5a46b03a9d65323a45afa85f8d0d026de48.html
+- id: S-p253-page
+  url: https://www.regionofwaterloo.ca/government-and-council/transparency-and-accountability/lobbyist-registry/
+  final_url: https://www.regionofwaterloo.ca/government-and-council/transparency-and-accountability/lobbyist-registry/
+  fetched_at: '2026-11-14T15:42:35+00:00'
+  sha256: 9c4cc6a00232e087626f8b3f2f24189455d7568e606d4d06d7628a3602fce5aa
+  content_type: text/html; charset=utf-8
+  status: 200
+  obtained_by: chromium
+  availability: ok
+  particular: P253
+  publisher: Region of Waterloo
+  title: Lobbyist registry guide page
+  path: snapshots/www.regionofwaterloo.ca/9c4cc6a00232e087626f8b3f2f24189455d7568e606d4d06d7628a3602fce5aa.html
+- id: S-p253-bylaw
+  url: https://media-003-ca.cdn.govstack.com/regionofwaterloo-018-ca/media/b1cb1nvl/by-law-24-043.pdf
+  final_url: https://media-003-ca.cdn.govstack.com/regionofwaterloo-018-ca/media/b1cb1nvl/by-law-24-043.pdf
+  fetched_at: '2026-11-14T15:42:13+00:00'
+  sha256: a3f19cc3a3b384901c7442f1638c1f43b18c5e9f5e0f4a09d47aed3e8b125183
+  content_type: application/pdf
+  status: 200
+  obtained_by: chromium
+  availability: ok
+  particular: P253
+  publisher: Region of Waterloo
+  title: Region By-law 24-043 (lobbyist registry)
+  path: snapshots/media-003-ca.cdn.govstack.com/a3f19cc3a3b384901c7442f1638c1f43b18c5e9f5e0f4a09d47aed3e8b125183.pdf
+- id: S-region-escribe
+  url: https://pub-regionofwaterloo.escribemeetings.com/
+  fetched_at: '2026-11-13'
+  obtained_by: chromium
+  availability: blocked
+  reason: Cloudflare browser check; not bypassed. Needs manual download.
+  particular: P147
+  publisher: Region of Waterloo
+  title: Region eScribe report PDFs

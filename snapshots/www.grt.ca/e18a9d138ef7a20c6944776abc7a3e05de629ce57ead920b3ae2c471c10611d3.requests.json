@@ -1,0 +1,20 @@
+[
+ {
+  "url": "https://api.uxtweak.com/snippet/68c631a9-c518-44ce-bf26-5e07497e352f",
+  "method": "POST",
+  "status": 200,
+  "content_type": "application/json; charset=utf-8"
+ },
+ {
+  "url": "https://www.grt.ca/umbraco/surface/GOVMemberSurface/GetMemberValue?pageId=2300",
+  "method": "GET",
+  "status": 200,
+  "content_type": "text/plain; charset=utf-8"
+ },
+ {
+  "url": "https://api.cludo.com/api/v4/868/experiences/settings?EngineID=9207",
+  "method": "GET",
+  "status": 200,
+  "content_type": "application/json; charset=utf-8"
+ }
+]

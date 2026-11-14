@@ -1,0 +1,44 @@
+[
+ {
+  "url": "https://maps.googleapis.com/maps/api/mapsjs/gen_204?csp_test=true",
+  "method": "GET",
+  "status": 200,
+  "content_type": "application/json; charset=UTF-8"
+ },
+ {
+  "url": "https://portal.lobbyregistry.ca/assets/i18n/en.json",
+  "method": "GET",
+  "status": 200,
+  "content_type": "application/json; charset=utf-8"
+ },
+ {
+  "url": "https://api.lobbyregistry.ca/api/SearchRegistry/GetCompanyLogo?companyid=6001",
+  "method": "GET",
+  "status": 200,
+  "content_type": "application/json; charset=utf-8"
+ },
+ {
+  "url": "https://api.lobbyregistry.ca/api/SearchRegistry/isActive?input=6001",
+  "method": "GET",
+  "status": 200,
+  "content_type": "application/json; charset=utf-8"
+ },
+ {
+  "url": "https://api.lobbyregistry.ca/api/SearchRegistry/LobbyistTypes",
+  "method": "GET",
+  "status": 200,
+  "content_type": "application/json; charset=utf-8"
+ },
+ {
+  "url": "https://api.lobbyregistry.ca/api/SearchRegistry/Municipality",
+  "method": "GET",
+  "status": 200,
+  "content_type": "application/json; charset=utf-8"
+ },
+ {
+  "url": "https://api.lobbyregistry.ca/api/SearchRegistry/lobbyistProfiles",
+  "method": "POST",
+  "status": 200,
+  "content_type": "application/json; charset=utf-8"
+ }
+]

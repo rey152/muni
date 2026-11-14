@@ -1,0 +1,26 @@
+[
+ {
+  "url": "https://www.google-analytics.com/g/collect?v=2&tid=G-1DFCZBZ16H&gtm=45je6bb1v9254674937za208zd9254674937xf1&_p=1794670776584&gcd=13l3l3l3l1l1&npa=0&dma=0&_eu=AAAAAAQ&cid=946083609.1794670666&frm=0&ngs=1&pscdl=noapi&rcb=9&sr=1280x720&uaa=arm&uab=64&uafvl=Not-A.Brand%3B99.0.0.0%7CGoogle%2520Chrome%3B157.0.8103.78%7CChromium%3B157.0.8103.78&uam=&uamb=0&uap=macOS&uapv=15.6.0&uaw=0&ul=en-us&_s=1&tag_exp=115938466~115938468~118897920~118897930~119860443~120213116~120385423~120412528~120420414~120469145~120469153~121246026~121246034&sid=1794670666&sct=1&seg=1&dl=https%3A%2F%2Fwww.grt.ca%2Falerts-and-detours%2Fposts%2Fdetour-columbia-st-at-phillip-st-lane-closures%2F&dt=Detour%3A%20Columbia%20St%20at%20Phillip%20St%20%E2%80%93%20Lane%20Closures%20%7C%20Grand%20River%20Transit&en=page_view&_ee=1&tfd=307",
+  "method": "POST",
+  "status": 204,
+  "content_type": "text/plain"
+ },
+ {
+  "url": "https://api.uxtweak.com/snippet/68c631a9-c518-44ce-bf26-5e07497e352f",
+  "method": "POST",
+  "status": 200,
+  "content_type": "application/json; charset=utf-8"
+ },
+ {
+  "url": "https://www.grt.ca/umbraco/surface/GOVMemberSurface/GetMemberValue?pageId=46197",
+  "method": "GET",
+  "status": 200,
+  "content_type": "text/plain; charset=utf-8"
+ },
+ {
+  "url": "https://api.cludo.com/api/v4/868/experiences/settings?EngineID=9207",
+  "method": "GET",
+  "status": 200,
+  "content_type": "application/json; charset=utf-8"
+ }
+]

@@ -1,0 +1,74 @@
+[
+ {
+  "url": "https://o382617.ingest.sentry.io/api/5211718/envelope/?sentry_version=7&sentry_key=e008262d2e8d4d77b2b47c497692546d&sentry_client=sentry.javascript.browser%2F10.27.0",
+  "method": "POST",
+  "status": 200,
+  "content_type": "application/json"
+ },
+ {
+  "url": "https://www.engagewr.ca/application/js/i18n/hive/en-CA/form.json?_v=2.71.4.0",
+  "method": "GET",
+  "status": 200,
+  "content_type": "application/json"
+ },
+ {
+  "url": "https://www.engagewr.ca/application/js/i18n/hive/en-CA/block_ui.json?_v=2.71.4.0",
+  "method": "GET",
+  "status": 200,
+  "content_type": "application/json"
+ },
+ {
+  "url": "https://www.engagewr.ca/application/js/i18n/hive/en-US/form.json?_v=2.71.4.0",
+  "method": "GET",
+  "status": 200,
+  "content_type": "application/json"
+ },
+ {
+  "url": "https://www.engagewr.ca/application/js/i18n/hive/en-US/block_ui.json?_v=2.71.4.0",
+  "method": "GET",
+  "status": 200,
+  "content_type": "application/json"
+ },
+ {
+  "url": "https://www.engagewr.ca/application/js/i18n/hive/en-CA/core.json?_v=2.71.4.0",
+  "method": "GET",
+  "status": 200,
+  "content_type": "application/json"
+ },
+ {
+  "url": "https://www.engagewr.ca/application/js/i18n/hive/en-US/core.json?_v=2.71.4.0",
+  "method": "GET",
+  "status": 200,
+  "content_type": "application/json"
+ },
+ {
+  "url": "https://analytics.google.com/g/collect?v=2&tid=G-F03DWSJDKM&gtm=45je6bb1v9125981398za20ozb78045476zd78045476xf1&_p=1794670706404&_gaz=1&gcd=13l3l3l3l1l1&npa=0&dma=0&_eu=AAAAAGQ&cid=1347219115.1794670616&frm=0&pscdl=noapi&rcb=18&sr=1280x720&uaa=arm&uab=64&uafvl=Not-A.Brand%3B99.0.0.0%7CGoogle%2520Chrome%3B157.0.8103.78%7CChromium%3B157.0.8103.78&uam=&uamb=0&uap=macOS&uapv=15.6.0&uaw=0&ul=en-us&gaf=2&_s=1&tag_exp=115938465~115938468~118897920~118897930~120213116~120385423~120412528~120420416~120469145~120469153~121246026~121246034&sid=1794670615&sct=1&seg=1&dl=https%3A%2F%2Fwww.engagewr.ca%2Fwaterloo%2Fdevelopment-planning-projects%2Fapps-with-decisions&dt=Applications%20with%20decisions%20%7C%20Planning%20Applications%20%7C%20Engage%20Waterloo%20%7C%20EngageWR&en=page_view&_c=1&tfd=1900",
+  "method": "POST",
+  "status": 204,
+  "content_type": "text/plain"
+ },
+ {
+  "url": "https://bam.nr-data.net/jserrors/1/8d90b6fc96?a=1702865249&v=1.324.1&to=bldVN0FUXxICAhVfDVcddBZAQV4MTCIOWAFLV0MGb3ZeEwY9MVcFXG50DF1BQw4PDQREPmlTUAZwWl8VEQ4NWgdLCA0VWlBG&rst=2191&s=16505622b9c2e1f2&ref=https://www.engagewr.ca/waterloo/development-planning-projects/apps-with-decisions&ptid=0df96e59a7dfb572",
+  "method": "POST",
+  "status": 200,
+  "content_type": "image/gif"
+ },
+ {
+  "url": "https://bam.nr-data.net/rum/2/8d90b6fc96?a=1702865249&v=1.324.1&to=bldVN0FUXxICAhVfDVcddBZAQV4MTCIOWAFLV0MGb3ZeEwY9MVcFXG50DF1BQw4PDQREPmlTUAZwWl8VEQ4NWgdLCA0VWlBG&rst=2189&s=16505622b9c2e1f2&ref=https://www.engagewr.ca/waterloo/development-planning-projects/apps-with-decisions&ptid=0df96e59a7dfb572&at=QhBCQQlOTE1BAEMMGURP&af=err,spa,xhr,stn,ins&ap=1617&be=1749&fe=430&dc=202&fp=1928&fcp=1928&perf=%7B%22timing%22:%7B%22of%22:1794670704642,%22n%22:0,%22f%22:0,%22dn%22:1,%22dne%22:53,%22c%22:53,%22s%22:69,%22ce%22:107,%22rq%22:107,%22rp%22:1749,%22rpe%22:1781,%22di%22:1950,%22ds%22:1950,%22de%22:1951,%22dc%22:2177,%22l%22:2177,%22le%22:2179%7D,%22navigation%22:%7B%7D%7D&timestamp=1794670704728",
+  "method": "POST",
+  "status": 200,
+  "content_type": "image/gif"
+ },
+ {
+  "url": "https://bam.nr-data.net/events/1/8d90b6fc96?a=1702865249&v=1.324.1&to=bldVN0FUXxICAhVfDVcddBZAQV4MTCIOWAFLV0MGb3ZeEwY9MVcFXG50DF1BQw4PDQREPmlTUAZwWl8VEQ4NWgdLCA0VWlBG&rst=2192&s=16505622b9c2e1f2&ref=https://www.engagewr.ca/waterloo/development-planning-projects/apps-with-decisions&ptid=0df96e59a7dfb572",
+  "method": "POST",
+  "status": 200,
+  "content_type": "image/gif"
+ },
+ {
+  "url": "https://bam.nr-data.net/events/1/8d90b6fc96?a=1702865249&v=1.324.1&to=bldVN0FUXxICAhVfDVcddBZAQV4MTCIOWAFLV0MGb3ZeEwY9MVcFXG50DF1BQw4PDQREPmlTUAZwWl8VEQ4NWgdLCA0VWlBG&rst=2191&s=16505622b9c2e1f2&ref=https://www.engagewr.ca/waterloo/development-planning-projects/apps-with-decisions&ptid=0df96e59a7dfb572",
+  "method": "POST",
+  "status": 200,
+  "content_type": "image/gif"
+ }
+]

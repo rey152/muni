@@ -1,0 +1,14 @@
+[
+ {
+  "url": "https://ero.ontario.ca/sitewide_alert/load",
+  "method": "GET",
+  "status": 200,
+  "content_type": "application/json"
+ },
+ {
+  "url": "https://analytics.google.com/g/collect?v=2&tid=G-HLLEK4SB6V&gtm=45je6bc0h2v9100006344z89183455951za20gzb9183455951zd9183455951xf1&_p=1794670675072&_gaz=1&gcd=13l3l3l3l1l1&npa=0&dma=0&gdid=dMDhkMT&_eu=AAAAACAC&cid=3629438.1794670675&frm=0&ibt=1&ngs=1&pscdl=noapi&rcb=11&sr=1280x720&uaa=arm&uab=64&uafvl=Not-A.Brand%3B99.0.0.0%7CGoogle%2520Chrome%3B157.0.8103.78%7CChromium%3B157.0.8103.78&uam=&uamb=0&uap=macOS&uapv=15.6.0&uaw=0&ul=en-us&_s=1&tag_exp=115938466~115938469~118897920~118897930~120213116~120385423~120412528~120420416~120469145~120469153~121246026~121246034~123785233~123988486&sid=1794670675&sct=1&seg=0&dl=https%3A%2F%2Fero.ontario.ca%2Fnotice%2F025-0203&dt=The%20Corporation%20of%20the%20City%20of%20Waterloo%20-%20Approval%20to%20amend%20a%20municipality%E2%80%99s%20official%20plan%20%7C%20Environmental%20Registry%20of%20Ontario&en=page_view&_fv=1&_nsi=1&_ss=1&ep.ministry_tag=Ministry%20of%20Municipal%20Affairs%20and%20Housing&tfd=641",
+  "method": "POST",
+  "status": 204,
+  "content_type": "text/plain"
+ }
+]

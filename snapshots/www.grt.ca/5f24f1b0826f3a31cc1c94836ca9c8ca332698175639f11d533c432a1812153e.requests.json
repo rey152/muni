@@ -1,0 +1,158 @@
+[
+ {
+  "url": "https://api.uxtweak.com/snippet/68c631a9-c518-44ce-bf26-5e07497e352f",
+  "method": "POST",
+  "status": 200,
+  "content_type": "application/json; charset=utf-8"
+ },
+ {
+  "url": "https://www.grt.ca/umbraco/surface/GOVMemberSurface/GetMemberValue?pageId=3097",
+  "method": "GET",
+  "status": 200,
+  "content_type": "text/plain; charset=utf-8"
+ },
+ {
+  "url": "https://www.google-analytics.com/g/collect?v=2&tid=G-1DFCZBZ16H&gtm=45je6bb1v9254674937za208zd9254674937xf1&_p=1794670806973&gcd=13l3l3l3l1l1&npa=0&dma=0&_eu=AAAAAAQ&cid=946083609.1794670666&frm=0&ngs=1&pscdl=noapi&rcb=16&sr=1280x720&uaa=arm&uab=64&uafvl=Not-A.Brand%3B99.0.0.0%7CGoogle%2520Chrome%3B157.0.8103.78%7CChromium%3B157.0.8103.78&uam=&uamb=0&uap=macOS&uapv=15.6.0&uaw=0&ul=en-us&_s=1&tag_exp=100940092~115938465~115938469~118897920~118897930~120213116~120385423~120412528~120420416~120469145~120469153~121246026~121246034&sid=1794670666&sct=1&seg=1&dl=https%3A%2F%2Fwww.grt.ca%2Fabout-grt%2Fridership-and-performance%2F&dt=Ridership%20and%20performance%20%7C%20Grand%20River%20Transit&en=page_view&_ee=1&tfd=217",
+  "method": "POST",
+  "status": 204,
+  "content_type": "text/plain"
+ },
+ {
+  "url": "https://api.cludo.com/api/v4/868/experiences/settings?EngineID=9207",
+  "method": "GET",
+  "status": 200,
+  "content_type": "application/json; charset=utf-8"
+ },
+ {
+  "url": "https://res.cdn.office.net/teams-js/validDomains/json/validDomains.json",
+  "method": "GET",
+  "status": 200,
+  "content_type": "application/json"
+ },
+ {
+  "url": "https://js.monitor.azure.com/scripts/b/ai.config.1.cfg.json",
+  "method": "GET",
+  "status": 200,
+  "content_type": "application/json"
+ },
+ {
+  "url": "https://dc.services.visualstudio.com/v2/track",
+  "method": "POST",
+  "status": 200,
+  "content_type": "application/json; charset=utf-8"
+ },
+ {
+  "url": "https://dc.services.visualstudio.com/v2/track",
+  "method": "POST",
+  "status": 200,
+  "content_type": "application/json; charset=utf-8"
+ },
+ {
+  "url": "https://wabi-us-north-central-h-primary-api.analysis.windows.net/public/reports/32c90626-6043-4de8-a909-ad284aecb3c2/modelsAndExploration?preferReadOnlySession=true",
+  "method": "GET",
+  "status": 200,
+  "content_type": "application/json; charset=utf-8"
+ },
+ {
+  "url": "https://dc.services.visualstudio.com/v2/track",
+  "method": "POST",
+  "status": 200,
+  "content_type": "application/json; charset=utf-8"
+ },
+ {
+  "url": "https://pbivisuals.powerbi.com/approvedResources.json",
+  "method": "GET",
+  "status": 200,
+  "content_type": "application/json"
+ },
+ {
+  "url": "https://app.powerbi.com/13.0.28522.235/sharedresources/BaseThemes/CY21SU04.json",
+  "method": "GET",
+  "status": 200,
+  "content_type": "application/json"
+ },
+ {
+  "url": "https://content.powerapps.com/resource/powerbiwfe/images/fluentui-icons.3b84fcc1bf51ee034efd.svg",
+  "method": "GET",
+  "status": 200,
+  "content_type": "image/svg+xml"
+ },
+ {
+  "url": "https://dc.services.visualstudio.com/v2/track",
+  "method": "POST",
+  "status": 200,
+  "content_type": "application/json; charset=utf-8"
+ },
+ {
+  "url": "https://wabi-us-north-central-h-primary-api.analysis.windows.net/public/reports/resourcePackage/37421859/2%2F9d0dca1e-0384-4da5-a5c0-d14b9aa1d99d%2FResourcePackage%2FBlobIdV2-8bf50482-65a8-43a2-93c3-9639dcfbd96cpXQynudux.Vzz41cj1i9hu.t7VOmAIPGKlPv.png",
+  "method": "GET",
+  "status": 200,
+  "content_type": "image/png"
+ },
+ {
+  "url": "https://wabi-us-north-central-h-primary-api.analysis.windows.net/public/reports/resourcePackage/37421859/2%2F9d0dca1e-0384-4da5-a5c0-d14b9aa1d99d%2FResourcePackage%2FBlobIdV2-e3462dae-4fc0-4e22-8dcf-052c60038bf9w9qCEesLLatBChl.png",
+  "method": "GET",
+  "status": 200,
+  "content_type": "image/png"
+ },
+ {
+  "url": "https://wabi-us-north-central-h-primary-api.analysis.windows.net/public/reports/conceptualschema",
+  "method": "POST",
+  "status": 200,
+  "content_type": "application/json; charset=utf-8"
+ },
+ {
+  "url": "https://wabi-us-north-central-h-primary-api.analysis.windows.net/public/reports/querydata?synchronous=true",
+  "method": "POST",
+  "status": 200,
+  "content_type": "text/plain; charset=utf-8"
+ },
+ {
+  "url": "https://wabi-us-north-central-h-primary-api.analysis.windows.net/public/reports/querydata?synchronous=true",
+  "method": "POST",
+  "status": 200,
+  "content_type": "text/plain; charset=utf-8"
+ },
+ {
+  "url": "https://wabi-us-north-central-h-primary-api.analysis.windows.net/public/reports/querydata?synchronous=true",
+  "method": "POST",
+  "status": 200,
+  "content_type": "text/plain; charset=utf-8"
+ },
+ {
+  "url": "https://wabi-us-north-central-h-primary-api.analysis.windows.net/public/reports/querydata?synchronous=true",
+  "method": "POST",
+  "status": 200,
+  "content_type": "text/plain; charset=utf-8"
+ },
+ {
+  "url": "https://appsource.powerbi.com/visuals.json",
+  "method": "GET",
+  "status": 200,
+  "content_type": "application/json"
+ },
+ {
+  "url": "https://dc.services.visualstudio.com/v2/track",
+  "method": "POST",
+  "status": 200,
+  "content_type": "application/json; charset=utf-8"
+ },
+ {
+  "url": "https://dc.services.visualstudio.com/v2/track",
+  "method": "POST",
+  "status": 200,
+  "content_type": "application/json; charset=utf-8"
+ },
+ {
+  "url": "https://www.google-analytics.com/g/collect?v=2&tid=G-1DFCZBZ16H&gtm=45je6bb1v9254674937za200zd9254674937xf1&_p=1794670806973&gcd=13l3l3l3l1l1&npa=0&dma=0&_eu=AEAAAAQ&ae=a&cid=946083609.1794670666&frm=0&ngs=1&pscdl=noapi&rcb=16&sr=1280x720&uaa=arm&uab=64&uafvl=Not-A.Brand%3B99.0.0.0%7CGoogle%2520Chrome%3B157.0.8103.78%7CChromium%3B157.0.8103.78&uam=&uamb=0&uap=macOS&uapv=15.6.0&uaw=0&ul=en-us&_s=2&tag_exp=100940092~115938465~115938469~118897920~118897930~120213116~120385423~120412528~120420416~120469145~120469153~121246026~121246034&sid=1794670666&sct=1&seg=1&dl=https%3A%2F%2Fwww.grt.ca%2Fabout-grt%2Fridership-and-performance%2F&dt=Ridership%20and%20performance%20%7C%20Grand%20River%20Transit&en=scroll&epn.percent_scrolled=90&_et=2&tfd=5218",
+  "method": "POST",
+  "status": 204,
+  "content_type": "text/plain"
+ },
+ {
+  "url": "https://dc.services.visualstudio.com/v2/track",
+  "method": "POST",
+  "status": 200,
+  "content_type": "application/json; charset=utf-8"
+ }
+]

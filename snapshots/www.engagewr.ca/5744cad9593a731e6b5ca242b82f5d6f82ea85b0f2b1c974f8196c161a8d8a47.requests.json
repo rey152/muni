@@ -1,0 +1,92 @@
+[
+ {
+  "url": "https://o382617.ingest.sentry.io/api/5211718/envelope/?sentry_version=7&sentry_key=e008262d2e8d4d77b2b47c497692546d&sentry_client=sentry.javascript.browser%2F10.27.0",
+  "method": "POST",
+  "status": 200,
+  "content_type": "application/json"
+ },
+ {
+  "url": "https://analytics.google.com/g/collect?v=2&tid=G-F03DWSJDKM&gtm=45je6bb1v9125981398za20ozb78045476zd78045476xf1&_p=1794670791762&_gaz=1&gcd=13l3l3l3l1l1&npa=0&dma=0&_eu=AAAAAGQ&cid=1347219115.1794670616&frm=0&pscdl=noapi&rcb=12&sr=1280x720&uaa=arm&uab=64&uafvl=Not-A.Brand%3B99.0.0.0%7CGoogle%2520Chrome%3B157.0.8103.78%7CChromium%3B157.0.8103.78&uam=&uamb=0&uap=macOS&uapv=15.6.0&uaw=0&ul=en-us&gaf=2&_s=1&tag_exp=100940092~115938465~115938468~118897920~118897930~119863601~120213116~120385422~120412526~120420416~120469145~120469153~121246026~121246034&sid=1794670615&sct=1&seg=1&dl=https%3A%2F%2Fwww.engagewr.ca%2Fwaterloo-budget-2024-2026&dt=City%20of%20Waterloo%202024-2026%20Budget%20%7C%20EngageWR&en=page_view&_c=1&tfd=892",
+  "method": "POST",
+  "status": 204,
+  "content_type": "text/plain"
+ },
+ {
+  "url": "https://www.engagewr.ca/application/js/i18n/hive/en-CA/form.json?_v=2.71.4.0",
+  "method": "GET",
+  "status": 200,
+  "content_type": "application/json"
+ },
+ {
+  "url": "https://www.engagewr.ca/application/js/i18n/hive/en-CA/block_ui.json?_v=2.71.4.0",
+  "method": "GET",
+  "status": 200,
+  "content_type": "application/json"
+ },
+ {
+  "url": "https://www.engagewr.ca/application/js/i18n/hive/en-US/form.json?_v=2.71.4.0",
+  "method": "GET",
+  "status": 200,
+  "content_type": "application/json"
+ },
+ {
+  "url": "https://www.engagewr.ca/application/js/i18n/hive/en-US/block_ui.json?_v=2.71.4.0",
+  "method": "GET",
+  "status": 200,
+  "content_type": "application/json"
+ },
+ {
+  "url": "https://www.engagewr.ca/application/js/i18n/hive/en-CA/core.json?_v=2.71.4.0",
+  "method": "GET",
+  "status": 200,
+  "content_type": "application/json"
+ },
+ {
+  "url": "https://www.engagewr.ca/application/js/i18n/hive/en-US/core.json?_v=2.71.4.0",
+  "method": "GET",
+  "status": 200,
+  "content_type": "application/json"
+ },
+ {
+  "url": "https://www.engagewr.ca/application/js/i18n/hive/en-CA/news_feed.json?_v=2.71.4.0",
+  "method": "GET",
+  "status": 200,
+  "content_type": "application/json"
+ },
+ {
+  "url": "https://www.engagewr.ca/application/js/i18n/hive/en-US/news_feed.json?_v=2.71.4.0",
+  "method": "GET",
+  "status": 200,
+  "content_type": "application/json"
+ },
+ {
+  "url": "https://bam.nr-data.net/rum/2/8d90b6fc96?a=1702865249&v=1.324.1&to=bldVN0FUXxICAhVfDVcddBZAQV4MTCIOWAFLV0MGb2VQAggABlM%2BbVpSK1pDVDERDgtTAU1BayBcW0UTDA0NUxBlYlYEVmFIEQY9MUQNU1dUFwkPRwgGFg%3D%3D&rst=1044&s=16505622b9c2e1f2&ref=https://www.engagewr.ca/waterloo-budget-2024-2026&ptid=6da99a3584a55f03&at=QhBCQQlOTE1BAEMMGURP&af=err,spa,xhr,stn,ins&ap=684&be=709&fe=329&dc=233&fp=880&fcp=880&perf=%7B%22timing%22:%7B%22of%22:1794670791040,%22n%22:0,%22f%22:1,%22dn%22:1,%22dne%22:1,%22c%22:1,%22s%22:1,%22ce%22:1,%22rq%22:1,%22rp%22:710,%22rpe%22:712,%22di%22:940,%22ds%22:940,%22de%22:942,%22dc%22:1036,%22l%22:1036,%22le%22:1038%7D,%22navigation%22:%7B%7D%7D&timestamp=1794670791126",
+  "method": "POST",
+  "status": 200,
+  "content_type": "image/gif"
+ },
+ {
+  "url": "https://bam.nr-data.net/jserrors/1/8d90b6fc96?a=1702865249&v=1.324.1&to=bldVN0FUXxICAhVfDVcddBZAQV4MTCIOWAFLV0MGb2VQAggABlM%2BbVpSK1pDVDERDgtTAU1BayBcW0UTDA0NUxBlYlYEVmFIEQY9MUQNU1dUFwkPRwgGFg%3D%3D&rst=1045&s=16505622b9c2e1f2&ref=https://www.engagewr.ca/waterloo-budget-2024-2026&ptid=6da99a3584a55f03",
+  "method": "POST",
+  "status": 200,
+  "content_type": "image/gif"
+ },
+ {
+  "url": "https://bam.nr-data.net/events/1/8d90b6fc96?a=1702865249&v=1.324.1&to=bldVN0FUXxICAhVfDVcddBZAQV4MTCIOWAFLV0MGb2VQAggABlM%2BbVpSK1pDVDERDgtTAU1BayBcW0UTDA0NUxBlYlYEVmFIEQY9MUQNU1dUFwkPRwgGFg%3D%3D&rst=1045&s=16505622b9c2e1f2&ref=https://www.engagewr.ca/waterloo-budget-2024-2026&ptid=6da99a3584a55f03",
+  "method": "POST",
+  "status": 200,
+  "content_type": "image/gif"
+ },
+ {
+  "url": "https://bam.nr-data.net/events/1/8d90b6fc96?a=1702865249&v=1.324.1&to=bldVN0FUXxICAhVfDVcddBZAQV4MTCIOWAFLV0MGb2VQAggABlM%2BbVpSK1pDVDERDgtTAU1BayBcW0UTDA0NUxBlYlYEVmFIEQY9MUQNU1dUFwkPRwgGFg%3D%3D&rst=1044&s=16505622b9c2e1f2&ref=https://www.engagewr.ca/waterloo-budget-2024-2026&ptid=6da99a3584a55f03",
+  "method": "POST",
+  "status": 200,
+  "content_type": "image/gif"
+ },
+ {
+  "url": "https://api.ca.harvestdp.com/hive/project/news?pagination=true&authtoken=eyJ0eXAiOiJKV1QiLCJhbGciOiJIRFBFQSIsImlhdCI6MTc5NDY3MDc5MSwidGFnIjoiSGl2ZSJ9.eyJlbmNyeXB0ZWQiOiI4WCtEbUdZT014NG45UktiTFpURVNiWGZjODBNTWVTT0E2WG4yTFFUWDIyOTJtUXR5a3dUa09lOGdkT0FLNU9hOVpkYkNlU0Vhd0o1WVwvWk4rVUFGd0pUXC93YXh1MjlyczdPZzR2SExCdHlMNVpPYXVobUJJMFk2aEdOU3VFZUVhWUFteFRCeHZ2cVwvbGNHeHRIV2FmNEpIVjVNVVI4cWJLMzA0UFE2ZFQyOGlKZ0htNlFrczRURnVwdjBxVmFCYzZEQT09In0.K0CeY0pfVM9g2e-8wANutSJShVIrhix85nlxuVNt-PE&length=3&start=0&sort=date_created&order=desc",
+  "method": "GET",
+  "status": 200,
+  "content_type": "application/json;charset=utf-8"
+ }
+]

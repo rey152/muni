@@ -1,0 +1,20 @@
+[
+ {
+  "url": "https://api.uxtweak.com/snippet/68c631a9-c518-44ce-bf26-5e07497e352f",
+  "method": "POST",
+  "status": 200,
+  "content_type": "application/json; charset=utf-8"
+ },
+ {
+  "url": "https://www.regionofwaterloo.ca/umbraco/surface/GOVMemberSurface/GetMemberValue?pageId=23148",
+  "method": "GET",
+  "status": 200,
+  "content_type": "text/plain; charset=utf-8"
+ },
+ {
+  "url": "https://listgrowth.ctctcdn.com/v1/dd3e14d2575cc3cd7a55f8107034521f.json",
+  "method": "GET",
+  "status": 200,
+  "content_type": "application/json"
+ }
+]
