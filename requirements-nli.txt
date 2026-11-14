@@ -1,0 +1,4 @@
+# Optional: the NLI check (pipeline/checks/nli.py). Without these the build skips it and says so.
+# The model (cross-encoder/nli-deberta-v3-base) must also be downloaded once; the build never downloads it.
+transformers==5.23.0
+torch==2.15.0

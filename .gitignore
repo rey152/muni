@@ -1,4 +1,3 @@
-tests/
 .pytest_cache/
 __pycache__/
 *.pyc
@@ -7,3 +6,27 @@ __pycache__/
 node_modules/
 site/data/muni.json
 manual_inbox/
+web/public/data/muni.json
+pipeline/muni.sqlite
+# Snapshot bodies too big for git. Their sha256 stays in snapshots/snapshots.sqlite,
+# snapshots/fetch-report.json and review/snapshots.yaml, so citations stay checkable.
+snapshots/**/*.pdf
+snapshots/**/*.zip
+snapshots/**/*.png
+snapshots/**/*.xlsx
+snapshots/**/*.xls
+snapshots/**/*.docx
+snapshots/**/*.doc
+snapshots/**/*.bin
+snapshots/.chrome-profile/
+# NLI results are rebuilt from the local model; the AI draft cache stays tracked so reruns give the same text.
+pipeline/nli_cache.json
+staff/
+web/node_modules/
+web/dist/
+web/test-screens/
+web/.astro/
+# This engagewr.ca page embeds the site's own public Mapbox token, which GitHub push
+# protection rejects. The file stays on disk unedited (editing it would break its sha256),
+# and its hash stays in snapshots/snapshots.sqlite and snapshots/fetch-report.json.
+snapshots/www.engagewr.ca/504f90ffca704fef1250ba00b61b8d0b1eec04d259a5a2ab38d859ab3604b537.html

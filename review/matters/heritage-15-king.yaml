@@ -1,0 +1,165 @@
+id: heritage-15-king
+title: 'Heritage designation: 15 King St N'
+topics:
+- Community services and local rules
+authority: City of Waterloo Council; Ontario Land Tribunal (appeals)
+authority_ids:
+- city-of-waterloo-council
+- ontario-land-tribunal
+location: 15 King St N
+wards:
+- 7
+identifiers:
+- value: By-law 2026-080
+  kind: by-law no.
+  passage_id: PA-p210-passed
+  review:
+    by: not recorded
+    status: approved
+    note: Migrated from review/matters.json, where it was approved; reviewer and date weren't recorded there.
+- value: 15 King St N
+  kind: address
+  passage_id: PA-p210-passed
+  review:
+    by: not recorded
+    status: approved
+    note: Migrated from review/matters.json, where it was approved; reviewer and date weren't recorded there.
+events:
+- id: EV-k1
+  kind: council_decision
+  date: '2026-10-05'
+  actor: City Council
+  outcome_text: Council passed By-law 2026-080 on Oct 5, 2026 designating 15 King St N under Part IV of the Ontario
+    Heritage Act.
+  passage_id: PA-p210-passed
+  establishes: The designation by-law was passed.
+  not_establishes: That it is in force.
+  review:
+    by: not recorded
+    status: approved
+    note: Migrated from review/matters.json, where it was approved; reviewer and date weren't recorded there.
+- id: EV-k2
+  kind: appeal_window
+  date: '2026-11-08'
+  actor: Ontario Land Tribunal
+  outcome_text: Appeal to the Ontario Land Tribunal (OLT) ending Nov 8, 2026. The by-law comes into force only if
+    no appeal is filed.
+  passage_id: PA-p210-appeal
+  establishes: The appeal deadline and the condition for coming into force.
+  not_establishes: Whether an appeal was filed.
+  review:
+    by: not recorded
+    status: approved
+    note: Migrated from review/matters.json, where it was approved; reviewer and date weren't recorded there.
+conditions:
+- id: CO-k1
+  text: only if no appeal is filed
+  imposed_by: decision
+  passage_id: PA-p210-appeal
+  review:
+    by: not recorded
+    status: approved
+    note: Migrated from review/matters.json, where it was approved; reviewer and date weren't recorded there.
+windows:
+- id: W-k1
+  action: Appeal the designation to the Ontario Land Tribunal
+  channel: Ontario Land Tribunal
+  state: dated
+  deadline_quote: Appeal to the Ontario Land Tribunal (OLT) ending Nov 8, 2026.
+  deadline_date: '2026-11-08'
+  passage_id: PA-p210-appeal
+  review:
+    by: not recorded
+    status: approved
+    note: Migrated from review/matters.json, where it was approved; reviewer and date weren't recorded there.
+claims:
+- id: C-k1
+  section: applies_to
+  text: The property at 15 King St N.
+  provenance: extraction
+  passage_ids:
+  - PA-p210-passed
+  review:
+    by: not recorded
+    status: approved
+    note: Migrated from review/matters.json, where it was approved; reviewer and date weren't recorded there.
+  checked_against:
+    S-p210: 11ecf4a2466b9f3c10360399a5e6255f673fc98642469adc7e8d13f581c1e388
+- id: C-k2
+  section: what_and_why
+  text: Council passed By-law 2026-080 to designate the property under the Ontario Heritage Act.
+  provenance: ai_paraphrase
+  passage_ids:
+  - PA-p210-passed
+  fallback: Council passed By-law 2026-080 on Oct 5, 2026 designating 15 King St N under Part IV of the Ontario
+    Heritage Act.
+  review:
+    by: not recorded
+    status: approved
+    note: Migrated from review/matters.json, where it was approved; reviewer and date weren't recorded there.
+  checked_against:
+    S-p210: 11ecf4a2466b9f3c10360399a5e6255f673fc98642469adc7e8d13f581c1e388
+- id: C-k3
+  section: who_decides
+  text: City Council passed the by-law. Appeals go to the Ontario Land Tribunal.
+  provenance: human
+  passage_ids:
+  - PA-p210-passed
+  - PA-p210-appeal
+  review:
+    by: not recorded
+    status: approved
+    note: Migrated from review/matters.json, where it was approved; reviewer and date weren't recorded there.
+  qualifiers_waived:
+    only if: Stated under Conditions.
+  checked_against:
+    S-p210: 11ecf4a2466b9f3c10360399a5e6255f673fc98642469adc7e8d13f581c1e388
+- id: C-k4
+  section: conditions
+  text: The by-law comes into force only if no appeal is filed.
+  provenance: ai_paraphrase
+  passage_ids:
+  - PA-p210-appeal
+  fallback: The by-law comes into force only if no appeal is filed.
+  review:
+    by: not recorded
+    status: approved
+    note: Migrated from review/matters.json, where it was approved; reviewer and date weren't recorded there.
+  checked_against:
+    S-p210: 11ecf4a2466b9f3c10360399a5e6255f673fc98642469adc7e8d13f581c1e388
+- id: C-k5
+  section: not_decided
+  text: Whether an appeal was filed is not shown in the records checked, so we can't say if the by-law is in force.
+  provenance: human
+  passage_ids:
+  - PA-p210-appeal
+  review:
+    by: not recorded
+    status: approved
+    note: Migrated from review/matters.json, where it was approved; reviewer and date weren't recorded there.
+  qualifiers_waived:
+    only if: Stated under Conditions.
+  checked_against:
+    S-p210: 11ecf4a2466b9f3c10360399a5e6255f673fc98642469adc7e8d13f581c1e388
+easy_read:
+- id: ER-k1
+  text: Council voted to protect the building at 15 King St N.
+  claim_id: C-k2
+  review:
+    by: not recorded
+    status: approved
+    note: Migrated from review/matters.json, where it was approved; reviewer and date weren't recorded there.
+- id: ER-k2
+  text: The law starts only if no appeal is filed.
+  claim_id: C-k4
+  review:
+    by: not recorded
+    status: approved
+    note: Migrated from review/matters.json, where it was approved; reviewer and date weren't recorded there.
+- id: ER-k3
+  text: We don't know yet if someone appealed.
+  claim_id: C-k5
+  review:
+    by: not recorded
+    status: approved
+    note: Migrated from review/matters.json, where it was approved; reviewer and date weren't recorded there.

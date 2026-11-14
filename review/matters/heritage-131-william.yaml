@@ -1,0 +1,142 @@
+id: heritage-131-william
+title: 'Heritage designation: 131 William St W'
+topics:
+- Community services and local rules
+- Homes and new buildings
+authority: City of Waterloo Council
+authority_ids:
+- city-of-waterloo-council
+location: 131 William St W
+wards:
+- 7
+identifiers:
+- value: 131 William St W
+  kind: address
+  passage_id: PA-p209-intent
+  review:
+    by: not recorded
+    status: approved
+    note: Migrated from review/matters.json, where it was approved; reviewer and date weren't recorded there.
+events:
+- id: EV-h1
+  kind: proposed
+  date: '2026-10-07'
+  actor: City Council (notice of intention)
+  outcome_text: NOTICE IS HEREBY GIVEN
+  passage_id: PA-p209-intent
+  establishes: Council intends to designate the property.
+  not_establishes: That the property is designated.
+  review:
+    by: not recorded
+    status: approved
+    note: Migrated from review/matters.json, where it was approved; reviewer and date weren't recorded there.
+- id: EV-h2
+  kind: appeal_window
+  date: '2026-11-06'
+  actor: Public
+  outcome_text: The last day for filing an objection is November 6, 2026
+  passage_id: PA-p209-objection
+  establishes: The objection deadline.
+  not_establishes: Whether objections were filed.
+  review:
+    by: not recorded
+    status: approved
+    note: Migrated from review/matters.json, where it was approved; reviewer and date weren't recorded there.
+windows:
+- id: W-h1
+  action: File an objection to the designation
+  channel: As stated in the notice
+  state: dated
+  deadline_quote: The last day for filing an objection is November 6, 2026
+  deadline_date: '2026-11-06'
+  passage_id: PA-p209-objection
+  review:
+    by: not recorded
+    status: approved
+    note: Migrated from review/matters.json, where it was approved; reviewer and date weren't recorded there.
+claims:
+- id: C-h1
+  section: applies_to
+  text: The property at 131 William St W.
+  provenance: extraction
+  passage_ids:
+  - PA-p209-intent
+  review:
+    by: not recorded
+    status: approved
+    note: Migrated from review/matters.json, where it was approved; reviewer and date weren't recorded there.
+  checked_against:
+    S-p209: edea81c3830f5ec0c1024cfbeef56f80471b6f58eba99cc0282c32bc4b86bfb1
+- id: C-h2
+  section: what_and_why
+  text: Council intends to designate the property under the Ontario Heritage Act. The notice says it meets heritage
+    criteria 1, 4, 5 and 8 of O. Reg. 9/06.
+  provenance: ai_paraphrase
+  passage_ids:
+  - PA-p209-intent
+  - PA-p209-value
+  fallback: Cultural-heritage-value statement citing O. Reg. 9/06 criteria 1, 4, 5, 8, and a list of heritage attributes.
+  review:
+    by: not recorded
+    status: approved
+    note: Migrated from review/matters.json, where it was approved; reviewer and date weren't recorded there.
+  checked_against:
+    S-p209: edea81c3830f5ec0c1024cfbeef56f80471b6f58eba99cc0282c32bc4b86bfb1
+- id: C-h3
+  section: who_decides
+  text: City Council decides whether to pass a designation by-law.
+  provenance: human
+  passage_ids:
+  - PA-p209-intent
+  review:
+    by: not recorded
+    status: approved
+    note: Migrated from review/matters.json, where it was approved; reviewer and date weren't recorded there.
+  checked_against:
+    S-p209: edea81c3830f5ec0c1024cfbeef56f80471b6f58eba99cc0282c32bc4b86bfb1
+- id: C-h4
+  section: not_decided
+  text: This is a notice of intention, not a designation. No designation by-law was found in the records checked.
+  provenance: human
+  passage_ids:
+  - PA-p209-intent
+  review:
+    by: not recorded
+    status: approved
+    note: Migrated from review/matters.json, where it was approved; reviewer and date weren't recorded there.
+  checked_against:
+    S-p209: edea81c3830f5ec0c1024cfbeef56f80471b6f58eba99cc0282c32bc4b86bfb1
+- id: C-h5
+  section: have_a_say
+  text: The last day for filing an objection is November 6, 2026
+  provenance: quote
+  passage_ids:
+  - PA-p209-objection
+  review:
+    by: not recorded
+    status: approved
+    note: Migrated from review/matters.json, where it was approved; reviewer and date weren't recorded there.
+  checked_against:
+    S-p209: edea81c3830f5ec0c1024cfbeef56f80471b6f58eba99cc0282c32bc4b86bfb1
+easy_read:
+- id: ER-h1
+  text: The City wants to protect the building at 131 William St W.
+  claim_id: C-h2
+  review:
+    by: not recorded
+    status: approved
+    note: Migrated from review/matters.json, where it was approved; reviewer and date weren't recorded there.
+- id: ER-h2
+  text: It is not protected yet. Council still has to decide.
+  claim_id: C-h4
+  review:
+    by: not recorded
+    status: approved
+    note: Migrated from review/matters.json, where it was approved; reviewer and date weren't recorded there.
+- id: ER-h3
+  text: The last day to object was November 6, 2026.
+  claim_id: C-h5
+  review:
+    by: not recorded
+    status: approved
+    note: Migrated from review/matters.json, where it was approved; reviewer and date weren't recorded there.

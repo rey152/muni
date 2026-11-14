@@ -1,0 +1,239 @@
+id: fees-2026
+title: City fees and charges for 2026
+topics:
+- Taxes, fees and city spending
+authority: City of Waterloo Council
+authority_ids:
+- city-of-waterloo-council
+location: citywide
+identifiers:
+- value: CORP2025-042
+  kind: report no.
+  passage_id: PA-min-amended
+  review:
+    by: not recorded
+    status: approved
+    note: Migrated from review/matters.json, where it was approved; reviewer and date weren't recorded there.
+- value: COM2025-034
+  kind: report no.
+  passage_id: PA-fees-proposed
+  review:
+    by: not recorded
+    status: approved
+    note: Migrated from review/matters.json, where it was approved; reviewer and date weren't recorded there.
+- value: By-law 2025-086
+  kind: by-law no.
+  passage_id: PA-revised-bylaw
+  valid_to: '2025-12-08'
+  note: Proposed number on the original agenda; renumbered.
+  review:
+    by: not recorded
+    status: approved
+    note: Migrated from review/matters.json, where it was approved; reviewer and date weren't recorded there.
+- value: By-law 2025-087
+  kind: by-law no.
+  passage_id: PA-min-bylaws
+  valid_from: '2025-12-08'
+  review:
+    by: not recorded
+    status: approved
+    note: Migrated from review/matters.json, where it was approved; reviewer and date weren't recorded there.
+- value: By-law 2026-047
+  kind: by-law no.
+  passage_id: PA-2026-047-repeal
+  review:
+    by: not recorded
+    status: approved
+    note: Migrated from review/matters.json, where it was approved; reviewer and date weren't recorded there.
+events:
+- id: EV-f1
+  kind: proposed
+  date: '2025-12-08'
+  actor: City staff
+  outcome_text: Current versus proposed fee schedules with effective dates, attached for Council approval. Proposed
+    fees became operative only through By-law 2025-087.
+  passage_id: PA-fees-proposed
+  establishes: What staff asked Council to approve.
+  not_establishes: That any fee was adopted.
+  review:
+    by: not recorded
+    status: approved
+    note: Migrated from review/matters.json, where it was approved; reviewer and date weren't recorded there.
+- id: EV-f2
+  kind: staff_recommendation
+  date: '2025-12-08'
+  actor: Council agenda
+  outcome_text: Revised agenda filled items marked "REPORT TO FOLLOW" and moved the first by-law number from 2025-086
+    to 2025-087.
+  passage_id: PA-revised-bylaw
+  establishes: The by-law number changed before the meeting.
+  not_establishes: What Council decided.
+  review:
+    by: not recorded
+    status: approved
+    note: Migrated from review/matters.json, where it was approved; reviewer and date weren't recorded there.
+- id: EV-f3
+  kind: council_decision
+  date: '2025-12-08'
+  actor: City Council
+  outcome_text: The minutes show the CORP2025-042 package amended and partly carried on divided votes. A failed
+    amendment (3-5) was followed by a carried amendment.
+  passage_id: PA-min-amended
+  establishes: Council amended the package and carried parts of it.
+  not_establishes: The final wording of each fee (see the by-law).
+  review:
+    by: not recorded
+    status: approved
+    note: Migrated from review/matters.json, where it was approved; reviewer and date weren't recorded there.
+- id: EV-f4
+  kind: in_force
+  date: '2025-12-08'
+  actor: City Council
+  outcome_text: 9. ENACTMENT OF BY-LAWS
+  passage_id: PA-min-bylaws
+  establishes: By-law 2025-087 was enacted at this meeting.
+  not_establishes: Fee amounts.
+  review:
+    by: not recorded
+    status: approved
+    note: Migrated from review/matters.json, where it was approved; reviewer and date weren't recorded there.
+- id: EV-f5
+  kind: repealed
+  date: '2026'
+  actor: City Council
+  outcome_text: The body repeals By-law 2025-087 (s.5.1) and is in force on passage (s.6.1). Most rows carry two
+    fee/effective-date pairs; 25 items are flagged DISCONTINUE.
+  passage_id: PA-2026-047-repeal
+  establishes: By-law 2025-087 is no longer in force; By-law 2026-047 is.
+  not_establishes: Which fees changed between the two by-laws.
+  review:
+    by: not recorded
+    status: approved
+    note: Migrated from review/matters.json, where it was approved; reviewer and date weren't recorded there.
+conditions:
+- id: CO-f1
+  text: Most rows carry two fee/effective-date pairs
+  imposed_by: decision
+  passage_id: PA-2026-047-repeal
+  review:
+    by: not recorded
+    status: approved
+    note: Migrated from review/matters.json, where it was approved; reviewer and date weren't recorded there.
+windows:
+- id: W-f1
+  action: Speak to Council about a future fee change
+  channel: Online form, e-mail or in person
+  state: rule_based
+  deadline_quote: Registration closes at 10 a.m. on the Monday of the meeting.
+  passage_id: PA-p202-register
+  review:
+    by: not recorded
+    status: approved
+    note: Migrated from review/matters.json, where it was approved; reviewer and date weren't recorded there.
+claims:
+- id: C-f1
+  section: applies_to
+  text: Fees and charges set by the City of Waterloo, citywide. The current list is in By-law 2026-047.
+  provenance: human
+  passage_ids:
+  - PA-2026-047-repeal
+  review:
+    by: not recorded
+    status: approved
+    note: Migrated from review/matters.json, where it was approved; reviewer and date weren't recorded there.
+  checked_against:
+    S-bylaw-2026-047: bb5ba2adb9cf630ff2e283c81ba4749094506302590a832f5e529e209443d559
+- id: C-f2
+  section: what_and_why
+  text: Staff proposed updated fee schedules with effective dates for Council to approve.
+  provenance: ai_paraphrase
+  passage_ids:
+  - PA-fees-proposed
+  fallback: Current versus proposed fee schedules with effective dates, attached for Council approval.
+  review:
+    by: not recorded
+    status: approved
+    note: Migrated from review/matters.json, where it was approved; reviewer and date weren't recorded there.
+- id: C-f3
+  section: who_decides
+  text: City Council decides. It amended the package and carried parts of it on divided votes on December 8, 2025.
+  provenance: human
+  passage_ids:
+  - PA-min-amended
+  review:
+    by: not recorded
+    status: approved
+    note: Migrated from review/matters.json, where it was approved; reviewer and date weren't recorded there.
+- id: C-f4
+  section: conditions
+  text: Most fees list two amounts, each with its own effective date. Check the date beside the fee you need.
+  provenance: ai_paraphrase
+  passage_ids:
+  - PA-2026-047-repeal
+  fallback: Most rows carry two fee/effective-date pairs; 25 items are flagged DISCONTINUE.
+  review:
+    by: not recorded
+    status: approved
+    note: Migrated from review/matters.json, where it was approved; reviewer and date weren't recorded there.
+  checked_against:
+    S-bylaw-2026-047: bb5ba2adb9cf630ff2e283c81ba4749094506302590a832f5e529e209443d559
+- id: C-f5
+  section: not_decided
+  text: By-law 2025-087 was repealed. The fees now in force come from By-law 2026-047.
+  provenance: extraction
+  passage_ids:
+  - PA-2026-047-repeal
+  review:
+    by: not recorded
+    status: approved
+    note: Migrated from review/matters.json, where it was approved; reviewer and date weren't recorded there.
+  checked_against:
+    S-bylaw-2026-047: bb5ba2adb9cf630ff2e283c81ba4749094506302590a832f5e529e209443d559
+- id: C-f6
+  section: have_a_say
+  text: No open comment period is published for this matter. You can register to speak at a future Council meeting.
+  provenance: human
+  passage_ids:
+  - PA-p202-register
+  review:
+    by: not recorded
+    status: approved
+    note: Migrated from review/matters.json, where it was approved; reviewer and date weren't recorded there.
+  checked_against:
+    S-p202: b3fe8cc432bd8de36682f3fa6e52d5a46b03a9d65323a45afa85f8d0d026de48
+easy_read:
+- id: ER-f1
+  text: The City charges fees for some services.
+  claim_id: C-f1
+  review:
+    by: not recorded
+    status: approved
+    note: Migrated from review/matters.json, where it was approved; reviewer and date weren't recorded there.
+- id: ER-f2
+  text: Council voted on new fees on December 8, 2025.
+  claim_id: C-f3
+  review:
+    by: not recorded
+    status: approved
+    note: Migrated from review/matters.json, where it was approved; reviewer and date weren't recorded there.
+- id: ER-f3
+  text: Later, a new fees law replaced that one. It is By-law 2026-047.
+  claim_id: C-f5
+  review:
+    by: not recorded
+    status: approved
+    note: Migrated from review/matters.json, where it was approved; reviewer and date weren't recorded there.
+- id: ER-f4
+  text: Many fees have two amounts. Each amount starts on a different date.
+  claim_id: C-f4
+  review:
+    by: not recorded
+    status: approved
+    note: Migrated from review/matters.json, where it was approved; reviewer and date weren't recorded there.
+- id: ER-f5
+  text: You can ask to speak at a Council meeting.
+  claim_id: C-f6
+  review:
+    by: not recorded
+    status: approved
+    note: Migrated from review/matters.json, where it was approved; reviewer and date weren't recorded there.

@@ -1,0 +1,147 @@
+id: debt-limit-2026
+title: 2026 debt and financial obligation limit
+topics:
+- Taxes, fees and city spending
+authority: City of Waterloo Council
+authority_ids:
+- city-of-waterloo-council
+location: citywide
+identifiers:
+- value: CORP2025-041
+  kind: report no.
+  passage_id: PA-debt-calc
+  review:
+    by: not recorded
+    status: approved
+    note: Migrated from review/matters.json, where it was approved; reviewer and date weren't recorded there.
+- value: CORP2024-046
+  kind: report no.
+  passage_id: PA-debt-chain
+  note: Prior year's report
+  review:
+    by: not recorded
+    status: approved
+    note: Migrated from review/matters.json, where it was approved; reviewer and date weren't recorded there.
+events:
+- id: EV-d1
+  kind: staff_recommendation
+  date: '2025-12-08'
+  actor: City Treasurer
+  outcome_text: The Treasurer's calculation shows 2024 debt charges of $7.44M, or 3.37% of net revenues, against
+    a 25% maximum, with projections to 2035. Not a borrowing approval; final provincial limit not yet received.
+  passage_id: PA-debt-calc
+  establishes: The calculated debt charges and the limit.
+  not_establishes: Any approval to borrow.
+  review:
+    by: not recorded
+    status: approved
+    note: Migrated from review/matters.json, where it was approved; reviewer and date weren't recorded there.
+conditions:
+- id: CO-d1
+  text: Not a borrowing approval
+  imposed_by: report
+  passage_id: PA-debt-calc
+  review:
+    by: not recorded
+    status: approved
+    note: Migrated from review/matters.json, where it was approved; reviewer and date weren't recorded there.
+- id: CO-d2
+  text: final provincial limit not yet received
+  imposed_by: report
+  passage_id: PA-debt-calc
+  review:
+    by: not recorded
+    status: approved
+    note: Migrated from review/matters.json, where it was approved; reviewer and date weren't recorded there.
+windows:
+- id: W-d1
+  action: Comment on this report
+  state: not_published
+  passage_id: PA-debt-calc
+  review:
+    by: not recorded
+    status: approved
+    note: Migrated from review/matters.json, where it was approved; reviewer and date weren't recorded there.
+claims:
+- id: C-d1
+  section: applies_to
+  text: The City's total borrowing room. It is citywide.
+  provenance: human
+  passage_ids:
+  - PA-debt-calc
+  review:
+    by: not recorded
+    status: approved
+    note: Migrated from review/matters.json, where it was approved; reviewer and date weren't recorded there.
+  qualifiers_waived:
+    not a: Scope sentence; the borrowing caveat is stated under What it would do and why.
+    not yet: Stated in Not decided yet.
+- id: C-d2
+  section: what_and_why
+  text: Staff say 2024 debt charges were $7.44M, or 3.37% of net revenues, against a 25% maximum. This is not a
+    borrowing approval, and the final provincial limit is not yet received.
+  provenance: ai_paraphrase
+  passage_ids:
+  - PA-debt-calc
+  fallback: The Treasurer's calculation shows 2024 debt charges of $7.44M, or 3.37% of net revenues, against a 25%
+    maximum. Not a borrowing approval; final provincial limit not yet received.
+  review:
+    by: not recorded
+    status: approved
+    note: Migrated from review/matters.json, where it was approved; reviewer and date weren't recorded there.
+- id: C-d3
+  section: who_decides
+  text: The report went to City Council on December 8, 2025.
+  provenance: extraction
+  passage_ids:
+  - PA-debt-calc
+  review:
+    by: not recorded
+    status: approved
+    note: Migrated from review/matters.json, where it was approved; reviewer and date weren't recorded there.
+  qualifiers_waived:
+    not a: Stated under What it would do and why.
+    not yet: Stated in Not decided yet.
+- id: C-d4
+  section: not_decided
+  text: The final provincial limit is not yet received.
+  provenance: quote
+  passage_ids:
+  - PA-debt-calc
+  review:
+    by: not recorded
+    status: approved
+    note: Migrated from review/matters.json, where it was approved; reviewer and date weren't recorded there.
+  qualifiers_waived:
+    not a: Stated under What it would do and why.
+easy_read:
+- id: ER-d1
+  text: The City checks how much it can borrow each year.
+  claim_id: C-d1
+  review:
+    by: not recorded
+    status: approved
+    note: Migrated from review/matters.json, where it was approved; reviewer and date weren't recorded there.
+- id: ER-d2
+  text: In 2024, debt payments were 3.37% of City income. The maximum is 25%.
+  claim_id: C-d2
+  review:
+    by: not recorded
+    status: approved
+    note: Migrated from review/matters.json, where it was approved; reviewer and date weren't recorded there.
+- id: ER-d3
+  text: This is not a borrowing approval.
+  claim_id: C-d2
+  review:
+    by: not recorded
+    status: approved
+    note: Migrated from review/matters.json, where it was approved; reviewer and date weren't recorded there.
+- id: ER-d4
+  text: The final provincial limit is not yet received.
+  claim_id: C-d2
+  review:
+    by: not recorded
+    status: approved
+    note: 'Migrated from review/matters.json, where it was approved; reviewer and date weren''t recorded there.
+      2026-11-14: relinked from C-d4 to C-d2, which says the same thing in its second sentence. C-d2''s other lines
+      (ER-d2, ER-d3) drop ''not yet'', and this line keeps it. Line text unchanged.'
