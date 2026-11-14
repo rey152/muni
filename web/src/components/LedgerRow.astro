@@ -1,0 +1,51 @@
+---
+// One civic record per row (muni-layout ML-L01): event-date stamp, title, authority line,
+// optional explanation, then a non-interactive stage tag and a chevron.
+import type { Matter } from '../lib/data';
+import { eventLabel, formatDate, latestEvent, placeText } from '../lib/civic';
+
+interface Props {
+  matter: Matter;
+  href?: string;
+}
+
+const { matter, href = `/matter/${matter.id}/` } = Astro.props;
+const latest = latestEvent(matter);
+const MONTHS = ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec'];
+
+// The stamp shows only what the event date says: a full date, a month or a year.
+let stampTop = '';
+let stampBottom = '';
+if (latest) {
+  const [year, month, day] = latest.date.split('-');
+  if (day) {
+    stampTop = MONTHS[Number(month) - 1];
+    stampBottom = String(Number(day));
+  } else if (month) {
+    stampTop = MONTHS[Number(month) - 1];
+    stampBottom = year;
+  } else {
+    stampBottom = year;
+  }
+}
+const stampLabel = latest ? `Latest record dated ${formatDate(latest.date)}` : 'No dated record';
+---
+<li data-matter={matter.id}>
+  <a class="lrow" href={href}>
+    {latest ? (
+      <span class="lstamp">{stampTop && <span class="lstamp__m" aria-hidden="true">{stampTop}</span>}<span class="lstamp__d" aria-hidden="true">{stampBottom}</span><span class="sr-only">{stampLabel}.</span></span>
+    ) : (
+      <span class="lstamp" aria-hidden="true"><span class="lstamp__dot"></span></span>
+    )}
+    <span class="lrow__body">
+      <span class="lrow__title">{matter.title}</span>
+      <span class="lrow__meta">{matter.authority} · {placeText(matter)}</span>
+      {latest && <span class="lrow__meta">Latest record: {latest.establishes}</span>}
+      <slot />
+    </span>
+    <span class="lrow__side">
+      <span class="tag">{latest ? eventLabel(latest.kind) : 'No status record'}</span>
+      <svg class="lrow__chev" viewBox="0 0 24 24" aria-hidden="true"><path d="M9 6 l6 6 -6 6" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/></svg>
+    </span>
+  </a>
+</li>

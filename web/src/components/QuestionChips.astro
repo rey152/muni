@@ -1,0 +1,14 @@
+---
+import { QUESTIONS } from '../lib/questions';
+
+interface Props {
+  current?: string;
+}
+
+const { current } = Astro.props;
+---
+<ul class="qchips">
+  {QUESTIONS.map((q) => (
+    <li><a href={`/questions/${q.key}/`} aria-current={q.key === current ? 'page' : undefined}>{q.title}</a></li>
+  ))}
+</ul>

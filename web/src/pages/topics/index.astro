@@ -1,0 +1,23 @@
+---
+import Base from '../../layouts/Base.astro';
+import PageHead from '../../components/PageHead.astro';
+import QuestionChips from '../../components/QuestionChips.astro';
+import TopicTiles from '../../components/TopicTiles.astro';
+import { data } from '../../lib/data';
+import { pluralMatters } from '../../lib/civic';
+---
+<Base title="Topics" current="topics">
+  <PageHead
+    overline="Browse"
+    title="Topics"
+    scope={`Six public topics · ${pluralMatters(data.matters.length)} checked in all · A matter can be in more than one topic`}
+  />
+  <TopicTiles />
+  <ul class="plain-list measure page-section">
+    {data.topics.map((t) => <li><a href={`/topic/${t.slug}/`}>{t.name}</a><br><span class="mu-meta">{t.description}</span></li>)}
+  </ul>
+  <section class="page-section" aria-labelledby="q-h">
+    <h2 id="q-h">Or start from a question</h2>
+    <QuestionChips />
+  </section>
+</Base>

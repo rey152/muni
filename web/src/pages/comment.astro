@@ -1,0 +1,73 @@
+---
+// Exposure Preview. The draft is checked in the browser and is never sent anywhere.
+// Muni submits nothing; it points to the official channel and quotes what that channel
+// says about publication.
+import Base from '../layouts/Base.astro';
+import PageHead from '../components/PageHead.astro';
+import SourceDetails from '../components/SourceDetails.astro';
+import { data, getPassage, getSnapshot } from '../lib/data';
+import { asOf, liveLinks, notEstablished } from '../lib/civic';
+---
+<Base title="Before you comment" current="comment">
+  <PageHead
+    title="Before you comment"
+    scope="Check which personal details in your draft could become public, and what each comment channel says about publication"
+  />
+
+  <div class="mu-alert mu-alert--info measure" role="note">
+    <span class="mu-alert__dot" aria-hidden="true"></span>
+    <div>
+      <p class="mu-alert__title">Your draft stays on this device. Muni doesn't send or submit anything.</p>
+      <p class="mu-alert__text">The check runs in your browser. It can miss things, so read your draft yourself too.</p>
+    </div>
+  </div>
+
+  <div class="draft measure page-section">
+    <div class="mu-field">
+      <label for="draft">Your comment draft</label>
+      <textarea id="draft" aria-describedby="draft-help" spellcheck="true"></textarea>
+      <span class="mu-field__help" id="draft-help">The check marks email addresses, phone numbers, postal codes, street addresses, and names after "my name is".</span>
+    </div>
+    <p class="no-js-only mu-meta">The check needs JavaScript. Your text still stays in this page.</p>
+    <div class="button-row js-only">
+      <button type="button" class="mu-btn mu-btn--secondary" id="save-draft">Save draft on this device</button>
+      <button type="button" class="mu-btn mu-btn--ghost" id="forget-draft">Delete saved draft</button>
+    </div>
+    <p class="mu-meta js-only" id="save-status" role="status" aria-live="polite">Nothing is saved unless you press "Save draft on this device".</p>
+  </div>
+
+  <section class="page-section measure" aria-labelledby="exposure-h">
+    <h2 id="exposure-h">What could become public</h2>
+    <p id="exposure-summary" role="status" aria-live="polite">Nothing found yet.</p>
+    <p class="mu-meta" id="preview-label">Your draft, with personal details marked:</p>
+    <div class="preview" id="exposure-preview"></div>
+  </section>
+
+  <section class="page-section measure" aria-labelledby="channels-h">
+    <h2 id="channels-h">What each channel says about publication</h2>
+    {data.channels.length === 0 ? <p class="empty">{notEstablished()}</p> : (
+      <ul class="plain-list">
+        {data.channels.map((channel) => {
+          const passage = getPassage(channel.passage_id);
+          const snapshot = getSnapshot(passage.snapshot_id);
+          const officialLink = liveLinks(snapshot)[0];
+          return (
+            <li>
+              <h3>{channel.channel}</h3>
+              <p class="src__kind">{passage.kind === 'verbatim' ? `${snapshot.publisher} says, word for word:` : `What ${snapshot.publisher}'s page says, in Muni's research note (not its exact words):`}</p>
+              <blockquote>{channel.statement}</blockquote>
+              <SourceDetails passageId={channel.passage_id} />
+              <p>To send a comment, use the official channel: <a href={officialLink.href} rel="noopener">{snapshot.title}</a>.</p>
+            </li>
+          );
+        })}
+      </ul>
+    )}
+    <h3>Lower-exposure options</h3>
+    <p>The records Muni checked don't list a lower-exposure way to comment for these channels (as of {asOf}). Muni only lists an option when a source states it.</p>
+  </section>
+
+  <script>
+    import '../scripts/comment';
+  </script>
+</Base>

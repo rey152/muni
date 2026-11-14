@@ -1,0 +1,67 @@
+---
+import Base from '../../layouts/Base.astro';
+import LedgerRow from '../../components/LedgerRow.astro';
+import PageHead from '../../components/PageHead.astro';
+import QuestionChips from '../../components/QuestionChips.astro';
+import { QUESTIONS, questionMatters } from '../../lib/questions';
+import type { Question } from '../../lib/questions';
+import { getPassage } from '../../lib/data';
+import {
+  asOf, eventLabel, eventsInDateOrder, formatDate, missingStages, pluralMatters, provenanceLabel, statusClass, windowStateText,
+} from '../../lib/civic';
+
+export function getStaticPaths() {
+  return QUESTIONS.map((question) => ({ params: { key: question.key }, props: { question } }));
+}
+
+const { question } = Astro.props as { question: Question };
+const matters = questionMatters(question);
+const decisionKinds = ['council_decision', 'mayoral_instrument', 'provincial_decision', 'in_force', 'repealed'];
+---
+<Base title={question.title} current="home">
+  <nav class="crumb" aria-label="Breadcrumb"><ol><li><a href="/">Home</a></li></ol></nav>
+  <PageHead overline="What I want to know" title={question.title} scope={`${question.explanation} ${pluralMatters(matters.length)}.`} />
+  <QuestionChips current={question.key} />
+
+  <div class="page-section">
+    {matters.length === 0 ? (
+      <p class="empty">No matter Muni has checked fits this yet (as of {asOf}).</p>
+    ) : (
+      <ul class="ledger">
+        {matters.map((m) => (
+          <LedgerRow matter={m} href={question.key === 'have-a-say' ? `/matter/${m.id}/#have_a_say` : `/matter/${m.id}/`}>
+            {question.key === 'decided' && eventsInDateOrder(m).filter((e) => decisionKinds.includes(e.kind)).map((e) => (
+              <span class="lrow__extra">{eventLabel(e.kind)}, record dated {formatDate(e.date)}: {e.establishes}</span>
+            ))}
+            {question.key === 'have-a-say' && (m.windows.length === 0
+              ? <span class="lrow__extra">No way to have a say is recorded (as of {asOf}).</span>
+              : m.windows.map((w) => {
+                  const state = windowStateText(w, w.computed_state);
+                  const dated = w.state === 'dated' && w.deadline_date && w.deadline_quote;
+                  return (
+                    <span class="lrow__extra" data-deadline={dated ? w.deadline_date : undefined}>
+                      <span class={statusClass(state.tag)} data-window-tag>{state.tag}</span> {w.action}
+                      {w.deadline_quote && (getPassage(w.passage_id).kind === 'verbatim'
+                        ? <Fragment> · The source says: “{w.deadline_quote}”</Fragment>
+                        : <Fragment> · Muni's research note (not the source's exact words): {w.deadline_quote}</Fragment>)}
+                    </span>
+                  );
+                }))}
+            {question.key === 'undecided' && (
+              <Fragment>
+                {m.claims.filter((c) => c.section === 'not_decided').map((c) => (
+                  <span class="lrow__extra"><span class="prov">{provenanceLabel(c)}</span>{c.text}</span>
+                ))}
+                {missingStages(m).map((stage) => <span class="lrow__extra">{stage}: no record found (as of {asOf}).</span>)}
+              </Fragment>
+            )}
+          </LedgerRow>
+        ))}
+      </ul>
+    )}
+  </div>
+
+  <script>
+    import '../../scripts/windows';
+  </script>
+</Base>

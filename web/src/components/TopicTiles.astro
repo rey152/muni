@@ -1,0 +1,29 @@
+---
+// ServiceTile grid of the six public topics, with honest counts.
+import { data, mattersInTopic } from '../lib/data';
+import { pluralMatters } from '../lib/civic';
+import TopicIcon from './TopicIcon.astro';
+
+const SHORT_NAMES: Record<string, string> = {
+  'homes-and-new-buildings': 'Homes and buildings',
+  'roads-transit-and-getting-around': 'Getting around',
+  'taxes-fees-and-city-spending': 'Taxes and fees',
+  'parks-recreation-and-public-spaces': 'Parks and spaces',
+  'water-waste-and-the-environment': 'Water and waste',
+  'community-services-and-local-rules': 'Community and rules',
+};
+---
+<ul class="mu-tiles ttiles">
+  {data.topics.map((topic) => {
+    const count = mattersInTopic(topic.slug).length;
+    return (
+      <li>
+        <a class="mu-tile" href={`/topic/${topic.slug}/`}>
+          <TopicIcon slug={topic.slug} />
+          <span>{SHORT_NAMES[topic.slug] ?? topic.name}<span class="sr-only">: {topic.name}</span></span>
+          <span class="ttile__n">{count ? pluralMatters(count) : 'None checked yet'}</span>
+        </a>
+      </li>
+    );
+  })}
+</ul>

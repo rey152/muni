@@ -1,0 +1,32 @@
+---
+import Base from '../../layouts/Base.astro';
+import LedgerRow from '../../components/LedgerRow.astro';
+import PageHead from '../../components/PageHead.astro';
+import TopicIcon from '../../components/TopicIcon.astro';
+import { data, mattersInTopic } from '../../lib/data';
+import type { Topic } from '../../lib/data';
+import { pluralMatters } from '../../lib/civic';
+
+export function getStaticPaths() {
+  return data.topics.map((topic) => ({ params: { slug: topic.slug }, props: { topic } }));
+}
+
+const { topic } = Astro.props as { topic: Topic };
+const matters = mattersInTopic(topic.slug);
+const checkedText = matters.length ? `${pluralMatters(matters.length)} checked` : 'No matters checked yet';
+---
+<Base title={topic.name} current="topics">
+  <nav class="crumb" aria-label="Breadcrumb"><ol><li><a href="/topics/">Topics</a></li></ol></nav>
+  <div class="topic-head">
+    <TopicIcon slug={topic.slug} />
+    <PageHead overline="Topic" title={topic.name} scope={`${topic.description.replace(/\.$/, '')} · ${checkedText}`} />
+  </div>
+  {matters.length ? (
+    <ul class="ledger">{matters.map((m) => <LedgerRow matter={m} />)}</ul>
+  ) : (
+    <div class="empty measure">
+      <p><strong>Muni hasn't checked any matters in this topic yet.</strong></p>
+      <p>That doesn't mean nothing is happening. Muni only lists matters whose records it has checked. For current items, see the <a href="https://www.waterloo.ca/" rel="noopener">City of Waterloo website</a>, or try <a href="/search/">searching</a> or another <a href="/topics/">topic</a>.</p>
+    </div>
+  )}
+</Base>

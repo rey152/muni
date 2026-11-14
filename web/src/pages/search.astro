@@ -1,0 +1,54 @@
+---
+import Base from '../layouts/Base.astro';
+import LedgerRow from '../components/LedgerRow.astro';
+import PageHead from '../components/PageHead.astro';
+import { data } from '../lib/data';
+import { pluralMatters } from '../lib/civic';
+
+const numbers = data.matters.flatMap((m) => m.identifiers.map((i) => ({ value: i.value, kind: i.kind, matter: m })));
+---
+<Base title="Search" current="search">
+  <PageHead
+    title="Search"
+    scope={`Find a matter by report number, by-law number, street or topic · ${pluralMatters(data.matters.length)} checked, City of Waterloo`}
+  />
+  <form class="search-form measure" action="/search/" method="get" role="search">
+    <div class="mu-field">
+      <label for="q">Search by report number, by-law number, street or topic</label>
+      <div class="search-inline">
+        <input id="q" name="q" type="search" autocomplete="off" aria-describedby="q-help" placeholder="COM2025-034">
+        <button class="mu-btn mu-btn--primary" type="submit">Search</button>
+      </div>
+      <span class="mu-field__help" id="q-help">A known number opens its matter straight away. Muni never guesses a matter for a number it doesn't know.</span>
+    </div>
+  </form>
+
+  <div class="page-section" id="results" role="status" aria-live="polite">
+    <p class="no-js-only mu-meta">Search needs JavaScript. You can still use the list of numbers below.</p>
+  </div>
+
+  <!-- Every matter's ledger row, built here so search results look like every other list. -->
+  <template id="result-rows">
+    <ul>{data.matters.map((m) => <LedgerRow matter={m} />)}</ul>
+  </template>
+
+  <section class="page-section" aria-labelledby="numbers-h">
+    <h2 id="numbers-h">Every number Muni knows</h2>
+    <p class="mu-meta">These are all the identifiers in the records checked, including old numbers.</p>
+    <div class="table-wrap">
+      <table>
+        <caption>Numbers and addresses, and the matter each one opens</caption>
+        <thead><tr><th scope="col">Number</th><th scope="col">Kind</th><th scope="col">Matter</th></tr></thead>
+        <tbody>
+          {numbers.map((n) => (
+            <tr><td>{n.value}</td><td>{n.kind}</td><td><a href={`/matter/${n.matter.id}/`}>{n.matter.title}</a></td></tr>
+          ))}
+        </tbody>
+      </table>
+    </div>
+  </section>
+
+  <script>
+    import '../scripts/search';
+  </script>
+</Base>

@@ -1,0 +1,86 @@
+---
+// Easy Read: short lines, each linked to the full sentence it simplifies, plus a five-step
+// strip. A step is marked only when a dated record says so.
+import Base from '../../../layouts/Base.astro';
+import PageHead from '../../../components/PageHead.astro';
+import TopicIcon from '../../../components/TopicIcon.astro';
+import { data, getMatter } from '../../../lib/data';
+import { asOf, easyReadSteps, eventLabel, eventsOutsideSteps, formatDate, placeText } from '../../../lib/civic';
+
+export function getStaticPaths() {
+  return data.matters.map((matter) => ({ params: { id: matter.id } }));
+}
+
+const matter = getMatter(Astro.params.id!);
+const steps = easyReadSteps(matter);
+const otherEvents = eventsOutsideSteps(matter);
+const fullPage = `/matter/${matter.id}/`;
+---
+<Base title={`Easy Read: ${matter.title}`} description={`A short, plain version of ${matter.title}.`}>
+  <nav class="crumb" aria-label="Breadcrumb">
+    <ol>
+      <li><a href="/">Home</a></li>
+      <li><a href={fullPage}>{matter.title}</a></li>
+    </ol>
+  </nav>
+  <div class="topic-head">
+    {matter.topic_slugs[0] && <TopicIcon slug={matter.topic_slugs[0]} />}
+    <PageHead
+      overline={matter.authority}
+      title={`Easy Read: ${matter.title}`}
+      scope={`A short version of the full page · ${placeText(matter)}`}
+    >
+      <p class="notice">This is not the official notice.</p>
+    </PageHead>
+  </div>
+
+  <p><a class="mu-btn mu-btn--secondary" href={fullPage}>Read the full version</a></p>
+
+  <section class="page-section measure" aria-labelledby="lines-h">
+    <h2 id="lines-h">In short</h2>
+    {matter.easy_read.length === 0 ? (
+      <p class="empty">There is no Easy Read version of this matter yet.</p>
+    ) : (
+      <ol class="easy-lines">
+        {matter.easy_read.map((line) => (
+          <li>
+            {line.text}
+            <br><a href={`${fullPage}#claim-${line.claim_id}`}>Where this comes from</a>
+          </li>
+        ))}
+      </ol>
+    )}
+  </section>
+
+  <section class="page-section" aria-labelledby="strip-h">
+    <h2 id="strip-h">Where this is now</h2>
+    <p class="mu-meta measure">Five common steps. A step is marked only when a dated record shows it. Not every matter goes through every step, and steps don't always happen in this order. Records as of {asOf}.</p>
+    <ol class="strip">
+      {steps.map((step) => (
+        <li class={step.events.length ? 'is-recorded' : 'is-unknown'}>
+          <span class="strip__name">
+            {step.events.length ? (
+              <svg class="strip__icon" viewBox="0 0 20 20" aria-hidden="true"><circle cx="10" cy="10" r="9" fill="#0b7a3d"/><path d="m6 10 3 3 5-6" fill="none" stroke="#faf9f5" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            ) : (
+              <svg class="strip__icon" viewBox="0 0 20 20" aria-hidden="true"><circle cx="10" cy="10" r="8" fill="none" stroke="currentColor" stroke-width="2" stroke-dasharray="3 3"/></svg>
+            )}
+            {step.name}
+          </span>
+          <span class="strip__status">
+            {step.events.length
+              ? `Yes. Record dated ${step.events.map((e) => formatDate(e.date)).join(' and ')}.`
+              : "We don't know yet."}
+          </span>
+        </li>
+      ))}
+    </ol>
+    {otherEvents.length > 0 && (
+      <Fragment>
+        <h3>Other records for this matter</h3>
+        <ul>
+          {otherEvents.map((e) => <li>{eventLabel(e.kind)}, record dated {formatDate(e.date)}: {e.establishes}</li>)}
+        </ul>
+      </Fragment>
+    )}
+  </section>
+</Base>

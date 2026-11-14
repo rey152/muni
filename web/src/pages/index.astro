@@ -1,0 +1,57 @@
+---
+import Base from '../layouts/Base.astro';
+import HeroArt from '../components/HeroArt.astro';
+import LedgerRow from '../components/LedgerRow.astro';
+import QuestionChips from '../components/QuestionChips.astro';
+import TopicTiles from '../components/TopicTiles.astro';
+import { data } from '../lib/data';
+import { asOf, pluralMatters } from '../lib/civic';
+---
+<Base title="Muni" current="home">
+  <section class="hero" aria-labelledby="home-h">
+    <div>
+      <p class="hero__kicker">City of Waterloo · Records checked {asOf}</p>
+      <h1 id="home-h">What's happening at City Hall, in plain words</h1>
+      <p class="lede">Look up a City matter by its number, street or topic. Every sentence links to the record it came from. This is not the official notice.</p>
+      <form class="search-form" action="/search/" method="get" role="search">
+        <div class="mu-field">
+          <label for="home-q">Search by report number, by-law number, street or topic</label>
+          <div class="search-inline">
+            <input id="home-q" name="q" type="search" autocomplete="off" aria-describedby="home-q-help" placeholder="By-law 2025-087">
+            <button class="mu-btn mu-btn--primary" type="submit">Search</button>
+          </div>
+          <span class="mu-field__help" id="home-q-help">Item Passport finds a matter by any number it has used, old numbers too.</span>
+        </div>
+      </form>
+    </div>
+    <HeroArt />
+  </section>
+
+  <nav aria-label="Ways in">
+    <ul class="waysin">
+      <li><a href="/search/"><strong>I have a number</strong><span>Report, by-law or file number</span></a></li>
+      <li><a href="/topics/"><strong>Browse by topic</strong><span>Six everyday subjects</span></a></li>
+      <li><a href="/near-me/"><strong>Near me</strong><span>Matters in your ward</span></a></li>
+      <li><a href="#questions-h"><strong>What I want to know</strong><span>Decided, undecided, or can I have a say</span></a></li>
+    </ul>
+  </nav>
+
+  <section class="page-section" aria-labelledby="topics-h">
+    <h2 id="topics-h">Browse by topic</h2>
+    <p class="mu-meta">A matter can be in more than one topic. A topic with no matters only means Muni hasn't checked one yet.</p>
+    <TopicTiles />
+  </section>
+
+  <section class="page-section" aria-labelledby="questions-h">
+    <h2 id="questions-h">What I want to know</h2>
+    <QuestionChips />
+  </section>
+
+  <section class="page-section" aria-labelledby="matters-h">
+    <h2 id="matters-h">City matters Muni has checked</h2>
+    <p class="mu-meta">{pluralMatters(data.matters.length)}. Muni lists only matters whose records it has checked, so this is not every item before Council. The date on the left is the latest record's date.</p>
+    <ul class="ledger">
+      {data.matters.map((m) => <LedgerRow matter={m} />)}
+    </ul>
+  </section>
+</Base>

@@ -1,0 +1,190 @@
+---
+// Glass Box: how each sentence was made, what the AI does and never does, the limits,
+// and where the data and code come from.
+import { readFileSync } from 'node:fs';
+import { join } from 'node:path';
+import Base from '../layouts/Base.astro';
+import PageHead from '../components/PageHead.astro';
+import { data } from '../lib/data';
+import { asOf, formatDate } from '../lib/civic';
+
+const claims = data.matters.flatMap((m) => m.claims);
+function countProvenance(kind: string): number {
+  return claims.filter((c) => c.provenance === kind).length;
+}
+const reviewersRecorded = claims.filter((c) => !c.review_summary.includes('Reviewer: not recorded')).length;
+// review/planted.yaml adds test sentences that must be held back; their ids say "planted".
+const plantedCount = data.blocked_claims.filter((b) => b.id.includes('planted')).length;
+
+// Versions come from the real manifests, so this table can't drift from what is installed.
+const sitePackage = JSON.parse(readFileSync(join(process.cwd(), 'package.json'), 'utf8')) as {
+  dependencies: Record<string, string>;
+  devDependencies: Record<string, string>;
+};
+function installedLicence(name: string): string {
+  try {
+    const manifest = JSON.parse(readFileSync(join(process.cwd(), 'node_modules', name, 'package.json'), 'utf8'));
+    return manifest.license ?? 'not stated';
+  } catch {
+    return 'not installed';
+  }
+}
+const siteRows = [
+  ...Object.entries(sitePackage.dependencies).map(([name, version]) => ({ name, version, use: 'Site', licence: installedLicence(name) })),
+  ...Object.entries(sitePackage.devDependencies).map(([name, version]) => ({ name, version, use: 'Site checks', licence: installedLicence(name) })),
+];
+
+// Python licences aren't in requirements.txt, so they're listed by hand from each project's own licence file.
+const PYTHON_LICENCES: Record<string, string> = {
+  pydantic: 'MIT',
+  playwright: 'Apache-2.0',
+  pdfplumber: 'MIT',
+  pymupdf: 'AGPL-3.0',
+  shapely: 'BSD-3-Clause',
+  textstat: 'MIT',
+  rapidfuzz: 'MIT',
+  beautifulsoup4: 'MIT',
+  lxml: 'BSD-3-Clause',
+  pyyaml: 'MIT',
+  'python-dateutil': 'Apache-2.0 or BSD-3-Clause',
+  pytest: 'MIT',
+  pytesseract: 'Apache-2.0',
+};
+let pythonRows: { name: string; version: string; licence: string }[] = [];
+try {
+  const requirements = readFileSync(join(process.cwd(), '..', 'requirements.txt'), 'utf8');
+  pythonRows = requirements
+    .split('\n')
+    .map((line) => line.trim())
+    .filter((line) => line && !line.startsWith('#'))
+    .map((line) => {
+      const [name, version = 'not pinned'] = line.split('==');
+      return { name, version, licence: PYTHON_LICENCES[name.toLowerCase()] ?? 'not recorded' };
+    });
+} catch {
+  pythonRows = [];
+}
+const coverage = data.coverage;
+---
+<Base title="How it works" current="about">
+  <PageHead
+    title="How Muni works"
+    scope={`What the AI does and never does, how each sentence is checked, and the limits · ${claims.length} published sentences, ${data.blocked_claims.length} held back`}
+  >
+    <p class="lede measure">Muni explains City of Waterloo matters from saved copies of official records. Every sentence shows how it was made and links to its source. This is not the official notice.</p>
+  </PageHead>
+
+  <nav class="onpage" aria-labelledby="about-onpage">
+    <p class="mu-overline" id="about-onpage">On this page</p>
+    <ul>
+      <li><a href="#ai-drafts">What the AI drafts</a></li>
+      <li><a href="#ai-never">What it never does</a></li>
+      <li><a href="#checks">How drafts are checked</a></li>
+      <li><a href="#log">Error log</a></li>
+      <li><a href="#labels">What the labels mean</a></li>
+      <li><a href="#limits">Limits</a></li>
+      <li><a href="#data">Data sources</a></li>
+      <li><a href="#versions">Versions and licences</a></li>
+    </ul>
+  </nav>
+
+  <div class="measure">
+    <section class="page-section" aria-labelledby="ai-drafts">
+      <h2 id="ai-drafts">What the AI drafts</h2>
+      <p>Some sentences were drafted by an AI model from a cited passage, then reviewed by a person. Those sentences are labelled "AI paraphrase". An AI model may also suggest which kind of information a passage holds; those tags are hints, never evidence.</p>
+      <p>On any matter page, "Show without AI" hides AI-drafted sentences and shows the source wording in their place.</p>
+    </section>
+
+    <section class="page-section" aria-labelledby="ai-never">
+      <h2 id="ai-never">What it never does</h2>
+      <ul>
+        <li>It never decides or labels the status of a matter. Status comes only from dated records such as minutes, notices and by-laws.</li>
+        <li>It never writes numbers. Numbers are copied from the records.</li>
+        <li>It never finds or works out deadlines. A deadline is shown only beside the words it was read from, and your browser compares that date with today.</li>
+        <li>It never links records together without a person confirming the link.</li>
+        <li>It never answers questions live. Every page is built ahead of time.</li>
+      </ul>
+    </section>
+
+    <section class="page-section" aria-labelledby="checks">
+      <h2 id="checks">How drafts are checked</h2>
+      <ul>
+        <li>Every sentence must cite a passage in a saved record. The build stops if one doesn't.</li>
+        <li>Qualifier Keeper holds back any sentence that drops a condition or hedge its source has, such as "not a" or "only if". It catches dropped wording, not every possible omission.</li>
+        <li>A person reviews each sentence. Only approved sentences are published.</li>
+        <li>Every deadline must come with its quote, and the date must be written in that quote.</li>
+        <li>Drift Sentinel compares public guides with the rules they explain and flags differences for staff. See the <a href="/staff/">staff page</a>.</li>
+        <li>When something isn't in the records, the page says "Not established in the records checked" with the date, instead of leaving a gap.</li>
+      </ul>
+    </section>
+
+    <section class="page-section" aria-labelledby="log">
+      <h2 id="log">Error log</h2>
+      <p>In this build: {countProvenance('ai_paraphrase')} AI paraphrases, {countProvenance('quote')} quotes, {countProvenance('extraction')} extracted facts and {countProvenance('human')} sentences written by a person were published. Qualifier Keeper held back {data.blocked_claims.length} {data.blocked_claims.length === 1 ? 'sentence' : 'sentences'}{plantedCount > 0 && `, including ${plantedCount} test ${plantedCount === 1 ? 'sentence' : 'sentences'} planted on purpose to prove the check works`}.</p>
+      <p>A full log of every AI draft a reviewer changed, and why, is not published with this build yet. {reviewersRecorded === 0 && 'The published sentences were approved before reviewer names and dates were recorded, so each one says "Reviewer: not recorded".'}</p>
+    </section>
+
+    <section class="page-section" aria-labelledby="labels">
+      <h2 id="labels">What the labels mean, and what they don't</h2>
+      <dl class="kv">
+        <dt><span class="prov">Quote</span></dt><dd>Copied word for word from the record.</dd>
+        <dt><span class="prov">Quote from a research note</span></dt><dd>Copied from a researcher's summary of the record, not from the record itself.</dd>
+        <dt><span class="prov">Extracted</span></dt><dd>A fact pulled from a record by a rule.</dd>
+        <dt><span class="prov prov--ai">AI paraphrase</span></dt><dd>Drafted by AI, then checked and approved by a person.</dd>
+        <dt><span class="prov">Written by a person</span></dt><dd>Written by a person from the record.</dd>
+      </dl>
+      <p>A label says how the text was made. It doesn't say the text is true, complete or current. A quote can be out of date. That's why every sentence also shows when its record was obtained and checked.</p>
+      <p>Some sources are research notes: a researcher's summary of a record, made during Muni's research pass and described in the Waterloo classification guide. They are always labelled as research notes, never as the record's own words.</p>
+    </section>
+
+    <section class="page-section" aria-labelledby="limits">
+      <h2 id="limits">Limits</h2>
+      <ul>
+        <li>Muni covers {data.matters.length} matters whose records were checked by hand. It is not a full list of City business.</li>
+        <li>Pages are only as current as the last check ({asOf}). A record can change after that.</li>
+        <li>Many sources are research notes, not text copied from a saved record.</li>
+        <li>Saved copies of records aren't published on this site yet. Each source shows the live address and what Muni's fetcher got back.</li>
+        <li>Some City and Region sites block automated access. Muni records the block and doesn't work around it.</li>
+        <li>A ward is an administrative area. Being in a ward doesn't mean a matter affects you, and being outside it doesn't mean it can't.</li>
+        <li>Easy Read steps are a simple guide. Muni marks a step only when a dated record shows it, and it can't yet tell a step that doesn't apply from one that hasn't happened, so both say "We don't know yet".</li>
+      </ul>
+    </section>
+
+    <section class="page-section" aria-labelledby="data">
+      <h2 id="data">Data sources</h2>
+      <p>Muni's research inventory lists {coverage.particulars} sources (records, guides, datasets and collections) and {coverage.relationships} typed links between kinds of information. {coverage.linked_to_matters} of them are behind the matters on this site. Every one is on the <a href="/sources/">All sources</a> page.</p>
+      <div class="table-wrap">
+        <table>
+          <caption>How the inventory was checked (research pass of {formatDate(data.inventory.source_check_date)})</caption>
+          <thead><tr><th scope="col">Evidence</th><th scope="col">Sources</th></tr></thead>
+          <tbody>{Object.entries(coverage.by_evidence).map(([kind, count]) => <tr><td>{kind}</td><td>{count}</td></tr>)}</tbody>
+        </table>
+      </div>
+      <p>Historical retrieval: {coverage.historical_retrieval.yes} of {coverage.historical_retrieval.total} ({coverage.historical_retrieval.percent}%), audit checked {formatDate(coverage.retrieval_audit_checked)}.</p>
+      <p><strong>What these counts don't measure:</strong></p>
+      <ul>{coverage.limits.map((limit) => <li>{limit}</li>)}</ul>
+      <p>Ward boundaries come from the City of Waterloo ward map (inventory P224); Muni hasn't checked its licence terms. The background map is from <a href="https://openfreemap.org/" rel="noopener">OpenFreeMap</a>, using map data © <a href="https://www.openstreetmap.org/copyright" rel="noopener">OpenStreetMap contributors</a>.</p>
+    </section>
+
+    <section class="page-section" aria-labelledby="versions">
+      <h2 id="versions">Versions and licences</h2>
+      <div class="table-wrap">
+        <table>
+          <caption>Website packages (exact versions from web/package.json)</caption>
+          <thead><tr><th scope="col">Package</th><th scope="col">Version</th><th scope="col">Used for</th><th scope="col">Licence</th></tr></thead>
+          <tbody>{siteRows.map((row) => <tr><td>{row.name}</td><td>{row.version}</td><td>{row.use}</td><td>{row.licence}</td></tr>)}</tbody>
+        </table>
+      </div>
+      {pythonRows.length > 0 && (
+        <div class="table-wrap page-section">
+          <table>
+            <caption>Pipeline packages (from requirements.txt)</caption>
+            <thead><tr><th scope="col">Package</th><th scope="col">Version</th><th scope="col">Licence</th></tr></thead>
+            <tbody>{pythonRows.map((row) => <tr><td>{row.name}</td><td>{row.version}</td><td>{row.licence}</td></tr>)}</tbody>
+          </table>
+        </div>
+      )}
+      <p>Fonts: Fredoka (SIL Open Font License), loaded from Google Fonts.</p>
+    </section>
+  </div>
+</Base>

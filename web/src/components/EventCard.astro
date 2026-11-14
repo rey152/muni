@@ -1,0 +1,27 @@
+---
+// One record in the Life of a Decision: what it says, what it establishes and what it doesn't.
+import type { MatterEvent } from '../lib/data';
+import { eventLabel, formatDate } from '../lib/civic';
+import SourceDetails from './SourceDetails.astro';
+
+interface Props {
+  event: MatterEvent;
+}
+
+const { event } = Astro.props;
+const yearOnly = /^\d{4}$/.test(event.date);
+---
+<li class="event" id={`event-${event.id}`}>
+  <p class="mu-overline">{eventLabel(event.kind)}</p>
+  <h4>Record date: {formatDate(event.date)}{yearOnly && ' (only the year is recorded)'}</h4>
+  <p class="mu-meta">Who: {event.actor}</p>
+  <p class="src__kind">
+    {event.outcome_kind === 'verbatim' ? 'What the record says, word for word:' : "What the record says, as summarized in Muni's research note (not its exact words):"}
+  </p>
+  <blockquote>{event.outcome_text}</blockquote>
+  <dl class="kv">
+    <dt>This record establishes</dt><dd>{event.establishes || 'Not stated'}</dd>
+    <dt>It does not establish</dt><dd>{event.not_establishes || 'Not stated'}</dd>
+  </dl>
+  <SourceDetails passageId={event.passage_id} />
+</li>

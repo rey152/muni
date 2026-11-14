@@ -1,0 +1,108 @@
+---
+// Ward Match. Every ward's result is prebuilt on this page; picking a ward (map tap,
+// location or list) only shows the matching block. Without JavaScript the list links
+// still work through :target. The tapped point and the location never leave the browser.
+import { readFileSync } from 'node:fs';
+import { join } from 'node:path';
+import Base from '../layouts/Base.astro';
+import LedgerRow from '../components/LedgerRow.astro';
+import PageHead from '../components/PageHead.astro';
+import { data } from '../lib/data';
+import { asOf, pluralMatters } from '../lib/civic';
+
+interface WardFeature {
+  properties: { WARD_NO: number; WARD_NAME: string };
+}
+
+const wardsPath = join(process.cwd(), 'public', 'data', 'wards.geojson');
+const wardFile = JSON.parse(readFileSync(wardsPath, 'utf8')) as { features: WardFeature[] };
+
+function titleCase(text: string): string {
+  return text.toLowerCase().replace(/(^|[\s-])([a-z])/g, (_, before, letter) => before + letter.toUpperCase());
+}
+
+const wards = wardFile.features
+  .map((f) => ({ number: f.properties.WARD_NO, name: titleCase(f.properties.WARD_NAME) }))
+  .sort((a, b) => a.number - b.number);
+
+const citywide = data.matters.filter((m) => m.wards.length === 0 && m.location.toLowerCase() === 'citywide');
+const wardUnknown = data.matters.filter((m) => m.wards.length === 0 && m.location.toLowerCase() !== 'citywide');
+---
+<Base title="Matters near me" current="near">
+  <PageHead
+    title="Matters near me"
+    scope={`Find your ward among the City of Waterloo's ${wards.length} wards, then see matters recorded there and citywide · ${pluralMatters(data.matters.length)} checked`}
+    provenance={`Ward boundaries from the City of Waterloo ward map (inventory P224) · Records as of ${asOf}`}
+  />
+
+  <div class="mu-alert mu-alert--info measure" role="note">
+    <span class="mu-alert__dot" aria-hidden="true"></span>
+    <div>
+      <p class="mu-alert__title">Your location stays on this device</p>
+      <p class="mu-alert__text">Finding your ward happens in your browser. Muni never sends the spot you tap or your location anywhere. The background map comes from OpenFreeMap, which sees which part of the map is on screen, like any online map. Muni doesn't move the map to your location.</p>
+    </div>
+  </div>
+
+  <div class="near page-section">
+    <div>
+      <div class="map-box">
+        <div id="ward-map" class="map-canvas" aria-label="Map of the City of Waterloo wards. Tap a spot to find its ward."></div>
+        <p class="map-fallback" id="map-fallback">The map needs JavaScript. Pick your ward from the list.</p>
+      </div>
+      <p class="approx-note">A ward is an administrative area, not how far effects reach.</p>
+      <p class="mu-meta" id="map-status" role="status" aria-live="polite"></p>
+    </div>
+
+    <div>
+      <h2 id="find-h">Find your ward</h2>
+      <div class="js-only">
+        <button type="button" class="mu-btn mu-btn--secondary" id="geo-btn">Use my location</button>
+        <p class="mu-meta">Your browser will ask first. The location is used once, on this device.</p>
+      </div>
+      <p id="geo-status" role="status" aria-live="polite"></p>
+      <h3 id="ward-list-h">Pick from the list</h3>
+      <ul class="ward-list" aria-labelledby="ward-list-h">
+        {wards.map((w) => <li><a href={`#ward-${w.number}`} data-ward={w.number}>Ward {w.number}: {w.name}</a></li>)}
+      </ul>
+      <div class="js-only">
+        <label class="check"><input type="checkbox" id="remember"> Remember my ward on this device</label>
+        <p class="mu-meta">Only the ward number is saved, in this browser. Untick to forget it.</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="page-section">
+    <p id="ward-none" class="empty measure">No ward chosen yet. Tap the map, use your location, or pick a ward from the list.</p>
+    {wards.map((w) => {
+      const inWard = data.matters.filter((m) => m.wards.includes(w.number));
+      return (
+        <section class="ward-result" id={`ward-${w.number}`} aria-labelledby={`ward-${w.number}-h`} tabindex="-1" data-ward={w.number}>
+          <h2 id={`ward-${w.number}-h`}>Ward {w.number}: {w.name}</h2>
+          <p class="approx-note">A ward is an administrative area, not how far effects reach. A matter in another ward, or citywide, can still affect you.</p>
+          <h3>Matters recorded in this ward</h3>
+          {inWard.length ? (
+            <ul class="ledger">{inWard.map((m) => <LedgerRow matter={m} />)}</ul>
+          ) : (
+            <p class="empty">No matter Muni has checked is recorded in this ward (as of {asOf}).</p>
+          )}
+          <h3>Citywide matters</h3>
+          {citywide.length ? (
+            <ul class="ledger">{citywide.map((m) => <LedgerRow matter={m} />)}</ul>
+          ) : (
+            <p class="empty">No citywide matters checked (as of {asOf}).</p>
+          )}
+          {wardUnknown.length > 0 && (
+            <Fragment>
+              <h3>Matters whose ward isn't recorded</h3>
+              <ul class="ledger">{wardUnknown.map((m) => <LedgerRow matter={m} />)}</ul>
+            </Fragment>
+          )}
+        </section>
+      );
+    })}
+  </div>
+
+  <script>
+    import '../scripts/near-me';
+  </script>
+</Base>

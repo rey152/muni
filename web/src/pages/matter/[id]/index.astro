@@ -1,0 +1,280 @@
+---
+// Decision Facts: one prebuilt page per matter. Works without JavaScript; the only scripts
+// recheck window dates against today and wire up the print button.
+import Base from '../../../layouts/Base.astro';
+import ClaimSentence from '../../../components/ClaimSentence.astro';
+import EventCard from '../../../components/EventCard.astro';
+import SourceDetails from '../../../components/SourceDetails.astro';
+import WindowCard from '../../../components/WindowCard.astro';
+import { data, getMatter } from '../../../lib/data';
+import type { Claim, Identifier } from '../../../lib/data';
+import {
+  SECTIONS, asOf, availabilityWithReason, eventLabel, eventsInDateOrder, fetchSummary, formatDate,
+  latestEvent, liveLinks, missingStages, notEstablished, placeText, snapshotsForMatter,
+  statusClass, windowStateText,
+} from '../../../lib/civic';
+
+export function getStaticPaths() {
+  return data.matters.map((matter) => ({ params: { id: matter.id } }));
+}
+
+const matter = getMatter(Astro.params.id!);
+const latest = latestEvent(matter);
+const events = eventsInDateOrder(matter);
+const missing = missingStages(matter);
+const snapshots = snapshotsForMatter(matter);
+const topic = data.topics.find((t) => t.slug === matter.topic_slugs[0]);
+const numbers = matter.identifiers.filter((i) => i.kind !== 'address');
+
+function claimsIn(section: string): Claim[] {
+  return matter.claims.filter((c) => c.section === section);
+}
+
+function sectionTitle(key: string): string {
+  return SECTIONS.find((s) => s.key === key)?.title ?? key;
+}
+
+// Qualifier Keeper's "Conditions kept" note: which sentences keep each marker,
+// and where a reviewer recorded why a sentence leaves one out.
+interface KeptMarker {
+  marker: string;
+  keptIn: Claim[];
+  waived: { claim: Claim; reason: string }[];
+}
+const kept: KeptMarker[] = [];
+for (const claim of matter.claims) {
+  for (const marker of claim.qualifiers_required) {
+    let entry = kept.find((k) => k.marker === marker);
+    if (!entry) {
+      entry = { marker, keptIn: [], waived: [] };
+      kept.push(entry);
+    }
+    const reason = claim.qualifiers_waived[marker];
+    if (reason) entry.waived.push({ claim, reason });
+    else entry.keptIn.push(claim);
+  }
+}
+
+// Item Passport: an identifier that stopped being used on the day another of the same
+// kind started is shown as renumbered to it.
+function replacedBy(identifier: Identifier): Identifier | undefined {
+  if (!identifier.valid_to) return undefined;
+  return matter.identifiers.find(
+    (other) => other !== identifier && other.kind === identifier.kind && other.valid_from === identifier.valid_to,
+  );
+}
+
+const imposedByText: Record<string, string> = {
+  decision: 'Set by the decision',
+  report: 'Stated in a staff report, not set by a decision',
+  study_mitigation: 'A mitigation proposed in a study, not a condition set by a decision',
+};
+
+const appliesTo = claimsIn('applies_to');
+const whatAndWhy = claimsIn('what_and_why');
+const whoDecides = claimsIn('who_decides');
+const conditionClaims = claimsIn('conditions');
+const notDecided = claimsIn('not_decided');
+const haveASay = claimsIn('have_a_say');
+---
+<Base title={matter.title} description={`${matter.title}: what is proposed or decided, who decides, conditions and how to have a say, with sources.`}>
+  <nav class="crumb" aria-label="Breadcrumb">
+    <ol>
+      <li><a href="/">Home</a></li>
+      {topic && <li><a href={`/topic/${topic.slug}/`}>{topic.name}</a></li>}
+    </ol>
+  </nav>
+
+  <header class="dossier-head">
+    <p class="mu-overline">{matter.authority}</p>
+    <h1>{matter.title}</h1>
+    <p class="mu-meta">Decision Facts for {placeText(matter)} · Records as of {asOf} · From {snapshots.length} official records</p>
+    <dl class="glance">
+      <div>
+        <dt>Latest record</dt>
+        <dd>
+          {latest ? (
+            <Fragment>{eventLabel(latest.kind)} · record date {formatDate(latest.date)}<br><span class="mu-meta">{latest.establishes}</span></Fragment>
+          ) : 'No dated record found'}
+        </dd>
+      </div>
+      <div>
+        <dt>Having a say</dt>
+        <dd>
+          {matter.windows.length === 0 ? 'No way to have a say is recorded.' : (
+            <ul>
+              {matter.windows.map((w) => {
+                const state = windowStateText(w, w.computed_state);
+                const dated = w.state === 'dated' && w.deadline_date && w.deadline_quote;
+                return <li data-deadline={dated ? w.deadline_date : undefined}><span class={statusClass(state.tag)} data-window-tag>{state.tag}</span> {w.action}</li>;
+              })}
+            </ul>
+          )}
+          <a href="#have_a_say" class="mu-meta glance__link">See the quotes</a>
+        </dd>
+      </div>
+      <div><dt>Who decides</dt><dd>{matter.authority}</dd></div>
+      <div><dt>Where</dt><dd>{placeText(matter)}</dd></div>
+      <div><dt>Numbers it has used</dt><dd>{numbers.length ? numbers.map((i) => i.value).join(', ') : 'None recorded'}</dd></div>
+      <div><dt>Records checked</dt><dd>{asOf}</dd></div>
+    </dl>
+    <p class="notice">This is not the official notice. Check the City's record before you act.</p>
+  </header>
+
+  <div class="tools no-print">
+    <label class="switch"><input type="checkbox" id="no-ai" role="switch"> Show without AI</label>
+    <a class="mu-btn mu-btn--secondary" href={`/matter/${matter.id}/easy-read/`}>Easy Read version</a>
+    <button type="button" class="mu-btn mu-btn--ghost js-only" id="print-btn">Print this page</button>
+    <p class="tools__help mu-meta">"Show without AI" hides sentences an AI drafted and shows the source wording in their place.</p>
+  </div>
+
+  <nav class="onpage" aria-labelledby="onpage-h">
+    <p class="mu-overline" id="onpage-h">On this page</p>
+    <ul>
+      {SECTIONS.map((s) => <li><a href={`#${s.key}`}>{s.title}</a></li>)}
+      <li><a href="#life">Life of a decision</a></li>
+      <li><a href="#passport">Item Passport</a></li>
+    </ul>
+  </nav>
+
+  <div class="facts">
+    <section aria-labelledby="applies_to">
+      <h2 id="applies_to">Applies to</h2>
+      {appliesTo.length ? appliesTo.map((c) => <ClaimSentence claim={c} />) : <p class="empty">{notEstablished()}</p>}
+    </section>
+
+    <section aria-labelledby="what_and_why">
+      <h2 id="what_and_why">What it would do and why</h2>
+      {whatAndWhy.length ? whatAndWhy.map((c) => <ClaimSentence claim={c} />) : <p class="empty">{notEstablished()}</p>}
+    </section>
+
+    <section aria-labelledby="who_decides">
+      <h2 id="who_decides">Who decides</h2>
+      {whoDecides.map((c) => <ClaimSentence claim={c} />)}
+      {whoDecides.length === 0 && events.length === 0 && <p class="empty">{notEstablished()}</p>}
+      <h3 id="life">Life of a decision</h3>
+      <p class="mu-meta">Each card is one dated record, oldest first. The order comes from this matter's records; it isn't a fixed process every matter follows.</p>
+      <ol class="events">
+        {events.map((e) => <EventCard event={e} />)}
+        {missing.map((stage) => (
+          <li class="event event--missing">
+            <p class="mu-overline">{stage}</p>
+            <h4>No record found (as of {asOf})</h4>
+            <p>Muni found no {stage.toLowerCase()} record for this matter in the records checked. That doesn't mean it didn't happen.</p>
+          </li>
+        ))}
+      </ol>
+    </section>
+
+    <section aria-labelledby="conditions">
+      <h2 id="conditions">Conditions</h2>
+      {conditionClaims.map((c) => <ClaimSentence claim={c} />)}
+      {conditionClaims.length === 0 && matter.conditions.length === 0 && <p class="empty">{notEstablished()}</p>}
+      {matter.conditions.length > 0 && (
+        <Fragment>
+          <h3>Conditions in the records</h3>
+          <ul class="plain-list">
+            {matter.conditions.map((condition) => (
+              <li>
+                <p class="claim__text">{condition.text}</p>
+                <p class="mu-meta">{imposedByText[condition.imposed_by] ?? condition.imposed_by}{condition.applies_to && ` · Applies to: ${condition.applies_to}`}</p>
+                <SourceDetails passageId={condition.passage_id} />
+              </li>
+            ))}
+          </ul>
+        </Fragment>
+      )}
+      {kept.length > 0 && (
+        <div class="mu-alert mu-alert--info kept" role="note">
+          <span class="mu-alert__dot" aria-hidden="true"></span>
+          <div>
+            <p class="mu-alert__title">Conditions kept</p>
+            <p class="mu-alert__text">Qualifier Keeper checked that the sentences on this page keep these words from their sources. It catches dropped wording, not every possible omission.</p>
+            <ul class="mu-alert__text">
+              {kept.map((k) => (
+                <li>
+                  <strong>"{k.marker}"</strong>
+                  {k.keptIn.length > 0 && <Fragment> is kept in {k.keptIn.map((c, i) => <Fragment>{i > 0 && ', '}<a href={`#claim-${c.id}`}>{sectionTitle(c.section)}</a></Fragment>)}.</Fragment>}
+                  {k.waived.map((w) => <Fragment> Left out of <a href={`#claim-${w.claim.id}`}>{sectionTitle(w.claim.section)}</a>; reviewer's reason: {w.reason}</Fragment>)}
+                </li>
+              ))}
+            </ul>
+          </div>
+        </div>
+      )}
+    </section>
+
+    <section aria-labelledby="not_decided">
+      <h2 id="not_decided">Not decided yet</h2>
+      {notDecided.map((c) => <ClaimSentence claim={c} />)}
+      {missing.length > 0 && (
+        <p class="claim">No record found (as of {asOf}) for: {missing.join(', ').toLowerCase()}. See <a href="#life">Life of a decision</a>.</p>
+      )}
+      {notDecided.length === 0 && missing.length === 0 && <p class="empty">{notEstablished()}</p>}
+    </section>
+
+    <section aria-labelledby="have_a_say">
+      <h2 id="have_a_say">How to have a say</h2>
+      {haveASay.map((c) => <ClaimSentence claim={c} />)}
+      {haveASay.length === 0 && matter.windows.length === 0 && <p class="empty">{notEstablished()}</p>}
+      {matter.windows.length > 0 && (
+        <Fragment>
+          <h3>Windows to have a say</h3>
+          <p class="mu-meta">Only what official pages state. "No deadline published" means the source was checked and gives none; "Not checked" means nobody has checked yet.</p>
+          <ul class="windows">
+            {matter.windows.map((w) => <WindowCard window={w} />)}
+          </ul>
+        </Fragment>
+      )}
+      <p class="no-print"><a href="/comment/">Before you comment, check what could become public</a></p>
+    </section>
+
+    <section aria-labelledby="records">
+      <h2 id="records">Records</h2>
+      {snapshots.length === 0 ? <p class="empty">{notEstablished()}</p> : (
+        <ul class="records">
+          {snapshots.map((s) => (
+            <li>
+              <h3>{s.title}</h3>
+              <dl class="kv">
+                <dt>Publisher</dt><dd>{s.publisher}</dd>
+                <dt>Obtained</dt><dd>{formatDate(s.fetched_at)}</dd>
+                <dt>Checked on</dt><dd>{formatDate(s.checked_on)}</dd>
+                <dt>Availability</dt><dd>{availabilityWithReason(s)}</dd>
+                <dt>Saved copy</dt><dd>{fetchSummary(s)}</dd>
+                <dt>Inventory</dt><dd>{s.particular_ids.map((id, i) => <Fragment>{i > 0 && ', '}<a href={`/sources/#${id}`}>{id}</a></Fragment>)}</dd>
+              </dl>
+              <p class="src__links">{liveLinks(s).map((link) => <a href={link.href} rel="noopener">{link.label}<span class="sr-only"> (publisher's website)</span></a>)}</p>
+              {liveLinks(s).filter((link) => link.note).map((link) => <p class="mu-meta">{link.note}</p>)}
+            </li>
+          ))}
+        </ul>
+      )}
+
+      <h3 id="passport" class="page-section">Item Passport: numbers this matter has used</h3>
+      {matter.identifiers.length === 0 ? <p class="empty">{notEstablished()}</p> : (
+        <ul class="passport">
+          {matter.identifiers.map((identifier) => {
+            const next = replacedBy(identifier);
+            return (
+              <li>
+                <span class="idchip">{identifier.value}</span> <span class="mu-meta">{identifier.kind}</span>
+                {identifier.valid_from && <span class="mu-meta"> · used from {formatDate(identifier.valid_from)}</span>}
+                {identifier.valid_to && <span class="mu-meta"> · used until {formatDate(identifier.valid_to)}</span>}
+                {next && <p>Renumbered: {identifier.value} → {next.value} on {formatDate(identifier.valid_to)}.</p>}
+                {identifier.note && <p class="mu-meta">{identifier.note}</p>}
+                <SourceDetails passageId={identifier.passage_id} />
+              </li>
+            );
+          })}
+        </ul>
+      )}
+      <p class="mu-meta">Searching for any of these numbers on Muni opens this page.</p>
+    </section>
+  </div>
+
+  <script>
+    import '../../../scripts/windows';
+    import '../../../scripts/print';
+  </script>
+</Base>

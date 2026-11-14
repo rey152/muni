@@ -1,0 +1,20 @@
+---
+// Every screen opens the same way (muni-layout ML-V01): title, a scope line, a provenance line.
+import { asOf } from '../lib/civic';
+
+interface Props {
+  title: string;
+  overline?: string;
+  scope: string;
+  provenance?: string;
+}
+
+const { title, overline, scope, provenance = `Records as of ${asOf} · From official City of Waterloo and Region of Waterloo sources` } = Astro.props;
+---
+<header class="page-head">
+  {overline && <p class="mu-overline">{overline}</p>}
+  <h1>{title}</h1>
+  <p class="scope">{scope}</p>
+  <p class="page-prov">{provenance}</p>
+  <slot />
+</header>

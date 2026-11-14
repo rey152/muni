@@ -1,0 +1,46 @@
+---
+// The expandable source beside a sentence: the passage (labelled verbatim or research note),
+// where it sits in the record, the record's dates, and links to the live source.
+import { getPassage, getSnapshot } from '../lib/data';
+import { asOf, availabilityWithReason, fetchSummary, formatDate, liveLinks } from '../lib/civic';
+
+interface Props {
+  passageId: string;
+  label?: string;
+  review?: string;
+}
+
+const { passageId, label = 'Source', review } = Astro.props;
+const passage = getPassage(passageId);
+const snapshot = getSnapshot(passage.snapshot_id);
+const links = liveLinks(snapshot);
+const obtainedBy = snapshot.obtained_by === 'manual' ? 'downloaded by hand' : 'fetched with a headless browser';
+---
+<details class="src">
+  <summary>{label}: {snapshot.title}</summary>
+  <div class="src__body">
+    {passage.kind === 'verbatim' ? (
+      <p class="src__kind">The record's exact words:</p>
+    ) : (
+      <p class="src__kind">Research note, not the record's exact words. It summarizes the record and comes from Muni's research pass (the Waterloo classification guide).</p>
+    )}
+    <blockquote>{passage.text}</blockquote>
+    {passage.note && <p>Reviewer note: {passage.note}</p>}
+    <dl class="kv">
+      <dt>Where in the record</dt><dd>{passage.locator || 'not stated'}</dd>
+      <dt>Record</dt><dd>{snapshot.title}</dd>
+      <dt>Publisher</dt><dd>{snapshot.publisher || 'not stated'}</dd>
+      <dt>Obtained</dt><dd>{formatDate(snapshot.fetched_at)} ({obtainedBy})</dd>
+      <dt>Checked on</dt><dd>{formatDate(snapshot.checked_on || asOf)}</dd>
+      {snapshot.availability !== 'ok' && (
+        <Fragment><dt>Availability</dt><dd>{availabilityWithReason(snapshot)}</dd></Fragment>
+      )}
+      <dt>Saved copy</dt><dd>{fetchSummary(snapshot)}</dd>
+      {review && <Fragment><dt>Review</dt><dd>{review}</dd></Fragment>}
+    </dl>
+    <p class="src__links">
+      {links.map((link) => <a href={link.href} rel="noopener">{link.label}<span class="sr-only"> (publisher's website)</span></a>)}
+    </p>
+    {links.filter((link) => link.note).map((link) => <p class="mu-meta">{link.note}</p>)}
+  </div>
+</details>

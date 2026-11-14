@@ -1,0 +1,48 @@
+---
+// One way to have a say (Windows Wall). A date only ever appears beside the quote it was read from.
+// Dated windows carry data-deadline so windows.ts can recheck open/closed against today's date;
+// without JavaScript the build-time state and its date stay on the page.
+import type { ParticipationWindow } from '../lib/data';
+import { getPassage } from '../lib/data';
+import { builtOn, formatDate, statusClass, windowStateText } from '../lib/civic';
+import SourceDetails from './SourceDetails.astro';
+
+interface Props {
+  window: ParticipationWindow;
+}
+
+const { window } = Astro.props;
+const state = windowStateText(window, window.computed_state);
+const isDated = window.state === 'dated' && Boolean(window.deadline_date) && Boolean(window.deadline_quote);
+const passage = getPassage(window.passage_id);
+const quoteLabel = passage.kind === 'verbatim'
+  ? 'What the source says, word for word:'
+  : "As written in Muni's research note (not the source's exact words):";
+---
+<li class="window" data-deadline={isDated ? window.deadline_date : undefined}>
+  <div>
+    <h4>{window.action}</h4>
+    <p class="mu-meta">How: {window.channel || 'not stated in the source'}</p>
+    <p class="window__state">
+      <span class={statusClass(state.tag)} data-window-tag>{state.tag}</span>
+      <span data-window-text>{state.text}</span>
+    </p>
+    {isDated && (
+      <p class="mu-meta" data-window-when>Open or closed was worked out on {builtOn}, when this page was built.</p>
+    )}
+    {window.note && <p>{window.note}</p>}
+    <p class="mu-meta">Checked on {formatDate(window.checked_on)}</p>
+  </div>
+  <div>
+    {window.deadline_quote ? (
+      <Fragment>
+        <p class="src__kind">{quoteLabel}</p>
+        <blockquote>{window.deadline_quote}</blockquote>
+        {isDated && <p class="mu-meta">Date read from this quote: {formatDate(window.deadline_date)}</p>}
+      </Fragment>
+    ) : (
+      <p>No deadline wording to quote.</p>
+    )}
+    <SourceDetails passageId={window.passage_id} />
+  </div>
+</li>

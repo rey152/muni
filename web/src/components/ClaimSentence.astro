@@ -1,0 +1,30 @@
+---
+// One Decision Facts sentence with its provenance label and sources.
+// An AI paraphrase is built twice: the paraphrase and its fallback wording.
+// The "Show without AI" switch only swaps which one is visible (CSS in global.css).
+import type { Claim } from '../lib/data';
+import { claimFallback, provenanceLabel } from '../lib/civic';
+import SourceDetails from './SourceDetails.astro';
+
+interface Props {
+  claim: Claim;
+}
+
+const { claim } = Astro.props;
+const isAi = claim.provenance === 'ai_paraphrase';
+const fallback = isAi ? claimFallback(claim) : null;
+const many = claim.passage_ids.length > 1;
+---
+<div class="claim" id={`claim-${claim.id}`}>
+  {fallback ? (
+    <p class="claim__text">
+      <span class="ai-only"><span class="prov prov--ai">AI paraphrase</span>{claim.text}</span>
+      <span class="noai-only"><span class="prov">{fallback.label}</span>{fallback.text}</span>
+    </p>
+  ) : (
+    <p class="claim__text"><span class="prov">{provenanceLabel(claim)}</span>{claim.text}</p>
+  )}
+  {claim.passage_ids.map((id, index) => (
+    <SourceDetails passageId={id} label={many ? `Source ${index + 1}` : 'Source'} review={index === 0 ? claim.review_summary : undefined} />
+  ))}
+</div>

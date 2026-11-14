@@ -1,0 +1,115 @@
+---
+// Drift Sentinel staff page: a fix list for staff, not for residents.
+import Base from '../layouts/Base.astro';
+import PageHead from '../components/PageHead.astro';
+import SourceDetails from '../components/SourceDetails.astro';
+import { data, getMatter } from '../lib/data';
+import { asOf, availabilityText, formatDate } from '../lib/civic';
+import { claimsNeedingRecheck, claimsWithoutCheckedHash, sourcesWithProblems } from '../lib/staff';
+
+const ruleDrift = data.discrepancies.filter((d) => d.kind === 'rule_drift');
+const recheck = claimsNeedingRecheck();
+const problemSources = sourcesWithProblems();
+const noHash = claimsWithoutCheckedHash();
+---
+<Base title="Drift Sentinel (staff)" current="staff">
+  <PageHead
+    overline="For staff"
+    title="Drift Sentinel"
+    scope="Where a public guide differs from the rule it explains, sentences held back before publishing, and sources Muni couldn't read"
+    provenance={`Records as of ${asOf} · Report built ${formatDate(data.generated_on)}`}
+  />
+  <p><a class="mu-btn mu-btn--primary" href="/data/drift.csv" download={`muni-drift-${data.generated_on}.csv`}>Download the fix list (CSV)</a></p>
+
+  <nav class="onpage" aria-labelledby="staff-onpage">
+    <p class="mu-overline" id="staff-onpage">On this page</p>
+    <ul>
+      <li><a href="#drift-h">Guides that differ from rules</a></li>
+      <li><a href="#held-h">Held back by Qualifier Keeper</a></li>
+      <li><a href="#sources-h">Sources with problems</a></li>
+      <li><a href="#recheck-h">Sentences that need a recheck</a></li>
+    </ul>
+  </nav>
+
+  <section class="page-section" aria-labelledby="drift-h">
+    <h2 id="drift-h">Guides that differ from rules</h2>
+    <p class="mu-meta measure">A difference alone doesn't show which source is right. Each row needs a person to check both.</p>
+    {ruleDrift.length === 0 ? <p class="empty">No differences found in this build.</p> : (
+      <ul class="records">
+        {ruleDrift.map((d) => (
+          <li>
+            <h3>{d.topic}</h3>
+            <div class="window">
+              <div>
+                <p class="src__kind">The guide says:</p>
+                <blockquote>{d.guide?.text}</blockquote>
+                {d.guide && <SourceDetails passageId={d.guide.passage_id} label="Guide source" />}
+              </div>
+              <div>
+                <p class="src__kind">The rule says:</p>
+                <blockquote>{d.rule?.text}</blockquote>
+                {d.rule && <SourceDetails passageId={d.rule.passage_id} label="Rule source" />}
+              </div>
+            </div>
+            <dl class="kv">
+              <dt>Difference</dt><dd>{d.difference}</dd>
+              <dt>Suggested fix</dt><dd>{d.suggested_fix}</dd>
+              <dt>Found</dt><dd>{formatDate(d.found_on)} · {d.status}</dd>
+            </dl>
+          </li>
+        ))}
+      </ul>
+    )}
+  </section>
+
+  <section class="page-section" aria-labelledby="held-h">
+    <h2 id="held-h">Held back by Qualifier Keeper</h2>
+    <p class="mu-meta measure">These sentences were not published because they dropped a qualifier their source has, such as "not a" or "not yet".</p>
+    {data.blocked_claims.length === 0 ? <p class="empty">No sentences were held back in this build.</p> : (
+      <ul class="plain-list measure">
+        {data.blocked_claims.map((b) => (
+          <li>
+            <p><strong>{b.text}</strong></p>
+            <p class="mu-meta">{b.id} · Matter: <a href={`/matter/${b.matter_id}/`}>{getMatter(b.matter_id).title}</a> · Missing: {b.missing.map((m) => `"${m}"`).join(', ')}</p>
+          </li>
+        ))}
+      </ul>
+    )}
+  </section>
+
+  <section class="page-section" aria-labelledby="sources-h">
+    <h2 id="sources-h">Sources with problems</h2>
+    <p class="mu-meta measure">Sources whose saved entry or latest fetch was not readable. Muni never works around a block. Blocked files come in by hand through manual_inbox/.</p>
+    {problemSources.length === 0 ? <p class="empty">Every source was readable in this build.</p> : (
+      <ul class="records">
+        {problemSources.map((s) => (
+          <li>
+            <h3>{s.title}</h3>
+            <dl class="kv">
+              <dt>Address</dt><dd><a href={s.url} rel="noopener">{s.url}</a></dd>
+              <dt>Saved entry says</dt><dd>{availabilityText(s.availability)}</dd>
+              <dt>Latest fetch</dt><dd>{s.latest_fetch ? `${formatDate(s.latest_fetch.fetched_at)}: HTTP ${s.latest_fetch.status ?? 'none'}, ${availabilityText(s.latest_fetch.availability)}` : 'Not fetched yet'}</dd>
+              <dt>Reason</dt><dd>{s.reason || (s.availability === 'ok' ? 'The saved entry and the latest fetch disagree. Check by hand.' : 'No reason recorded')}</dd>
+            </dl>
+          </li>
+        ))}
+      </ul>
+    )}
+  </section>
+
+  <section class="page-section measure" aria-labelledby="recheck-h">
+    <h2 id="recheck-h">Sentences that need a recheck</h2>
+    {recheck.length === 0 ? (
+      <p class="empty">None found in this build. Note: {noHash} of {data.matters.reduce((n, m) => n + m.claims.length, 0)} published sentences don't record which copy of their source a reviewer checked, so this check has nothing to compare for them yet.</p>
+    ) : (
+      <ul class="plain-list">
+        {recheck.map((d) => (
+          <li>
+            <p><strong>{d.claim_id}</strong> · {d.difference}</p>
+            <p class="mu-meta">Snapshot {d.snapshot_id} · checked {d.checked_sha256 ?? 'no hash'} · now {d.latest_sha256 ?? 'no hash'} · {d.suggested_fix}</p>
+          </li>
+        ))}
+      </ul>
+    )}
+  </section>
+</Base>

@@ -1,0 +1,133 @@
+---
+// Every particular (P001-P267) and every relationship (L01-L21) from the research inventory.
+import Base from '../layouts/Base.astro';
+import PageHead from '../components/PageHead.astro';
+import { data, findParticular, getMatter } from '../lib/data';
+import type { Endpoint } from '../lib/data';
+import { formatDate } from '../lib/civic';
+
+const families = Object.entries(data.families).sort(([a], [b]) => a.localeCompare(b));
+
+function roleName(code: string): string {
+  const role = data.roles[code];
+  return role ? `${code} ${role.name}` : code;
+}
+
+function endpointText(endpoint: Endpoint): string {
+  if (endpoint.kind === 'role') return roleName(endpoint.value);
+  if (endpoint.kind === 'particular') return `${endpoint.value} ${findParticular(endpoint.value)?.title ?? ''}`.trim();
+  return endpoint.value;
+}
+
+const coverage = data.coverage;
+---
+<Base title="All sources" description="Every source in Muni's research inventory and every typed link between kinds of information.">
+  <PageHead
+    title="All sources"
+    scope={`Muni's research inventory: ${data.particulars.length} sources in ${families.length} document families, and ${data.relationships.length} typed links`}
+    provenance={`Inventory from the research pass of ${formatDate(data.inventory.source_check_date)} · ${coverage.linked_to_matters} sources are behind matters on this site`}
+  >
+    <p class="lede measure">A source here can be one record, a collection, a guide, a dataset or a part of a document. Being listed doesn't make it about any one matter, and its kind of information says what it contributes, not that it is true or current.</p>
+  </PageHead>
+
+  <nav class="onpage" aria-labelledby="src-onpage">
+    <p class="mu-overline" id="src-onpage">On this page</p>
+    <ul>
+      <li><a href="#particulars-h">Sources by document family</a></li>
+      <li><a href="#relationships-h">Links between kinds of information</a></li>
+      <li><a href="#components-h">Parts of documents</a></li>
+      <li><a href="#roles-h">Kinds of information</a></li>
+    </ul>
+  </nav>
+
+  <section class="page-section" aria-labelledby="particulars-h">
+    <h2 id="particulars-h">Sources by document family</h2>
+    <p class="mu-meta measure">Open a source to see its summary, what it contributes, how it was checked and how to parse it.</p>
+    {families.map(([code, family]) => (
+      <section aria-labelledby={`fam-${code}`}>
+        <h3 id={`fam-${code}`}>{code}: {family.name}</h3>
+        {Object.entries(family.subfamilies).map(([subCode, sub]) => (
+          <Fragment>
+            <p class="mu-meta">{subCode}: {sub.name}</p>
+            <ul class="particulars">
+              {sub.members.map((id) => {
+                const p = findParticular(id);
+                if (!p) return <li>{id} (not in the inventory file)</li>;
+                return (
+                  <li id={p.id}>
+                    <details>
+                      <summary><span class="pid">{p.id}</span> <span>{p.title}</span> <span class="mu-meta">{p.authority} · {p.evidence}</span></summary>
+                      <div class="measure">
+                        <p>{p.summary}</p>
+                        <dl class="kv">
+                          <dt>Kind of source</dt><dd>{p.level}</dd>
+                          <dt>Main information</dt><dd>{roleName(p.primary_role)}: {p.primary_reason}</dd>
+                          {p.secondary_roles.length > 0 && <Fragment><dt>Also has</dt><dd>{p.secondary_roles.map((r) => `${roleName(r.code)}: ${r.reason}`).join(' · ')}</dd></Fragment>}
+                          <dt>Status</dt><dd>{p.authority_status || 'not recorded'}</dd>
+                          <dt>Access</dt><dd>{p.access}. {p.access_note}</dd>
+                          <dt>Evidence</dt><dd>{p.evidence}. {p.evidence_detail}</dd>
+                          <dt>Parsing note</dt><dd>{p.parsing_note || 'none'}</dd>
+                          {p.cross_refs.length > 0 && <Fragment><dt>Related sources</dt><dd>{p.cross_refs.map((ref, i) => <Fragment>{i > 0 && ', '}<a href={`#${ref}`}>{ref}</a></Fragment>)}</dd></Fragment>}
+                          {p.linked_matter_ids.length > 0 && <Fragment><dt>Used by</dt><dd>{p.linked_matter_ids.map((mid, i) => <Fragment>{i > 0 && ', '}<a href={`/matter/${mid}/`}>{getMatter(mid).title}</a></Fragment>)}</dd></Fragment>}
+                          {p.latest_fetch && <Fragment><dt>Muni's last fetch</dt><dd>{formatDate(p.latest_fetch.fetched_at)}, HTTP {p.latest_fetch.status ?? 'none'}</dd></Fragment>}
+                        </dl>
+                        {p.url && <p><a href={p.url} rel="noopener">Open the source<span class="sr-only"> {p.id} (publisher's website)</span></a></p>}
+                      </div>
+                    </details>
+                  </li>
+                );
+              })}
+            </ul>
+          </Fragment>
+        ))}
+      </section>
+    ))}
+  </section>
+
+  <section class="page-section" aria-labelledby="relationships-h">
+    <h2 id="relationships-h">Links between kinds of information</h2>
+    <p class="mu-meta measure">Each link joins kinds of information, not particular matters. An arrow shows the direction the research recorded; it doesn't prove cause.</p>
+    <ul class="records">
+      {data.relationships.map((rel) => (
+        <li id={rel.id}>
+          <h3>{rel.id}: {rel.categories}</h3>
+          <p class="chain">
+            {rel.chain.map((node, i) => (
+              <Fragment>
+                {i > 0 && <span aria-label={rel.arrows[i - 1] === '↔' ? 'linked both ways with' : 'leads to'}>{rel.arrows[i - 1]}</span>}
+                <span class="idchip">{node.map(endpointText).join(' or ')}</span>
+              </Fragment>
+            ))}
+          </p>
+          <dl class="kv measure">
+            <dt>Families</dt><dd>{rel.families.map((f) => data.relationship_families.find((rf) => rf.code === f)?.name ?? f).join(', ')}</dd>
+            <dt>Meaning</dt><dd>{rel.meaning}</dd>
+            <dt>Condition</dt><dd>{rel.condition}</dd>
+            <dt>Evidence</dt><dd>{rel.evidence}{rel.url && <Fragment> (<a href={rel.url} rel="noopener">source</a>)</Fragment>}</dd>
+            <dt>Limitation</dt><dd>{rel.limitation}</dd>
+          </dl>
+        </li>
+      ))}
+    </ul>
+    <h3>Relationship families</h3>
+    <dl class="kv measure">
+      {data.relationship_families.map((f) => <Fragment><dt>{f.code} {f.name}</dt><dd>{f.meaning}</dd></Fragment>)}
+    </dl>
+  </section>
+
+  <section class="page-section measure" aria-labelledby="components-h">
+    <h2 id="components-h">Parts of documents</h2>
+    <ul class="plain-list">
+      {data.document_components.map((c) => (
+        <li id={c.id}><strong>{c.label}</strong> ({c.id}, part of <a href={`#${c.source_particular}`}>{c.source_particular}</a>)<br>{c.description}</li>
+      ))}
+    </ul>
+  </section>
+
+  <section class="page-section measure" aria-labelledby="roles-h">
+    <h2 id="roles-h">Kinds of information</h2>
+    <dl class="kv">
+      {Object.values(data.roles).map((r) => <Fragment><dt>{r.code} {r.name}</dt><dd>{r.description}</dd></Fragment>)}
+    </dl>
+  </section>
+</Base>
